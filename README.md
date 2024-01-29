@@ -1,4 +1,4 @@
-### ✌ Olá!!! Pode me chamar de Pedro Reoli ✌
+### ✌ Olá!!! Pode me chamar de Pedro Reis ✌
 **Pe**dro Lucas **Re**is de **Oli**veira Sousa
 
 ## Sobre mim 
