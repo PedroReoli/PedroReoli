@@ -5,7 +5,7 @@
 Sou um entusiasta da tecnologia, apaixonado por programação e desenvolvimento de software. Atualmente, estou explorando diferentes áreas e aprendendo constantemente para aprimorar minhas habilidades.
 
 - 🔭 Hoje eu procuro atuar na área de desenvolvimento Web, com React
-- 🌱 Estudando Typescript, React, HTML, CSS, Javascript e, colateralmente, Python e C# ...
+- 🌱 Estudando C# ,Typescript, React, HTML, CSS, Javascript ...
 
 <div>
   <a href="https://beacons.al/PedroReoli">
