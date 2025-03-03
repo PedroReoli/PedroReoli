@@ -34,7 +34,7 @@
   <a href="https://www.linkedin.com/in/pedro-lucas-reis-de-oliveira-sousa-a93945171/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-  <a href="[https://discord.gg/seuservidor](https://discord.gg/teDfu39G7r)">
+  <a href="https://discord.gg/teDfu39G7r">
     <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
   </a>
 </div>
