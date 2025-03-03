@@ -55,7 +55,7 @@ Sou um entusiasta da tecnologia, apaixonado por desenvolvimento de software. Bus
 
 Atualmente, trabalho na **Autocom3**, uma empresa especializada em sistemas ERP de automação comercial, ajudando desde pequenas até grandes empresas a gerirem seus negócios de forma eficiente.
 
-- 🔭 Atualmente estou trabalhando no meu TCC: [FalaAtipica](https://github.com/PedroReoli/falatipica-tutor)
+- 🔭 Atualmente estou botando muito tempo no meu TCC: [FalaAtipica](https://github.com/PedroReoli/falatipica-tutor)
 - 🌱 Estou estudando **Node.js (JS, TS), React e C#**
 - 👨‍💻 Meu portfólio: [pedroreoliportfolio.netlify.app](https://pedroreoliportfolio.netlify.app)
 - 📝 Escrevo artigos sobre tecnologia no meu blog: [Dev em Desenvolvimento](https://www.devemdesenvolvimento.com.br/)
