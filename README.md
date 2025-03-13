@@ -1,5 +1,3 @@
-### 🚀 Pedro Reis | Full Stack Developer
-
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:30363d&height=200&section=header&text=Pedro%20Reis&fontSize=80&fontAlignY=35&animation=twinkling&fontColor=58a6ff&desc=Transformando%20ideias%20em%20código&descAlignY=55&descAlign=50&descSize=18&descColor=c9d1d9" width="100%"/>
 </div>
@@ -21,7 +19,6 @@
   <img src="https://komarev.com/ghpvc/?username=pedroreoli&label=Profile%20views&color=0e75b6&style=flat" alt="pedroreoli" />
   <img src="https://img.shields.io/badge/Status-Coding%20Now-brightgreen?style=flat&logo=visual-studio-code&logoColor=white" alt="Status" />
   <img src="https://img.shields.io/badge/Focus-Full%20Stack-blue?style=flat&logo=react" alt="Focus" />
-  <img src="https://profile-counter.glitch.me/PedroReoli/count.svg" alt="Visitor Count" />
 </p>
 
 <div align="center">
@@ -55,18 +52,17 @@ Sou um entusiasta da tecnologia, apaixonado por desenvolvimento de software. Bus
 
 Atualmente, trabalho na **Autocom3**, uma empresa especializada em sistemas ERP de automação comercial, ajudando desde pequenas até grandes empresas a gerirem seus negócios de forma eficiente.
 
-- 🔭 Atualmente estou botando muito tempo no meu TCC: [FalaAtipica](https://github.com/PedroReoli/falatipica-tutor)
-- 🌱 Estou estudando **Node.js (JS, TS), React e C#**
+- 🔭 Atualmente estou focado no meu TCC: [FalaAtipica](https://github.com/PedroReoli/falatipica-tutor)
+- 🌱 Estou aprofundando meus conhecimentos em **Node.js (JS, TS), React e C#**
 - 👨‍💻 Meu portfólio: [pedroreoliportfolio.netlify.app](https://pedroreoliportfolio.netlify.app)
-- 📝 Escrevo artigos sobre tecnologia no meu blog: [Dev em Desenvolvimento](https://www.devemdesenvolvimento.com.br/)
-- 💬 Vamos falar sobre **React, Desenvolvimento Full Stack e Gamificação**
+- 📝 Compartilho conhecimento no meu blog: [Dev em Desenvolvimento](https://www.devemdesenvolvimento.com.br/)
+- 💬 Vamos conversar sobre **React, Desenvolvimento Full Stack e Gamificação**
 - 🎸 **Fun fact:** Sou músico apaixonado por Blues, Metal e Rock 🤘
 
-## 🐍 Meus Commits
+## 🐍 Contribuições
 
 <div align="center">
-  <h3>Atividade no GitHub</h3>
-  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%" />
+  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake Animation" />
 </div>
 
 ---
@@ -103,6 +99,31 @@ Atualmente, trabalho na **Autocom3**, uma empresa especializada em sistemas ERP 
         <p><strong>🛠 Tecnologias:</strong> React, JavaScript, Tailwind.</p>
       </td>
     </tr>
+    <tr>
+      <td width="50%">
+        <h3 align="center">FalaAtipica</h3>
+        <p align="center">
+          <a href="https://github.com/PedroReoli/falatipica-tutor" target="_blank">
+            <img src="https://img.shields.io/badge/CÓDIGO-80ffea?style=for-the-badge&logo=github&logoColor=black">
+          </a>
+        </p>
+        <p>Meu TCC - Uma plataforma para auxiliar pessoas com dificuldades de fala.</p>
+        <p><strong>🛠 Tecnologias:</strong> React Native, Node.js, Firebase, TensorFlow.</p>
+      </td>
+      <td width="50%">
+        <h3 align="center">DataViz Dashboard</h3>
+        <p align="center">
+          <a href="#" target="_blank">
+            <img src="https://img.shields.io/badge/CÓDIGO-80ffea?style=for-the-badge&logo=github&logoColor=black">
+          </a>
+          <a href="#" target="_blank">
+            <img src="https://img.shields.io/badge/DEMO-ff64ff?style=for-the-badge&logo=vercel&logoColor=black">
+          </a>
+        </p>
+        <p>Dashboard interativo para visualização de dados com gráficos dinâmicos e análises em tempo real.</p>
+        <p><strong>🛠 Tecnologias:</strong> D3.js, React, TypeScript, Tailwind CSS.</p>
+      </td>
+    </tr>
   </table>
 </div>
 
@@ -111,37 +132,13 @@ Atualmente, trabalho na **Autocom3**, uma empresa especializada em sistemas ERP 
 ## 📊 Estatísticas
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=pedroreoli&theme=dracula&row=1&column=6&margin-w=15&margin-h=15" alt="GitHub Trophies" />
-</div>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=PedroReoli&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=PedroReoli&show_icons=true&theme=buefy&include_all_commits=true&count_private=true&hide_border=true">
-    <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=PedroReoli&show_icons=true&include_all_commits=true&count_private=true">
-  </picture>
-
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=PedroReoli&layout=donut&theme=radical&hide_border=true">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=PedroReoli&layout=donut&theme=buefy&hide_border=true">
-    <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PedroReoli&layout=donut">
-  </picture>
-</div>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=radical&hide_border=true">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=buefy&hide_border=true">
-    <img alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli">
-  </picture>
-</div>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=PedroReoli&bg_color=1a1b27&color=628fdb&line=38bdae&point=FFFFFF&area=true&hide_border=true">
-    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=PedroReoli&bg_color=ffffff&color=4c8ed9&line=1a8870&point=403d3d&area=true&hide_border=true">
-    <img alt="Contribution Heat Map" src="https://github-readme-activity-graph.vercel.app/graph?username=PedroReoli&bg_color=1a1b27&color=628fdb&line=38bdae&point=FFFFFF&area=true&hide_border=true" width="100%">
-  </picture>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+    <div style="display: flex; gap: 10px; width: 100%; justify-content: center;">
+      <img width="390" src="https://github-readme-stats.vercel.app/api?username=PedroReoli&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true" alt="GitHub Stats" />
+      <img width="390" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PedroReoli&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+    </div>
+    <img width="800" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=radical&hide_border=true" alt="GitHub Streak" />
+  </div>
 </div>
 
 ---
@@ -150,58 +147,57 @@ Atualmente, trabalho na **Autocom3**, uma empresa especializada em sistemas ERP 
 
 <div align="center">
   <h3>Minha Stack Tecnológica</h3>
-<p align="center">
-  <a href="https://developer.android.com" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/>
-  </a>
-  <a href="https://appwrite.io" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/appwriteio/appwriteio-icon.svg" alt="appwrite" width="40" height="40"/>
-  </a>
-  <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/>
-  </a>
-  <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/>
-  </a>
-  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
-  </a>
-  <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/>
-  </a>
-  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
-  </a>
-  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
-  </a>
-</p>
-<p align="center">
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
-  </a>
-  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>
-  </a>
-  <a href="https://nodejs.org" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>
-  </a>
-  <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/>
-  </a>
-  <a href="https://www.python.org" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
-  </a>
-  <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
-  </a>
-  <a href="https://reactnative.dev/" target="_blank" rel="noreferrer">
-    <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/>
-  </a>
-  <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
-  </a>
-</p>
+  <p align="center">
+    <a href="https://developer.android.com" target="_blank" rel="noreferrer">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/>
+    </a>
+    <a href="https://appwrite.io" target="_blank" rel="noreferrer">
+      <img src="https://www.vectorlogo.zone/logos/appwriteio/appwriteio-icon.svg" alt="appwrite" width="40" height="40"/>
+    </a>
+    <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer">
+      <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/>
+    </a>
+    <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/>
+    </a>
+    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
+    </a>
+    <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/>
+    </a>
+    <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+      <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
+    </a>
+    <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+    </a>
+    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>
+    </a>
+    <a href="https://nodejs.org" target="_blank" rel="noreferrer">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>
+    </a>
+    <a href="https://www.postgresql.org" target="_blank" rel="noreferrer">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/>
+    </a>
+    <a href="https://www.python.org" target="_blank" rel="noreferrer">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+    </a>
+    <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
+    </a>
+    <a href="https://reactnative.dev/" target="_blank" rel="noreferrer">
+      <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/>
+    </a>
+    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
+    </a>
+  </p>
+</div>
 
 ---
 
