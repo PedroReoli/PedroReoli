@@ -111,17 +111,17 @@ Atualmente, trabalho na **Autocom3**, uma empresa especializada em sistemas ERP 
         <p><strong>🛠 Tecnologias:</strong> React Native, Node.js, Firebase, TensorFlow.</p>
       </td>
       <td width="50%">
-        <h3 align="center">DataViz Dashboard</h3>
+        <h3 align="center">ContaAi</h3>
         <p align="center">
-          <a href="#" target="_blank">
+          <a href="https://github.com/PedroReoli/ContAi" target="_blank">
             <img src="https://img.shields.io/badge/CÓDIGO-80ffea?style=for-the-badge&logo=github&logoColor=black">
           </a>
           <a href="#" target="_blank">
             <img src="https://img.shields.io/badge/DEMO-ff64ff?style=for-the-badge&logo=vercel&logoColor=black">
           </a>
         </p>
-        <p>Dashboard interativo para visualização de dados com gráficos dinâmicos e análises em tempo real.</p>
-        <p><strong>🛠 Tecnologias:</strong> D3.js, React, TypeScript, Tailwind CSS.</p>
+        <p>Plataforma Web para auxiliar a entender e calcular ICMS e outras tributações fiscais</p>
+        <p><strong>🛠 Tecnologias:</strong> React, TypeScript, Tailwind CSS.</p>
       </td>
     </tr>
   </table>
