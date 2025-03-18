@@ -62,7 +62,7 @@ Atualmente, trabalho na **Autocom3**, uma empresa especializada em sistemas ERP 
 ## 🐍 Contribuições
 
 <div align="center">
-  <img src="https://github.com/PedroReoli/PedroReoli/blob/output/github-snake.svg" width="100%" alt="Snake Animation" />
+  <img src="https://github.com/PedroReoli/PedroReoli/raw/output/github-snake-dark.svg" width="100%" alt="Snake Animation" />
 </div>
 
 ---
