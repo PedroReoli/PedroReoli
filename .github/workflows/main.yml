@@ -10,12 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Generate Snake Game from GitHub Contribution Grid
+
+      - name: Generate Dark Mode Snake Game
         uses: Platane/snk@v3
         with:
           github_user_name: PedroReoli
           outputs: |
-            dist/github-snake.svg
+            dist/github-snake-dark.svg
+          color_snake: "#00ff00"  # Cor da cobra (Verde Neon)
+          color_dots: "#333333"  # Cor dos pontos (Cinza escuro)
+          color_grid: "#111111"  # Cor do fundo (Preto)
+
       - name: Push generated snake game to output branch
         uses: crazy-max/ghaction-github-pages@v2.1.3
         with:
