@@ -116,7 +116,7 @@ Atualmente, trabalho na **Autocom3**, uma empresa especializada em sistemas ERP 
           <a href="https://github.com/PedroReoli/ContAi" target="_blank">
             <img src="https://img.shields.io/badge/CÓDIGO-80ffea?style=for-the-badge&logo=github&logoColor=black">
           </a>
-          <a href="#" target="_blank">
+          <a href="https://cont-ai-eta.vercel.app/" target="_blank">
             <img src="https://img.shields.io/badge/DEMO-ff64ff?style=for-the-badge&logo=vercel&logoColor=black">
           </a>
         </p>
