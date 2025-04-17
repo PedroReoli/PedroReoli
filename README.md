@@ -54,7 +54,7 @@ Atualmente, trabalho na **Autocom3**, uma empresa especializada em sistemas ERP 
 
 - 🔭 Atualmente estou focado no meu TCC: [FalaAtipica](https://github.com/PedroReoli/falatipica-tutor)
 - 🌱 Estou aprofundando meus conhecimentos em **Node.js (JS, TS), React e C#**
-- 👨‍💻 Meu portfólio: [pedroreoliportfolio.netlify.app](https://pedroreoliportfolio.netlify.app)
+- 👨‍💻 Meu portfólio: [https://pedroreoliportfolio.vercel.app](https://pedroreoliportfolio.vercel.app)
 - 📝 Compartilho conhecimento no meu blog: [Dev em Desenvolvimento](https://www.devemdesenvolvimento.com.br/)
 - 💬 Vamos conversar sobre **React, Desenvolvimento Full Stack e Gamificação**
 - 🎸 **Fun fact:** Sou músico apaixonado por Blues, Metal e Rock 🤘
