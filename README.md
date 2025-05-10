@@ -1,23 +1,14 @@
 <div align="center">
-<a href="https://github.com/PedroReoli">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:30363d&height=200&section=header&text=Pedro%20Reis&fontSize=75&fontAlignY=35&animation=twinkling&fontColor=58a6ff&desc=Arquiteto%20Frontend%20%26%20Desenvolvedor%20Full%20Stack&descAlignY=55&descAlign=50&descSize=18&descColor=c9d1d9" width="100%"/>
-</a>
+  <h1>Pedro Reis | Desenvolvedor Fullstack Jr</h1>
 </div>
 
-<div align="center">
-<a href="README.md">
-  <img src="https://img.shields.io/badge/Português-009c3b?style=for-the-badge&logo=googletranslate&logoColor=white" alt="Português" />
-</a>
-<a href="README.en.md">
-  <img src="https://img.shields.io/badge/English-012169?style=for-the-badge&logo=googletranslate&logoColor=white" alt="English" />
-</a>
-</div>
-
-[<img align="right" alt="Chill gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="360" height="190" />](https://github.com/PedroReoli?tab=repositories)
-
-<h2 align="center">✨ Criando Experiências Digitais Extraordinárias ✨</h2>
 
 <p align="center">
+<!-- GIF posicionado à direita com texto fluindo ao redor -->
+<a href="https://github.com/PedroReoli?tab=repositories">
+  <img align="right" alt="Chill gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="360" height="190" />
+</a>
+
 <img src="https://komarev.com/ghpvc/?username=pedroreoli&label=Visitantes&color=0e75b6&style=flat" alt="pedroreoli" />
 <img src="https://img.shields.io/badge/Status-Codando%20Agora-brightgreen?style=flat&logo=visual-studio-code&logoColor=white" alt="Status" />
 <img src="https://img.shields.io/badge/Foco-Frontend%20Avançado-blue?style=flat&logo=react" alt="Focus" />
@@ -38,23 +29,33 @@
 </a>
 </div>
 
----
-
 <div align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Arquiteto+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
 </div>
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="400" alt="Pixel Art Developer" />
 </div>
 
-## 👋 Sobre Mim
+##  Commits
 
 <div align="center">
-<p>
-  <b>Desenvolvedor Full Stack</b> especializado em <b>Frontend</b>, transformando ideias em experiências digitais extraordinárias. Na <b>Autocom3</b>, aplico minha expertise em desenvolvimento Full Stack para criar soluções digitais que fortalecem a presença online da marca. Fui responsável pela reformulação completa do layout corporativo, incluindo a criação de todos os sites da empresa, garantindo uma identidade visual moderna e profissional.
-</p>
+<h3> Matriz de Contribuições 3D</h3>
+<img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Profile" width="60%" />
 </div>
+
+
+<div align="center">
+<a href="https://github.com/PedroReoli">
+  <img src="https://github.com/PedroReoli/PedroReoli/blob/output/github-snake-dark.svg" width="100%" alt="Snake Animation">
+</a>
+</div>
+
+## 👋 Sobre Mim
+
+<p>
+<b>Desenvolvedor Full Stack</b> especializado em <b>Frontend</b>, transformando ideias em experiências digitais extraordinárias. Na <b>Autocom3</b>, aplico minha expertise em desenvolvimento Full Stack para criar soluções digitais que fortalecem a presença online da marca. Fui responsável pela reformulação completa do layout corporativo, incluindo a criação de todos os sites da empresa, garantindo uma identidade visual moderna e profissional.
+</p>
 
 - 💼 Atualmente trabalho na **Autocom3**, desenvolvendo sistemas ERP para automação comercial
 - 🎓 Em desenvolvimento: [FalaAtipica](https://github.com/PedroReoli/falatipica-tutor) - meu TCC focado em acessibilidade comunicativa
@@ -63,21 +64,7 @@
 - 📝 Compartilho conhecimento em: [Dev em Desenvolvimento](https://www.devemdesenvolvimento.com.br/)
 - 🎸 **Curiosidade:** Quando não estou codando, estou criando música - apaixonado por Blues, Metal e Rock 🤘
 
-## 🌌 Universo de Contribuições
-
-<div align="center">
-<a href="https://github.com/PedroReoli">
-  <img src="https://github.com/PedroReoli/PedroReoli/raw/output/github-snake-dark.svg" width="100%" alt="Snake Animation">
-</a>
-</div>
-
-<!-- Quando configurarmos o workflow, esta seção mostrará sua visualização 3D -->
-<div align="center">
-<h3>🔮 Matriz de Contribuições 3D</h3>
-<p><i>Em breve: Visualização 3D interativa das suas contribuições</i></p>
-</div>
-
----
+--
 
 ## 🚀 Projetos Destacados
 
@@ -141,10 +128,9 @@
 
 ---
 
-## 🌠 Constelação Tecnológica
+## 🌠 Minha Stack
 
 <div align="center">
-  <h3>Frontend</h3>
   <p align="center">
     <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="50" height="50"/>
@@ -173,10 +159,6 @@
     <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor" target="_blank" rel="noreferrer">
       <img src="https://cdn.simpleicons.org/blazor/512BD4" alt="Blazor" width="50" height="50"/>
     </a>
-  </p>
-  
-  <h3>Backend</h3>
-  <p align="center">
     <a href="https://nodejs.org" target="_blank" rel="noreferrer">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="50" height="50"/>
     </a>
@@ -201,10 +183,6 @@
     <a href="https://socket.io/" target="_blank" rel="noreferrer">
       <img src="https://cdn.simpleicons.org/socketdotio/010101" alt="Socket.IO" width="50" height="50"/>
     </a>
-  </p>
-  
-  <h3>Banco de Dados</h3>
-  <p align="center">
     <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="50" height="50"/>
     </a>
@@ -214,10 +192,6 @@
     <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer">
       <img src="https://cdn.simpleicons.org/postgresql/336791" alt="PostgreSQL" width="50" height="50"/>
     </a>
-  </p>
-  
-  <h3>Ferramentas & DevOps</h3>
-  <p align="center">
     <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="50" height="50"/>
     </a>
@@ -261,11 +235,3 @@
 
 ---
 
-<div align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=100&section=footer" width="100%"/>
-</div>
-
-<div align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=14&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=500&lines=Criando+interfaces+que+inspiram+desde+2018;Onde+design+encontra+funcionalidade;Transformando+visões+em+experiências+digitais;Feito+com+%E2%9D%A4%EF%B8%8F+e+código+por+Pedro+Reis" alt="Footer Typing SVG" />
-</div>
-```
