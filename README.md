@@ -41,7 +41,7 @@
 
 <div align="center">
 <h3> Matriz de Contribuições 3D</h3>
-<img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Profile" width="60%" />
+<img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Profile" width="80%" />
 </div>
 
 
