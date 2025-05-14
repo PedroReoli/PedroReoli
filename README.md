@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Pedro Reis | Desenvolvedor Fullstack Jr</h1>
+  <h1>Pedro Reoli | Desenvolvedor Fullstack Jr</h1>
 </div>
 
 
