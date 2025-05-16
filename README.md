@@ -1,233 +1,110 @@
 <div align="center">
   <h1>Pedro Reoli | Desenvolvedor Fullstack Jr</h1>
+  
+  <p>
+    <img src="https://komarev.com/ghpvc/?username=pedroreoli&label=Visitantes&color=0e75b6&style=flat" alt="pedroreoli" />
+    <img src="https://img.shields.io/badge/Status-Codando%20Agora-brightgreen?style=flat&logo=visual-studio-code&logoColor=white" alt="Status" />
+    <img src="https://img.shields.io/badge/Foco-Frontend%20Avançado-blue?style=flat&logo=react" alt="Focus" />
+  </p>
+
+  <div>
+    <a href="https://www.youtube.com/@DevDesenvolvimento"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" /></a>
+    <a href="https://www.instagram.com/01_dev_em_desenvolvimento/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
+    <a href="https://www.linkedin.com/in/pedro-lucas-reis-de-oliveira-sousa-a93945171/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+    <a href="https://discord.gg/teDfu39G7r"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  </div>
+  
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
 </div>
 
+## 👨‍💻 Sobre Mim
 
-<p align="center">
-<!-- GIF posicionado à direita com texto fluindo ao redor -->
-<a href="https://github.com/PedroReoli?tab=repositories">
-  <img align="right" alt="Chill gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="360" height="190" />
-</a>
+<img align="right" alt="Chill gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="300" height="160" />
 
-<img src="https://komarev.com/ghpvc/?username=pedroreoli&label=Visitantes&color=0e75b6&style=flat" alt="pedroreoli" />
-<img src="https://img.shields.io/badge/Status-Codando%20Agora-brightgreen?style=flat&logo=visual-studio-code&logoColor=white" alt="Status" />
-<img src="https://img.shields.io/badge/Foco-Frontend%20Avançado-blue?style=flat&logo=react" alt="Focus" />
-</p>
+**Desenvolvedor Full Stack** especializado em **Frontend**, transformando ideias em experiências digitais extraordinárias. Na **Autocom3**, aplico minha expertise em desenvolvimento Full Stack para criar soluções digitais que fortalecem a presença online da marca.
 
-<div align="center">
-<a href="https://www.youtube.com/@DevDesenvolvimento">
-  <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" />
-</a>
-<a href="https://www.instagram.com/01_dev_em_desenvolvimento/">
-  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
-</a>
-<a href="https://www.linkedin.com/in/pedro-lucas-reis-de-oliveira-sousa-a93945171/">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-</a>
-<a href="https://discord.gg/teDfu39G7r">
-  <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
-</a>
-</div>
-
-<div align="center">
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
-</div>
-
-<div align="center">
-<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="400" alt="Pixel Art Developer" />
-</div>
-
-##  Commits
-
-<div align="center">
-<h3> Matriz de Contribuições 3D</h3>
-<img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Profile" width="80%" />
-</div>
-
-
-<div align="center">
-<a href="https://github.com/PedroReoli">
-  <img src="https://github.com/PedroReoli/PedroReoli/blob/output/github-snake-dark.svg" width="100%" alt="Snake Animation">
-</a>
-</div>
-
-## 👋 Sobre Mim
-
-<p>
-<b>Desenvolvedor Full Stack</b> especializado em <b>Frontend</b>, transformando ideias em experiências digitais extraordinárias. Na <b>Autocom3</b>, aplico minha expertise em desenvolvimento Full Stack para criar soluções digitais que fortalecem a presença online da marca. Fui responsável pela reformulação completa do layout corporativo, incluindo a criação de todos os sites da empresa, garantindo uma identidade visual moderna e profissional.
-</p>
-
-- 💼 Atualmente trabalho na **Autocom3**, desenvolvendo sistemas ERP para automação comercial
-- 🎓 Em desenvolvimento: [FalaAtipica](https://github.com/PedroReoli/falatipica-tutor) - meu TCC focado em acessibilidade comunicativa
+- 💼 Atualmente na **Autocom3**, desenvolvendo sistemas ERP para automação comercial
+- 🎓 Em desenvolvimento: [FalaAtipica](https://github.com/PedroReoli/falatipica-tutor) - TCC focado em acessibilidade comunicativa
 - 🚀 Aprimorando habilidades em **React, Next.js, Three.js, Node.js e C#**
-- 👨‍💻 Meu portfólio: [https://pedroreoliportfolio.vercel.app](https://pedroreoliportfolio.vercel.app)
-- 📝 Compartilho conhecimento em: [Dev em Desenvolvimento](https://www.devemdesenvolvimento.com.br/)
+- 👨‍💻 Portfólio: [pedroreoliportfolio.vercel.app](https://pedroreoliportfolio.vercel.app)
+- 📝 Blog: [Dev em Desenvolvimento](https://www.devemdesenvolvimento.com.br/)
 - 🎸 **Curiosidade:** Quando não estou codando, estou criando música - apaixonado por Blues, Metal e Rock 🤘
-
---
-
-## 🚀 Projetos Destacados
-
-<div align="center">
-<table border="0">
-  <tr>
-    <td width="50%">
-      <h3 align="center">BlogDevInDevelopment</h3>
-      <p align="center">
-        <a href="https://github.com/PedroReoli/BlogDevInDevelopment" target="_blank">
-          <img src="https://img.shields.io/badge/CÓDIGO-80ffea?style=for-the-badge&logo=github&logoColor=black">
-        </a>
-        <a href="https://www.devemdesenvolvimento.com.br/" target="_blank">
-          <img src="https://img.shields.io/badge/DEMO-ff64ff?style=for-the-badge&logo=vercel&logoColor=black">
-        </a>
-      </p>
-      <p align="justify">Uma plataforma digital para desenvolvedores compartilharem conhecimento, com interface moderna e experiência de usuário fluida. Implementei recursos avançados de frontend como lazy loading, animações suaves e design responsivo otimizado.</p>
-      <p><strong>🛠 Tecnologias:</strong> React, Node.js, TypeScript, Tailwind, Appwrite, Firebase.</p>
-    </td>
-    <td width="50%">
-      <h3 align="center">Portfolio</h3>
-      <p align="center">
-        <a href="https://github.com/PedroReoli/pedroreoli-portfolio" target="_blank">
-          <img src="https://img.shields.io/badge/CÓDIGO-80ffea?style=for-the-badge&logo=github&logoColor=black">
-        </a>
-        <a href="https://pedroreoliportfolio.netlify.app" target="_blank">
-          <img src="https://img.shields.io/badge/DEMO-ff64ff?style=for-the-badge&logo=netlify&logoColor=black">
-        </a>
-      </p>
-      <p align="justify">Meu portfólio pessoal com design minimalista e interações imersivas. Utilizei técnicas avançadas de animação e transição para criar uma experiência memorável, com foco em performance e acessibilidade.</p>
-      <p><strong>🛠 Tecnologias:</strong> React, JavaScript, Tailwind, Framer Motion.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3 align="center">FalaAtipica</h3>
-      <p align="center">
-        <a href="https://github.com/PedroReoli/falatipica-tutor" target="_blank">
-          <img src="https://img.shields.io/badge/CÓDIGO-80ffea?style=for-the-badge&logo=github&logoColor=black">
-        </a>
-      </p>
-      <p align="justify">Aplicativo inovador para auxiliar pessoas com dificuldades de fala, com interface intuitiva e acessível. Desenvolvi componentes de UI personalizados para garantir a melhor experiência possível para usuários com necessidades especiais.</p>
-      <p><strong>🛠 Tecnologias:</strong> React Native, Node.js, Firebase, TensorFlow.</p>
-    </td>
-    <td width="50%">
-      <h3 align="center">ContaAi</h3>
-      <p align="center">
-        <a href="https://github.com/PedroReoli/ContAi" target="_blank">
-          <img src="https://img.shields.io/badge/CÓDIGO-80ffea?style=for-the-badge&logo=github&logoColor=black">
-        </a>
-        <a href="https://cont-ai-eta.vercel.app/" target="_blank">
-          <img src="https://img.shields.io/badge/DEMO-ff64ff?style=for-the-badge&logo=vercel&logoColor=black">
-        </a>
-      </p>
-      <p align="justify">Plataforma web para cálculos tributários com visualizações interativas e dashboard intuitivo. Implementei gráficos dinâmicos e formulários inteligentes para simplificar processos complexos de tributação.</p>
-      <p><strong>🛠 Tecnologias:</strong> React, TypeScript, Tailwind CSS, Chart.js.</p>
-    </td>
-  </tr>
-</table>
-</div>
-
----
 
 ## 🌠 Minha Stack
 
 <div align="center">
-  <p align="center">
-    <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="50" height="50"/>
-    </a>
-    <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" width="50" height="50"/>
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" width="50" height="50"/>
-    </a>
-    <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS" width="50" height="50"/>
-    </a>
-    <a href="https://vitejs.dev/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/vite/646CFF" alt="Vite" width="50" height="50"/>
-    </a>
-    <a href="https://threejs.org/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/threedotjs/000000" alt="Three.js" width="50" height="50"/>
-    </a>
-    <a href="https://ui.shadcn.com/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/shadcnui/000000" alt="Shadcn/UI" width="50" height="50"/>
-    </a>
-    <a href="https://www.framer.com/motion/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/framer/0055FF" alt="Framer Motion" width="50" height="50"/>
-    </a>
-    <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/blazor/512BD4" alt="Blazor" width="50" height="50"/>
-    </a>
-    <a href="https://nodejs.org" target="_blank" rel="noreferrer">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="50" height="50"/>
-    </a>
-    <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" width="50" height="50"/>
-    </a>
-    <a href="https://www.python.org/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="50" height="50"/>
-    </a>
-    <a href="https://supabase.com/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/supabase/3ECF8E" alt="Supabase" width="50" height="50"/>
-    </a>
-    <a href="https://expressjs.com/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/express/000000" alt="Express.js" width="50" height="50"/>
-    </a>
-    <a href="https://www.prisma.io/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/prisma/2D3748" alt="Prisma" width="50" height="50"/>
-    </a>
-    <a href="https://jwt.io/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/jsonwebtokens/000000" alt="JWT" width="50" height="50"/>
-    </a>
-    <a href="https://socket.io/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/socketdotio/010101" alt="Socket.IO" width="50" height="50"/>
-    </a>
-    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="50" height="50"/>
-    </a>
-    <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="50" height="50"/>
-    </a>
-    <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/postgresql/336791" alt="PostgreSQL" width="50" height="50"/>
-    </a>
-    <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="50" height="50"/>
-    </a>
-    <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="50" height="50"/>
-    </a>
-    <a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" width="50" height="50"/>
-    </a>
-    <a href="https://vercel.com/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/vercel/000000" alt="Vercel" width="50" height="50"/>
-    </a>
-    <a href="https://eslint.org/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/eslint/4B32C3" alt="ESLint" width="50" height="50"/>
-    </a>
-    <a href="https://www.postman.com/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/postman/FF6C37" alt="Postman" width="50" height="50"/>
-    </a>
-    <a href="https://swagger.io/" target="_blank" rel="noreferrer">
-      <img src="https://cdn.simpleicons.org/swagger/85EA2D" alt="Swagger" width="50" height="50"/>
-    </a>
-  </p>
+  <!-- Frontend -->
+  <h4>Frontend</h4>
+  <div>
+    <a href="https://reactjs.org/" title="React"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" /></a>&nbsp;
+    <a href="https://nextjs.org/" title="Next.js"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored-dark.svg" width="36" height="36" alt="Next.js" /></a>&nbsp;
+    <a href="https://www.typescriptlang.org/" title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" /></a>&nbsp;
+    <a href="https://tailwindcss.com/" title="Tailwind CSS"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="36" height="36" alt="Tailwind" /></a>&nbsp;
+    <a href="https://vitejs.dev/" title="Vite"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="36" height="36" alt="Vite" /></a>&nbsp;
+    <a href="https://threejs.org/" title="Three.js"><img src="https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png" width="36" height="36" alt="Three.js" /></a>&nbsp;
+    <a href="https://ui.shadcn.com/" title="Shadcn UI"><img src="https://avatars.githubusercontent.com/u/124599?s=200&v=4" width="36" height="36" alt="Shadcn UI" /></a>&nbsp;
+    <a href="https://www.framer.com/motion/" title="Framer Motion"><img src="https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png" width="36" height="36" alt="Framer Motion" /></a>
+  </div>
+  
+  <!-- Backend -->
+  <h4>Backend</h4>
+  <div>
+    <a href="https://nodejs.org" title="Node.js"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="Node.js" /></a>&nbsp;
+    <a href="https://expressjs.com/" title="Express"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored-dark.svg" width="36" height="36" alt="Express" /></a>&nbsp;
+    <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor" title="Blazor"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/dot-net-colored.svg" width="36" height="36" alt="Blazor" /></a>&nbsp;
+    <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" title="C#"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/csharp-colored.svg" width="36" height="36" alt="C#" /></a>&nbsp;
+    <a href="https://www.python.org/" title="Python"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python" /></a>&nbsp;
+    <a href="https://www.prisma.io/" title="Prisma"><img src="https://avatars.githubusercontent.com/u/17219288?s=200&v=4" width="36" height="36" alt="Prisma" /></a>&nbsp;
+    <a href="https://jwt.io/" title="JWT"><img src="https://jwt.io/img/pic_logo.svg" width="36" height="36" alt="JWT" /></a>&nbsp;
+    <a href="https://socket.io/" title="Socket.IO"><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" width="36" height="36" alt="Socket.IO" /></a>
+  </div>
+  
+  <!-- Databases -->
+  <h4>Databases</h4>
+  <div>
+    <a href="https://www.mysql.com/" title="MySQL"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="36" height="36" alt="MySQL" /></a>&nbsp;
+    <a href="https://www.mongodb.com/" title="MongoDB"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="36" height="36" alt="MongoDB" /></a>&nbsp;
+    <a href="https://www.postgresql.org/" title="PostgreSQL"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="36" height="36" alt="PostgreSQL" /></a>&nbsp;
+    <a href="https://supabase.com/" title="Supabase"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/supabase-colored.svg" width="36" height="36" alt="Supabase" /></a>
+  </div>
+  
+  <!-- DevOps & Tools -->
+  <h4>DevOps & Tools</h4>
+  <div>
+    <a href="https://git-scm.com/" title="Git"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="36" height="36" alt="Git" /></a>&nbsp;
+    <a href="https://www.docker.com/" title="Docker"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg" width="36" height="36" alt="Docker" /></a>&nbsp;
+    <a href="https://code.visualstudio.com/" title="VS Code"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg" width="36" height="36" alt="VS Code" /></a>&nbsp;
+    <a href="https://vercel.com/" title="Vercel"><img src="https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" width="36" height="36" alt="Vercel" /></a>&nbsp;
+    <a href="https://eslint.org/" title="ESLint"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/ESLint_logo.svg" width="36" height="36" alt="ESLint" /></a>&nbsp;
+    <a href="https://www.postman.com/" title="Postman"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="36" height="36" alt="Postman" /></a>&nbsp;
+    <a href="https://swagger.io/" title="Swagger"><img src="https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png" width="36" height="36" alt="Swagger" /></a>
+  </div>
 </div>
 
----
-
-## 📊 Estatísticas
+## 📊 GitHub Stats
 
 <div align="center">
-<div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
-  <div style="display: flex; gap: 10px; width: 100%; justify-content: center;">
-    <img width="390" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PedroReoli&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+  <div style="display: flex; justify-content: center; gap: 10px;">
+    <img width="400" height="158" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PedroReoli&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+    <img width="400" height="158" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=radical&hide_border=true" alt="GitHub Streak" />
   </div>
-  <img width="800" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=radical&hide_border=true" alt="GitHub Streak" />
-</div>
+  
+  <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="300" alt="Pixel Art Developer" />
 </div>
 
----
+## 🎮 Contribuições
+
+<div align="center">
+  <h3>Pacman Contribution Graph</h3>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
+    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
+  </picture>
+  
+  <h3>Matriz de Contribuições 3D</h3>
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Profile" width="80%" />
+</div>
+
+
 
