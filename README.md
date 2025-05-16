@@ -33,52 +33,110 @@
 ## 🌠 Minha Stack
 
 <div align="center">
-  <!-- Frontend -->
-  <h4>Frontend</h4>
-  <div>
-    <a href="https://reactjs.org/" title="React"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" /></a>&nbsp;
-    <a href="https://nextjs.org/" title="Next.js"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored-dark.svg" width="36" height="36" alt="Next.js" /></a>&nbsp;
-    <a href="https://www.typescriptlang.org/" title="TypeScript"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" /></a>&nbsp;
-    <a href="https://tailwindcss.com/" title="Tailwind CSS"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="36" height="36" alt="Tailwind" /></a>&nbsp;
-    <a href="https://vitejs.dev/" title="Vite"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="36" height="36" alt="Vite" /></a>&nbsp;
-    <a href="https://threejs.org/" title="Three.js"><img src="https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png" width="36" height="36" alt="Three.js" /></a>&nbsp;
-    <a href="https://ui.shadcn.com/" title="Shadcn UI"><img src="https://avatars.githubusercontent.com/u/124599?s=200&v=4" width="36" height="36" alt="Shadcn UI" /></a>&nbsp;
-    <a href="https://www.framer.com/motion/" title="Framer Motion"><img src="https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png" width="36" height="36" alt="Framer Motion" /></a>
-  </div>
-  
-  <!-- Backend -->
-  <h4>Backend</h4>
-  <div>
-    <a href="https://nodejs.org" title="Node.js"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="Node.js" /></a>&nbsp;
-    <a href="https://expressjs.com/" title="Express"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored-dark.svg" width="36" height="36" alt="Express" /></a>&nbsp;
-    <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor" title="Blazor"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/dot-net-colored.svg" width="36" height="36" alt="Blazor" /></a>&nbsp;
-    <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" title="C#"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/csharp-colored.svg" width="36" height="36" alt="C#" /></a>&nbsp;
-    <a href="https://www.python.org/" title="Python"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python" /></a>&nbsp;
-    <a href="https://www.prisma.io/" title="Prisma"><img src="https://avatars.githubusercontent.com/u/17219288?s=200&v=4" width="36" height="36" alt="Prisma" /></a>&nbsp;
-    <a href="https://jwt.io/" title="JWT"><img src="https://jwt.io/img/pic_logo.svg" width="36" height="36" alt="JWT" /></a>&nbsp;
-    <a href="https://socket.io/" title="Socket.IO"><img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" width="36" height="36" alt="Socket.IO" /></a>
-  </div>
-  
-  <!-- Databases -->
-  <h4>Databases</h4>
-  <div>
-    <a href="https://www.mysql.com/" title="MySQL"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="36" height="36" alt="MySQL" /></a>&nbsp;
-    <a href="https://www.mongodb.com/" title="MongoDB"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="36" height="36" alt="MongoDB" /></a>&nbsp;
-    <a href="https://www.postgresql.org/" title="PostgreSQL"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="36" height="36" alt="PostgreSQL" /></a>&nbsp;
-    <a href="https://supabase.com/" title="Supabase"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/supabase-colored.svg" width="36" height="36" alt="Supabase" /></a>
-  </div>
-  
-  <!-- DevOps & Tools -->
-  <h4>DevOps & Tools</h4>
-  <div>
-    <a href="https://git-scm.com/" title="Git"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="36" height="36" alt="Git" /></a>&nbsp;
-    <a href="https://www.docker.com/" title="Docker"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg" width="36" height="36" alt="Docker" /></a>&nbsp;
-    <a href="https://code.visualstudio.com/" title="VS Code"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg" width="36" height="36" alt="VS Code" /></a>&nbsp;
-    <a href="https://vercel.com/" title="Vercel"><img src="https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" width="36" height="36" alt="Vercel" /></a>&nbsp;
-    <a href="https://eslint.org/" title="ESLint"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/ESLint_logo.svg" width="36" height="36" alt="ESLint" /></a>&nbsp;
-    <a href="https://www.postman.com/" title="Postman"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="36" height="36" alt="Postman" /></a>&nbsp;
-    <a href="https://swagger.io/" title="Swagger"><img src="https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png" width="36" height="36" alt="Swagger" /></a>
-  </div>
+  <table>
+    <tr>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="32" height="32" alt="React" />
+        <br><span style="font-size:10px">React</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored-dark.svg" width="32" height="32" alt="Next.js" />
+        <br><span style="font-size:10px">Next.js</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="32" height="32" alt="TypeScript" />
+        <br><span style="font-size:10px">TypeScript</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="32" height="32" alt="Tailwind" />
+        <br><span style="font-size:10px">Tailwind</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="32" height="32" alt="Vite" />
+        <br><span style="font-size:10px">Vite</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://canada1.discourse-cdn.com/flex035/uploads/threejs/optimized/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751_2_496x500.png" width="32" height="32" alt="Three.js" />
+        <br><span style="font-size:10px">Three.js</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://avatars.githubusercontent.com/u/124599?s=200&v=4" width="32" height="32" alt="Shadcn UI" />
+        <br><span style="font-size:10px">Shadcn</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png" width="32" height="32" alt="Framer Motion" />
+        <br><span style="font-size:10px">FramerMotion</span>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="32" height="32" alt="Node.js" />
+        <br><span style="font-size:10px">Node.js</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored-dark.svg" width="32" height="32" alt="Express" />
+        <br><span style="font-size:10px">Express</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/csharp-colored.svg" width="32" height="32" alt="C#" />
+        <br><span style="font-size:10px">C#</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/dot-net-colored.svg" width="32" height="32" alt="Blazor" />
+        <br><span style="font-size:10px">Blazor</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="32" height="32" alt="Python" />
+        <br><span style="font-size:10px">Python</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://avatars.githubusercontent.com/u/17219288?s=200&v=4" width="32" height="32" alt="Prisma" />
+        <br><span style="font-size:10px">Prisma</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://jwt.io/img/pic_logo.svg" width="32" height="32" alt="JWT" />
+        <br><span style="font-size:10px">JWT</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" width="32" height="32" alt="Socket.IO" />
+        <br><span style="font-size:10px">Socket.IO</span>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="32" height="32" alt="MySQL" />
+        <br><span style="font-size:10px">MySQL</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="32" height="32" alt="MongoDB" />
+        <br><span style="font-size:10px">MongoDB</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="32" height="32" alt="PostgreSQL" />
+        <br><span style="font-size:10px">PostgreSQL</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/supabase-colored.svg" width="32" height="32" alt="Supabase" />
+        <br><span style="font-size:10px">Supabase</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="32" height="32" alt="Git" />
+        <br><span style="font-size:10px">Git</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg" width="32" height="32" alt="Docker" />
+        <br><span style="font-size:10px">Docker</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg" width="32" height="32" alt="VS Code" />
+        <br><span style="font-size:10px">VS Code</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" width="32" height="32" alt="Vercel" />
+        <br><span style="font-size:10px">Vercel</span>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ## 📊 GitHub Stats
