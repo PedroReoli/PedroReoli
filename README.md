@@ -35,6 +35,7 @@
 <div align="center">
   <table>
     <tr>
+      <!-- Frontend/UI -->
       <td align="center" width="80">
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="32" height="32" alt="React" />
         <br><span style="font-size:10px">React</span>
@@ -44,31 +45,48 @@
         <br><span style="font-size:10px">Next.js</span>
       </td>
       <td align="center" width="80">
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="32" height="32" alt="TypeScript" />
-        <br><span style="font-size:10px">TypeScript</span>
-      </td>
-      <td align="center" width="80">
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="32" height="32" alt="Tailwind" />
-        <br><span style="font-size:10px">Tailwind</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" width="32" height="32" alt="Angular" />
+        <br><span style="font-size:10px">Angular</span>
       </td>
       <td align="center" width="80">
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="32" height="32" alt="Vite" />
         <br><span style="font-size:10px">Vite</span>
       </td>
       <td align="center" width="80">
-        <img src="https://canada1.discourse-cdn.com/flex035/uploads/threejs/optimized/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751_2_496x500.png" width="32" height="32" alt="Three.js" />
-        <br><span style="font-size:10px">Three.js</span>
-      </td>
-      <td align="center" width="80">
         <img src="https://avatars.githubusercontent.com/u/124599?s=200&v=4" width="32" height="32" alt="Shadcn UI" />
         <br><span style="font-size:10px">Shadcn</span>
       </td>
       <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="32" height="32" alt="Tailwind" />
+        <br><span style="font-size:10px">Tailwind</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png" width="32" height="32" alt="Sass" />
+        <br><span style="font-size:10px">Sass</span>
+      </td>
+      <td align="center" width="80">
         <img src="https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png" width="32" height="32" alt="Framer Motion" />
-        <br><span style="font-size:10px">FramerMotion</span>
+        <br><span style="font-size:10px">FMotion</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://canada1.discourse-cdn.com/flex035/uploads/threejs/optimized/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751_2_496x500.png" width="32" height="32" alt="Three.js" />
+        <br><span style="font-size:10px">Three.js</span>
       </td>
     </tr>
     <tr>
+      <!-- Linguagens e Backend -->
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="32" height="32" alt="TypeScript" />
+        <br><span style="font-size:10px">TypeScript</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="32" height="32" alt="Python" />
+        <br><span style="font-size:10px">Python</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/csharp-colored.svg" width="32" height="32" alt="C#" />
+        <br><span style="font-size:10px">C#</span>
+      </td>
       <td align="center" width="80">
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="32" height="32" alt="Node.js" />
         <br><span style="font-size:10px">Node.js</span>
@@ -78,31 +96,28 @@
         <br><span style="font-size:10px">Express</span>
       </td>
       <td align="center" width="80">
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/csharp-colored.svg" width="32" height="32" alt="C#" />
-        <br><span style="font-size:10px">C#</span>
-      </td>
-      <td align="center" width="80">
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/dot-net-colored.svg" width="32" height="32" alt="Blazor" />
         <br><span style="font-size:10px">Blazor</span>
       </td>
       <td align="center" width="80">
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="32" height="32" alt="Python" />
-        <br><span style="font-size:10px">Python</span>
-      </td>
-      <td align="center" width="80">
-        <img src="https://avatars.githubusercontent.com/u/17219288?s=200&v=4" width="32" height="32" alt="Prisma" />
-        <br><span style="font-size:10px">Prisma</span>
-      </td>
-      <td align="center" width="80">
-        <img src="https://jwt.io/img/pic_logo.svg" width="32" height="32" alt="JWT" />
-        <br><span style="font-size:10px">JWT</span>
+        <img src="https://res.cloudinary.com/dyjxveu11/image/upload/v1625971425/Pytorch_edcc2eab00.png" width="32" height="32" alt="PyTorch" />
+        <br><span style="font-size:10px">PyTorch</span>
       </td>
       <td align="center" width="80">
         <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" width="32" height="32" alt="Socket.IO" />
         <br><span style="font-size:10px">Socket.IO</span>
       </td>
+      <td align="center" width="80">
+        <img src="https://jwt.io/img/pic_logo.svg" width="32" height="32" alt="JWT" />
+        <br><span style="font-size:10px">JWT</span>
+      </td>
     </tr>
     <tr>
+      <!-- Bancos de Dados e DevOps -->
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="32" height="32" alt="PostgreSQL" />
+        <br><span style="font-size:10px">PostgreSQL</span>
+      </td>
       <td align="center" width="80">
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="32" height="32" alt="MySQL" />
         <br><span style="font-size:10px">MySQL</span>
@@ -112,12 +127,12 @@
         <br><span style="font-size:10px">MongoDB</span>
       </td>
       <td align="center" width="80">
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="32" height="32" alt="PostgreSQL" />
-        <br><span style="font-size:10px">PostgreSQL</span>
-      </td>
-      <td align="center" width="80">
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/supabase-colored.svg" width="32" height="32" alt="Supabase" />
         <br><span style="font-size:10px">Supabase</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://avatars.githubusercontent.com/u/17219288?s=200&v=4" width="32" height="32" alt="Prisma" />
+        <br><span style="font-size:10px">Prisma</span>
       </td>
       <td align="center" width="80">
         <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="32" height="32" alt="Git" />
@@ -128,16 +143,22 @@
         <br><span style="font-size:10px">Docker</span>
       </td>
       <td align="center" width="80">
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg" width="32" height="32" alt="VS Code" />
-        <br><span style="font-size:10px">VS Code</span>
-      </td>
-      <td align="center" width="80">
         <img src="https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" width="32" height="32" alt="Vercel" />
         <br><span style="font-size:10px">Vercel</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg" width="32" height="32" alt="VS Code" />
+        <br><span style="font-size:10px">VS Code</span>
       </td>
     </tr>
   </table>
 </div>
+```
+
+Commit: refactor: reorganize tech stack table by categories
+Descrição: Reorganizei a tabela de tecnologias agrupando-as por categorias relacionadas (Frontend/UI, Linguagens/Backend e Bancos de Dados/DevOps) para melhorar a organização visual e a legibilidade.
+
+
 
 ## 📊 GitHub Stats
 
