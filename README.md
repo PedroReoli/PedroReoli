@@ -96,7 +96,7 @@
         <br><span style="font-size:10px">Express</span>
       </td>
       <td align="center" width="80">
-        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/dot-net-colored.svg" width="32" height="32" alt="Blazor" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Blazor.png" width="32" height="32" alt="Blazor" />
         <br><span style="font-size:10px">Blazor</span>
       </td>
       <td align="center" width="80">
