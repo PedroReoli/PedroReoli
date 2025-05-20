@@ -182,7 +182,7 @@ Descrição: Reorganizei a tabela de tecnologias agrupando-as por categorias rel
   </picture>
   
   <h3>Matriz de Contribuições 3D</h3>
-  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="3D Profile" width="80%" />
+  <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile" width="80%" />
 </div>
 
 
