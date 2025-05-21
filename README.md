@@ -155,8 +155,6 @@
 </div>
 ```
 
-Commit: refactor: reorganize tech stack table by categories
-Descrição: Reorganizei a tabela de tecnologias agrupando-as por categorias relacionadas (Frontend/UI, Linguagens/Backend e Bancos de Dados/DevOps) para melhorar a organização visual e a legibilidade.
 
 
 
