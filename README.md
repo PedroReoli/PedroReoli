@@ -1,10 +1,10 @@
 <div align="center">
-  <h1>Pedro Reoli | Junior Fullstack Developer</h1>
+  <h1>Pedro Reoli | Desenvolvedor Fullstack Jr</h1>
   
   <p>
-    <img src="https://komarev.com/ghpvc/?username=pedroreoli&label=Visitors&color=0e75b6&style=flat" alt="pedroreoli" />
-    <img src="https://img.shields.io/badge/Status-Coding%20Now-brightgreen?style=flat&logo=visual-studio-code&logoColor=white" alt="Status" />
-    <img src="https://img.shields.io/badge/Focus-Advanced%20Frontend-blue?style=flat&logo=react" alt="Focus" />
+    <img src="https://komarev.com/ghpvc/?username=pedroreoli&label=Visitantes&color=0e75b6&style=flat" alt="pedroreoli" />
+    <img src="https://img.shields.io/badge/Status-Codando%20Agora-brightgreen?style=flat&logo=visual-studio-code&logoColor=white" alt="Status" />
+    <img src="https://img.shields.io/badge/Foco-Frontend%20Avançado-blue?style=flat&logo=react" alt="Focus" />
   </p>
 
   <div>
@@ -14,123 +14,151 @@
     <a href="https://discord.gg/teDfu39G7r"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   </div>
   
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Frontend+Specialist+Developer;Full+Stack+Developer;Immersive+Interface+Creator;React+and+Next.js+Enthusiast;Code+Artist;Musician+in+Spare+Time" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
 </div>
 
-<!-- Language Toggle -->
+## 👨‍💻 Sobre Mim
+
+<img align="right" alt="Chill gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="300" height="160" />
+
+**Desenvolvedor Full Stack** especializado em **Frontend**, transformando ideias em experiências digitais extraordinárias. Na **Autocom3**, aplico minha expertise em desenvolvimento Full Stack para criar soluções digitais que fortalecem a presença online da marca.
+
+- 💼 Atualmente na **Autocom3**, desenvolvendo sistemas ERP para automação comercial
+- 🎓 Em desenvolvimento: [FalaAtipica](https://github.com/PedroReoli/falatipica-tutor) - TCC focado em acessibilidade comunicativa
+- 🚀 Aprimorando habilidades em **React, Next.js, Three.js, Node.js e C#**
+- 👨‍💻 Portfólio: [pedroreoliportfolio.vercel.app](https://pedroreoliportfolio.vercel.app)
+- 📝 Blog: [Dev em Desenvolvimento](https://www.devemdesenvolvimento.com.br/)
+- 🎸 **Curiosidade:** Quando não estou codando, estou criando música - apaixonado por Blues, Metal e Rock 🤘
+
+## 🌠 Minha Stack
+
 <div align="center">
-  <p>
-    <a href="../README.md">🇧🇷 Português</a> | 
-    <strong>🇺🇸 English</strong>
-  </p>
+  <table>
+    <tr>
+      <!-- Frontend/UI -->
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="32" height="32" alt="React" />
+        <br><span style="font-size:10px">React</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored-dark.svg" width="32" height="32" alt="Next.js" />
+        <br><span style="font-size:10px">Next.js</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" width="32" height="32" alt="Angular" />
+        <br><span style="font-size:10px">Angular</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="32" height="32" alt="Vite" />
+        <br><span style="font-size:10px">Vite</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://avatars.githubusercontent.com/u/124599?s=200&v=4" width="32" height="32" alt="Shadcn UI" />
+        <br><span style="font-size:10px">Shadcn</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="32" height="32" alt="Tailwind" />
+        <br><span style="font-size:10px">Tailwind</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png" width="32" height="32" alt="Sass" />
+        <br><span style="font-size:10px">Sass</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png" width="32" height="32" alt="Framer Motion" />
+        <br><span style="font-size:10px">FMotion</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://canada1.discourse-cdn.com/flex035/uploads/threejs/optimized/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751_2_496x500.png" width="32" height="32" alt="Three.js" />
+        <br><span style="font-size:10px">Three.js</span>
+      </td>
+    </tr>
+    <tr>
+      <!-- Linguagens e Backend -->
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="32" height="32" alt="TypeScript" />
+        <br><span style="font-size:10px">TypeScript</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="32" height="32" alt="Python" />
+        <br><span style="font-size:10px">Python</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/csharp-colored.svg" width="32" height="32" alt="C#" />
+        <br><span style="font-size:10px">C#</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="32" height="32" alt="Node.js" />
+        <br><span style="font-size:10px">Node.js</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored-dark.svg" width="32" height="32" alt="Express" />
+        <br><span style="font-size:10px">Express</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Blazor.png" width="32" height="32" alt="Blazor" />
+        <br><span style="font-size:10px">Blazor</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://res.cloudinary.com/dyjxveu11/image/upload/v1625971425/Pytorch_edcc2eab00.png" width="32" height="32" alt="PyTorch" />
+        <br><span style="font-size:10px">PyTorch</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" width="32" height="32" alt="Socket.IO" />
+        <br><span style="font-size:10px">Socket.IO</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://jwt.io/img/pic_logo.svg" width="32" height="32" alt="JWT" />
+        <br><span style="font-size:10px">JWT</span>
+      </td>
+    </tr>
+    <tr>
+      <!-- Bancos de Dados e DevOps -->
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="32" height="32" alt="PostgreSQL" />
+        <br><span style="font-size:10px">PostgreSQL</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="32" height="32" alt="MySQL" />
+        <br><span style="font-size:10px">MySQL</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mongodb-colored.svg" width="32" height="32" alt="MongoDB" />
+        <br><span style="font-size:10px">MongoDB</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/supabase-colored.svg" width="32" height="32" alt="Supabase" />
+        <br><span style="font-size:10px">Supabase</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://avatars.githubusercontent.com/u/17219288?s=200&v=4" width="32" height="32" alt="Prisma" />
+        <br><span style="font-size:10px">Prisma</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="32" height="32" alt="Git" />
+        <br><span style="font-size:10px">Git</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg" width="32" height="32" alt="Docker" />
+        <br><span style="font-size:10px">Docker</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" width="32" height="32" alt="Vercel" />
+        <br><span style="font-size:10px">Vercel</span>
+      </td>
+      <td align="center" width="80">
+        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode-colored.svg" width="32" height="32" alt="VS Code" />
+        <br><span style="font-size:10px">VS Code</span>
+      </td>
+    </tr>
+  </table>
 </div>
 
-<!-- Quick Navigation -->
-<div align="center">
-  <h2>📋 Quick Navigation</h2>
-  <p>
-    <a href="#live-status">🟢 Live Status</a> •
-    <a href="#about-me">👨‍💻 About Me</a> •
-    <a href="#tech-stack">🎨 Tech Stack</a> •
-    <a href="#skill-evolution">📈 Skill Evolution</a> •
-    <a href="#projects">🌌 Projects</a> •
-    <a href="#observatory">🔭 Observatory</a> •
-    <a href="#github-stats">📊 GitHub Stats</a>
-  </p>
-</div>
 
-<!-- Live Status -->
-<div id="live-status">
-  <h2>🟢 Live Status</h2>
-  <p align="center">
-    <img src="https://img.shields.io/badge/🔄_Updating_Status...-6E56CF?style=for-the-badge" alt="Updating Status..." />
-    <!-- Will be replaced by dynamic badges -->
-  </p>
-</div>
 
-<!-- About Me -->
-<details open id="about-me">
-  <summary><h2>👨‍💻 About Me</h2></summary>
-  <img align="right" alt="Chill gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="300" height="160" />
 
-  <p><strong>Full Stack Developer</strong> specialized in <strong>Frontend</strong>, transforming ideas into extraordinary digital experiences. At <strong>Autocom3</strong>, I apply my Full Stack development expertise to create digital solutions that strengthen the brand's online presence.</p>
 
-  <ul>
-    <li>💼 Currently at <strong>Autocom3</strong>, developing ERP systems for commercial automation</li>
-    <li>🎓 In development: <a href="https://github.com/PedroReoli/falatipica-tutor">FalaAtipica</a> - Thesis focused on communicative accessibility</li>
-    <li>🚀 Improving skills in <strong>React, Next.js, Three.js, Node.js and C#</strong></li>
-    <li>👨‍💻 Portfolio: <a href="https://pedroreoliportfolio.vercel.app">pedroreoliportfolio.vercel.app</a></li>
-    <li>📝 Blog: <a href="https://www.devemdesenvolvimento.com.br/">Dev em Desenvolvimento</a></li>
-    <li>🎸 <strong>Fun fact:</strong> When I'm not coding, I'm creating music - passionate about Blues, Metal and Rock 🤘</li>
-  </ul>
-</details>
-
-<!-- Tech Stack -->
-<details id="tech-stack">
-  <summary><h2>🎨 3D Tech Stack</h2></summary>
-  <div align="center">
-    <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="100" alt="Tech Animation" />
-    
-    ### 🎨 Frontend & UI/UX
-    
-    | React | Next.js | Angular | Vite | Shadcn | Tailwind | Sass | Framer Motion | Three.js |
-    |:-----:|:-------:|:-------:|:----:|:------:|:--------:|:----:|:-------------:|:--------:|
-    | <img src="https://skillicons.dev/icons?i=react&theme=dark" width="48" height="48" alt="React" /><br/>**React** | <img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="48" height="48" alt="Next.js" /><br/>**Next.js** | <img src="https://skillicons.dev/icons?i=angular&theme=dark" width="48" height="48" alt="Angular" /><br/>**Angular** | <img src="https://skillicons.dev/icons?i=vite&theme=dark" width="48" height="48" alt="Vite" /><br/>**Vite** | <img src="https://avatars.githubusercontent.com/u/124599?s=200&v=4" width="48" height="48" alt="Shadcn UI" /><br/>**Shadcn** | <img src="https://skillicons.dev/icons?i=tailwind&theme=dark" width="48" height="48" alt="Tailwind" /><br/>**Tailwind** | <img src="https://skillicons.dev/icons?i=sass&theme=dark" width="48" height="48" alt="Sass" /><br/>**Sass** | <img src="https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png" width="48" height="48" alt="Framer Motion" /><br/>**Framer Motion** | <img src="https://skillicons.dev/icons?i=threejs&theme=dark" width="48" height="48" alt="Three.js" /><br/>**Three.js** |
-
-    ### ⚡ Languages & Backend
-    
-    | TypeScript | Python | C# | Node.js | Express | Blazor | PyTorch | Socket.IO | JWT |
-    |:----------:|:------:|:--:|:-------:|:-------:|:------:|:-------:|:---------:|:---:|
-    | <img src="https://skillicons.dev/icons?i=typescript&theme=dark" width="48" height="48" alt="TypeScript" /><br/>**TypeScript** | <img src="https://skillicons.dev/icons?i=python&theme=dark" width="48" height="48" alt="Python" /><br/>**Python** | <img src="https://skillicons.dev/icons?i=cs&theme=dark" width="48" height="48" alt="C#" /><br/>**C#** | <img src="https://skillicons.dev/icons?i=nodejs&theme=dark" width="48" height="48" alt="Node.js" /><br/>**Node.js** | <img src="https://skillicons.dev/icons?i=express&theme=dark" width="48" height="48" alt="Express" /><br/>**Express** | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Blazor.png" width="48" height="48" alt="Blazor" /><br/>**Blazor** | <img src="https://skillicons.dev/icons?i=pytorch&theme=dark" width="48" height="48" alt="PyTorch" /><br/>**PyTorch** | <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" width="48" height="48" alt="Socket.IO" style="background: white; border-radius: 8px; padding: 4px;" /><br/>**Socket.IO** | <img src="https://jwt.io/img/pic_logo.svg" width="48" height="48" alt="JWT" /><br/>**JWT** |
-
-    ### 🗄️ Database & DevOps
-    
-    | PostgreSQL | MySQL | MongoDB | Supabase | Prisma | Git | Docker | Vercel | VS Code |
-    |:----------:|:-----:|:-------:|:--------:|:------:|:---:|:------:|:------:|:-------:|
-    | <img src="https://skillicons.dev/icons?i=postgresql&theme=dark" width="48" height="48" alt="PostgreSQL" /><br/>**PostgreSQL** | <img src="https://skillicons.dev/icons?i=mysql&theme=dark" width="48" height="48" alt="MySQL" /><br/>**MySQL** | <img src="https://skillicons.dev/icons?i=mongodb&theme=dark" width="48" height="48" alt="MongoDB" /><br/>**MongoDB** | <img src="https://skillicons.dev/icons?i=supabase&theme=dark" width="48" height="48" alt="Supabase" /><br/>**Supabase** | <img src="https://skillicons.dev/icons?i=prisma&theme=dark" width="48" height="48" alt="Prisma" /><br/>**Prisma** | <img src="https://skillicons.dev/icons?i=git&theme=dark" width="48" height="48" alt="Git" /><br/>**Git** | <img src="https://skillicons.dev/icons?i=docker&theme=dark" width="48" height="48" alt="Docker" /><br/>**Docker** | <img src="https://skillicons.dev/icons?i=vercel&theme=dark" width="48" height="48" alt="Vercel" /><br/>**Vercel** | <img src="https://skillicons.dev/icons?i=vscode&theme=dark" width="48" height="48" alt="VS Code" /><br/>**VS Code** |
-    
-    <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="200" alt="Coding Animation" />
-  </div>
-</details>
-
-<!-- Skill Evolution -->
-<details id="skill-evolution">
-  <summary><h2>📈 Skill Evolution</h2></summary>
-  <div align="center">
-    <p>Loading skill evolution data...</p>
-    <!-- Will be replaced by evolution chart -->
-  </div>
-</details>
-
-<!-- Project Constellation -->
-<details id="projects">
-  <summary><h2>🌌 Project Constellation</h2></summary>
-  <div align="center">
-    <p>Generating project constellation...</p>
-    <!-- Will be replaced by constellation SVG -->
-  </div>
-</details>
-
-<!-- Dev Observatory -->
-<details id="observatory">
-  <summary><h2>🔭 Dev Observatory</h2></summary>
-  <div align="center">
-    <div style="background: linear-gradient(145deg, #1e1e2e, #2a2a3e); border-radius: 12px; padding: 20px; margin: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
-      <h3>📊 Weekly Insights</h3>
-      <p>Analyzing your coding patterns...</p>
-      <!-- Will be replaced by insights -->
-      
-      <div style="margin-top: 20px; padding: 15px; border-radius: 8px; background: rgba(255,255,255,0.1);">
-        <h4>🧭 Dev Chronotype</h4>
-        <p>Analyzing your commit times...</p>
-        <!-- Will be replaced by chronotype -->
-      </div>
-    </div>
-  </div>
-</details>
-
-<!-- GitHub Stats -->
-<h2 id="github-stats">📊 GitHub Stats</h2>
+## 📊 GitHub Stats
 
 <div align="center">
   <div style="display: flex; justify-content: center; gap: 10px;">
@@ -141,8 +169,7 @@
   <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="300" alt="Pixel Art Developer" />
 </div>
 
-<!-- Contributions -->
-<h2 id="contributions">🎮 Contributions</h2>
+## 🎮 Contribuições
 
 <div align="center">
   <h3>Pacman Contribution Graph</h3>
@@ -152,11 +179,9 @@
     <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
   </picture>
   
-  <h3>3D Contribution Matrix</h3>
-  <img src="../profile-3d-contrib/profile-night-green.svg" alt="3D Profile" width="80%" />
+  <h3>Matriz de Contribuições 3D</h3>
+  <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile" width="80%" />
 </div>
 
-<!-- Footer -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
-</div>
+
+

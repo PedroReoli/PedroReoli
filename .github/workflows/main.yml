@@ -6,12 +6,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  generate-all-stats:
+  snake-animation:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       
-      # Snake Animation
       - name: Generate Snake Animation
         uses: Platane/snk@v3
         with:
@@ -23,34 +22,42 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
-      # 3D Profile
-      - name: Generate 3D Profile
-        uses: yoshi389111/github-profile-3d-contrib@0.7.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-          
-      # Profile Summary Cards
-      - name: Generate Profile Summary Cards
-        uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          
-      # Push all generated content
-      - name: Push Generated Content
+      - name: Push Snake Animation
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  profile-3d:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Generate 3D Profile
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
           
-      - name: Commit Profile Changes
+      - name: Commit & Push 3D Profile
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -A .
-          git commit -m "📊 Update profile visualizations" || echo "No changes to commit"
+          git commit -m "Updated 3D Profile Visualization" || echo "No changes to commit"
           git push || echo "No changes to push"
+
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      
+      - name: GitHub Readme Stats Reference
+        run: |
+          echo "Para estatísticas do GitHub, use as URLs em seu README:"
+          echo "https://github-readme-stats.vercel.app/api/top-langs/?username=${{ github.repository_owner }}&layout=compact&theme=radical&hide_border=true"
+          echo "https://github-readme-streak-stats.herokuapp.com/?user=${{ github.repository_owner }}&theme=radical&hide_border=true"
+          echo "https://github-readme-activity-graph.vercel.app/graph?username=${{ github.repository_owner }}&theme=redical&bg_color=20232a&hide_border=true"
