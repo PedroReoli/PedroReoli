@@ -166,7 +166,7 @@
     </picture>
     
     <br>
-    <sub><i>Atualizado em: 30/05/2025, 20:03:31</i></sub>
+    <sub><i>Atualizado em: 30/05/2025, 20:20:15</i></sub>
   </div>
 </details>
 
