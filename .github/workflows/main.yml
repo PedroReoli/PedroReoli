@@ -18,11 +18,12 @@ jobs:
         with:
           fetch-depth: 0
       
-      - name: Pull latest changes
+      - name: Force sync with remote
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git pull --rebase origin main || true
+          git fetch origin
+          git reset --hard origin/main
       
       # Snake Animation
       - name: Generate Snake Animation

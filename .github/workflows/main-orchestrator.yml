@@ -12,62 +12,69 @@ on:
   workflow_dispatch:
 
 jobs:
-  # 1. Primeiro: Gerar dados base
+  # 0. Primeiro: Pacman animation (mais leve)
+  generate-pacman:
+    name: "🟡 Pacman Animation"
+    uses: ./.github/workflows/pacman.yml
+    secrets: inherit
+
+  # 1. Segundo: Gerar dados base
   generate-stats:
     name: "📊 GitHub Stats"
+    needs: generate-pacman
     uses: ./.github/workflows/github-stats.yml
     secrets: inherit
 
-  # 2. Segundo: Análise de skills (depende dos stats)
+  # 2. Terceiro: Análise de skills (depende dos stats)
   analyze-skills:
     name: "🧠 Skill Evolution"
     needs: generate-stats
     uses: ./.github/workflows/weekly-insights.yml
     secrets: inherit
 
-  # 3. Terceiro: Constelação de projetos
+  # 3. Quarto: Constelação de projetos
   generate-constellation:
     name: "🌌 Project Constellation"
     needs: analyze-skills
     uses: ./.github/workflows/constellation.yml
     secrets: inherit
 
-  # 4. Quarto: Observatório e insights
+  # 4. Quinto: Observatório e insights
   observatory-analysis:
     name: "🔭 Dev Observatory"
     needs: generate-constellation
     uses: ./.github/workflows/observatory.yml
     secrets: inherit
 
-  # 5. Quinto: Status de presença
+  # 5. Sexto: Status de presença
   update-presence:
     name: "🟢 Live Presence"
     needs: observatory-analysis
     uses: ./.github/workflows/daily-update.yml
     secrets: inherit
 
-  # 6. Sexto: Animações e visualizações
+  # 6. Sétimo: Animações e visualizações 3D
   generate-animations:
     name: "🎨 Animations & 3D"
     needs: update-presence
     uses: ./.github/workflows/main.yml
     secrets: inherit
 
-  # 7. Sétimo: Tech stack
+  # 7. Oitavo: Tech stack
   update-tech-stack:
     name: "🚀 Tech Stack"
     needs: generate-animations
     uses: ./.github/workflows/update-tech-stack.yml
     secrets: inherit
 
-  # 8. Oitavo: Sincronizar versão em inglês
+  # 8. Nono: Sincronizar versão em inglês
   sync-english:
     name: "🌍 English Sync"
     needs: update-tech-stack
     uses: ./.github/workflows/sync-english.yml
     secrets: inherit
 
-  # 9. Último: Otimização e limpeza
+  # 9. Penúltimo: Otimização e limpeza
   optimize-assets:
     name: "⚡ Optimize & Clean"
     needs: sync-english
@@ -76,7 +83,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # Buscar todo o histórico
+          fetch-depth: 0
           
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -86,11 +93,12 @@ jobs:
       - name: Install dependencies
         run: npm install
         
-      - name: Pull latest changes
+      - name: Force sync with remote
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git pull --rebase origin main
+          git fetch origin
+          git reset --hard origin/main
           
       - name: Run performance optimizer
         run: node scripts/performance-optimizer.js
@@ -98,10 +106,10 @@ jobs:
       - name: Final commit and push
         run: |
           git add .
-          git diff --staged --quiet || git commit -m "🎭 orchestrator: optimize assets and finalize profile update"
+          git diff --staged --quiet || git commit -m "⚡ orchestrator: optimize assets and finalize profile update"
           git push
 
-  # 10. Relatório final
+  # 10. Último: Relatório final
   orchestrator-report:
     name: "📋 Orchestration Report"
     needs: optimize-assets
@@ -111,6 +119,7 @@ jobs:
         run: |
           echo "🎭 Profile Orchestrator completed successfully!"
           echo "✅ All workflows executed in sequence"
+          echo "🟡 Pacman: Generated"
           echo "📊 Stats: Generated"
           echo "🧠 Skills: Analyzed" 
           echo "🌌 Constellation: Created"
