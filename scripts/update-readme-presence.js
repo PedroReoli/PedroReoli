@@ -1,5 +1,5 @@
 /**
- * Atualiza README com cards de presença minimalistas
+ * Atualiza README com status de presença - Versão Markdown Puro
  */
 
 import fs from "fs"
@@ -22,29 +22,52 @@ function updateReadmePresence() {
     const status = JSON.parse(fs.readFileSync(statusFile, "utf8"))
     const readme = fs.readFileSync(readmeFile, "utf8")
 
-    // Usar o HTML gerado pelo presence-tracker
-    const statusSection = status.html
+    // Gerar seção de status usando apenas Markdown e HTML simples
+    const githubActivity = status.github
+
+    const statusSection = `
+## 📊 Últimas Atualizações
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <b>Status</b><br>
+        <span>${githubActivity.isOnline ? "🟢 Online" : "⚪ Offline"}</span>
+      </td>
+      <td align="center">
+        <b>Projeto Ativo</b><br>
+        <span>${githubActivity.activeRepo}</span>
+      </td>
+      <td align="center">
+        <b>Última Atividade</b><br>
+        <span>${githubActivity.lastActive}</span>
+      </td>
+      <td align="center">
+        <b>Commits Hoje</b><br>
+        <span>${githubActivity.todayCommits}</span>
+      </td>
+    </tr>
+  </table>
+  <sub><i>Atualizado em: ${new Date().toLocaleString("pt-BR")}</i></sub>
+</div>
+`
 
     // Substituir seção de Status Live/Últimas Atualizações
-    const statusRegex = /<div class="status-live-container">[\s\S]*?<\/div>(?:\s*<\/div>)?/
+    const statusRegex =
+      /<div class="status-live-container">[\s\S]*?<\/div>(?:\s*<\/div>)?|<!-- Status Live -->[\s\S]*?<\/div>/
 
     let newReadme
     if (statusRegex.test(readme)) {
       newReadme = readme.replace(statusRegex, statusSection)
     } else {
-      // Se não encontrar, procurar por comentário
-      const commentRegex = /(<!-- Status Live -->)/
-      if (commentRegex.test(readme)) {
-        newReadme = readme.replace(commentRegex, `$1\n${statusSection}`)
-      } else {
-        // Fallback: adicionar após o typing SVG
-        const typingRegex = /(alt="Typing SVG" \/>\s*<\/div>)/
-        newReadme = readme.replace(typingRegex, `$1\n\n${statusSection}`)
-      }
+      // Se não encontrar, adicionar após o typing SVG
+      const typingRegex = /(alt="Typing SVG" \/>\s*<\/div>)/
+      newReadme = readme.replace(typingRegex, `$1\n\n${statusSection}`)
     }
 
     fs.writeFileSync(readmeFile, newReadme)
-    console.log("README atualizado com cards de status corrigidos!")
+    console.log("README atualizado com status em Markdown puro!")
   } catch (error) {
     console.error("Erro ao atualizar README:", error)
   }
