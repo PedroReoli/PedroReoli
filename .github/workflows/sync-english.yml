@@ -1,0 +1,35 @@
+name: Sync English Version
+
+on:
+  schedule:
+    - cron: "0 */6 * * *" # Every 6 hours
+  workflow_dispatch:
+  push:
+    paths:
+      - 'assets/*.json'
+      - 'assets/*.svg'
+
+jobs:
+  sync-english:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      - name: Update English README
+        run: node scripts/update-english-readme.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add EnglishVersion/README.en.md
+          git diff --staged --quiet || git commit -m "🌍 Sync English README with latest data"
+          git push

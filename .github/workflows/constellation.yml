@@ -1,0 +1,83 @@
+name: Generate Constellation
+
+on:
+  schedule:
+    - cron: "0 0 * * 0" # Executa todo domingo à meia-noite
+  workflow_dispatch:
+
+jobs:
+  constellation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      - name: Install dependencies
+        run: |
+          npm install @octokit/rest
+          
+      - name: Generate constellation
+        run: node scripts/constellation-generator.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          
+      - name: Update README with constellation
+        run: |
+          if [ -f assets/constellation-data.json ]; then
+            node -e '
+              const fs = require("fs");
+              const path = require("path");
+              
+              // Ler arquivos
+              const dataFile = path.join(__dirname, "assets/constellation-data.json");
+              const readmeFile = path.join(__dirname, "README.md");
+              
+              const constellationData = JSON.parse(fs.readFileSync(dataFile, "utf8"));
+              let readme = fs.readFileSync(readmeFile, "utf8");
+              
+              // Gerar HTML para a seção de constelação
+              const constellationHtml = `<details id="projetos">
+  <summary><h2>🌌 Constelação de Projetos</h2></summary>
+  <div align="center">
+    <p>Visualização interativa dos repositórios como uma constelação estelar</p>
+    
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/constellation-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/constellation-light.svg">
+      <img src="./assets/constellation-dark.svg" alt="Constelação de Projetos" width="900">
+    </picture>
+    
+    <p><i>Cada estrela representa um repositório. Tamanho = commits, brilho = stars, cor = linguagem.</i></p>
+    <p><i>Clique nas estrelas para visitar os repositórios.</i></p>
+    
+    <br>
+    <sub><i>Atualizado em: ${new Date(constellationData.lastUpdated).toLocaleString("pt-BR")}</i></sub>
+  </div>
+</details>`;
+              
+              // Substituir seção de constelação
+              const newReadme = readme.replace(
+                /<details id="projetos">[\s\S]*?<\/details>/,
+                constellationHtml
+              );
+              
+              fs.writeFileSync(readmeFile, newReadme);
+              console.log("README atualizado com sucesso!");
+            '
+          else
+            echo "Arquivo de dados da constelação não encontrado!"
+          fi
+          
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md assets/constellation*.svg assets/constellation-data.json
+          git diff --staged --quiet || git commit -m "🌌 Atualiza constelação de projetos"
+          git push
