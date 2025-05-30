@@ -1,6 +1,6 @@
 /**
- * Status de Presença Online - V3.0 Minimalista
- * Gera cards modernos com ícones SVG customizados
+ * Status de Presença Online - V3.1 Corrigido
+ * Gera cards modernos com HTML bem formado
  */
 
 import fs from "fs"
@@ -186,7 +186,7 @@ function generateStatusCards(data) {
   const cardHTML = cards
     .map(
       (card) => `
-    <div class="status-card ${card.accent ? "accent" : ""}">
+    <div class="status-card${card.accent ? " accent" : ""}">
       <div class="card-icon">
         ${card.icon}
       </div>
@@ -194,148 +194,144 @@ function generateStatusCards(data) {
         <div class="card-value">${card.value}</div>
         <div class="card-label">${card.label}</div>
       </div>
-    </div>
-  `,
+    </div>`,
     )
     .join("")
 
-  return `
-    <div class="status-live-container">
-      <style>
-        .status-live-container {
-          max-width: 600px;
-          margin: 0 auto;
-          padding: 20px 0;
-        }
-        
-        .status-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-          gap: 16px;
-          margin: 16px 0;
-        }
-        
-        .status-card {
-          background: #ffffff;
-          border: 1px solid #e2e8f0;
-          border-radius: 12px;
-          padding: 20px 16px;
-          text-align: center;
-          transition: all 0.2s ease;
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-        }
-        
-        .status-card.accent {
-          border-color: #6E56CF;
-          background: linear-gradient(135deg, #ffffff 0%, #f8f7ff 100%);
-        }
-        
-        .card-icon {
-          margin-bottom: 12px;
-          display: flex;
-          justify-content: center;
-        }
-        
-        .card-value {
-          font-size: 16px;
-          font-weight: 600;
-          color: #2d3748;
-          margin-bottom: 4px;
-          line-height: 1.2;
-        }
-        
-        .card-label {
-          font-size: 12px;
-          color: #718096;
-          font-weight: 500;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-        }
-        
-        .status-header {
-          text-align: center;
-          margin-bottom: 8px;
-        }
-        
-        .status-title {
-          font-size: 18px;
-          font-weight: 600;
-          color: #2d3748;
-          margin: 0;
-        }
-        
-        .status-subtitle {
-          font-size: 12px;
-          color: #718096;
-          margin: 4px 0 0 0;
-        }
-        
-        /* Dark mode */
-        @media (prefers-color-scheme: dark) {
-          .status-card {
-            background: #1a202c;
-            border-color: #2d3748;
-          }
-          
-          .status-card.accent {
-            border-color: #6E56CF;
-            background: linear-gradient(135deg, #1a202c 0%, #2d1b69 100%);
-          }
-          
-          .card-value {
-            color: #f7fafc;
-          }
-          
-          .card-label {
-            color: #a0aec0;
-          }
-          
-          .status-title {
-            color: #f7fafc;
-          }
-          
-          .status-subtitle {
-            color: #a0aec0;
-          }
-        }
-        
-        /* Mobile responsivo */
-        @media (max-width: 640px) {
-          .status-grid {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-          }
-          
-          .status-card {
-            padding: 16px 12px;
-          }
-          
-          .card-value {
-            font-size: 14px;
-          }
-          
-          .card-label {
-            font-size: 11px;
-          }
-        }
-      </style>
+  return `<div class="status-live-container">
+  <style>
+    .status-live-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+    
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+      margin: 16px 0;
+    }
+    
+    .status-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+    
+    .status-card.accent {
+      border-color: #6E56CF;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f7ff 100%);
+    }
+    
+    .card-icon {
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .card-value {
+      font-size: 16px;
+      font-weight: 600;
+      color: #2d3748;
+      margin-bottom: 4px;
+      line-height: 1.2;
+    }
+    
+    .card-label {
+      font-size: 12px;
+      color: #718096;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .status-header {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    
+    .status-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #2d3748;
+      margin: 0;
+    }
+    
+    .status-subtitle {
+      font-size: 12px;
+      color: #718096;
+      margin: 4px 0 0 0;
+    }
+    
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
+      .status-card {
+        background: #1a202c;
+        border-color: #2d3748;
+      }
       
-      <div class="status-header">
-        <h2 class="status-title">Últimas Atualizações</h2>
-        <p class="status-subtitle">Atualizado em tempo real</p>
-      </div>
+      .status-card.accent {
+        border-color: #6E56CF;
+        background: linear-gradient(135deg, #1a202c 0%, #2d1b69 100%);
+      }
       
-      <div class="status-grid">
-        ${cardHTML}
-      </div>
+      .card-value {
+        color: #f7fafc;
+      }
       
-      <div style="text-align: center; margin-top: 16px;">
-        <small style="color: #718096; font-size: 11px;">
-          Última atualização: ${new Date().toLocaleString("pt-BR")}
-        </small>
-      </div>
-    </div>
-  `
+      .card-label {
+        color: #a0aec0;
+      }
+      
+      .status-title {
+        color: #f7fafc;
+      }
+      
+      .status-subtitle {
+        color: #a0aec0;
+      }
+    }
+    
+    /* Mobile responsivo */
+    @media (max-width: 640px) {
+      .status-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+      
+      .status-card {
+        padding: 16px 12px;
+      }
+      
+      .card-value {
+        font-size: 14px;
+      }
+      
+      .card-label {
+        font-size: 11px;
+      }
+    }
+  </style>
+  
+  <div class="status-header">
+    <h2 class="status-title">📊 Últimas Atualizações</h2>
+    <p class="status-subtitle">Atividade em tempo real</p>
+  </div>
+  
+  <div class="status-grid">${cardHTML}
+  </div>
+  
+  <div style="text-align: center; margin-top: 16px;">
+    <small style="color: #718096; font-size: 11px;">
+      Última atualização: ${new Date().toLocaleString("pt-BR")}
+    </small>
+  </div>
+</div>`
 }
 
 /**
