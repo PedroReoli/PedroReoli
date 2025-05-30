@@ -109,8 +109,55 @@
 <details>
   <summary><h2>Evolução das Skills</h2></summary>
   <div align="center">
-    <p>Carregando dados de evolução...</p>
-    <!-- Será substituído pelo gráfico de evolução -->
+    <p>Análise dos últimos 30 dias de commits</p>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Linguagem</th>
+          <th>Commits</th>
+          <th>Tendência</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td><strong>React/TypeScript</strong></td>
+            <td align="center">7</td>
+            <td align="center">⬆️ +6</td>
+          </tr>
+        <tr>
+            <td><strong>JSON</strong></td>
+            <td align="center">6</td>
+            <td align="center">⬆️ +6</td>
+          </tr>
+        <tr>
+            <td><strong>TypeScript</strong></td>
+            <td align="center">4</td>
+            <td align="center">⬆️ +4</td>
+          </tr>
+        <tr>
+            <td><strong>Markdown</strong></td>
+            <td align="center">1</td>
+            <td align="center">⬆️ +1</td>
+          </tr>
+        <tr>
+            <td><strong>HTML</strong></td>
+            <td align="center">1</td>
+            <td align="center">⬆️ +1</td>
+          </tr>
+      </tbody>
+    </table>
+    
+    <br>
+    
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/skill-evolution-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/skill-evolution-light.svg">
+      <img src="./assets/skill-evolution-dark.svg" alt="Skill Evolution" width="800">
+    </picture>
+    
+    <br>
+    <sub><i>Atualizado em: 30/05/2025, 20:03:31</i></sub>
   </div>
 </details>
 

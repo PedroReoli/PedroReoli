@@ -1,0 +1,84 @@
+{
+  "period": {
+    "start": "2025-04-30",
+    "end": "2025-05-30",
+    "days": 30
+  },
+  "weeklyData": {
+    "0": {
+      "languages": {
+        "Python": 1
+      },
+      "totalCommits": 1
+    },
+    "1": {
+      "languages": {
+        "React/TypeScript": 57,
+        "JavaScript": 2,
+        "JSON": 8,
+        "TypeScript": 20
+      },
+      "totalCommits": 4
+    },
+    "2": {
+      "languages": {
+        "JSON": 19,
+        "Python": 24,
+        "Markdown": 1,
+        "TypeScript": 1
+      },
+      "totalCommits": 8
+    },
+    "3": {
+      "languages": {
+        "React/TypeScript": 1
+      },
+      "totalCommits": 2
+    },
+    "4": {
+      "languages": {
+        "Markdown": 1,
+        "HTML": 1,
+        "React/TypeScript": 7,
+        "TypeScript": 4,
+        "JSON": 6
+      },
+      "totalCommits": 3
+    }
+  },
+  "trends": {
+    "languages": {
+      "Markdown": {
+        "trend": "up",
+        "change": 1,
+        "current": 1,
+        "previous": 0
+      },
+      "HTML": {
+        "trend": "up",
+        "change": 1,
+        "current": 1,
+        "previous": 0
+      },
+      "React/TypeScript": {
+        "trend": "up",
+        "change": 6,
+        "current": 7,
+        "previous": 1
+      },
+      "TypeScript": {
+        "trend": "up",
+        "change": 4,
+        "current": 4,
+        "previous": 0
+      },
+      "JSON": {
+        "trend": "up",
+        "change": 6,
+        "current": 6,
+        "previous": 0
+      }
+    }
+  },
+  "lastUpdated": "2025-05-30T20:03:31.218Z"
+}
