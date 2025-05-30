@@ -1,0 +1,44 @@
+{
+  "lastUpdated": "2025-05-30T20:04:21.279Z",
+  "github": {
+    "lastActive": "1h atrás",
+    "activeRepo": "PedroReoli",
+    "todayCommits": 5
+  },
+  "coding": {
+    "topLanguage": "JavaScript",
+    "cronotipo": "Vespertino 🌅"
+  },
+  "badges": [
+    {
+      "text": "🧑‍💻 Focado em: JavaScript",
+      "color": "61DAFB",
+      "logo": "visualstudiocode",
+      "logoColor": "white"
+    },
+    {
+      "text": "📝 5 commits hoje",
+      "color": "4CAF50",
+      "logo": "git",
+      "logoColor": "white"
+    },
+    {
+      "text": "🚀 Projeto: PedroReoli",
+      "color": "6E56CF",
+      "logo": "github",
+      "logoColor": "white"
+    },
+    {
+      "text": "⏱️ Última atividade: 1h atrás",
+      "color": "FF9800",
+      "logo": "clockify",
+      "logoColor": "white"
+    },
+    {
+      "text": "🧭 Dev Vespertino 🌅",
+      "color": "FF5722",
+      "logo": "clock",
+      "logoColor": "white"
+    }
+  ]
+}

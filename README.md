@@ -21,8 +21,13 @@
 <div>
   <h2>Status Live</h2>
   <p align="center">
-    <img src="https://img.shields.io/badge/🔄_Atualizando_Status...-6E56CF?style=for-the-badge" alt="Atualizando Status..." />
-    <!-- Será substituído pelos badges dinâmicos -->
+    <img src="https://img.shields.io/badge/%F0%9F%A7%91%E2%80%8D%F0%9F%92%BB%20Focado%20em%3A%20JavaScript-61DAFB?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="🧑‍💻 Focado em: JavaScript" />
+    <img src="https://img.shields.io/badge/%F0%9F%93%9D%205%20commits%20hoje-4CAF50?style=for-the-badge&logo=git&logoColor=white" alt="📝 5 commits hoje" />
+    <img src="https://img.shields.io/badge/%F0%9F%9A%80%20Projeto%3A%20PedroReoli-6E56CF?style=for-the-badge&logo=github&logoColor=white" alt="🚀 Projeto: PedroReoli" />
+    <img src="https://img.shields.io/badge/%E2%8F%B1%EF%B8%8F%20%C3%9Altima%20atividade%3A%201h%20atr%C3%A1s-FF9800?style=for-the-badge&logo=clockify&logoColor=white" alt="⏱️ Última atividade: 1h atrás" />
+    <img src="https://img.shields.io/badge/%F0%9F%A7%AD%20Dev%20Vespertino%20%F0%9F%8C%85-FF5722?style=for-the-badge&logo=clock&logoColor=white" alt="🧭 Dev Vespertino 🌅" />
+    <br>
+    <sub><i>Última atualização: 30/05/2025, 20:04:21</i></sub>
   </p>
 </div>
 
