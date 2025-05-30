@@ -1,6 +1,12 @@
 name: Sync English Version
 
 on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
   schedule:
     - cron: "0 */6 * * *" # Every 6 hours
   workflow_dispatch:

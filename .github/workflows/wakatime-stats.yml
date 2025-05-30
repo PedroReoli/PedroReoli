@@ -1,6 +1,12 @@
 name: WakaTime Stats
 
 on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
   schedule:
     # Runs every hour
     - cron: '0 * * * *'

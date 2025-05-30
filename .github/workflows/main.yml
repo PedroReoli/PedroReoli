@@ -1,6 +1,12 @@
 name: GitHub Profile README Automation
 
 on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
   schedule:
     - cron: "0 */12 * * *" # Executa a cada 12 horas
   workflow_dispatch:

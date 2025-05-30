@@ -1,6 +1,12 @@
 name: Observatory Insights
 
 on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
   schedule:
     - cron: "0 0 * * 1" # Executa toda segunda-feira à meia-noite
   workflow_dispatch:

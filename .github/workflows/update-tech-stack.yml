@@ -1,6 +1,12 @@
 name: Update Tech Stack
 
 on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
   schedule:
     - cron: "0 0 * * 1" # Toda segunda-feira
   workflow_dispatch:
