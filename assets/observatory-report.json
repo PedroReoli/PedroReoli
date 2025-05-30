@@ -1,0 +1,108 @@
+{
+  "week": "2025-05-30",
+  "cronotipo": {
+    "type": "noturno",
+    "peakStart": 18,
+    "peakEnd": 24,
+    "distribution": {
+      "0": 1,
+      "1": 0,
+      "2": 2,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 2,
+      "11": 0,
+      "12": 0,
+      "13": 1,
+      "14": 2,
+      "15": 1,
+      "16": 2,
+      "17": 5,
+      "18": 4,
+      "19": 5,
+      "20": 4,
+      "21": 0,
+      "22": 6,
+      "23": 1
+    },
+    "totalCommits": 36,
+    "peakHour": 22
+  },
+  "gamification": {
+    "totalXP": 3360,
+    "level": 4,
+    "title": "Frontend Specialist",
+    "badges": [
+      "⚡ Consistency King"
+    ],
+    "stats": {
+      "totalCommits": 36,
+      "activeDays": 30
+    }
+  },
+  "insights": [
+    "Coruja do código! Você é um Dev Noturno 🌙 com 36 commits entre 18h e 24h.",
+    "🎉 Conquista desbloqueada: ⚡ Consistency King!",
+    "🚀 Semana produtiva com 36 commits! Você está no ritmo certo."
+  ],
+  "weeklyGoals": [
+    {
+      "name": "Finalizar sistema de autenticação do FalaAtipica",
+      "progress": 85,
+      "target": 100
+    },
+    {
+      "name": "Implementar dashboard responsivo",
+      "progress": 70,
+      "target": 100
+    },
+    {
+      "name": "Estudar Three.js para projetos 3D",
+      "progress": 45,
+      "target": 100
+    },
+    {
+      "name": "Refatorar componentes React legados",
+      "progress": 60,
+      "target": 100
+    },
+    {
+      "name": "Escrever documentação técnica",
+      "progress": 30,
+      "target": 100
+    },
+    {
+      "name": "Dominar TypeScript avançado",
+      "progress": 80,
+      "target": 100
+    },
+    {
+      "name": "Contribuir para projetos open source",
+      "progress": 55,
+      "target": 100
+    },
+    {
+      "name": "Aprender arquitetura de microsserviços",
+      "progress": 35,
+      "target": 100
+    },
+    {
+      "name": "Certificação AWS",
+      "progress": 20,
+      "target": 100
+    }
+  ],
+  "summary": {
+    "totalCommits": 36,
+    "activeHours": "18h - 24h",
+    "level": 4,
+    "title": "Frontend Specialist",
+    "xp": 3360
+  },
+  "lastUpdated": "2025-05-30T19:43:12.450Z"
+}
