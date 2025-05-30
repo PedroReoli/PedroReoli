@@ -14,6 +14,8 @@ on:
 jobs:
   update-presence:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -29,13 +31,13 @@ jobs:
       - name: Generate presence status
         run: node scripts/presence-tracker.js
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          TOKEN: ${{ secrets.TOKEN }}
+          REPOSITORY_OWNER: ${{ secrets.REPOSITORY_OWNER }}
           
       - name: Update README with presence status
         run: node scripts/update-readme-presence.js
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN: ${{ secrets.TOKEN }}
           
       - name: Commit and push changes
         run: |
