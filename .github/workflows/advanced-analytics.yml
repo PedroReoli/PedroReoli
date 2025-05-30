@@ -23,8 +23,8 @@ jobs:
       - name: Generate advanced analytics
         run: node scripts/advanced-analytics.js
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          TOKEN: ${{ secrets.TOKEN }}
+          REPOSITORY_OWNER: ${{ github.repository_owner }}
           
       - name: Clean cache
         run: node scripts/smart-cache.js

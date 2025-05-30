@@ -24,8 +24,8 @@ jobs:
       - name: Generate presence status
         run: node scripts/presence-tracker.js
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          TOKEN: ${{ secrets.TOKEN }}
+          REPOSITORY_OWNER: ${{ github.repository_owner }}
           
       - name: Update README with presence status
         run: |

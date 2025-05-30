@@ -24,8 +24,8 @@ jobs:
       - name: Generate observatory report
         run: node scripts/observatory-insights.js
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          TOKEN: ${{ secrets.TOKEN }}
+          REPOSITORY_OWNER: ${{ github.repository_owner }}
           
       - name: Update README with observatory
         run: |

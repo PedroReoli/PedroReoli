@@ -218,7 +218,7 @@ ${badgesHtml}
     }
 
     // Atualizar observatório
-    if (fs.existsSync(observatoryFile)) {
+    if (fs.existsExists(observatoryFile)) {
       const observatoryData = JSON.parse(fs.readFileSync(observatoryFile, "utf8"))
       const translatedData = translateObservatoryData(observatoryData)
 

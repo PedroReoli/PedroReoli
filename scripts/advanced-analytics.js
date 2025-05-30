@@ -6,11 +6,11 @@ const fs = require("fs")
 const path = require("path")
 const { Octokit } = require("@octokit/rest")
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN
-const USERNAME = process.env.GITHUB_REPOSITORY_OWNER || "PedroReoli"
+const TOKEN = process.env.TOKEN
+const USERNAME = process.env.REPOSITORY_OWNER || "PedroReoli"
 const OUTPUT_DIR = path.join(__dirname, "../assets")
 
-const octokit = new Octokit({ auth: GITHUB_TOKEN })
+const octokit = new Octokit({ auth: TOKEN })
 
 /**
  * Análise de qualidade de código

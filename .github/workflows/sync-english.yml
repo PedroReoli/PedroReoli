@@ -24,7 +24,7 @@ jobs:
       - name: Update English README
         run: node scripts/update-english-readme.js
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN: ${{ secrets.TOKEN }}
           
       - name: Commit and push changes
         run: |

@@ -118,8 +118,8 @@ pedroreoli/
 
 ### Variáveis de Ambiente
 \`\`\`bash
-GITHUB_TOKEN=seu_token_github
-GITHUB_REPOSITORY_OWNER=PedroReoli
+TOKEN=seu_token_github
+REPOSITORY_OWNER=PedroReoli
 \`\`\`
 
 ### Metas Semanais (.devgoals.yml)
@@ -193,7 +193,7 @@ function calculateGamification(weeklyData, cronotipo) {
 
 1. **Workflows não executando**
    - Verifique permissões do GitHub Actions
-   - Confirme se GITHUB_TOKEN tem os escopos corretos
+   - Confirme se TOKEN tem os escopos corretos
 
 2. **SVGs não exibindo**
    - Certifique-se que os assets estão commitados no repositório
