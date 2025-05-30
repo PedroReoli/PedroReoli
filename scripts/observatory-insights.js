@@ -8,8 +8,8 @@ const path = require("path")
 const { Octokit } = require("@octokit/rest")
 
 // Configuração
-const TOKEN = process.env.TOKEN
-const USERNAME = process.env.REPOSITORY_OWNER || "PedroReoli"
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN
+const USERNAME = process.env.GITHUB_REPOSITORY_OWNER || "PedroReoli"
 const OUTPUT_DIR = path.join(__dirname, "../assets")
 
 // Templates de insights
@@ -75,7 +75,7 @@ const ACHIEVEMENT_TEMPLATES = [
 
 // Inicialização do Octokit
 const octokit = new Octokit({
-  auth: TOKEN,
+  auth: GITHUB_TOKEN,
 })
 
 /**
