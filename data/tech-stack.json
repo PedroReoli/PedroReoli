@@ -1,0 +1,122 @@
+{
+  "frontend": [
+    {
+      "name": "React",
+      "url": "https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif"
+    },
+    {
+      "name": "Next.js",
+      "url": "https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png"
+    },
+    {
+      "name": "Angular",
+      "url": "https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif"
+    },
+    {
+      "name": "Vue.js",
+      "url": "https://media.giphy.com/media/VgGthkhUvGgOit7Y9i/giphy.gif"
+    },
+    {
+      "name": "TypeScript",
+      "url": "https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif"
+    },
+    {
+      "name": "JavaScript",
+      "url": "https://media.giphy.com/media/SU2ic3wTfuC6JhD1lA/giphy.gif"
+    },
+    {
+      "name": "Tailwind CSS",
+      "url": "https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif"
+    },
+    {
+      "name": "Sass",
+      "url": "https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif"
+    },
+    {
+      "name": "Three.js",
+      "url": "https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png"
+    },
+    {
+      "name": "Framer Motion",
+      "url": "https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png"
+    }
+  ],
+  "backend": [
+    {
+      "name": "Node.js",
+      "url": "https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif"
+    },
+    {
+      "name": "Python",
+      "url": "https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif"
+    },
+    {
+      "name": "C#",
+      "url": "https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif"
+    },
+    {
+      "name": "Express.js",
+      "url": "https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png"
+    },
+    {
+      "name": "Blazor",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Blazor.png"
+    },
+    {
+      "name": "PyTorch",
+      "url": "https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif"
+    },
+    {
+      "name": "Socket.IO",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg"
+    }
+  ],
+  "database": [
+    {
+      "name": "PostgreSQL",
+      "url": "https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif"
+    },
+    {
+      "name": "MySQL",
+      "url": "https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif"
+    },
+    {
+      "name": "MongoDB",
+      "url": "https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif"
+    },
+    {
+      "name": "Supabase",
+      "url": "https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png"
+    },
+    {
+      "name": "Prisma",
+      "url": "https://avatars.githubusercontent.com/u/17219288?s=200&v=4"
+    }
+  ],
+  "tools": [
+    {
+      "name": "Git",
+      "url": "https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif"
+    },
+    {
+      "name": "Docker",
+      "url": "https://media.giphy.com/media/6HkGCxUE8KnBGOvKJ7/giphy.gif"
+    },
+    {
+      "name": "VS Code",
+      "url": "https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif"
+    },
+    {
+      "name": "Vercel",
+      "url": "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png"
+    },
+    {
+      "name": "Figma",
+      "url": "https://media.giphy.com/media/Ri2TUcKlaOcaDBxFpY/giphy.gif"
+    },
+    {
+      "name": "Vite",
+      "url": "https://vitejs.dev/logo.svg"
+    }
+  ]
+}
