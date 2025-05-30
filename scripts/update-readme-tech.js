@@ -10,24 +10,21 @@ const TECH_DATA_FILE = path.join(__dirname, "../data/tech-stack.json")
 const README_FILE = path.join(__dirname, "../README.md")
 
 /**
- * Gera HTML para uma categoria de tecnologias
+ * Gera seção de tecnologias em Markdown puro
  */
-function generateTechSection(techs, title) {
-  const techItems = techs
+function generateTechSection(techs, title, emoji) {
+  const techRows = techs
     .map((tech) => {
-      return `      <div class="tech-item">
-        <img src="${tech.url}" alt="${tech.name}" width="60" height="60" />
-        <span>${tech.name}</span>
-      </div>`
+      return `| <img src="${tech.url}" alt="${tech.name}" width="40" height="40" /> | **${tech.name}** |`
     })
     .join("\n")
 
-  return `    <div class="tech-category">
-      <h3>${title}</h3>
-      <div class="tech-grid">
-${techItems}
-      </div>
-    </div>`
+  return `### ${emoji} ${title}
+
+| Tecnologia | Nome |
+|:---:|:---:|
+${techRows}
+`
 }
 
 /**
@@ -37,86 +34,27 @@ function updateReadmeTechStack() {
   console.log("Atualizando tech stack no README...")
 
   try {
+    // Verificar se arquivo de dados existe
+    if (!fs.existsSync(TECH_DATA_FILE)) {
+      console.error("Arquivo data/tech-stack.json não encontrado!")
+      return
+    }
+
     // Ler dados das tecnologias
     const techData = JSON.parse(fs.readFileSync(TECH_DATA_FILE, "utf8"))
 
     // Ler README atual
-    const readme = fs.readFileSync(README_FILE, "utf8")
+    let readme = fs.readFileSync(README_FILE, "utf8")
 
-    // Gerar seções
-    const frontendSection = generateTechSection(techData.frontend, "Frontend & UI")
-    const backendSection = generateTechSection(techData.backend, "Backend & Languages")
-    const databaseSection = generateTechSection(techData.database, "Database & Storage")
-    const toolsSection = generateTechSection(techData.tools, "Tools & DevOps")
+    // Gerar seções em Markdown puro
+    const frontendSection = generateTechSection(techData.frontend, "Frontend & UI", "🎨")
+    const backendSection = generateTechSection(techData.backend, "Backend & Languages", "⚙️")
+    const databaseSection = generateTechSection(techData.database, "Database & Storage", "🗄️")
+    const toolsSection = generateTechSection(techData.tools, "Tools & DevOps", "🛠️")
 
-    // Gerar HTML completo da tech stack
-    const techStackHtml = `<details>
-  <summary><h2>Tech Stack</h2></summary>
-  <div class="tech-container">
-    <style>
-      .tech-container {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        padding: 20px;
-      }
-      .tech-category {
-        background: linear-gradient(145deg, #1a1a2e, #16213e);
-        border-radius: 15px;
-        padding: 25px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-      }
-      .tech-category h3 {
-        color: #64ffda;
-        margin-bottom: 20px;
-        font-size: 1.4em;
-        text-align: center;
-      }
-      .tech-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 20px;
-        justify-items: center;
-      }
-      .tech-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        padding: 15px;
-        background: rgba(255, 255, 255, 0.05);
-        border-radius: 12px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        min-width: 100px;
-      }
-      .tech-item:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px rgba(100, 255, 218, 0.2);
-      }
-      .tech-item img {
-        border-radius: 8px;
-        object-fit: contain;
-      }
-      .tech-item span {
-        color: #e6f1ff;
-        font-size: 0.9em;
-        font-weight: 500;
-        text-align: center;
-      }
-      @media (max-width: 768px) {
-        .tech-grid {
-          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-          gap: 15px;
-        }
-        .tech-item {
-          padding: 10px;
-        }
-        .tech-item img {
-          width: 50px !important;
-          height: 50px !important;
-        }
-      }
-    </style>
+    // Gerar seção completa da tech stack
+    const techStackMarkdown = `<details>
+  <summary><h2>🚀 Tech Stack</h2></summary>
 
 ${frontendSection}
 
@@ -126,18 +64,37 @@ ${databaseSection}
 
 ${toolsSection}
 
-    <div align="center" style="margin-top: 30px;">
-      <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="200" alt="Coding Animation" />
-    </div>
-  </div>
+<div align="center">
+  
+![Coding](https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif)
+
+*Sempre aprendendo e evoluindo! 🚀*
+
+</div>
+
 </details>`
 
     // Substituir seção de tech stack
-    const newReadme = readme.replace(/<details[^>]*>\s*<summary><h2>Tech Stack.*?<\/details>/s, techStackHtml)
+    const techStackRegex = /<details>\s*<summary><h2>(?:🚀\s*)?Tech Stack<\/h2><\/summary>[\s\S]*?<\/details>/
+
+    if (techStackRegex.test(readme)) {
+      readme = readme.replace(techStackRegex, techStackMarkdown)
+    } else {
+      console.log("Seção Tech Stack não encontrada, adicionando nova seção...")
+      // Se não encontrar, adicionar após a seção "Sobre Mim"
+      const aboutMeRegex = /(<\/details>\s*\n?)(?=\n*<!--)/
+      readme = readme.replace(aboutMeRegex, `$1\n${techStackMarkdown}\n\n`)
+    }
 
     // Salvar README atualizado
-    fs.writeFileSync(README_FILE, newReadme)
+    fs.writeFileSync(README_FILE, readme)
     console.log("Tech stack atualizada com sucesso!")
+
+    // Log das tecnologias carregadas
+    console.log(`Frontend: ${techData.frontend.length} tecnologias`)
+    console.log(`Backend: ${techData.backend.length} tecnologias`)
+    console.log(`Database: ${techData.database.length} tecnologias`)
+    console.log(`Tools: ${techData.tools.length} tecnologias`)
   } catch (error) {
     console.error("Erro ao atualizar tech stack:", error)
     throw error

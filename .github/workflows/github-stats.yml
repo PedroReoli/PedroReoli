@@ -1,4 +1,4 @@
-name: Daily Profile Update
+name: Generate GitHub Stats
 
 on:
   push:
@@ -8,11 +8,11 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */6 * * *" # A cada 6 horas
   workflow_dispatch:
 
 jobs:
-  update-presence:
+  generate-stats:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -28,21 +28,19 @@ jobs:
       - name: Install dependencies
         run: npm install @octokit/rest
           
-      - name: Generate presence status
-        run: node scripts/presence-tracker.js
+      - name: Generate GitHub stats card
+        run: node scripts/github-stats-generator.js
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           GITHUB_REPOSITORY_OWNER: ${{ secrets.REPOSITORY_OWNER }}
           
-      - name: Update README with presence status
-        run: node scripts/update-readme-presence.js
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
-          
+      - name: Update README with stats
+        run: node scripts/update-readme-stats.js
+        
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add README.md assets/presence-status.json
-          git diff --staged --quiet || git commit -m "atualiza status de presença"
+          git add README.md assets/github-stats*.svg assets/github-stats-data.json
+          git diff --staged --quiet || git commit -m "update github stats card"
           git push

@@ -80,6 +80,8 @@ async function getTopLanguageFromCommits() {
       repo: repos[0].name,
     })
 
+    if (Object.keys(languages).length === 0) return null
+
     // Encontrar linguagem principal
     const topLanguage = Object.keys(languages).reduce((a, b) => (languages[a] > languages[b] ? a : b))
 

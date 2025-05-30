@@ -29,22 +29,16 @@ jobs:
             dist/github-snake-dark.svg?palette=github-dark
             dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
         env:
-          TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
           
       # 3D Profile Contribution Matrix
       - name: Generate 3D Profile
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
-          TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
           USERNAME: ${{ secrets.REPOSITORY_OWNER }}
           
-      # Profile Summary Cards
-      - name: Generate Profile Summary Cards
-        uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          TOKEN: ${{ secrets.TOKEN }}
-        with:
-          USERNAME: ${{ secrets.REPOSITORY_OWNER }}
+      # Profile Summary Cards removed - using custom stats card instead
           
       # Push Snake Animation
       - name: Push Snake Animation
@@ -53,7 +47,7 @@ jobs:
           target_branch: output
           build_dir: dist
         env:
-          TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
           
       # Commit 3D Profile
       - name: Commit & Push 3D Profile
@@ -61,5 +55,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add profile-3d-contrib/*.svg dist/
-          git diff --staged --quiet || git commit -m "atualiza visualizações 3D e animações"
+          git diff --staged --quiet || git commit -m "update 3D profile and animations"
           git push
