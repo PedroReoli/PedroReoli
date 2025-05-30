@@ -145,15 +145,21 @@
 <h2>GitHub Stats</h2>
 
 <div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-stats-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/github-stats-light.svg">
+    <img src="./assets/github-stats-dark.svg" alt="GitHub Stats" width="800">
+  </picture>
+  
+  <br><br>
+  
   <div style="display: flex; justify-content: center; gap: 10px;">
-    <img width="400" height="158" src="https://github-readme-stats.vercel.app/api/top-langs/?username=PedroReoli&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
     <img width="400" height="158" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=radical&hide_border=true" alt="GitHub Streak" />
   </div>
   
   <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="300" alt="Pixel Art Developer" />
 </div>
 
-<!-- Contribuições -->
 <h2>Contribuições</h2>
 
 <div align="center">
