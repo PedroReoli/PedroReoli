@@ -84,6 +84,35 @@ Opa! Sou **desenvolvedor Full Stack** com foco em **Frontend**, sempre buscando 
 - Blog onde escrevo sobre código: [Dev em Desenvolvimento](https://www.devemdesenvolvimento.com.br/)
 - **Plot twist:** Quando não estou debugando, estou tocando guitarra - viciado em Blues, Metal e Rock
 
+
+## 🚀 Tech Stack
+
+### 🎨 Frontend & UI
+
+| <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" width="40" height="40" /> <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="40" height="40" /> <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Angular" width="40" height="40" /> <img src="https://media.giphy.com/media/VgGthkhUvGgOit7Y9i/giphy.gif" alt="Vue.js" width="40" height="40" /> <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="TypeScript" width="40" height="40" /> |
+| <b>React</b> | <b>Next.js</b> | <b>Angular</b> | <b>Vue.js</b> | <b>TypeScript</b> |
+| <img src="https://media.giphy.com/media/SU2ic3wTfuC6JhD1lA/giphy.gif" alt="JavaScript" width="40" height="40" /> <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="Tailwind CSS" width="40" height="40" /> <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" alt="Sass" width="40" height="40" /> <img src="https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png" alt="Three.js" width="40" height="40" /> <img src="https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png" alt="Framer Motion" width="40" height="40" /> |
+| <b>JavaScript</b> | <b>Tailwind CSS</b> | <b>Sass</b> | <b>Three.js</b> | <b>Framer Motion</b> |
+
+### ⚙️ Backend & Languages
+
+| <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="Node.js" width="40" height="40" /> <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="Python" width="40" height="40" /> <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="C#" width="40" height="40" /> <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" alt="Express.js" width="40" height="40" /> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Blazor.png" alt="Blazor" width="40" height="40" /> |
+| <b>Node.js</b> | <b>Python</b> | <b>C#</b> | <b>Express.js</b> | <b>Blazor</b> |
+| <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" alt="PyTorch" width="40" height="40" /> <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" alt="Socket.IO" width="40" height="40" /> |
+| <b>PyTorch</b> | <b>Socket.IO</b> |
+
+### 🗄️ Database & Storage
+
+| <img src="https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif" alt="PostgreSQL" width="40" height="40" /> <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" alt="MySQL" width="40" height="40" /> <img src="https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif" alt="MongoDB" width="40" height="40" /> <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase" width="40" height="40" /> <img src="https://avatars.githubusercontent.com/u/17219288?s=200&v=4" alt="Prisma" width="40" height="40" /> |
+| <b>PostgreSQL</b> | <b>MySQL</b> | <b>MongoDB</b> | <b>Supabase</b> | <b>Prisma</b> |
+
+### 🛠️ Tools & DevOps
+
+| <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" width="40" height="40" /> <img src="https://media.giphy.com/media/6HkGCxUE8KnBGOvKJ7/giphy.gif" alt="Docker" width="40" height="40" /> <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="VS Code" width="40" height="40" /> <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" width="40" height="40" /> <img src="https://media.giphy.com/media/Ri2TUcKlaOcaDBxFpY/giphy.gif" alt="Figma" width="40" height="40" /> |
+| <b>Git</b> | <b>Docker</b> | <b>VS Code</b> | <b>Vercel</b> | <b>Figma</b> |
+| <img src="https://vitejs.dev/logo.svg" alt="Vite" width="40" height="40" /> |
+| <b>Vite</b> |
+
 ## 🚀 Tech Stack
 
 ### 🎨 Frontend & UI
