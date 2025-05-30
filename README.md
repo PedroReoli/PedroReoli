@@ -19,9 +19,191 @@
 
 <!-- Status Live -->
 <div class="status-live-container">
-  <div style="text-align: center; padding: 40px 20px;">
-    <h2 style="color: #2d3748; margin-bottom: 8px;">📊 Últimas Atualizações</h2>
-    <p style="color: #718096; font-size: 14px; margin: 0;">Carregando dados...</p>
+  <style>
+    .status-live-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+    
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+      margin: 16px 0;
+    }
+    
+    .status-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 20px 16px;
+      text-align: center;
+      transition: all 0.2s ease;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+    
+    .status-card.accent {
+      border-color: #6E56CF;
+      background: linear-gradient(135deg, #ffffff 0%, #f8f7ff 100%);
+    }
+    
+    .card-icon {
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .card-value {
+      font-size: 16px;
+      font-weight: 600;
+      color: #2d3748;
+      margin-bottom: 4px;
+      line-height: 1.2;
+    }
+    
+    .card-label {
+      font-size: 12px;
+      color: #718096;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .status-header {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    
+    .status-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #2d3748;
+      margin: 0;
+    }
+    
+    .status-subtitle {
+      font-size: 12px;
+      color: #718096;
+      margin: 4px 0 0 0;
+    }
+    
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
+      .status-card {
+        background: #1a202c;
+        border-color: #2d3748;
+      }
+      
+      .status-card.accent {
+        border-color: #6E56CF;
+        background: linear-gradient(135deg, #1a202c 0%, #2d1b69 100%);
+      }
+      
+      .card-value {
+        color: #f7fafc;
+      }
+      
+      .card-label {
+        color: #a0aec0;
+      }
+      
+      .status-title {
+        color: #f7fafc;
+      }
+      
+      .status-subtitle {
+        color: #a0aec0;
+      }
+    }
+    
+    /* Mobile responsivo */
+    @media (max-width: 640px) {
+      .status-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+      
+      .status-card {
+        padding: 16px 12px;
+      }
+      
+      .card-value {
+        font-size: 14px;
+      }
+      
+      .card-label {
+        font-size: 11px;
+      }
+    }
+  </style>
+  
+  <div class="status-header">
+    <h2 class="status-title">📊 Últimas Atualizações</h2>
+    <p class="status-subtitle">Atividade em tempo real</p>
+  </div>
+  
+  <div class="status-grid">
+    <div class="status-card accent">
+      <div class="card-icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="10" cy="10" r="4" fill="#48bb78">
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="10" cy="10" r="7" stroke="#48bb78" stroke-width="1" fill="none" opacity="0.3"/>
+  </svg>
+      </div>
+      <div class="card-content">
+        <div class="card-value">Online</div>
+        <div class="card-label">Status atual</div>
+      </div>
+    </div>
+    <div class="status-card accent">
+      <div class="card-icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6 7L2 10L6 13" stroke="#6E56CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M14 7L18 10L14 13" stroke="#6E56CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12 4L8 16" stroke="#718096" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>
+      </div>
+      <div class="card-content">
+        <div class="card-value">PedroReoli</div>
+        <div class="card-label">Projeto ativo</div>
+      </div>
+    </div>
+    <div class="status-card">
+      <div class="card-icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="10" cy="10" r="7" stroke="#718096" stroke-width="1.5"/>
+    <path d="M10 6V10L13 13" stroke="#2d3748" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+      </div>
+      <div class="card-content">
+        <div class="card-value">1h</div>
+        <div class="card-label">Última atividade</div>
+      </div>
+    </div>
+    <div class="status-card accent">
+      <div class="card-icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3 12L6 9L10 13L17 6" stroke="#6E56CF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="2" y="15" width="2" height="3" fill="#48bb78" opacity="0.6"/>
+    <rect x="6" y="13" width="2" height="5" fill="#48bb78" opacity="0.8"/>
+    <rect x="10" y="11" width="2" height="7" fill="#48bb78"/>
+    <rect x="14" y="14" width="2" height="4" fill="#48bb78" opacity="0.7"/>
+  </svg>
+      </div>
+      <div class="card-content">
+        <div class="card-value">7</div>
+        <div class="card-label">Commits hoje</div>
+      </div>
+    </div>
+  </div>
+  
+  <div style="text-align: center; margin-top: 16px;">
+    <small style="color: #718096; font-size: 11px;">
+      Última atualização: 30/05/2025, 20:35:31
+    </small>
   </div>
 </div>
 
