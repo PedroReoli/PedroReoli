@@ -24,12 +24,12 @@ jobs:
       - name: Update English README
         run: node scripts/update-english-readme.js
         env:
-          TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add EnglishVersion/README.en.md
-          git diff --staged --quiet || git commit -m "🌍 Sync English README with latest data"
+          git diff --staged --quiet || git commit -m "sincroniza README em inglês com dados mais recentes"
           git push

@@ -24,24 +24,22 @@ jobs:
       - name: Generate skill evolution data
         run: node scripts/skill-evolution.js
         env:
-          TOKEN: ${{ secrets.TOKEN }}
-          REPOSITORY_OWNER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
           
       - name: Update README with skill evolution
         run: |
           if [ -f assets/skill-evolution.json ]; then
-            node -e '
-              const fs = require("fs");
-              const path = require("path");
+            node -e "
+              const fs = require('fs');
+              const path = require('path');
               
-              // Ler arquivos
-              const skillFile = path.join(__dirname, "assets/skill-evolution.json");
-              const readmeFile = path.join(__dirname, "README.md");
+              const skillFile = path.join(__dirname, 'assets/skill-evolution.json');
+              const readmeFile = path.join(__dirname, 'README.md');
               
-              const skillData = JSON.parse(fs.readFileSync(skillFile, "utf8"));
-              let readme = fs.readFileSync(readmeFile, "utf8");
+              const skillData = JSON.parse(fs.readFileSync(skillFile, 'utf8'));
+              let readme = fs.readFileSync(readmeFile, 'utf8');
               
-              // Extrair top 5 linguagens da semana atual
               const currentWeek = Math.max(...Object.keys(skillData.weeklyData).map(Number));
               const currentLanguages = skillData.weeklyData[currentWeek].languages;
               
@@ -51,15 +49,14 @@ jobs:
                 .map(([language, count]) => ({
                   name: language,
                   count,
-                  trend: skillData.trends.languages[language]?.trend || "stable",
+                  trend: skillData.trends.languages[language]?.trend || 'stable',
                   change: skillData.trends.languages[language]?.change || 0,
                 }));
               
-              // Gerar HTML para a seção de skill evolution
-              const skillEvolutionHtml = `<details id="skill-evolution">
-  <summary><h2>📈 Skill Evolution</h2></summary>
-  <div align="center">
-    <p>Análise dos últimos ${skillData.period.days} dias de commits</p>
+              const skillEvolutionHtml = \`<details>
+  <summary><h2>Evolução das Skills</h2></summary>
+  <div align=\"center\">
+    <p>Análise dos últimos \${skillData.period.days} dias de commits</p>
     
     <table>
       <thead>
@@ -70,41 +67,40 @@ jobs:
         </tr>
       </thead>
       <tbody>
-        ${topLanguages.map(lang => {
-          const trendIcon = lang.trend === "up" ? "⬆️" : lang.trend === "down" ? "⬇️" : "↔️";
-          const trendText = lang.trend === "up" ? `+${lang.change}` : lang.trend === "down" ? `-${lang.change}` : "0";
+        \${topLanguages.map(lang => {
+          const trendIcon = lang.trend === 'up' ? '⬆️' : lang.trend === 'down' ? '⬇️' : '↔️';
+          const trendText = lang.trend === 'up' ? \`+\${lang.change}\` : lang.trend === 'down' ? \`-\${lang.change}\` : '0';
           
-          return `<tr>
-            <td><strong>${lang.name}</strong></td>
-            <td align="center">${lang.count}</td>
-            <td align="center">${trendIcon} ${trendText}</td>
-          </tr>`;
-        }).join("\n        ")}
+          return \`<tr>
+            <td><strong>\${lang.name}</strong></td>
+            <td align=\"center\">\${lang.count}</td>
+            <td align=\"center\">\${trendIcon} \${trendText}</td>
+          </tr>\`;
+        }).join('\n        ')}
       </tbody>
     </table>
     
     <br>
     
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./assets/skill-evolution-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="./assets/skill-evolution-light.svg">
-      <img src="./assets/skill-evolution-dark.svg" alt="Skill Evolution" width="800">
+      <source media=\"(prefers-color-scheme: dark)\" srcset=\"./assets/skill-evolution-dark.svg\">
+      <source media=\"(prefers-color-scheme: light)\" srcset=\"./assets/skill-evolution-light.svg\">
+      <img src=\"./assets/skill-evolution-dark.svg\" alt=\"Skill Evolution\" width=\"800\">
     </picture>
     
     <br>
-    <sub><i>Atualizado em: ${new Date(skillData.lastUpdated).toLocaleString("pt-BR")}</i></sub>
+    <sub><i>Atualizado em: \${new Date(skillData.lastUpdated).toLocaleString('pt-BR')}</i></sub>
   </div>
-</details>`;
+</details>\`;
               
-              // Substituir seção de skill evolution
               const newReadme = readme.replace(
-                /<details id="skill-evolution">[\s\S]*?<\/details>/,
+                /<details>\s*<summary><h2>Evolução das Skills<\/h2><\/summary>[\s\S]*?<\/details>/,
                 skillEvolutionHtml
               );
               
               fs.writeFileSync(readmeFile, newReadme);
-              console.log("README atualizado com sucesso!");
-            '
+              console.log('README atualizado com sucesso!');
+            "
           else
             echo "Arquivo de skill evolution não encontrado!"
           fi
@@ -114,5 +110,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md assets/skill-evolution*.svg assets/skill-evolution.json
-          git diff --staged --quiet || git commit -m "📊 Atualiza skill evolution"
+          git diff --staged --quiet || git commit -m "atualiza skill evolution"
           git push
