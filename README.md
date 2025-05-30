@@ -165,8 +165,19 @@
 <details>
   <summary><h2>Constelação de Projetos</h2></summary>
   <div align="center">
-    <p>Gerando constelação...</p>
-    <!-- Será substituído pela constelação SVG -->
+    <p>Visualização interativa dos repositórios como uma constelação estelar</p>
+    
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/constellation-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/constellation-light.svg">
+      <img src="./assets/constellation-dark.svg" alt="Constelação de Projetos" width="900">
+    </picture>
+    
+    <p><i>Cada estrela representa um repositório. Tamanho = commits, brilho = stars, cor = linguagem.</i></p>
+    <p><i>Clique nas estrelas para visitar os repositórios.</i></p>
+    
+    <br>
+    <sub><i>Atualizado em: 30/05/2025, 20:03:54</i></sub>
   </div>
 </details>
 
