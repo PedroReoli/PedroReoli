@@ -67,6 +67,7 @@
 | <img src="https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png" alt="Three.js" width="40" height="40" /> | **Three.js** |
 | <img src="https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png" alt="Framer Motion" width="40" height="40" /> | **Framer Motion** |
 
+
 ### ⚙️ Backend & Languages
 
 | Tecnologia | Nome |
@@ -79,6 +80,7 @@
 | <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" alt="PyTorch" width="40" height="40" /> | **PyTorch** |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" alt="Socket.IO" width="40" height="40" /> | **Socket.IO** |
 
+
 ### 🗄️ Database & Storage
 
 | Tecnologia | Nome |
@@ -88,6 +90,7 @@
 | <img src="https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif" alt="MongoDB" width="40" height="40" /> | **MongoDB** |
 | <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase" width="40" height="40" /> | **Supabase** |
 | <img src="https://avatars.githubusercontent.com/u/17219288?s=200&v=4" alt="Prisma" width="40" height="40" /> | **Prisma** |
+
 
 ### 🛠️ Tools & DevOps
 
@@ -99,6 +102,7 @@
 | <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" width="40" height="40" /> | **Vercel** |
 | <img src="https://media.giphy.com/media/Ri2TUcKlaOcaDBxFpY/giphy.gif" alt="Figma" width="40" height="40" /> | **Figma** |
 | <img src="https://vitejs.dev/logo.svg" alt="Vite" width="40" height="40" /> | **Vite** |
+
 
 <div align="center">
   
