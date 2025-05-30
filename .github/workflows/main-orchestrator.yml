@@ -1,0 +1,125 @@
+name: 🎭 Profile Orchestrator
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: "0 */6 * * *" # A cada 6 horas
+  workflow_dispatch:
+
+jobs:
+  # 1. Primeiro: Gerar dados base
+  generate-stats:
+    name: "📊 GitHub Stats"
+    uses: ./.github/workflows/github-stats.yml
+    secrets: inherit
+
+  # 2. Segundo: Análise de skills (depende dos stats)
+  analyze-skills:
+    name: "🧠 Skill Evolution"
+    needs: generate-stats
+    uses: ./.github/workflows/weekly-insights.yml
+    secrets: inherit
+
+  # 3. Terceiro: Constelação de projetos
+  generate-constellation:
+    name: "🌌 Project Constellation"
+    needs: analyze-skills
+    uses: ./.github/workflows/constellation.yml
+    secrets: inherit
+
+  # 4. Quarto: Observatório e insights
+  observatory-analysis:
+    name: "🔭 Dev Observatory"
+    needs: generate-constellation
+    uses: ./.github/workflows/observatory.yml
+    secrets: inherit
+
+  # 5. Quinto: Status de presença
+  update-presence:
+    name: "🟢 Live Presence"
+    needs: observatory-analysis
+    uses: ./.github/workflows/daily-update.yml
+    secrets: inherit
+
+  # 6. Sexto: Animações e visualizações
+  generate-animations:
+    name: "🎨 Animations & 3D"
+    needs: update-presence
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+
+  # 7. Sétimo: Tech stack
+  update-tech-stack:
+    name: "🚀 Tech Stack"
+    needs: generate-animations
+    uses: ./.github/workflows/update-tech-stack.yml
+    secrets: inherit
+
+  # 8. Oitavo: Sincronizar versão em inglês
+  sync-english:
+    name: "🌍 English Sync"
+    needs: update-tech-stack
+    uses: ./.github/workflows/sync-english.yml
+    secrets: inherit
+
+  # 9. Último: Otimização e limpeza
+  optimize-assets:
+    name: "⚡ Optimize & Clean"
+    needs: sync-english
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Buscar todo o histórico
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Pull latest changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git pull --rebase origin main
+          
+      - name: Run performance optimizer
+        run: node scripts/performance-optimizer.js
+        
+      - name: Final commit and push
+        run: |
+          git add .
+          git diff --staged --quiet || git commit -m "🎭 orchestrator: optimize assets and finalize profile update"
+          git push
+
+  # 10. Relatório final
+  orchestrator-report:
+    name: "📋 Orchestration Report"
+    needs: optimize-assets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate completion report
+        run: |
+          echo "🎭 Profile Orchestrator completed successfully!"
+          echo "✅ All workflows executed in sequence"
+          echo "📊 Stats: Generated"
+          echo "🧠 Skills: Analyzed" 
+          echo "🌌 Constellation: Created"
+          echo "🔭 Observatory: Updated"
+          echo "🟢 Presence: Refreshed"
+          echo "🎨 Animations: Generated"
+          echo "🚀 Tech Stack: Updated"
+          echo "🌍 English: Synced"
+          echo "⚡ Assets: Optimized"
+          echo ""
+          echo "🕐 Completed at: $(date)"
+          echo "🎯 Next run: In 6 hours"

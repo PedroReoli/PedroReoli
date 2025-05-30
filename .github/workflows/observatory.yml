@@ -1,15 +1,12 @@
 name: Observatory Insights
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-  schedule:
-    - cron: "0 0 * * 1" # Every Monday
-  workflow_dispatch:
+  workflow_call: # Permite ser chamado por outros workflows
+    secrets:
+      TOKEN:
+        required: true
+      REPOSITORY_OWNER:
+        required: true
 
 jobs:
   observatory:
@@ -19,14 +16,22 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        
+        with:
+          fetch-depth: 0
+          
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
           
       - name: Install dependencies
-        run: npm install
+        run: npm install @octokit/rest
+        
+      - name: Pull latest changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git pull --rebase origin main || true
           
       - name: Generate observatory report
         run: node scripts/observatory-insights.js
@@ -41,8 +46,6 @@ jobs:
           
       - name: Commit and push changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
           git add README.md assets/observatory-report.json .devgoals.yml
-          git diff --staged --quiet || git commit -m "update dev observatory and weekly goals"
+          git diff --staged --quiet || git commit -m "🔭 update dev observatory and weekly goals"
           git push

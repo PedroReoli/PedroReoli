@@ -1,15 +1,10 @@
 name: Sync English Version
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-  schedule:
-    - cron: "0 */6 * * *" # Every 6 hours
-  workflow_dispatch:
+  workflow_call: # Permite ser chamado por outros workflows
+    secrets:
+      TOKEN:
+        required: true
 
 jobs:
   sync-english:
@@ -19,7 +14,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        
+        with:
+          fetch-depth: 0
+          
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -27,6 +24,12 @@ jobs:
           
       - name: Install dependencies
         run: npm install
+        
+      - name: Pull latest changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git pull --rebase origin main || true
           
       - name: Update English README
         run: node scripts/update-english-readme.js
@@ -35,8 +38,6 @@ jobs:
           
       - name: Commit and push changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
           git add EnglishVersion/README.en.md
-          git diff --staged --quiet || git commit -m "sync english README with latest data"
+          git diff --staged --quiet || git commit -m "🌍 sync english README with latest data"
           git push

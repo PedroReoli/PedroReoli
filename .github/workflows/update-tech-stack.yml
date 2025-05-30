@@ -1,17 +1,7 @@
 name: Update Tech Stack
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'data/tech-stack.json'
-  pull_request:
-    branches:
-      - main
-  schedule:
-    - cron: "0 0 * * 1" # Every Monday
-  workflow_dispatch:
+  workflow_call: # Permite ser chamado por outros workflows
 
 jobs:
   update-tech:
@@ -21,7 +11,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        
+        with:
+          fetch-depth: 0
+          
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -29,14 +21,18 @@ jobs:
           
       - name: Install dependencies
         run: npm install
+        
+      - name: Pull latest changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git pull --rebase origin main || true
           
       - name: Update README tech stack
         run: node scripts/update-readme-tech.js
         
       - name: Commit and push changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
           git add README.md
-          git diff --staged --quiet || git commit -m "update tech stack in README"
+          git diff --staged --quiet || git commit -m "🚀 update tech stack in README"
           git push

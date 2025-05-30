@@ -1,15 +1,12 @@
 name: Generate GitHub Stats
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-  schedule:
-    - cron: "0 */6 * * *" # A cada 6 horas
-  workflow_dispatch:
+  workflow_call: # Permite ser chamado por outros workflows
+    secrets:
+      TOKEN:
+        required: true
+      REPOSITORY_OWNER:
+        required: true
 
 jobs:
   generate-stats:
@@ -19,7 +16,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        
+        with:
+          fetch-depth: 0
+          
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -27,6 +26,12 @@ jobs:
           
       - name: Install dependencies
         run: npm install @octokit/rest
+        
+      - name: Pull latest changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git pull --rebase origin main || true
           
       - name: Generate GitHub stats card
         run: node scripts/github-stats-generator.js
@@ -39,8 +44,6 @@ jobs:
         
       - name: Commit and push changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
           git add README.md assets/github-stats*.svg assets/github-stats-data.json
-          git diff --staged --quiet || git commit -m "update github stats card"
+          git diff --staged --quiet || git commit -m "📊 update github stats card"
           git push
