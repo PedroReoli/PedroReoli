@@ -8,7 +8,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 0 * * 1" # Executa toda segunda-feira à meia-noite
+    - cron: "0 0 * * 1" # Every Monday
   workflow_dispatch:
 
 jobs:
@@ -26,7 +26,7 @@ jobs:
           node-version: '18'
           
       - name: Install dependencies
-        run: npm install @octokit/rest
+        run: npm install
           
       - name: Generate observatory report
         run: node scripts/observatory-insights.js
@@ -44,5 +44,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md assets/observatory-report.json .devgoals.yml
-          git diff --staged --quiet || git commit -m "atualiza observatório dev e metas semanais"
+          git diff --staged --quiet || git commit -m "update dev observatory and weekly goals"
           git push

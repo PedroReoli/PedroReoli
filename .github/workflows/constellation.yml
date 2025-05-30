@@ -26,7 +26,7 @@ jobs:
           node-version: '18'
           
       - name: Install dependencies
-        run: npm install @octokit/rest
+        run: npm install
           
       - name: Generate constellation
         run: node scripts/constellation-generator.js
@@ -44,5 +44,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md assets/constellation*.svg assets/constellation-data.json
-          git diff --staged --quiet || git commit -m "atualiza constelação de projetos"
+          git diff --staged --quiet || git commit -m "update constellation visualization"
           git push

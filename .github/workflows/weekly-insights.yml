@@ -8,7 +8,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 0 * * 0" # Executa todo domingo à meia-noite
+    - cron: "0 0 * * 0" # Every Sunday
   workflow_dispatch:
 
 jobs:
@@ -26,8 +26,7 @@ jobs:
           node-version: '18'
           
       - name: Install dependencies
-        run: |
-          npm install @octokit/rest
+        run: npm install
           
       - name: Generate skill evolution data
         run: node scripts/skill-evolution.js
@@ -45,5 +44,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md assets/skill-evolution*.svg assets/skill-evolution.json
-          git diff --staged --quiet || git commit -m "atualiza skill evolution"
+          git diff --staged --quiet || git commit -m "update skill evolution analysis"
           git push

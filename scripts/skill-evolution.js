@@ -3,13 +3,16 @@
  * Analisa commits para detectar evolução de linguagens e tecnologias
  */
 
-const fs = require("fs")
-const path = require("path")
-const { Octokit } = require("@octokit/rest")
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 // Configuração
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN
-const USERNAME = process.env.GITHUB_REPOSITORY_OWNER || "PedroReoli"
+const GITHUB_TOKEN = process.env.TOKEN
+const USERNAME = process.env.REPOSITORY_OWNER || "PedroReoli"
 const DAYS_TO_ANALYZE = 30
 const OUTPUT_DIR = path.join(__dirname, "../assets")
 
@@ -42,50 +45,6 @@ const FILE_EXTENSIONS = {
   svelte: "Svelte",
 }
 
-// Mapeamento de frameworks/bibliotecas baseado em imports e dependências
-const FRAMEWORK_PATTERNS = {
-  react: "React",
-  next: "Next.js",
-  vue: "Vue.js",
-  angular: "Angular",
-  svelte: "Svelte",
-  express: "Express",
-  nest: "NestJS",
-  django: "Django",
-  flask: "Flask",
-  tailwind: "Tailwind",
-  bootstrap: "Bootstrap",
-  "material-ui": "Material UI",
-  chakra: "Chakra UI",
-  "three.js": "Three.js",
-  "framer-motion": "Framer Motion",
-  redux: "Redux",
-  zustand: "Zustand",
-  recoil: "Recoil",
-  jotai: "Jotai",
-  prisma: "Prisma",
-  mongoose: "Mongoose",
-  sequelize: "Sequelize",
-  typeorm: "TypeORM",
-  supabase: "Supabase",
-  firebase: "Firebase",
-  apollo: "Apollo",
-  graphql: "GraphQL",
-  jest: "Jest",
-  cypress: "Cypress",
-  playwright: "Playwright",
-  storybook: "Storybook",
-  webpack: "Webpack",
-  vite: "Vite",
-  docker: "Docker",
-  kubernetes: "Kubernetes",
-  aws: "AWS",
-  azure: "Azure",
-  gcp: "GCP",
-  vercel: "Vercel",
-  netlify: "Netlify",
-}
-
 // Cores para as linguagens
 const LANGUAGE_COLORS = {
   JavaScript: "#f7df1e",
@@ -97,25 +56,18 @@ const LANGUAGE_COLORS = {
   HTML: "#e34c26",
   CSS: "#264de4",
   SCSS: "#c6538c",
-  "Next.js": "#000000",
-  "Vue.js": "#4fc08d",
-  Angular: "#dd0031",
-  Svelte: "#ff3e00",
-  Express: "#000000",
-  NestJS: "#e0234e",
-  Django: "#092e20",
-  Flask: "#000000",
-  Tailwind: "#06b6d4",
-  Bootstrap: "#7952b3",
-  "Three.js": "#000000",
-  "Framer Motion": "#0055ff",
   default: "#6e56cf",
 }
 
-// Inicialização do Octokit
-const octokit = new Octokit({
-  auth: GITHUB_TOKEN,
-})
+/**
+ * Inicializa Octokit dinamicamente
+ */
+async function createOctokit() {
+  const { Octokit } = await import("@octokit/rest")
+  return new Octokit({
+    auth: GITHUB_TOKEN,
+  })
+}
 
 /**
  * Obtém a data de N dias atrás
@@ -135,29 +87,14 @@ function detectLanguage(filename) {
 }
 
 /**
- * Detecta frameworks/bibliotecas baseado no conteúdo do arquivo
- */
-function detectFrameworks(content) {
-  const frameworks = new Set()
-
-  if (!content) return []
-
-  Object.entries(FRAMEWORK_PATTERNS).forEach(([pattern, framework]) => {
-    if (content.toLowerCase().includes(pattern.toLowerCase())) {
-      frameworks.add(framework)
-    }
-  })
-
-  return Array.from(frameworks)
-}
-
-/**
- * Analisa commits para detectar linguagens e frameworks
+ * Analisa commits para detectar linguagens
  */
 async function analyzeCommits() {
   console.log(`Analisando commits dos últimos ${DAYS_TO_ANALYZE} dias...`)
 
   try {
+    const octokit = await createOctokit()
+
     // Obter repositórios do usuário
     const { data: repos } = await octokit.repos.listForUser({
       username: USERNAME,
@@ -178,7 +115,6 @@ async function analyzeCommits() {
     for (let i = 0; i <= currentWeek; i++) {
       weeklyData[i] = {
         languages: {},
-        frameworks: {},
         totalCommits: 0,
       }
     }
@@ -224,19 +160,6 @@ async function analyzeCommits() {
               if (language !== "Outro") {
                 weeklyData[weekIndex].languages[language] = (weeklyData[weekIndex].languages[language] || 0) + 1
               }
-
-              // Detectar frameworks (apenas para alguns tipos de arquivos)
-              if (
-                ["js", "jsx", "ts", "tsx", "py", "cs", "html", "json"].includes(
-                  file.filename.split(".").pop().toLowerCase(),
-                )
-              ) {
-                const frameworks = detectFrameworks(file.patch)
-
-                frameworks.forEach((framework) => {
-                  weeklyData[weekIndex].frameworks[framework] = (weeklyData[weekIndex].frameworks[framework] || 0) + 1
-                })
-              }
             }
           } catch (error) {
             console.log(`Erro ao obter detalhes do commit ${commit.sha}: ${error.message}`)
@@ -279,12 +202,11 @@ async function analyzeCommits() {
 }
 
 /**
- * Calcula tendências de uso de linguagens e frameworks
+ * Calcula tendências de uso de linguagens
  */
 function calculateTrends(weeklyData) {
   const trends = {
     languages: {},
-    frameworks: {},
   }
 
   const weeks = Object.keys(weeklyData)
@@ -311,28 +233,6 @@ function calculateTrends(weeklyData) {
       else trend = "stable"
 
       trends.languages[language] = {
-        trend,
-        change: Math.abs(change),
-        current,
-        previous,
-      }
-    })
-
-    // Calcular tendências de frameworks
-    const currentFrameworks = weeklyData[currentWeek].frameworks
-    const previousFrameworks = weeklyData[previousWeek].frameworks
-
-    Object.keys(currentFrameworks).forEach((framework) => {
-      const current = currentFrameworks[framework] || 0
-      const previous = previousFrameworks[framework] || 0
-      const change = current - previous
-
-      let trend
-      if (change > 0) trend = "up"
-      else if (change < 0) trend = "down"
-      else trend = "stable"
-
-      trends.frameworks[framework] = {
         trend,
         change: Math.abs(change),
         current,

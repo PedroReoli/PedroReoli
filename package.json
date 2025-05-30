@@ -1,0 +1,19 @@
+{
+  "name": "github-profile-automation",
+  "version": "1.0.0",
+  "description": "Automated GitHub profile with custom visualizations",
+  "type": "module",
+  "scripts": {
+    "constellation": "node scripts/constellation-generator.js",
+    "skills": "node scripts/skill-evolution.js",
+    "stats": "node scripts/github-stats-generator.js",
+    "observatory": "node scripts/observatory-insights.js",
+    "presence": "node scripts/presence-tracker.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^20.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -3,25 +3,35 @@
  * Gera badges dinâmicos usando apenas GitHub API
  */
 
-const fs = require("fs")
-const path = require("path")
-const { Octokit } = require("@octokit/rest")
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 // Configuração
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN
-const USERNAME = process.env.GITHUB_REPOSITORY_OWNER || "PedroReoli"
+const GITHUB_TOKEN = process.env.TOKEN
+const USERNAME = process.env.REPOSITORY_OWNER || "PedroReoli"
 const OUTPUT_FILE = path.join(__dirname, "../assets/presence-status.json")
 
-// Inicialização do Octokit
-const octokit = new Octokit({
-  auth: GITHUB_TOKEN,
-})
+/**
+ * Inicializa Octokit dinamicamente
+ */
+async function createOctokit() {
+  const { Octokit } = await import("@octokit/rest")
+  return new Octokit({
+    auth: GITHUB_TOKEN,
+  })
+}
 
 /**
  * Obtém os dados de atividade do GitHub
  */
 async function getGitHubActivity() {
   try {
+    const octokit = await createOctokit()
+
     const { data: events } = await octokit.activity.listPublicEventsForUser({
       username: USERNAME,
       per_page: 10,
@@ -65,6 +75,8 @@ async function getGitHubActivity() {
  */
 async function getTopLanguageFromCommits() {
   try {
+    const octokit = await createOctokit()
+
     // Obter repositórios do usuário
     const { data: repos } = await octokit.repos.listForUser({
       username: USERNAME,
@@ -93,51 +105,12 @@ async function getTopLanguageFromCommits() {
 }
 
 /**
- * Calcula tempo estimado de codificação baseado em commits
- */
-async function estimateCodingTime() {
-  try {
-    const { data: events } = await octokit.activity.listPublicEventsForUser({
-      username: USERNAME,
-      per_page: 50,
-    })
-
-    const pushEvents = events.filter((event) => event.type === "PushEvent")
-
-    if (pushEvents.length < 2) return 0
-
-    // Calcular intervalos entre commits
-    let totalMinutes = 0
-    let sessions = 0
-
-    for (let i = 0; i < pushEvents.length - 1; i++) {
-      const current = new Date(pushEvents[i].created_at)
-      const next = new Date(pushEvents[i + 1].created_at)
-      const diffMinutes = Math.abs(current - next) / (1000 * 60)
-
-      // Considerar como sessão se intervalo for menor que 4 horas
-      if (diffMinutes <= 240) {
-        totalMinutes += diffMinutes
-        sessions++
-      }
-    }
-
-    // Estimar tempo médio de sessão
-    const avgSessionTime = sessions > 0 ? totalMinutes / sessions : 0
-    const estimatedHours = Math.round((avgSessionTime / 60) * 10) / 10
-
-    return estimatedHours
-  } catch (error) {
-    console.error("Erro ao calcular tempo de codificação:", error)
-    return 0
-  }
-}
-
-/**
  * Detecta o "Dev Cronotipo" baseado em horários de commit
  */
 async function detectDevCronotipo() {
   try {
+    const octokit = await createOctokit()
+
     const { data: events } = await octokit.activity.listPublicEventsForUser({
       username: USERNAME,
       per_page: 100,
@@ -179,10 +152,9 @@ async function generateStatusBadges() {
   console.log("Gerando status de presença...")
 
   // Obter dados de atividade
-  const [githubActivity, topLanguage, codingTime, cronotipo] = await Promise.all([
+  const [githubActivity, topLanguage, cronotipo] = await Promise.all([
     getGitHubActivity(),
     getTopLanguageFromCommits(),
-    estimateCodingTime(),
     detectDevCronotipo(),
   ])
 
@@ -196,7 +168,6 @@ async function generateStatusBadges() {
     },
     coding: {
       topLanguage: topLanguage,
-      estimatedHours: codingTime,
       cronotipo: cronotipo,
     },
     badges: [],
@@ -237,15 +208,6 @@ async function generateStatusBadges() {
     logoColor: "white",
   })
 
-  if (codingTime > 0) {
-    status.badges.push({
-      text: `⚡ ~${codingTime}h de código estimado`,
-      color: "9C27B0",
-      logo: "lightning",
-      logoColor: "white",
-    })
-  }
-
   status.badges.push({
     text: `🧭 Dev ${cronotipo}`,
     color: "FF5722",
@@ -260,7 +222,6 @@ async function generateStatusBadges() {
   console.log("Status de presença gerado com sucesso!")
   console.log(`- Linguagem principal: ${topLanguage || "N/A"}`)
   console.log(`- Commits hoje: ${githubActivity.todayCommits}`)
-  console.log(`- Tempo estimado: ${codingTime}h`)
   console.log(`- Cronotipo: ${cronotipo}`)
 
   return status

@@ -3,13 +3,16 @@
  * Gera visualização SVG dos repositórios como uma constelação
  */
 
-const fs = require("fs")
-const path = require("path")
-const { Octokit } = require("@octokit/rest")
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 // Configuração
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN
-const USERNAME = process.env.GITHUB_REPOSITORY_OWNER || "PedroReoli"
+const GITHUB_TOKEN = process.env.TOKEN
+const USERNAME = process.env.REPOSITORY_OWNER || "PedroReoli"
 const OUTPUT_DIR = path.join(__dirname, "../assets")
 
 // Mapeamento de linguagens para cores
@@ -33,16 +36,23 @@ const LANGUAGE_COLORS = {
   default: "#6e56cf",
 }
 
-// Inicialização do Octokit
-const octokit = new Octokit({
-  auth: GITHUB_TOKEN,
-})
+/**
+ * Inicializa Octokit dinamicamente
+ */
+async function createOctokit() {
+  const { Octokit } = await import("@octokit/rest")
+  return new Octokit({
+    auth: GITHUB_TOKEN,
+  })
+}
 
 /**
  * Obtém dados dos repositórios do usuário
  */
 async function getRepositories() {
   try {
+    const octokit = await createOctokit()
+
     const { data: repos } = await octokit.repos.listForUser({
       username: USERNAME,
       sort: "updated",
@@ -53,7 +63,7 @@ async function getRepositories() {
 
     // Obter linguagens para cada repositório
     const reposWithLanguages = await Promise.all(
-      repos.map(async (repo) => {
+      repos.slice(0, 20).map(async (repo) => {
         try {
           const { data: languages } = await octokit.repos.listLanguages({
             owner: USERNAME,
@@ -66,15 +76,6 @@ async function getRepositories() {
             Object.keys(languages)[0] || "default",
           )
 
-          // Obter estatísticas de commits
-          const { data: stats } = await octokit.repos.getCommitActivityStats({
-            owner: USERNAME,
-            repo: repo.name,
-          })
-
-          // Calcular total de commits recentes (últimas 4 semanas)
-          const recentCommits = stats ? stats.slice(-4).reduce((sum, week) => sum + week.total, 0) : 0
-
           return {
             name: repo.name,
             description: repo.description || "",
@@ -84,7 +85,6 @@ async function getRepositories() {
             mainLanguage,
             languages: Object.keys(languages),
             size: repo.size,
-            recentCommits,
             createdAt: repo.created_at,
             updatedAt: repo.updated_at,
           }
@@ -99,7 +99,6 @@ async function getRepositories() {
             mainLanguage: "default",
             languages: [],
             size: repo.size,
-            recentCommits: 0,
             createdAt: repo.created_at,
             updatedAt: repo.updated_at,
           }
@@ -216,11 +215,10 @@ async function generateConstellationSVG(theme) {
         const position = positions[repo.name]
         if (!position) return null
 
-        // Calcular tamanho do nó baseado em stars e commits
+        // Calcular tamanho do nó baseado em stars
         const baseSize = 5
-        const commitFactor = Math.min(10, Math.log(repo.recentCommits + 1) * 2)
         const starFactor = Math.min(10, Math.log(repo.stars + 1) * 3)
-        const size = baseSize + commitFactor + starFactor
+        const size = baseSize + starFactor
 
         // Calcular brilho baseado em stars
         const glow = repo.stars > 0 ? Math.min(15, 5 + repo.stars * 0.5) : 0
@@ -239,7 +237,6 @@ async function generateConstellationSVG(theme) {
           url: repo.url,
           description: repo.description,
           stars: repo.stars,
-          recentCommits: repo.recentCommits,
         }
       })
       .filter(Boolean)
@@ -334,29 +331,9 @@ async function generateConstellationSVG(theme) {
           <text x="${node.x}" y="${node.y - node.size - 5}" text-anchor="middle" font-size="12" fill="${colors.text}" class="repo-label">
             ${node.name}
           </text>
-          <g class="repo-tooltip">
-            <rect x="${node.x + 10}" y="${node.y - 40}" width="180" height="80" rx="5" ry="5" fill="${colors.background}" stroke="${colors.line}" stroke-width="1" />
-            <text x="${node.x + 20}" y="${node.y - 20}" font-size="12" font-weight="bold" fill="${colors.text}">${node.name}</text>
-            <text x="${node.x + 20}" y="${node.y}" font-size="10" fill="${colors.text}" width="160" height="40">
-              ${node.description ? (node.description.length > 60 ? node.description.substring(0, 60) + "..." : node.description) : "Sem descrição"}
-            </text>
-            <text x="${node.x + 20}" y="${node.y + 20}" font-size="10" fill="${colors.highlight}">
-              ⭐ ${node.stars} stars | 📝 ${node.recentCommits} commits recentes
-            </text>
-          </g>
         `
         })
         .join("\n")}
-      
-      <!-- Legenda -->
-      <g transform="translate(20, ${height - 70})">
-        <rect width="200" height="60" rx="5" ry="5" fill="${colors.background}" stroke="${colors.line}" stroke-width="1" />
-        <text x="10" y="20" font-size="12" font-weight="bold" fill="${colors.text}">Legenda:</text>
-        <circle cx="20" cy="40" r="5" fill="${colors.highlight}" />
-        <text x="35" y="44" font-size="12" fill="${colors.text}">Repositório</text>
-        <circle cx="100" cy="40" r="10" fill="${colors.highlight}" opacity="0.15" />
-        <text x="120" y="44" font-size="12" fill="${colors.text}">Stars</text>
-      </g>
       
       <!-- Atualizado em -->
       <text x="${width - 20}" y="${height - 20}" text-anchor="end" font-size="10" fill="${colors.groupLabel}">

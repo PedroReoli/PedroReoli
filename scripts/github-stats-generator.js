@@ -3,13 +3,16 @@
  * Gera um SVG customizado com stats essenciais
  */
 
-const fs = require("fs")
-const path = require("path")
-const { Octokit } = require("@octokit/rest")
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 // Configuração
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN
-const USERNAME = process.env.GITHUB_REPOSITORY_OWNER || "PedroReoli"
+const GITHUB_TOKEN = process.env.TOKEN
+const USERNAME = process.env.REPOSITORY_OWNER || "PedroReoli"
 const OUTPUT_DIR = path.join(__dirname, "../assets")
 
 // Cores para linguagens
@@ -27,16 +30,23 @@ const LANGUAGE_COLORS = {
   default: "#6e56cf",
 }
 
-// Inicialização do Octokit
-const octokit = new Octokit({
-  auth: GITHUB_TOKEN,
-})
+/**
+ * Inicializa Octokit dinamicamente
+ */
+async function createOctokit() {
+  const { Octokit } = await import("@octokit/rest")
+  return new Octokit({
+    auth: GITHUB_TOKEN,
+  })
+}
 
 /**
  * Obtém estatísticas do usuário
  */
 async function getUserStats() {
   try {
+    const octokit = await createOctokit()
+
     const { data: user } = await octokit.users.getByUsername({
       username: USERNAME,
     })
@@ -63,6 +73,8 @@ async function getUserStats() {
  */
 async function getTopLanguages() {
   try {
+    const octokit = await createOctokit()
+
     const { data: repos } = await octokit.repos.listForUser({
       username: USERNAME,
       per_page: 100,
@@ -110,6 +122,8 @@ async function getTopLanguages() {
  */
 async function getCommitStreak() {
   try {
+    const octokit = await createOctokit()
+
     const { data: events } = await octokit.activity.listPublicEventsForUser({
       username: USERNAME,
       per_page: 100,
@@ -153,6 +167,8 @@ async function getCommitStreak() {
  */
 async function getTotalStars() {
   try {
+    const octokit = await createOctokit()
+
     const { data: repos } = await octokit.repos.listForUser({
       username: USERNAME,
       per_page: 100,

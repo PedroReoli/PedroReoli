@@ -3,86 +3,35 @@
  * Gera insights automáticos sobre padrões de desenvolvimento
  */
 
-const fs = require("fs")
-const path = require("path")
-const { Octokit } = require("@octokit/rest")
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 // Configuração
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN
-const USERNAME = process.env.GITHUB_REPOSITORY_OWNER || "PedroReoli"
+const GITHUB_TOKEN = process.env.TOKEN
+const USERNAME = process.env.REPOSITORY_OWNER || "PedroReoli"
 const OUTPUT_DIR = path.join(__dirname, "../assets")
 
-// Templates de insights
-const INSIGHT_TEMPLATES = {
-  matinal: [
-    "Esta semana você foi um verdadeiro Dev Matinal ☀️! Sua produtividade máxima foi entre {peak_start}h e {peak_end}h.",
-    "Começando cedo! Você mostrou ser um Dev Matinal ☀️ com {commits} commits entre {peak_start}h e {peak_end}h.",
-    "Madrugador produtivo! Seu perfil matinal ☀️ rendeu {commits} commits nas primeiras horas do dia.",
-  ],
-  vespertino: [
-    "Tarde produtiva! Você se destacou como Dev Vespertino 🌅 com pico entre {peak_start}h e {peak_end}h.",
-    "Ritmo da tarde! Seu perfil vespertino 🌅 gerou {commits} commits no período mais produtivo.",
-    "Energia da tarde! Como Dev Vespertino 🌅, você manteve consistência entre {peak_start}h e {peak_end}h.",
-  ],
-  noturno: [
-    "Coruja do código! Você é um Dev Noturno 🌙 com {commits} commits entre {peak_start}h e {peak_end}h.",
-    "Noites produtivas! Seu perfil noturno 🌙 brilhou com atividade intensa após as {peak_start}h.",
-    "Energia noturna! Como Dev Noturno 🌙, você transformou a madrugada em código produtivo.",
-  ],
-  madrugador: [
-    "Insônia produtiva! Você é um Dev Madrugador 🦉 com atividade entre {peak_start}h e {peak_end}h.",
-    "Sem hora para parar! Seu perfil de madrugador 🦉 gerou {commits} commits nas horas mais silenciosas.",
-    "Dedicação extrema! Como Dev Madrugador 🦉, você codifica quando o mundo dorme.",
-  ],
+/**
+ * Inicializa Octokit dinamicamente
+ */
+async function createOctokit() {
+  const { Octokit } = await import("@octokit/rest")
+  return new Octokit({
+    auth: GITHUB_TOKEN,
+  })
 }
-
-const LANGUAGE_INSIGHTS = {
-  JavaScript: [
-    "JavaScript continua sendo sua linguagem de confiança com {count} commits.",
-    "Dominando o ecossistema JS com {count} commits esta semana.",
-    "JavaScript em alta! {count} commits mostram sua expertise crescente.",
-  ],
-  TypeScript: [
-    "TypeScript está se tornando seu superpoder com {count} commits!",
-    "Tipagem forte em foco! {count} commits em TypeScript esta semana.",
-    "Evoluindo com TypeScript: {count} commits de código tipado.",
-  ],
-  React: [
-    "React continua sendo sua paixão com {count} commits em componentes.",
-    "Construindo interfaces incríveis! {count} commits em React esta semana.",
-    "Componentização em alta! {count} commits mostram seu domínio em React.",
-  ],
-  Python: [
-    "Python versátil! {count} commits explorando suas possibilidades.",
-    "Simplicidade e poder: {count} commits em Python esta semana.",
-    "Pythônico por natureza! {count} commits de código limpo e eficiente.",
-  ],
-  "C#": [
-    "C# enterprise! {count} commits construindo soluções robustas.",
-    "Orientação a objetos em ação: {count} commits em C# esta semana.",
-    "Ecossistema .NET em foco com {count} commits produtivos.",
-  ],
-}
-
-const ACHIEVEMENT_TEMPLATES = [
-  "🏆 Conquistou o badge 'Commit Streak' com {streak} dias consecutivos!",
-  "🎯 Desbloqueou 'Language Master' dominando {languages} linguagens!",
-  "⚡ Ganhou 'Speed Coder' com {commits} commits em um único dia!",
-  "🌟 Alcançou 'Project Juggler' trabalhando em {projects} projetos!",
-  "🔥 Obteve 'Night Owl' com {night_commits} commits noturnos!",
-  "☀️ Conquistou 'Early Bird' com {morning_commits} commits matinais!",
-]
-
-// Inicialização do Octokit
-const octokit = new Octokit({
-  auth: GITHUB_TOKEN,
-})
 
 /**
  * Analisa padrões de commit para detectar cronotipo
  */
 async function analyzeDevCronotipo() {
   try {
+    const octokit = await createOctokit()
+
     const { data: events } = await octokit.activity.listPublicEventsForUser({
       username: USERNAME,
       per_page: 100,
@@ -172,18 +121,11 @@ function calculateGamification(weeklyData, cronotipo) {
   let totalXP = 0
 
   // XP por commits (10 XP por commit)
-  const totalCommits = Object.values(weeklyData.weeklyData).reduce((sum, week) => sum + week.totalCommits, 0)
+  const totalCommits = cronotipo.totalCommits
   totalXP += totalCommits * 10
 
-  // XP por linguagens diferentes (50 XP por linguagem)
-  const uniqueLanguages = new Set()
-  Object.values(weeklyData.weeklyData).forEach((week) => {
-    Object.keys(week.languages).forEach((lang) => uniqueLanguages.add(lang))
-  })
-  totalXP += uniqueLanguages.size * 50
-
   // XP por consistência (100 XP por dia ativo)
-  const activeDays = Object.values(weeklyData.weeklyData).filter((week) => week.totalCommits > 0).length
+  const activeDays = Math.min(totalCommits, 30) // Máximo 30 dias
   totalXP += activeDays * 100
 
   // XP por cronotipo especial
@@ -205,7 +147,6 @@ function calculateGamification(weeklyData, cronotipo) {
   // Gerar badges conquistados
   const badges = []
   if (totalCommits >= 50) badges.push("🏆 Commit Master")
-  if (uniqueLanguages.size >= 5) badges.push("🎯 Polyglot")
   if (activeDays >= 7) badges.push("⚡ Consistency King")
   if (cronotipo.type === "madrugador") badges.push("🦉 Night Owl")
   if (cronotipo.type === "matinal") badges.push("☀️ Early Bird")
@@ -217,7 +158,6 @@ function calculateGamification(weeklyData, cronotipo) {
     badges,
     stats: {
       totalCommits,
-      uniqueLanguages: uniqueLanguages.size,
       activeDays,
     },
   }
@@ -226,36 +166,18 @@ function calculateGamification(weeklyData, cronotipo) {
 /**
  * Gera insights usando templates inteligentes
  */
-function generateInsights(weeklyData, cronotipo, gamification) {
+function generateInsights(cronotipo, gamification) {
   const insights = []
 
   // Insight sobre cronotipo
-  const cronotypeTemplates = INSIGHT_TEMPLATES[cronotipo.type] || INSIGHT_TEMPLATES.matinal
-  const cronotypeTemplate = cronotypeTemplates[Math.floor(Math.random() * cronotypeTemplates.length)]
-
-  const cronotypeInsight = cronotypeTemplate
-    .replace("{peak_start}", cronotipo.peakStart)
-    .replace("{peak_end}", cronotipo.peakEnd)
-    .replace("{commits}", cronotipo.totalCommits)
-
-  insights.push(cronotypeInsight)
-
-  // Insight sobre linguagem principal
-  const currentWeek = Math.max(...Object.keys(weeklyData.weeklyData).map(Number))
-  const currentLanguages = weeklyData.weeklyData[currentWeek].languages
-
-  if (Object.keys(currentLanguages).length > 0) {
-    const topLanguage = Object.entries(currentLanguages).sort((a, b) => b[1] - a[1])[0]
-    const [language, count] = topLanguage
-
-    const languageTemplates = LANGUAGE_INSIGHTS[language] || [
-      `${language} em destaque com {count} commits esta semana!`,
-    ]
-    const languageTemplate = languageTemplates[Math.floor(Math.random() * languageTemplates.length)]
-
-    const languageInsight = languageTemplate.replace("{count}", count)
-    insights.push(languageInsight)
+  const cronotypeInsights = {
+    matinal: `Esta semana você foi um verdadeiro Dev Matinal ☀️! Sua produtividade máxima foi entre ${cronotipo.peakStart}h e ${cronotipo.peakEnd}h.`,
+    vespertino: `Tarde produtiva! Você se destacou como Dev Vespertino 🌅 com pico entre ${cronotipo.peakStart}h e ${cronotipo.peakEnd}h.`,
+    noturno: `Coruja do código! Você é um Dev Noturno 🌙 com ${cronotipo.totalCommits} commits entre ${cronotipo.peakStart}h e ${cronotipo.peakEnd}h.`,
+    madrugador: `Insônia produtiva! Você é um Dev Madrugador 🦉 com atividade entre ${cronotipo.peakStart}h e ${cronotipo.peakEnd}h.`,
   }
+
+  insights.push(cronotypeInsights[cronotipo.type] || "Padrão de desenvolvimento único!")
 
   // Insight sobre gamificação
   if (gamification.badges.length > 0) {
@@ -263,16 +185,9 @@ function generateInsights(weeklyData, cronotipo, gamification) {
     insights.push(`🎉 Conquista desbloqueada: ${latestBadge}!`)
   }
 
-  // Insight sobre evolução
-  if (weeklyData.trends && Object.keys(weeklyData.trends.languages).length > 0) {
-    const trendingUp = Object.entries(weeklyData.trends.languages)
-      .filter(([_, data]) => data.trend === "up")
-      .sort((a, b) => b[1].change - a[1].change)
-
-    if (trendingUp.length > 0) {
-      const [language, data] = trendingUp[0]
-      insights.push(`📈 ${language} em alta! Crescimento de +${data.change} commits esta semana.`)
-    }
+  // Insight sobre produtividade
+  if (cronotipo.totalCommits > 20) {
+    insights.push(`🚀 Semana produtiva com ${cronotipo.totalCommits} commits! Você está no ritmo certo.`)
   }
 
   return insights
@@ -352,22 +267,14 @@ async function generateObservatoryReport() {
   console.log("Gerando relatório do Observatório Dev...")
 
   try {
-    // Carregar dados existentes
-    const skillFile = path.join(OUTPUT_DIR, "skill-evolution.json")
-    let weeklyData = { weeklyData: {}, trends: {} }
-
-    if (fs.existsSync(skillFile)) {
-      weeklyData = JSON.parse(fs.readFileSync(skillFile, "utf8"))
-    }
-
     // Analisar cronotipo
     const cronotipo = await analyzeDevCronotipo()
 
     // Calcular gamificação
-    const gamification = calculateGamification(weeklyData, cronotipo)
+    const gamification = calculateGamification({}, cronotipo)
 
     // Gerar insights
-    const insights = generateInsights(weeklyData, cronotipo, gamification)
+    const insights = generateInsights(cronotipo, gamification)
 
     // Ler metas da semana
     const weeklyGoals = readWeeklyGoals()

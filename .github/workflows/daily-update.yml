@@ -26,23 +26,23 @@ jobs:
           node-version: '18'
           
       - name: Install dependencies
-        run: npm install @octokit/rest
+        run: npm install
           
       - name: Generate presence status
         run: node scripts/presence-tracker.js
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
-          GITHUB_REPOSITORY_OWNER: ${{ secrets.REPOSITORY_OWNER }}
+          TOKEN: ${{ secrets.TOKEN }}
+          REPOSITORY_OWNER: ${{ secrets.REPOSITORY_OWNER }}
           
       - name: Update README with presence status
         run: node scripts/update-readme-presence.js
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          TOKEN: ${{ secrets.TOKEN }}
           
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md assets/presence-status.json
-          git diff --staged --quiet || git commit -m "atualiza status de presença"
+          git diff --staged --quiet || git commit -m "update presence status"
           git push
