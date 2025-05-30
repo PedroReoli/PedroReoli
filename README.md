@@ -115,136 +115,136 @@
     <div class="tech-category">
       <h3>Frontend & UI</h3>
       <div class="tech-grid">
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" width="60" height="60" />
-          <span>React</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="60" height="60" />
-          <span>Next.js</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Angular" width="60" height="60" />
-          <span>Angular</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/VgGthkhUvGgOit7Y9i/giphy.gif" alt="Vue.js" width="60" height="60" />
-          <span>Vue.js</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="TypeScript" width="60" height="60" />
-          <span>TypeScript</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/SU2ic3wTfuC6JhD1lA/giphy.gif" alt="JavaScript" width="60" height="60" />
-          <span>JavaScript</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="Tailwind CSS" width="60" height="60" />
-          <span>Tailwind CSS</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" alt="Sass" width="60" height="60" />
-          <span>Sass</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png" alt="Three.js" width="60" height="60" />
-          <span>Three.js</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png" alt="Framer Motion" width="60" height="60" />
-          <span>Framer Motion</span>
-        </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" width="60" height="60" />
+        <span>React</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="60" height="60" />
+        <span>Next.js</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Angular" width="60" height="60" />
+        <span>Angular</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/VgGthkhUvGgOit7Y9i/giphy.gif" alt="Vue.js" width="60" height="60" />
+        <span>Vue.js</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="TypeScript" width="60" height="60" />
+        <span>TypeScript</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/SU2ic3wTfuC6JhD1lA/giphy.gif" alt="JavaScript" width="60" height="60" />
+        <span>JavaScript</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="Tailwind CSS" width="60" height="60" />
+        <span>Tailwind CSS</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" alt="Sass" width="60" height="60" />
+        <span>Sass</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png" alt="Three.js" width="60" height="60" />
+        <span>Three.js</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png" alt="Framer Motion" width="60" height="60" />
+        <span>Framer Motion</span>
+      </div>
       </div>
     </div>
 
     <div class="tech-category">
       <h3>Backend & Languages</h3>
       <div class="tech-grid">
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="Node.js" width="60" height="60" />
-          <span>Node.js</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="Python" width="60" height="60" />
-          <span>Python</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="C#" width="60" height="60" />
-          <span>C#</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" alt="Express.js" width="60" height="60" />
-          <span>Express.js</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Blazor.png" alt="Blazor" width="60" height="60" />
-          <span>Blazor</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" alt="PyTorch" width="60" height="60" />
-          <span>PyTorch</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" alt="Socket.IO" width="60" height="60" />
-          <span>Socket.IO</span>
-        </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="Node.js" width="60" height="60" />
+        <span>Node.js</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="Python" width="60" height="60" />
+        <span>Python</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="C#" width="60" height="60" />
+        <span>C#</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" alt="Express.js" width="60" height="60" />
+        <span>Express.js</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Blazor.png" alt="Blazor" width="60" height="60" />
+        <span>Blazor</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" alt="PyTorch" width="60" height="60" />
+        <span>PyTorch</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" alt="Socket.IO" width="60" height="60" />
+        <span>Socket.IO</span>
+      </div>
       </div>
     </div>
 
     <div class="tech-category">
       <h3>Database & Storage</h3>
       <div class="tech-grid">
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif" alt="PostgreSQL" width="60" height="60" />
-          <span>PostgreSQL</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" alt="MySQL" width="60" height="60" />
-          <span>MySQL</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif" alt="MongoDB" width="60" height="60" />
-          <span>MongoDB</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase" width="60" height="60" />
-          <span>Supabase</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://avatars.githubusercontent.com/u/17219288?s=200&v=4" alt="Prisma" width="60" height="60" />
-          <span>Prisma</span>
-        </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif" alt="PostgreSQL" width="60" height="60" />
+        <span>PostgreSQL</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" alt="MySQL" width="60" height="60" />
+        <span>MySQL</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif" alt="MongoDB" width="60" height="60" />
+        <span>MongoDB</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase" width="60" height="60" />
+        <span>Supabase</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://avatars.githubusercontent.com/u/17219288?s=200&v=4" alt="Prisma" width="60" height="60" />
+        <span>Prisma</span>
+      </div>
       </div>
     </div>
 
     <div class="tech-category">
       <h3>Tools & DevOps</h3>
       <div class="tech-grid">
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" width="60" height="60" />
-          <span>Git</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/6HkGCxUE8KnBGOvKJ7/giphy.gif" alt="Docker" width="60" height="60" />
-          <span>Docker</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="VS Code" width="60" height="60" />
-          <span>VS Code</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" width="60" height="60" />
-          <span>Vercel</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://media.giphy.com/media/Ri2TUcKlaOcaDBxFpY/giphy.gif" alt="Figma" width="60" height="60" />
-          <span>Figma</span>
-        </div>
-        <div class="tech-item">
-          <img src="https://vitejs.dev/logo.svg" alt="Vite" width="60" height="60" />
-          <span>Vite</span>
-        </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" width="60" height="60" />
+        <span>Git</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/6HkGCxUE8KnBGOvKJ7/giphy.gif" alt="Docker" width="60" height="60" />
+        <span>Docker</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="VS Code" width="60" height="60" />
+        <span>VS Code</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" width="60" height="60" />
+        <span>Vercel</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://media.giphy.com/media/Ri2TUcKlaOcaDBxFpY/giphy.gif" alt="Figma" width="60" height="60" />
+        <span>Figma</span>
+      </div>
+      <div class="tech-item">
+        <img src="https://vitejs.dev/logo.svg" alt="Vite" width="60" height="60" />
+        <span>Vite</span>
+      </div>
       </div>
     </div>
 
