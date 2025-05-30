@@ -1,5 +1,5 @@
 /**
- * Atualiza README com dados de presença
+ * Atualiza README com cards de presença minimalistas
  */
 
 import fs from "fs"
@@ -22,26 +22,29 @@ function updateReadmePresence() {
     const status = JSON.parse(fs.readFileSync(statusFile, "utf8"))
     const readme = fs.readFileSync(readmeFile, "utf8")
 
-    const badgesHtml = status.badges
-      .map((badge) => {
-        const url = `https://img.shields.io/badge/${encodeURIComponent(badge.text)}-${badge.color}?style=for-the-badge&logo=${badge.logo}&logoColor=${badge.logoColor}`
-        return `    <img src="${url}" alt="${badge.text}" />`
-      })
-      .join("\n")
+    // Usar o HTML gerado pelo presence-tracker
+    const statusSection = status.html
 
-    const statusSection = `<div>
-  <h2>Status Live</h2>
-  <p align="center">
-${badgesHtml}
-    <br>
-    <sub><i>Última atualização: ${new Date(status.lastUpdated).toLocaleString("pt-BR")}</i></sub>
-  </p>
-</div>`
+    // Substituir seção de Últimas Atualizações
+    const statusRegex =
+      /<div class="status-live-container">[\s\S]*?<\/div>(?:\s*<\/div>)?|<div>\s*<h2>Últimas Atualizações<\/h2>[\s\S]*?<\/div>/
 
-    const newReadme = readme.replace(/<div>\s*<h2>Status Live<\/h2>[\s\S]*?<\/div>/, statusSection)
+    let newReadme
+    if (statusRegex.test(readme)) {
+      newReadme = readme.replace(statusRegex, statusSection)
+    } else {
+      // Se não encontrar, adicionar após o header
+      const headerRegex = /(<!-- Últimas Atualizações -->|<\/div>\s*\n\s*<img src="https:\/\/readme-typing-svg)/
+      if (headerRegex.test(readme)) {
+        newReadme = readme.replace(headerRegex, `${statusSection}\n\n$1`)
+      } else {
+        // Fallback: adicionar após o primeiro </div>
+        newReadme = readme.replace(/(<\/div>\s*\n)/, `$1\n${statusSection}\n`)
+      }
+    }
 
     fs.writeFileSync(readmeFile, newReadme)
-    console.log("README atualizado com sucesso!")
+    console.log("README atualizado com cards de status minimalistas!")
   } catch (error) {
     console.error("Erro ao atualizar README:", error)
   }
