@@ -1,108 +1,46 @@
 {
   "week": "2025-05-30",
   "cronotipo": {
-    "type": "noturno",
-    "peakStart": 18,
-    "peakEnd": 24,
+    "type": "vespertino",
+    "peakStart": 12,
+    "peakEnd": 18,
     "distribution": {
-      "0": 1,
+      "0": 0,
       "1": 0,
-      "2": 2,
+      "2": 0,
       "3": 0,
       "4": 0,
       "5": 0,
       "6": 0,
-      "7": 0,
+      "7": 2,
       "8": 0,
       "9": 0,
-      "10": 2,
-      "11": 0,
-      "12": 0,
-      "13": 1,
-      "14": 2,
-      "15": 1,
-      "16": 2,
-      "17": 5,
-      "18": 7,
-      "19": 5,
-      "20": 4,
-      "21": 0,
-      "22": 6,
-      "23": 1
+      "10": 1,
+      "11": 2,
+      "12": 1,
+      "13": 2,
+      "14": 5,
+      "15": 8,
+      "16": 5,
+      "17": 4,
+      "18": 0,
+      "19": 6,
+      "20": 1,
+      "21": 1,
+      "22": 0,
+      "23": 2
     },
-    "totalCommits": 39,
-    "peakHour": 18
-  },
-  "gamification": {
-    "totalXP": 3390,
-    "level": 4,
-    "title": "Frontend Specialist",
-    "badges": [
-      "⚡ Consistency King"
-    ],
-    "stats": {
-      "totalCommits": 39,
-      "activeDays": 30
-    }
+    "totalCommits": 40,
+    "peakHour": 15
   },
   "insights": [
-    "Coruja do código! Você é um Dev Noturno 🌙 com 39 commits entre 18h e 24h.",
-    "🎉 Conquista desbloqueada: ⚡ Consistency King!",
-    "🚀 Semana produtiva com 39 commits! Você está no ritmo certo."
-  ],
-  "weeklyGoals": [
-    {
-      "name": "Finalizar sistema de autenticação do FalaAtipica",
-      "progress": 85,
-      "target": 100
-    },
-    {
-      "name": "Implementar dashboard responsivo",
-      "progress": 70,
-      "target": 100
-    },
-    {
-      "name": "Estudar Three.js para projetos 3D",
-      "progress": 45,
-      "target": 100
-    },
-    {
-      "name": "Refatorar componentes React legados",
-      "progress": 60,
-      "target": 100
-    },
-    {
-      "name": "Escrever documentação técnica",
-      "progress": 30,
-      "target": 100
-    },
-    {
-      "name": "Dominar TypeScript avançado",
-      "progress": 80,
-      "target": 100
-    },
-    {
-      "name": "Contribuir para projetos open source",
-      "progress": 55,
-      "target": 100
-    },
-    {
-      "name": "Aprender arquitetura de microsserviços",
-      "progress": 35,
-      "target": 100
-    },
-    {
-      "name": "Certificação AWS",
-      "progress": 20,
-      "target": 100
-    }
+    "Tarde produtiva! Me destaquei como Dev Vespertino com pico entre 12h e 18h (horário de Brasília).",
+    "Semana produtiva com 40 commits! Estou no ritmo certo."
   ],
   "summary": {
-    "totalCommits": 39,
-    "activeHours": "18h - 24h",
-    "level": 4,
-    "title": "Frontend Specialist",
-    "xp": 3390
+    "totalCommits": 40,
+    "activeHours": "12h - 18h (Brasília)",
+    "type": "vespertino"
   },
-  "lastUpdated": "2025-05-30T20:44:25.027Z"
+  "lastUpdated": "2025-05-30T20:53:16.981Z"
 }
