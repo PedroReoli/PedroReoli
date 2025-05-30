@@ -8,22 +8,22 @@
   "topLanguages": [
     {
       "name": "TypeScript",
-      "percentage": "61.0",
+      "percentage": "61.4",
       "color": "#3178c6"
     },
     {
       "name": "Python",
-      "percentage": "20.6",
+      "percentage": "20.7",
       "color": "#3776ab"
     },
     {
       "name": "JavaScript",
-      "percentage": "11.1",
+      "percentage": "10.5",
       "color": "#f7df1e"
     },
     {
       "name": "CSS",
-      "percentage": "5.4",
+      "percentage": "5.5",
       "color": "#264de4"
     },
     {
@@ -35,5 +35,5 @@
   "commitStreak": 1,
   "totalStars": 0,
   "yearsOnGitHub": 2,
-  "lastUpdated": "2025-05-30T20:34:31.352Z"
+  "lastUpdated": "2025-05-30T20:43:32.890Z"
 }
