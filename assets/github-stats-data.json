@@ -8,7 +8,7 @@
   "topLanguages": [
     {
       "name": "TypeScript",
-      "percentage": "61.4",
+      "percentage": "61.6",
       "color": "#3178c6"
     },
     {
@@ -18,7 +18,7 @@
     },
     {
       "name": "JavaScript",
-      "percentage": "10.5",
+      "percentage": "10.3",
       "color": "#f7df1e"
     },
     {
@@ -35,5 +35,5 @@
   "commitStreak": 1,
   "totalStars": 0,
   "yearsOnGitHub": 2,
-  "lastUpdated": "2025-05-30T20:43:32.890Z"
+  "lastUpdated": "2025-05-30T20:52:35.745Z"
 }
