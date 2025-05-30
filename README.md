@@ -306,9 +306,11 @@
 }
 </style>
 
+
 ### 🎨 Frontend & UI
 
 <div class="tech-grid">
+
     <div class="tech-item">
       <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" width="40" height="40" />
       <span>React</span>
@@ -351,9 +353,12 @@
     </div>
 </div>
 
+
+
 ### ⚙️ Backend & Languages
 
 <div class="tech-grid">
+
     <div class="tech-item">
       <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="Node.js" width="40" height="40" />
       <span>Node.js</span>
@@ -384,9 +389,12 @@
     </div>
 </div>
 
+
+
 ### 🗄️ Database & Storage
 
 <div class="tech-grid">
+
     <div class="tech-item">
       <img src="https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif" alt="PostgreSQL" width="40" height="40" />
       <span>PostgreSQL</span>
@@ -409,9 +417,12 @@
     </div>
 </div>
 
+
+
 ### 🛠️ Tools & DevOps
 
 <div class="tech-grid">
+
     <div class="tech-item">
       <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" width="40" height="40" />
       <span>Git</span>
@@ -437,6 +448,7 @@
       <span>Vite</span>
     </div>
 </div>
+
 
 </details>
 
