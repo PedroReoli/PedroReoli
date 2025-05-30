@@ -17,6 +17,34 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
 </div>
 
+
+## 📊 Últimas Atualizações
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <b>Status</b><br>
+        <span>🟢 Online</span>
+      </td>
+      <td align="center">
+        <b>Projeto Ativo</b><br>
+        <span>PedroReoli</span>
+      </td>
+      <td align="center">
+        <b>Última Atividade</b><br>
+        <span>2h</span>
+      </td>
+      <td align="center">
+        <b>Commits Hoje</b><br>
+        <span>7</span>
+      </td>
+    </tr>
+  </table>
+  <sub><i>Atualizado em: 30/05/2025, 20:44:38</i></sub>
+</div>
+
+
 ## 📊 Últimas Atualizações
 
 <div align="center">
