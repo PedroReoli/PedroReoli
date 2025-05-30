@@ -1,6 +1,6 @@
 /**
- * Observatório Dev - Insights Semanais
- * Gera insights automáticos sobre padrões de desenvolvimento
+ * Observatório Dev - Insights Semanais Corrigidos
+ * Gera insights em primeira pessoa e horários do Brasil
  */
 
 import fs from "fs"
@@ -26,7 +26,7 @@ async function createOctokit() {
 }
 
 /**
- * Analisa padrões de commit para detectar cronotipo
+ * Analisa padrões de commit para detectar cronotipo (horário do Brasil)
  */
 async function analyzeDevCronotipo() {
   try {
@@ -49,15 +49,17 @@ async function analyzeDevCronotipo() {
       }
     }
 
-    // Analisar distribuição por hora
+    // Analisar distribuição por hora (convertendo para horário do Brasil - UTC-3)
     const hourDistribution = {}
     for (let i = 0; i < 24; i++) {
       hourDistribution[i] = 0
     }
 
     pushEvents.forEach((event) => {
-      const date = new Date(event.created_at)
-      const hour = date.getHours()
+      const utcDate = new Date(event.created_at)
+      // Converter para horário do Brasil (UTC-3)
+      const brazilDate = new Date(utcDate.getTime() - 3 * 60 * 60 * 1000)
+      const hour = brazilDate.getHours()
       hourDistribution[hour]++
     })
 
@@ -72,7 +74,7 @@ async function analyzeDevCronotipo() {
       }
     })
 
-    // Determinar cronotipo baseado no pico
+    // Determinar cronotipo baseado no pico (horário do Brasil)
     let cronotipo
     let peakStart, peakEnd
 
@@ -115,183 +117,55 @@ async function analyzeDevCronotipo() {
 }
 
 /**
- * Calcula XP e level baseado na atividade
+ * Gera insights usando templates em primeira pessoa
  */
-function calculateGamification(weeklyData, cronotipo) {
-  let totalXP = 0
-
-  // XP por commits (10 XP por commit)
-  const totalCommits = cronotipo.totalCommits
-  totalXP += totalCommits * 10
-
-  // XP por consistência (100 XP por dia ativo)
-  const activeDays = Math.min(totalCommits, 30) // Máximo 30 dias
-  totalXP += activeDays * 100
-
-  // XP por cronotipo especial
-  if (cronotipo.type === "madrugador") totalXP += 200 // Bonus por dedicação extrema
-  if (cronotipo.totalCommits > 50) totalXP += 300 // Bonus por alta produtividade
-
-  // Calcular level (cada 1000 XP = 1 level)
-  const level = Math.floor(totalXP / 1000) + 1
-
-  // Determinar título baseado no level
-  let title
-  if (level >= 10) title = "Code Architect"
-  else if (level >= 8) title = "Senior Developer"
-  else if (level >= 6) title = "Full Stack Developer"
-  else if (level >= 4) title = "Frontend Specialist"
-  else if (level >= 2) title = "Junior Developer"
-  else title = "Code Apprentice"
-
-  // Gerar badges conquistados
-  const badges = []
-  if (totalCommits >= 50) badges.push("🏆 Commit Master")
-  if (activeDays >= 7) badges.push("⚡ Consistency King")
-  if (cronotipo.type === "madrugador") badges.push("🦉 Night Owl")
-  if (cronotipo.type === "matinal") badges.push("☀️ Early Bird")
-
-  return {
-    totalXP,
-    level,
-    title,
-    badges,
-    stats: {
-      totalCommits,
-      activeDays,
-    },
-  }
-}
-
-/**
- * Gera insights usando templates inteligentes
- */
-function generateInsights(cronotipo, gamification) {
+function generateInsights(cronotipo) {
   const insights = []
 
-  // Insight sobre cronotipo
+  // Insight sobre cronotipo em primeira pessoa
   const cronotypeInsights = {
-    matinal: `Esta semana você foi um verdadeiro Dev Matinal ☀️! Sua produtividade máxima foi entre ${cronotipo.peakStart}h e ${cronotipo.peakEnd}h.`,
-    vespertino: `Tarde produtiva! Você se destacou como Dev Vespertino 🌅 com pico entre ${cronotipo.peakStart}h e ${cronotipo.peakEnd}h.`,
-    noturno: `Coruja do código! Você é um Dev Noturno 🌙 com ${cronotipo.totalCommits} commits entre ${cronotipo.peakStart}h e ${cronotipo.peakEnd}h.`,
-    madrugador: `Insônia produtiva! Você é um Dev Madrugador 🦉 com atividade entre ${cronotipo.peakStart}h e ${cronotipo.peakEnd}h.`,
+    matinal: `Esta semana fui um verdadeiro Dev Matinal! Minha produtividade máxima foi entre ${cronotipo.peakStart}h e ${cronotipo.peakEnd}h (horário de Brasília).`,
+    vespertino: `Tarde produtiva! Me destaquei como Dev Vespertino com pico entre ${cronotipo.peakStart}h e ${cronotipo.peakEnd}h (horário de Brasília).`,
+    noturno: `Coruja do código! Sou um Dev Noturno com ${cronotipo.totalCommits} commits entre ${cronotipo.peakStart}h e ${cronotipo.peakEnd}h (horário de Brasília).`,
+    madrugador: `Insônia produtiva! Sou um Dev Madrugador com atividade entre ${cronotipo.peakStart}h e ${cronotipo.peakEnd}h (horário de Brasília).`,
   }
 
   insights.push(cronotypeInsights[cronotipo.type] || "Padrão de desenvolvimento único!")
 
-  // Insight sobre gamificação
-  if (gamification.badges.length > 0) {
-    const latestBadge = gamification.badges[gamification.badges.length - 1]
-    insights.push(`🎉 Conquista desbloqueada: ${latestBadge}!`)
-  }
-
-  // Insight sobre produtividade
+  // Insight sobre produtividade em primeira pessoa
   if (cronotipo.totalCommits > 20) {
-    insights.push(`🚀 Semana produtiva com ${cronotipo.totalCommits} commits! Você está no ritmo certo.`)
+    insights.push(`Semana produtiva com ${cronotipo.totalCommits} commits! Estou no ritmo certo.`)
+  } else if (cronotipo.totalCommits > 10) {
+    insights.push(`Mantive um bom ritmo com ${cronotipo.totalCommits} commits esta semana.`)
+  } else {
+    insights.push(`Semana mais tranquila com ${cronotipo.totalCommits} commits. Foco na qualidade!`)
   }
 
   return insights
 }
 
 /**
- * Lê metas da semana do arquivo .devgoals.yml
- */
-function readWeeklyGoals() {
-  const goalsFile = path.join(__dirname, "../.devgoals.yml")
-
-  if (!fs.existsSync(goalsFile)) {
-    // Criar arquivo de exemplo se não existir
-    const exampleGoals = `# Metas da Semana
-goals:
-  - name: "Finalizar feature de autenticação"
-    progress: 80
-    target: 100
-  - name: "Estudar Three.js"
-    progress: 30
-    target: 100
-  - name: "Refatorar componentes React"
-    progress: 60
-    target: 100
-  - name: "Escrever testes unitários"
-    progress: 40
-    target: 100
-
-# Metas de longo prazo
-long_term:
-  - name: "Dominar TypeScript"
-    progress: 75
-  - name: "Contribuir para open source"
-    progress: 45
-`
-
-    fs.writeFileSync(goalsFile, exampleGoals)
-    console.log("Arquivo .devgoals.yml criado com metas de exemplo")
-  }
-
-  try {
-    const content = fs.readFileSync(goalsFile, "utf8")
-    // Parse simples do YAML (apenas para este caso específico)
-    const goals = []
-    const lines = content.split("\n")
-    let currentGoal = null
-
-    lines.forEach((line) => {
-      const trimmed = line.trim()
-      if (trimmed.startsWith("- name:")) {
-        if (currentGoal) goals.push(currentGoal)
-        currentGoal = {
-          name: trimmed.match(/"([^"]+)"/)?.[1] || "Meta sem nome",
-          progress: 0,
-          target: 100,
-        }
-      } else if (trimmed.startsWith("progress:") && currentGoal) {
-        currentGoal.progress = Number.parseInt(trimmed.split(":")[1].trim()) || 0
-      } else if (trimmed.startsWith("target:") && currentGoal) {
-        currentGoal.target = Number.parseInt(trimmed.split(":")[1].trim()) || 100
-      }
-    })
-
-    if (currentGoal) goals.push(currentGoal)
-
-    return goals
-  } catch (error) {
-    console.error("Erro ao ler metas:", error)
-    return []
-  }
-}
-
-/**
- * Gera relatório completo do observatório
+ * Gera relatório simplificado do observatório
  */
 async function generateObservatoryReport() {
-  console.log("Gerando relatório do Observatório Dev...")
+  console.log("Gerando relatório simplificado do Observatório Dev...")
 
   try {
     // Analisar cronotipo
     const cronotipo = await analyzeDevCronotipo()
 
-    // Calcular gamificação
-    const gamification = calculateGamification({}, cronotipo)
+    // Gerar insights em primeira pessoa
+    const insights = generateInsights(cronotipo)
 
-    // Gerar insights
-    const insights = generateInsights(cronotipo, gamification)
-
-    // Ler metas da semana
-    const weeklyGoals = readWeeklyGoals()
-
-    // Criar relatório completo
+    // Criar relatório simplificado
     const report = {
       week: new Date().toISOString().split("T")[0],
       cronotipo,
-      gamification,
       insights,
-      weeklyGoals,
       summary: {
         totalCommits: cronotipo.totalCommits,
-        activeHours: `${cronotipo.peakStart}h - ${cronotipo.peakEnd}h`,
-        level: gamification.level,
-        title: gamification.title,
-        xp: gamification.totalXP,
+        activeHours: `${cronotipo.peakStart}h - ${cronotipo.peakEnd}h (Brasília)`,
+        type: cronotipo.type,
       },
       lastUpdated: new Date().toISOString(),
     }
@@ -301,9 +175,8 @@ async function generateObservatoryReport() {
     fs.writeFileSync(path.join(OUTPUT_DIR, "observatory-report.json"), JSON.stringify(report, null, 2))
 
     console.log("Relatório do Observatório gerado com sucesso!")
-    console.log(`Level: ${gamification.level} - ${gamification.title}`)
-    console.log(`XP Total: ${gamification.totalXP}`)
-    console.log(`Cronotipo: Dev ${cronotipo.type} (${cronotipo.peakStart}h-${cronotipo.peakEnd}h)`)
+    console.log(`Cronotipo: Dev ${cronotipo.type} (${cronotipo.peakStart}h-${cronotipo.peakEnd}h Brasília)`)
+    console.log(`Total de commits: ${cronotipo.totalCommits}`)
 
     return report
   } catch (error) {

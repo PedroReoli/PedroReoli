@@ -1,5 +1,5 @@
 /**
- * Atualiza a seção de tech stack no README - Versão Markdown Puro
+ * Atualiza a seção de tech stack no README - Versão Tabela Corrigida
  */
 
 import fs from "fs"
@@ -14,7 +14,38 @@ const TECH_DATA_FILE = path.join(__dirname, "../data/tech-stack.json")
 const README_FILE = path.join(__dirname, "../README.md")
 
 /**
- * Atualiza o README com as tecnologias em formato Markdown
+ * Gera seção de tecnologias em formato de tabela correta
+ */
+function generateTechSection(techs, title, emoji) {
+  // Dividir em grupos de 6 para melhor alinhamento
+  const rows = []
+  for (let i = 0; i < techs.length; i += 6) {
+    rows.push(techs.slice(i, i + 6))
+  }
+
+  // Gerar tabela em Markdown com alinhamento correto
+  let tableMarkdown = `### ${emoji} ${title}\n\n`
+
+  rows.forEach((row) => {
+    // Linha de ícones
+    const iconRow = row.map((tech) => `<img src="${tech.url}" alt="${tech.name}" width="40" height="40" />`).join(" | ")
+
+    // Linha de nomes
+    const nameRow = row.map((tech) => `**${tech.name}**`).join(" | ")
+
+    // Linha de separação
+    const separatorRow = row.map(() => ":---:").join(" | ")
+
+    tableMarkdown += `| ${iconRow} |\n`
+    tableMarkdown += `| ${separatorRow} |\n`
+    tableMarkdown += `| ${nameRow} |\n\n`
+  })
+
+  return tableMarkdown
+}
+
+/**
+ * Atualiza o README com as tecnologias em formato de tabela
  */
 function updateReadmeTechStack() {
   console.log("Atualizando tech stack no README...")
@@ -32,14 +63,14 @@ function updateReadmeTechStack() {
     // Ler README atual
     let readme = fs.readFileSync(README_FILE, "utf8")
 
-    // Gerar seções em Markdown puro
+    // Gerar seções em tabelas corretas
     const frontendSection = generateTechSection(techData.frontend, "Frontend & UI", "🎨")
     const backendSection = generateTechSection(techData.backend, "Backend & Languages", "⚙️")
     const databaseSection = generateTechSection(techData.database, "Database & Storage", "🗄️")
     const toolsSection = generateTechSection(techData.tools, "Tools & DevOps", "🛠️")
 
     // Gerar seção completa da tech stack
-    const techStackMarkdown = `## 🚀 Tech Stack
+    const techStackMarkdown = `## Tech Stack
 
 ${frontendSection}
 
@@ -51,7 +82,7 @@ ${toolsSection}
 `
 
     // Substituir seção de tech stack
-    const techStackRegex = /<details>\s*<summary><h2>(?:🚀\s*)?Tech Stack<\/h2><\/summary>[\s\S]*?<\/details>/
+    const techStackRegex = /## 🚀 Tech Stack[\s\S]*?(?=##|$)/
 
     if (techStackRegex.test(readme)) {
       readme = readme.replace(techStackRegex, techStackMarkdown)
@@ -64,7 +95,7 @@ ${toolsSection}
 
     // Salvar README atualizado
     fs.writeFileSync(README_FILE, readme)
-    console.log("Tech stack atualizada com sucesso!")
+    console.log("Tech stack atualizada com tabelas corretas!")
 
     // Log das tecnologias carregadas
     console.log(`Frontend: ${techData.frontend.length} tecnologias`)
@@ -75,28 +106,6 @@ ${toolsSection}
     console.error("Erro ao atualizar tech stack:", error)
     throw error
   }
-}
-
-/**
- * Gera seção de tecnologias em formato Markdown
- */
-function generateTechSection(techs, title, emoji) {
-  // Dividir em grupos de 5 para melhor visualização
-  const rows = []
-  for (let i = 0; i < techs.length; i += 5) {
-    rows.push(techs.slice(i, i + 5))
-  }
-
-  // Gerar tabela em Markdown
-  const techTable = rows
-    .map((row) => {
-      const icons = row.map((tech) => `<img src="${tech.url}" alt="${tech.name}" width="40" height="40" />`).join(" ")
-      const names = row.map((tech) => `<b>${tech.name}</b>`).join(" | ")
-      return `| ${icons} |\n| ${names} |`
-    })
-    .join("\n")
-
-  return `### ${emoji} ${title}\n\n${techTable}`
 }
 
 // Executar

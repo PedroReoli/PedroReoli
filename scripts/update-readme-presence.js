@@ -1,5 +1,5 @@
 /**
- * Atualiza README com status de presença - Versão Markdown Puro
+ * Atualiza README com status de presença - Versão Melhorada
  */
 
 import fs from "fs"
@@ -22,40 +22,33 @@ function updateReadmePresence() {
     const status = JSON.parse(fs.readFileSync(statusFile, "utf8"))
     const readme = fs.readFileSync(readmeFile, "utf8")
 
-    // Gerar seção de status usando apenas Markdown e HTML simples
+    // Gerar seção de status limpa sem emojis
     const githubActivity = status.github
 
     const statusSection = `
-## 📊 Últimas Atualizações
+## Ultimas Atualizacoes
 
 <div align="center">
   <table>
     <tr>
-      <td align="center">
-        <b>Status</b><br>
-        <span>${githubActivity.isOnline ? "🟢 Online" : "⚪ Offline"}</span>
-      </td>
-      <td align="center">
-        <b>Projeto Ativo</b><br>
-        <span>${githubActivity.activeRepo}</span>
-      </td>
-      <td align="center">
-        <b>Última Atividade</b><br>
-        <span>${githubActivity.lastActive}</span>
-      </td>
-      <td align="center">
-        <b>Commits Hoje</b><br>
-        <span>${githubActivity.todayCommits}</span>
-      </td>
+      <td align="center"><strong>Status</strong></td>
+      <td align="center"><strong>Projeto Ativo</strong></td>
+      <td align="center"><strong>Ultima Atividade</strong></td>
+      <td align="center"><strong>Commits Hoje</strong></td>
+    </tr>
+    <tr>
+      <td align="center">${githubActivity.isOnline ? "Online" : "Offline"}</td>
+      <td align="center">${githubActivity.activeRepo}</td>
+      <td align="center">${githubActivity.lastActive}</td>
+      <td align="center">${githubActivity.todayCommits}</td>
     </tr>
   </table>
-  <sub><i>Atualizado em: ${new Date().toLocaleString("pt-BR")}</i></sub>
+  <sub><i>Atualizado via GitHub Actions</i></sub>
 </div>
 `
 
     // Substituir seção de Status Live/Últimas Atualizações
-    const statusRegex =
-      /<div class="status-live-container">[\s\S]*?<\/div>(?:\s*<\/div>)?|<!-- Status Live -->[\s\S]*?<\/div>/
+    const statusRegex = /## 📊 Últimas Atualizações[\s\S]*?<\/div>|## Ultimas Atualizacoes[\s\S]*?<\/div>/
 
     let newReadme
     if (statusRegex.test(readme)) {
@@ -67,7 +60,7 @@ function updateReadmePresence() {
     }
 
     fs.writeFileSync(readmeFile, newReadme)
-    console.log("README atualizado com status em Markdown puro!")
+    console.log("README atualizado com status melhorado!")
   } catch (error) {
     console.error("Erro ao atualizar README:", error)
   }

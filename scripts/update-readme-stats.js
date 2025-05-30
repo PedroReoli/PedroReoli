@@ -1,5 +1,5 @@
 /**
- * Atualiza README com o card de stats customizado - Versão Markdown Puro
+ * Atualiza README com o card de stats customizado - Versão Melhorada
  */
 
 import fs from "fs"
@@ -22,8 +22,8 @@ function updateReadmeStats() {
     const statsData = JSON.parse(fs.readFileSync(statsFile, "utf8"))
     const readme = fs.readFileSync(readmeFile, "utf8")
 
-    // Gerar seção de stats usando apenas Markdown e HTML simples
-    const statsMarkdown = `## 📈 GitHub Overview
+    // Gerar seção de stats melhorada
+    const statsMarkdown = `## GitHub Overview
 
 <div align="center">
   <picture>
@@ -36,7 +36,7 @@ function updateReadmeStats() {
   
   <img width="400" height="158" src="https://github-readme-stats.vercel.app/api/top-langs/?username=${
     process.env.REPOSITORY_OWNER || "pedroreoli"
-  }&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+  }&layout=compact&theme=radical&hide_border=true&hide_title=true" alt="Linguagens" />
   <img width="400" height="158" src="https://github-readme-streak-stats.herokuapp.com/?user=${
     process.env.REPOSITORY_OWNER || "pedroreoli"
   }&theme=radical&hide_border=true" alt="GitHub Streak" />
@@ -48,13 +48,12 @@ function updateReadmeStats() {
 `
 
     // Substituir seção de GitHub Stats
-    const statsRegex =
-      /<h2>GitHub Stats<\/h2>[\s\S]*?(?=<h2>|<div align="center">\s*<img src="https:\/\/capsule-render|$)/
+    const statsRegex = /## 📈 GitHub Overview[\s\S]*?(?=##|$)/
 
     const newReadme = readme.replace(statsRegex, statsMarkdown + "\n\n")
 
     fs.writeFileSync(readmeFile, newReadme)
-    console.log("README atualizado com stats em Markdown puro!")
+    console.log("README atualizado com stats melhorados!")
   } catch (error) {
     console.error("Erro ao atualizar README:", error)
   }

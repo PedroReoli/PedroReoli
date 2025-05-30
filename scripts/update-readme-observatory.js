@@ -1,5 +1,5 @@
 /**
- * Atualiza README com dados do observatório - Versão Markdown Puro
+ * Atualiza README com dados do observatório - Versão Simplificada
  */
 
 import fs from "fs"
@@ -22,69 +22,37 @@ function updateReadmeObservatory() {
     const observatoryData = JSON.parse(fs.readFileSync(observatoryFile, "utf8"))
     const readme = fs.readFileSync(readmeFile, "utf8")
 
-    // Formatar badges
-    const badges = observatoryData.gamification.badges.map((badge) => `\`${badge}\``).join(" ")
-
-    // Formatar insights
+    // Formatar insights em primeira pessoa
     const insights = observatoryData.insights.map((insight) => `> ${insight}`).join("\n\n")
 
-    // Formatar metas
-    const goals = observatoryData.weeklyGoals
-      .slice(0, 3)
-      .map((goal) => {
-        const percentage = Math.round((goal.progress / goal.target) * 100)
-        const progressBar = "█".repeat(Math.floor(percentage / 10)) + "░".repeat(10 - Math.floor(percentage / 10))
-        return `| ${goal.name} | ${progressBar} ${percentage}% |`
-      })
-      .join("\n")
-
-    // Gerar seção do observatório usando apenas Markdown e HTML simples
-    const observatoryMarkdown = `## 🔭 Observatório Dev
+    // Gerar seção do observatório simplificada
+    const observatoryMarkdown = `## Observatorio Dev
 
 <div align="center">
-  <h4>Insights automáticos sobre padrões de desenvolvimento</h4>
+  <h4>Insights automáticos sobre meus padrões de desenvolvimento</h4>
 </div>
 
-### 🎮 Status do Desenvolvedor
-
-| Atributo | Valor |
-|:---------|:------|
-| **Level** | ${observatoryData.gamification.level} |
-| **XP Total** | ${observatoryData.gamification.totalXP.toLocaleString()} |
-| **Título** | ${observatoryData.gamification.title} |
-
-**Badges:** ${badges}
-
-### 🧭 Dev Cronotipo
+### Dev Cronotipo
 
 | Atributo | Valor |
 |:---------|:------|
 | **Tipo** | Dev ${observatoryData.cronotipo.type} |
-| **Horário de Pico** | ${observatoryData.cronotipo.peakStart}h - ${observatoryData.cronotipo.peakEnd}h |
+| **Horário de Pico** | ${observatoryData.cronotipo.peakStart}h - ${observatoryData.cronotipo.peakEnd}h (Brasília) |
 | **Total de Commits** | ${observatoryData.cronotipo.totalCommits} |
 
-### 💡 Insights Semanais
+### Insights Semanais
 
 ${insights}
 
-### 🎯 Metas da Semana
-
-| Meta | Progresso |
-|:-----|:----------|
-${goals}
-
 <div align="center">
-  <sub><i>Relatório atualizado em: ${new Date(observatoryData.lastUpdated).toLocaleString("pt-BR")}</i></sub>
+  <sub><i>Atualizado via GitHub Actions</i></sub>
 </div>
 `
 
-    const newReadme = readme.replace(
-      /<details>\s*<summary><h2>🔭 Observatório Dev<\/h2><\/summary>[\s\S]*?<\/details>/,
-      observatoryMarkdown,
-    )
+    const newReadme = readme.replace(/## 🔭 Observatório Dev[\s\S]*?(?=##|$)/, observatoryMarkdown)
 
     fs.writeFileSync(readmeFile, newReadme)
-    console.log("README atualizado com observatório em Markdown puro!")
+    console.log("README atualizado com observatório simplificado!")
   } catch (error) {
     console.error("Erro ao atualizar README:", error)
   }

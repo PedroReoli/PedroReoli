@@ -17,58 +17,24 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
 </div>
 
-
-## 📊 Últimas Atualizações
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <b>Status</b><br>
-        <span>🟢 Online</span>
-      </td>
-      <td align="center">
-        <b>Projeto Ativo</b><br>
-        <span>PedroReoli</span>
-      </td>
-      <td align="center">
-        <b>Última Atividade</b><br>
-        <span>2h</span>
-      </td>
-      <td align="center">
-        <b>Commits Hoje</b><br>
-        <span>7</span>
-      </td>
-    </tr>
-  </table>
-  <sub><i>Atualizado em: 30/05/2025, 20:44:38</i></sub>
-</div>
-
-
-## 📊 Últimas Atualizações
+## Ultimas Atualizacoes
 
 <div align="center">
   <table>
     <tr>
-      <td align="center">
-        <b>Status</b><br>
-        <span>🟢 Online</span>
-      </td>
-      <td align="center">
-        <b>Projeto Ativo</b><br>
-        <span>PedroReoli</span>
-      </td>
-      <td align="center">
-        <b>Última Atividade</b><br>
-        <span>Agora</span>
-      </td>
-      <td align="center">
-        <b>Commits Hoje</b><br>
-        <span>6</span>
-      </td>
+      <td align="center"><strong>Status</strong></td>
+      <td align="center"><strong>Projeto Ativo</strong></td>
+      <td align="center"><strong>Ultima Atividade</strong></td>
+      <td align="center"><strong>Commits Hoje</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Online</td>
+      <td align="center">PedroReoli</td>
+      <td align="center">Agora</td>
+      <td align="center">8</td>
     </tr>
   </table>
-  <sub><i>Atualizado em: 30/05/2025, 17:37:21</i></sub>
+  <sub><i>Atualizado via GitHub Actions</i></sub>
 </div>
 
 ## Sobre Mim
@@ -84,160 +50,96 @@ Opa! Sou **desenvolvedor Full Stack** com foco em **Frontend**, sempre buscando 
 - Blog onde escrevo sobre código: [Dev em Desenvolvimento](https://www.devemdesenvolvimento.com.br/)
 - **Plot twist:** Quando não estou debugando, estou tocando guitarra - viciado em Blues, Metal e Rock
 
+## Tech Stack
 
-## 🚀 Tech Stack
+### Frontend & UI
 
-### 🎨 Frontend & UI
+| <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" width="40" height="40" /> | <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Angular" width="40" height="40" /> | <img src="https://media.giphy.com/media/VgGthkhUvGgOit7Y9i/giphy.gif" alt="Vue.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="TypeScript" width="40" height="40" /> | <img src="https://media.giphy.com/media/SU2ic3wTfuC6JhD1lA/giphy.gif" alt="JavaScript" width="40" height="40" /> |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **React** | **Next.js** | **Angular** | **Vue.js** | **TypeScript** | **JavaScript** |
 
-| <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" width="40" height="40" /> <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="40" height="40" /> <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Angular" width="40" height="40" /> <img src="https://media.giphy.com/media/VgGthkhUvGgOit7Y9i/giphy.gif" alt="Vue.js" width="40" height="40" /> <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="TypeScript" width="40" height="40" /> |
-| <b>React</b> | <b>Next.js</b> | <b>Angular</b> | <b>Vue.js</b> | <b>TypeScript</b> |
-| <img src="https://media.giphy.com/media/SU2ic3wTfuC6JhD1lA/giphy.gif" alt="JavaScript" width="40" height="40" /> <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="Tailwind CSS" width="40" height="40" /> <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" alt="Sass" width="40" height="40" /> <img src="https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png" alt="Three.js" width="40" height="40" /> <img src="https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png" alt="Framer Motion" width="40" height="40" /> |
-| <b>JavaScript</b> | <b>Tailwind CSS</b> | <b>Sass</b> | <b>Three.js</b> | <b>Framer Motion</b> |
+| <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="Tailwind CSS" width="40" height="40" /> | <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" alt="Sass" width="40" height="40" /> | <img src="https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png" alt="Three.js" width="40" height="40" /> | <img src="https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png" alt="Framer Motion" width="40" height="40" /> |
+| :---: | :---: | :---: | :---: |
+| **Tailwind CSS** | **Sass** | **Three.js** | **Framer Motion** |
 
-### ⚙️ Backend & Languages
+### Backend & Languages
 
-| <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="Node.js" width="40" height="40" /> <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="Python" width="40" height="40" /> <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="C#" width="40" height="40" /> <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" alt="Express.js" width="40" height="40" /> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Blazor.png" alt="Blazor" width="40" height="40" /> |
-| <b>Node.js</b> | <b>Python</b> | <b>C#</b> | <b>Express.js</b> | <b>Blazor</b> |
-| <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" alt="PyTorch" width="40" height="40" /> <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" alt="Socket.IO" width="40" height="40" /> |
-| <b>PyTorch</b> | <b>Socket.IO</b> |
+| <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="Node.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="Python" width="40" height="40" /> | <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="C#" width="40" height="40" /> | <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" alt="Express.js" width="40" height="40" /> | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Blazor.png" alt="Blazor" width="40" height="40" /> | <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" alt="PyTorch" width="40" height="40" /> |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **Node.js** | **Python** | **C#** | **Express.js** | **Blazor** | **PyTorch** |
 
-### 🗄️ Database & Storage
+| <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" alt="Socket.IO" width="40" height="40" /> |
+| :---: |
+| **Socket.IO** |
 
-| <img src="https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif" alt="PostgreSQL" width="40" height="40" /> <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" alt="MySQL" width="40" height="40" /> <img src="https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif" alt="MongoDB" width="40" height="40" /> <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase" width="40" height="40" /> <img src="https://avatars.githubusercontent.com/u/17219288?s=200&v=4" alt="Prisma" width="40" height="40" /> |
-| <b>PostgreSQL</b> | <b>MySQL</b> | <b>MongoDB</b> | <b>Supabase</b> | <b>Prisma</b> |
+### Database & Storage
 
-### 🛠️ Tools & DevOps
+| <img src="https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif" alt="PostgreSQL" width="40" height="40" /> | <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" alt="MySQL" width="40" height="40" /> | <img src="https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif" alt="MongoDB" width="40" height="40" /> | <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase" width="40" height="40" /> | <img src="https://avatars.githubusercontent.com/u/17219288?s=200&v=4" alt="Prisma" width="40" height="40" /> |
+| :---: | :---: | :---: | :---: | :---: |
+| **PostgreSQL** | **MySQL** | **MongoDB** | **Supabase** | **Prisma** |
 
-| <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" width="40" height="40" /> <img src="https://media.giphy.com/media/6HkGCxUE8KnBGOvKJ7/giphy.gif" alt="Docker" width="40" height="40" /> <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="VS Code" width="40" height="40" /> <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" width="40" height="40" /> <img src="https://media.giphy.com/media/Ri2TUcKlaOcaDBxFpY/giphy.gif" alt="Figma" width="40" height="40" /> |
-| <b>Git</b> | <b>Docker</b> | <b>VS Code</b> | <b>Vercel</b> | <b>Figma</b> |
-| <img src="https://vitejs.dev/logo.svg" alt="Vite" width="40" height="40" /> |
-| <b>Vite</b> |
+### Tools & DevOps
 
-## 🚀 Tech Stack
+| <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" width="40" height="40" /> | <img src="https://media.giphy.com/media/6HkGCxUE8KnBGOvKJ7/giphy.gif" alt="Docker" width="40" height="40" /> | <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="VS Code" width="40" height="40" /> | <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" width="40" height="40" /> | <img src="https://media.giphy.com/media/Ri2TUcKlaOcaDBxFpY/giphy.gif" alt="Figma" width="40" height="40" /> | <img src="https://vitejs.dev/logo.svg" alt="Vite" width="40" height="40" /> |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **Git** | **Docker** | **VS Code** | **Vercel** | **Figma** | **Vite** |
 
-### 🎨 Frontend & UI
-
-| <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" width="40" height="40" /> <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="40" height="40" /> <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Angular" width="40" height="40" /> <img src="https://media.giphy.com/media/VgGthkhUvGgOit7Y9i/giphy.gif" alt="Vue.js" width="40" height="40" /> <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="TypeScript" width="40" height="40" /> |
-| <b>React</b> | <b>Next.js</b> | <b>Angular</b> | <b>Vue.js</b> | <b>TypeScript</b> |
-
-| <img src="https://media.giphy.com/media/SU2ic3wTfuC6JhD1lA/giphy.gif" alt="JavaScript" width="40" height="40" /> <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="Tailwind CSS" width="40" height="40" /> <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" alt="Sass" width="40" height="40" /> <img src="https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png" alt="Three.js" width="40" height="40" /> <img src="https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png" alt="Framer Motion" width="40" height="40" /> |
-| <b>JavaScript</b> | <b>Tailwind CSS</b> | <b>Sass</b> | <b>Three.js</b> | <b>Framer Motion</b> |
-
-### ⚙️ Backend & Languages
-
-| <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="Node.js" width="40" height="40" /> <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="Python" width="40" height="40" /> <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="C#" width="40" height="40" /> <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" alt="Express.js" width="40" height="40" /> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Blazor.png" alt="Blazor" width="40" height="40" /> |
-| <b>Node.js</b> | <b>Python</b> | <b>C#</b> | <b>Express.js</b> | <b>Blazor</b> |
-
-| <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" alt="PyTorch" width="40" height="40" /> <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" alt="Socket.IO" width="40" height="40" /> |
-| <b>PyTorch</b> | <b>Socket.IO</b> |
-
-### 🗄️ Database & Storage
-
-| <img src="https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif" alt="PostgreSQL" width="40" height="40" /> <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" alt="MySQL" width="40" height="40" /> <img src="https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif" alt="MongoDB" width="40" height="40" /> <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase" width="40" height="40" /> <img src="https://avatars.githubusercontent.com/u/17219288?s=200&v=4" alt="Prisma" width="40" height="40" /> |
-| <b>PostgreSQL</b> | <b>MySQL</b> | <b>MongoDB</b> | <b>Supabase</b> | <b>Prisma</b> |
-
-### 🛠️ Tools & DevOps
-
-| <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" width="40" height="40" /> <img src="https://media.giphy.com/media/6HkGCxUE8KnBGOvKJ7/giphy.gif" alt="Docker" width="40" height="40" /> <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="VS Code" width="40" height="40" /> <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" width="40" height="40" /> <img src="https://media.giphy.com/media/Ri2TUcKlaOcaDBxFpY/giphy.gif" alt="Figma" width="40" height="40" /> |
-| <b>Git</b> | <b>Docker</b> | <b>VS Code</b> | <b>Vercel</b> | <b>Figma</b> |
-
-| <img src="https://vitejs.dev/logo.svg" alt="Vite" width="40" height="40" /> |
-| <b>Vite</b> |
-
-## 🧠 Evolução das Skills
+## Constelacao de Projetos
 
 <div align="center">
-  <h4>Análise dos últimos 30 dias de commits</h4>
-  
-  | Linguagem | Commits | Tendência |
-  |:----------|:-------:|:----------|
-  | **React/TypeScript** | 7 | ⬆️ +6 |
-  | **JSON** | 6 | ⬆️ +6 |
-  | **TypeScript** | 4 | ⬆️ +4 |
-  | **Markdown** | 1 | ⬆️ +1 |
-  | **HTML** | 1 | ⬆️ +1 |
-  
-  <br>
-  
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/skill-evolution-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/skill-evolution-light.svg">
-    <img src="./assets/skill-evolution-dark.svg" alt="Skill Evolution" width="800">
-  </picture>
-  
-  <br>
-  <sub><i>Atualizado em: 30/05/2025, 17:37:21</i></sub>
-</div>
-
-## 🌌 Constelação de Projetos
-
-<div align="center">
-  <h4>Visualização interativa dos repositórios como uma constelação estelar</h4>
   
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/constellation-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="./assets/constellation-light.svg">
-    <img src="./assets/constellation-dark.svg" alt="Constelação de Projetos" width="900">
+    <img src="./assets/constellation-dark.svg" alt="Constelacao de Projetos" width="900">
   </picture>
   
   <table>
     <tr>
-      <td align="center">⭐ <b>Tamanho</b><br>Número de commits</td>
-      <td align="center">✨ <b>Brilho</b><br>Quantidade de stars</td>
-      <td align="center">🎨 <b>Cor</b><br>Linguagem principal</td>
-      <td align="center">🔗 <b>Interação</b><br>Clique para visitar</td>
+      <td align="center"><strong>Repositorios</strong><br>25</td>
+      <td align="center"><strong>Stars Totais</strong><br>42</td>
+      <td align="center"><strong>Linguagens</strong><br>8</td>
+      <td align="center"><strong>Interativo</strong><br>Clique nas estrelas</td>
     </tr>
   </table>
   
   <br>
-  <sub><i>Atualizado em: 30/05/2025, 17:37:21</i></sub>
+  
+  **Como ler a constelacao:**
+  - Tamanho da estrela = atividade do repositorio
+  - Brilho da estrela = popularidade (stars)
+  - Cor da estrela = linguagem principal
+  - Conexoes = repositorios da mesma linguagem
+  
+  <br>
+  <sub><i>Atualizado via GitHub Actions</i></sub>
 </div>
 
-## 🔭 Observatório Dev
+## Observatorio Dev
 
 <div align="center">
-  <h4>Insights automáticos sobre padrões de desenvolvimento</h4>
+  <h4>Insights automáticos sobre meus padrões de desenvolvimento</h4>
 </div>
 
-### 🎮 Status do Desenvolvedor
-
-| Atributo | Valor |
-|:---------|:------|
-| **Level** | 8 |
-| **XP Total** | 8,500 |
-| **Título** | Senior Developer |
-
-**Badges:** `🏆 Commit Master` `⚡ Consistency King` `☀️ Early Bird`
-
-### 🧭 Dev Cronotipo
+### Dev Cronotipo
 
 | Atributo | Valor |
 |:---------|:------|
 | **Tipo** | Dev matinal |
-| **Horário de Pico** | 6h - 12h |
+| **Horário de Pico** | 6h - 12h (Brasília) |
 | **Total de Commits** | 65 |
 
-### 💡 Insights Semanais
+### Insights Semanais
 
-> Esta semana você foi um verdadeiro Dev Matinal ☀️! Sua produtividade máxima foi entre 6h e 12h.
+> Esta semana fui um verdadeiro Dev Matinal! Minha produtividade máxima foi entre 6h e 12h (horário de Brasília).
 
-> 🎉 Conquista desbloqueada: ☀️ Early Bird!
-
-> 🚀 Semana produtiva com 65 commits! Você está no ritmo certo.
-
-### 🎯 Metas da Semana
-
-| Meta | Progresso |
-|:-----|:----------|
-| Finalizar sistema de autenticação do FalaAtipica | ████████░░ 85% |
-| Implementar dashboard responsivo | ███████░░░ 70% |
-| Estudar Three.js para projetos 3D | ████░░░░░░ 45% |
+> Semana produtiva com 65 commits! Estou no ritmo certo.
 
 <div align="center">
-  <sub><i>Relatório atualizado em: 30/05/2025, 17:37:21</i></sub>
+  <sub><i>Atualizado via GitHub Actions</i></sub>
 </div>
 
-## 📈 GitHub Overview
+## GitHub Overview
 
 <div align="center">
   <picture>
@@ -248,7 +150,7 @@ Opa! Sou **desenvolvedor Full Stack** com foco em **Frontend**, sempre buscando 
   
   <br><br>
   
-  <img width="400" height="158" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true" alt="Top Languages" />
+  <img width="400" height="158" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&hide_title=true" alt="Linguagens" />
   <img width="400" height="158" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=radical&hide_border=true" alt="GitHub Streak" />
   
   <br>
@@ -256,7 +158,7 @@ Opa! Sou **desenvolvedor Full Stack** com foco em **Frontend**, sempre buscando 
   <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="300" alt="Developer Animation" />
 </div>
 
-## Contribuições
+## Contribuicoes
 
 <div align="center">
   <h3>Pacman Contribution Graph</h3>
@@ -266,7 +168,7 @@ Opa! Sou **desenvolvedor Full Stack** com foco em **Frontend**, sempre buscando 
     <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
   </picture>
   
-  <h3>Matriz de Contribuições 3D</h3>
+  <h3>Matriz de Contribuicoes 3D</h3>
   <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile" width="80%" />
 </div>
 
