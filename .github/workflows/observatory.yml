@@ -1,0 +1,131 @@
+name: Observatory Insights
+
+on:
+  schedule:
+    - cron: "0 0 * * 1" # Executa toda segunda-feira à meia-noite
+  workflow_dispatch:
+
+jobs:
+  observatory:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      - name: Install dependencies
+        run: |
+          npm install @octokit/rest
+          
+      - name: Generate observatory report
+        run: node scripts/observatory-insights.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
+          
+      - name: Update README with observatory
+        run: |
+          if [ -f assets/observatory-report.json ]; then
+            node -e '
+              const fs = require("fs");
+              const path = require("path");
+              
+              // Ler arquivos
+              const reportFile = path.join(__dirname, "assets/observatory-report.json");
+              const readmeFile = path.join(__dirname, "README.md");
+              
+              const report = JSON.parse(fs.readFileSync(reportFile, "utf8"));
+              let readme = fs.readFileSync(readmeFile, "utf8");
+              
+              // Gerar HTML para o observatório
+              const observatoryHtml = `<details id="observatorio">
+  <summary><h2>🔭 Observatório Dev</h2></summary>
+  <div align="center">
+    
+    <!-- Gamificação -->
+    <div style="background: linear-gradient(145deg, #1e1e2e, #2a2a3e); border-radius: 12px; padding: 20px; margin: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
+      <h3>🎮 Status do Desenvolvedor</h3>
+      <p>
+        <img src="https://img.shields.io/badge/Level-${report.gamification.level}-6E56CF?style=for-the-badge&logo=levelsdotfyi&logoColor=white" alt="Level" />
+        <img src="https://img.shields.io/badge/XP-${report.gamification.totalXP}-4CAF50?style=for-the-badge&logo=xp&logoColor=white" alt="XP" />
+        <img src="https://img.shields.io/badge/Título-${encodeURIComponent(report.gamification.title)}-FF9800?style=for-the-badge&logo=crown&logoColor=white" alt="Título" />
+      </p>
+      
+      <h4>🏆 Badges Conquistados</h4>
+      <p>
+        ${report.gamification.badges.map(badge => 
+          `<img src="https://img.shields.io/badge/${encodeURIComponent(badge)}-Conquistado-success?style=flat-square" alt="${badge}" />`
+        ).join(" ")}
+      </p>
+    </div>
+    
+    <!-- Dev Cronotipo -->
+    <div style="background: linear-gradient(145deg, #2d1b69, #3d2b79); border-radius: 12px; padding: 20px; margin: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
+      <h3>🧭 Dev Cronotipo</h3>
+      <p><strong>Você é um Dev ${report.cronotipo.type.charAt(0).toUpperCase() + report.cronotipo.type.slice(1)} ${
+        report.cronotipo.type === "matinal" ? "☀️" : 
+        report.cronotipo.type === "vespertino" ? "🌅" : 
+        report.cronotipo.type === "noturno" ? "🌙" : "🦉"
+      }</strong></p>
+      <p>Horário de maior produtividade: <strong>${report.cronotipo.peakStart}h - ${report.cronotipo.peakEnd}h</strong></p>
+      <p>Total de commits analisados: <strong>${report.cronotipo.totalCommits}</strong></p>
+    </div>
+    
+    <!-- Insights Semanais -->
+    <div style="background: linear-gradient(145deg, #0f3460, #1f4470); border-radius: 12px; padding: 20px; margin: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
+      <h3>💡 Insights da Semana</h3>
+      ${report.insights.map(insight => `<p>• ${insight}</p>`).join("")}
+    </div>
+    
+    <!-- Metas da Semana -->
+    <div style="background: linear-gradient(145deg, #1e1e2e, #2a2a3e); border-radius: 12px; padding: 20px; margin: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
+      <h3>🎯 Metas da Semana</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Meta</th>
+            <th>Progresso</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${report.weeklyGoals.slice(0, 5).map(goal => {
+            const percentage = Math.round((goal.progress / goal.target) * 100);
+            const progressBar = "█".repeat(Math.floor(percentage / 10)) + "░".repeat(10 - Math.floor(percentage / 10));
+            return `<tr>
+              <td>${goal.name}</td>
+              <td>${progressBar} ${percentage}%</td>
+            </tr>`;
+          }).join("")}
+        </tbody>
+      </table>
+    </div>
+    
+    <br>
+    <sub><i>Relatório atualizado em: ${new Date(report.lastUpdated).toLocaleString("pt-BR")}</i></sub>
+  </div>
+</details>`;
+              
+              // Substituir seção do observatório
+              const newReadme = readme.replace(
+                /<details id="observatorio">[\s\S]*?<\/details>/,
+                observatoryHtml
+              );
+              
+              fs.writeFileSync(readmeFile, newReadme);
+              console.log("README atualizado com sucesso!");
+            '
+          else
+            echo "Arquivo de relatório do observatório não encontrado!"
+          fi
+          
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md assets/observatory-report.json .devgoals.yml
+          git diff --staged --quiet || git commit -m "🔭 Atualiza observatório dev e metas semanais"
+          git push

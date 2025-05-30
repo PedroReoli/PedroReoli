@@ -1,0 +1,28 @@
+# Metas da Semana - Pedro Reoli
+goals:
+  - name: "Finalizar sistema de autenticação do FalaAtipica"
+    progress: 85
+    target: 100
+  - name: "Implementar dashboard responsivo"
+    progress: 70
+    target: 100
+  - name: "Estudar Three.js para projetos 3D"
+    progress: 45
+    target: 100
+  - name: "Refatorar componentes React legados"
+    progress: 60
+    target: 100
+  - name: "Escrever documentação técnica"
+    progress: 30
+    target: 100
+
+# Metas de longo prazo
+long_term:
+  - name: "Dominar TypeScript avançado"
+    progress: 80
+  - name: "Contribuir para projetos open source"
+    progress: 55
+  - name: "Aprender arquitetura de microsserviços"
+    progress: 35
+  - name: "Certificação AWS"
+    progress: 20
