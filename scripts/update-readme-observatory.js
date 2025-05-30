@@ -1,54 +1,106 @@
-const fs = require("fs")
-const path = require("path")
+/**
+ * Atualiza README com dados do observatório
+ */
 
-const readmePath = path.join(__dirname, "..", "README.md")
-const reportsDir = path.join(__dirname, "..", "reports")
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
 
-function updateReadme() {
-  const reportFiles = fs.readdirSync(reportsDir).filter((file) => file.endsWith(".json"))
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
-  let observatoryData = ""
+function updateReadmeObservatory() {
+  try {
+    const observatoryFile = path.join(__dirname, "../assets/observatory-report.json")
+    const readmeFile = path.join(__dirname, "../README.md")
 
-  reportFiles.forEach((file) => {
-    const reportFile = path.join(reportsDir, file)
-    if (fs.existsSync(reportFile)) {
-      const reportContent = fs.readFileSync(reportFile, "utf-8")
-      try {
-        const report = JSON.parse(reportContent)
-        observatoryData += `\n### ${report.name}\n`
-        observatoryData += `\n- Date: ${report.date}\n`
-        observatoryData += `\n- Score: ${report.score}\n`
-        observatoryData += `\n- [Report](${path.relative(path.join(__dirname, ".."), reportFile)})\n` // Create relative path to report
-      } catch (error) {
-        console.error(`Error parsing report file ${file}: ${error}`)
-      }
-    } else {
-      console.warn(`Report file ${file} does not exist.`)
+    if (!fs.existsSync(observatoryFile)) {
+      console.log("Arquivo de relatório do observatório não encontrado!")
+      return
     }
-  })
 
-  const startMarker = "## Observatory Reports"
-  const endMarker = "<!-- END OBSERVATORY REPORTS -->"
+    const observatoryData = JSON.parse(fs.readFileSync(observatoryFile, "utf8"))
+    const readme = fs.readFileSync(readmeFile, "utf8")
 
-  const readmeContent = fs.readFileSync(readmePath, "utf-8")
+    const observatoryHtml = `<details>
+  <summary><h2>🔭 Observatório Dev</h2></summary>
+  <div align="center">
+    
+    <!-- Gamification -->
+    <div style="background: linear-gradient(145deg, #1e1e2e, #2a2a3e); border-radius: 12px; padding: 20px; margin: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
+      <h3>🎮 Status do Desenvolvedor</h3>
+      <p>
+        <img src="https://img.shields.io/badge/Level-${observatoryData.gamification.level}-6E56CF?style=for-the-badge&logo=levelsdotfyi&logoColor=white" alt="Level" />
+        <img src="https://img.shields.io/badge/XP-${observatoryData.gamification.totalXP}-4CAF50?style=for-the-badge&logo=xp&logoColor=white" alt="XP" />
+        <img src="https://img.shields.io/badge/Title-${encodeURIComponent(observatoryData.gamification.title)}-FF9800?style=for-the-badge&logo=crown&logoColor=white" alt="Title" />
+      </p>
+      
+      <h4>🏆 Badges Conquistados</h4>
+      <p>
+        ${observatoryData.gamification.badges
+          .map(
+            (badge) =>
+              `<img src="https://img.shields.io/badge/${encodeURIComponent(badge)}-Conquistado-success?style=flat-square" alt="${badge}" />`,
+          )
+          .join(" ")}
+      </p>
+    </div>
+    
+    <!-- Dev Chronotype -->
+    <div style="background: linear-gradient(145deg, #2d1b69, #3d2b79); border-radius: 12px; padding: 20px; margin: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
+      <h3>🧭 Dev Cronotipo</h3>
+      <p><strong>Você é um Dev ${observatoryData.cronotipo.type}</strong></p>
+      <p>Horário de pico de produtividade: <strong>${observatoryData.cronotipo.peakStart}h - ${observatoryData.cronotipo.peakEnd}h</strong></p>
+      <p>Total de commits analisados: <strong>${observatoryData.cronotipo.totalCommits}</strong></p>
+    </div>
+    
+    <!-- Weekly Insights -->
+    <div style="background: linear-gradient(145deg, #0f3460, #1f4470); border-radius: 12px; padding: 20px; margin: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
+      <h3>💡 Insights Semanais</h3>
+      ${observatoryData.insights.map((insight) => `<p>• ${insight}</p>`).join("")}
+    </div>
+    
+    <!-- Weekly Goals -->
+    <div style="background: linear-gradient(145deg, #1e1e2e, #2a2a3e); border-radius: 12px; padding: 20px; margin: 20px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
+      <h3>🎯 Metas da Semana</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Meta</th>
+            <th>Progresso</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${observatoryData.weeklyGoals
+            .slice(0, 5)
+            .map((goal) => {
+              const percentage = Math.round((goal.progress / goal.target) * 100)
+              const progressBar = "█".repeat(Math.floor(percentage / 10)) + "░".repeat(10 - Math.floor(percentage / 10))
+              return `<tr>
+              <td>${goal.name}</td>
+              <td>${progressBar} ${percentage}%</td>
+            </tr>`
+            })
+            .join("")}
+        </tbody>
+      </table>
+    </div>
+    
+    <br>
+    <sub><i>Relatório atualizado em: ${new Date(observatoryData.lastUpdated).toLocaleString("pt-BR")}</i></sub>
+  </div>
+</details>`
 
-  const startIndex = readmeContent.indexOf(startMarker)
-  const endIndex = readmeContent.indexOf(endMarker)
+    const newReadme = readme.replace(
+      /<details>\s*<summary><h2>🔭 Observatório Dev<\/h2><\/summary>[\s\S]*?<\/details>/,
+      observatoryHtml,
+    )
 
-  if (startIndex === -1 || endIndex === -1) {
-    console.error("Markers not found in README.md")
-    return
+    fs.writeFileSync(readmeFile, newReadme)
+    console.log("README atualizado com dados do observatório!")
+  } catch (error) {
+    console.error("Erro ao atualizar README:", error)
   }
-
-  const updatedReadmeContent =
-    readmeContent.substring(0, startIndex + startMarker.length) +
-    "\n" +
-    observatoryData +
-    "\n" +
-    readmeContent.substring(endIndex)
-
-  fs.writeFileSync(readmePath, updatedReadmeContent, "utf-8")
-  console.log("README.md updated successfully!")
 }
 
-updateReadme()
+updateReadmeObservatory()

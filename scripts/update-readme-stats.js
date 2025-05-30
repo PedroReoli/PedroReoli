@@ -2,8 +2,12 @@
  * Atualiza README com o card de stats customizado
  */
 
-const fs = require("fs")
-const path = require("path")
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 function updateReadmeStats() {
   try {
@@ -31,7 +35,7 @@ function updateReadmeStats() {
   <br><br>
   
   <div style="display: flex; justify-content: center; gap: 10px;">
-    <img width="400" height="158" src="https://github-readme-streak-stats.herokuapp.com/?user=${process.env.GITHUB_REPOSITORY_OWNER || "pedroreoli"}&theme=radical&hide_border=true" alt="GitHub Streak" />
+    <img width="400" height="158" src="https://github-readme-streak-stats.herokuapp.com/?user=${process.env.REPOSITORY_OWNER || "pedroreoli"}&theme=radical&hide_border=true" alt="GitHub Streak" />
   </div>
   
   <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="300" alt="Pixel Art Developer" />
