@@ -49,7 +49,7 @@ Opa! Sou desenvolvedor Full Stack com foco em Frontend, sempre buscando transfor
 - Desenvolvendo o [FalaAtipica](https://github.com/PedroReoli/falatipica-tutor) - TCC sobre acessibilidade comunicativa
 - Sempre aprendendo algo novo em **React, Next.js, Three.js, Node.js, C#**
 - Meu portfólio: [pedroreoliportfolio.vercel.app](https://pedroreoliportfolio.vercel.app)
-- Blog onde escrevo sobre código: [devemdesenvolvimento.com.br](https://www.devemdesenvolvimento.com.br/)
+- Blog onde escrevo sobre código: [devemdesenvolvimento.com.br/](https://www.devemdesenvolvimento.com.br/)
 - **Plot twist:** Quando não estou debugando, estou tocando guitarra - viciado em Tocar guitarra, Blues, Metal, Rock
 
 ## Tech Stack
