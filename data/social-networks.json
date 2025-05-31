@@ -9,25 +9,31 @@
     {
       "name": "Instagram",
       "url": "https://www.instagram.com/01_dev_em_desenvolvimento/",
-      "gif": "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmhxNWc1Mzg5YXdsY2hqcXRoNXBxOHUzZ3NoZXFtdTBjbm03bW9ndiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YwNCU8P5jGMNKGG5Bq/giphy.gif",
+      "gif": "https://media.giphy.com/media/Xy6OuMPWQVija8JcXa/giphy.gif",
       "alt": "Instagram Profile"
     },
     {
       "name": "LinkedIn",
       "url": "https://www.linkedin.com/in/pedro-lucas-reis-de-oliveira-sousa-a93945171/",
-      "gif": "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHVzenF3NTY4b3VuNmoxZGhzMW4zcTg2bmJvNDJzMmMycHg5ZXVvMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/0R7mnx1ZvrBG42PbNV/giphy.gif",
+      "gif": "https://media.giphy.com/media/TLHXKJlSHSkzC/giphy.gif",
       "alt": "LinkedIn Profile"
+    },
+    {
+      "name": "Discord",
+      "url": "https://discord.gg/teDfu39G7r",
+      "gif": "https://media.giphy.com/media/PCiPUzKYmXOGmTIUOF/giphy.gif",
+      "alt": "Discord Server"
     },
     {
       "name": "Portfolio",
       "url": "https://pedroreoliportfolio.vercel.app",
-      "gif": "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm9hczN2bHl4YjNiamFqZHYwdzh3cHB2NXpoODdla25vejdncXNneSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/K2Sh84qmPCk0rekSqk/giphy.gif",
+      "gif": "https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif",
       "alt": "Portfolio Website"
     },
     {
       "name": "Blog",
       "url": "https://www.devemdesenvolvimento.com.br/",
-      "gif": "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHh0c3R6ZWluMGp6cjhvdXdwaDl5eTJ3NnZ2d240YnYzN2gxeWV4aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/yxPRAfqAIjzGlz7cPE/giphy.gif",
+      "gif": "https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif",
       "alt": "Dev Blog"
     }
   ],
