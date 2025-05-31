@@ -17,35 +17,27 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
 </div>
 
+
 ## Ultimas Atualizacoes
 
-<!-- Esta seção será preenchida automaticamente pelo script update-readme-presence.js -->
-
-## Sobre Mim
-
-<!-- Esta seção será preenchida automaticamente pelo script update-aboutme.js -->
-
-## Tech Stack
-
-<!-- Esta seção será preenchida automaticamente pelo script update-readme-tech.js -->
-
-## GitHub Overview
-
-<!-- Esta seção será preenchida automaticamente pelo script update-readme-stats.js -->
-
-## Contribuicoes
-
 <div align="center">
-  <h3>Pacman Contribution Graph</h3>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
-    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
-  </picture>
-  
-  <h3>Matriz de Contribuicoes 3D</h3>
-  <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile" width="80%" />
+  <table>
+    <tr>
+      <td align="center"><strong>Status</strong></td>
+      <td align="center"><strong>Projeto Ativo</strong></td>
+      <td align="center"><strong>Ultima Atividade</strong></td>
+      <td align="center"><strong>Commits Hoje</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Online</td>
+      <td align="center">PedroReoli</td>
+      <td align="center">57min</td>
+      <td align="center">10</td>
+    </tr>
+  </table>
+  <sub><i>Atualizado via GitHub Actions</i></sub>
 </div>
+
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
