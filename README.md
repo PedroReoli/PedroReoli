@@ -17,36 +17,27 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
 </div>
 
+
 ## Ultimas Atualizacoes
 
-<!-- Esta seção será preenchida automaticamente pelo script update-readme-presence.js -->
-
-## Sobre Mim
-
-<!-- Esta seção será preenchida automaticamente pelo script update-aboutme.js -->
-
-## Tech Stack
-
-<!-- Esta seção será preenchida automaticamente pelo script update-readme-tech.js -->
-
-## GitHub Overview
-
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-stats-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/github-stats-light.svg">
-    <img src="./assets/github-stats-dark.svg" alt="GitHub Overview" width="800">
-  </picture>
-  
-  <br><br>
-  
-  <img width="400" height="158" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&hide_title=true" alt="Linguagens" />
-  <img width="400" height="158" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=radical&hide_border=true" alt="GitHub Streak" />
-  
-  <br>
-  
-  <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="300" alt="Developer Animation" />
+  <table>
+    <tr>
+      <td align="center"><strong>Status</strong></td>
+      <td align="center"><strong>Projeto Ativo</strong></td>
+      <td align="center"><strong>Ultima Atividade</strong></td>
+      <td align="center"><strong>Commits Hoje</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Online</td>
+      <td align="center">PedroReoli</td>
+      <td align="center">Agora</td>
+      <td align="center">10</td>
+    </tr>
+  </table>
+  <sub><i>Atualizado via GitHub Actions</i></sub>
 </div>
+
 
 ## Contribuicoes
 
