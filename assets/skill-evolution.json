@@ -1,7 +1,7 @@
 {
   "period": {
-    "start": "2025-04-30",
-    "end": "2025-05-30",
+    "start": "2025-05-01",
+    "end": "2025-05-31",
     "days": 30
   },
   "weeklyData": {
@@ -37,13 +37,9 @@
     },
     "4": {
       "languages": {
-        "Markdown": 1,
-        "HTML": 1,
-        "React/TypeScript": 7,
-        "TypeScript": 4,
-        "JSON": 6
+        "Markdown": 1
       },
-      "totalCommits": 3
+      "totalCommits": 1
     }
   },
   "trends": {
@@ -53,32 +49,8 @@
         "change": 1,
         "current": 1,
         "previous": 0
-      },
-      "HTML": {
-        "trend": "up",
-        "change": 1,
-        "current": 1,
-        "previous": 0
-      },
-      "React/TypeScript": {
-        "trend": "up",
-        "change": 6,
-        "current": 7,
-        "previous": 1
-      },
-      "TypeScript": {
-        "trend": "up",
-        "change": 4,
-        "current": 4,
-        "previous": 0
-      },
-      "JSON": {
-        "trend": "up",
-        "change": 6,
-        "current": 6,
-        "previous": 0
       }
     }
   },
-  "lastUpdated": "2025-05-30T21:04:10.137Z"
+  "lastUpdated": "2025-05-31T01:21:53.557Z"
 }
