@@ -46,35 +46,28 @@ jobs:
     uses: ./.github/workflows/update-aboutme.yml
     secrets: inherit
 
-  # 5. Sexto: Social Networks
-  update-social-networks:
-    name: "Social Networks"
-    needs: update-aboutme
-    uses: ./.github/workflows/update-social-networks.yml
-    secrets: inherit
-
-  # 6. Sétimo: Tech Stack
+  # 5. Sexto: Tech Stack
   update-tech-stack:
     name: "Tech Stack"
-    needs: update-social-networks
+    needs: update-aboutme
     uses: ./.github/workflows/update-tech-stack.yml
     secrets: inherit
 
-  # 7. Oitavo: Animações e visualizações 3D
+  # 6. Sétimo: Animações e visualizações 3D
   generate-animations:
     name: "Animations & 3D"
     needs: update-tech-stack
     uses: ./.github/workflows/main.yml
     secrets: inherit
 
-  # 8. Penúltimo: Sincronizar versão em inglês
+  # 7. Oitavo: Sincronizar versão em inglês
   sync-english:
     name: "English Sync"
     needs: generate-animations
     uses: ./.github/workflows/sync-english.yml
     secrets: inherit
 
-  # 9. Otimização e limpeza
+  # 8. Penúltimo: Otimização e limpeza
   optimize-assets:
     name: "Optimize & Clean"
     needs: sync-english
@@ -109,7 +102,7 @@ jobs:
           git diff --staged --quiet || git commit -m "optimize assets and finalize profile update"
           git push
 
-  # 10. Último: Relatório final
+  # 9. Último: Relatório final
   orchestrator-report:
     name: "Orchestration Report"
     needs: optimize-assets
@@ -124,7 +117,6 @@ jobs:
           echo "Skills: Analyzed" 
           echo "Presence: Refreshed"
           echo "About Me: Updated"
-          echo "Social Networks: Updated"
           echo "Tech Stack: Updated"
           echo "Animations: Generated"
           echo "English: Synced"
