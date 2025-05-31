@@ -1,15 +1,13 @@
-name: Observatory Insights
+name: Update About Me
 
 on:
   workflow_call: # Permite ser chamado por outros workflows
     secrets:
       TOKEN:
         required: true
-      REPOSITORY_OWNER:
-        required: true
 
 jobs:
-  observatory:
+  update-aboutme:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -25,7 +23,7 @@ jobs:
           node-version: '18'
           
       - name: Install dependencies
-        run: npm install @octokit/rest
+        run: npm install
         
       - name: Force sync with remote
         run: |
@@ -34,19 +32,13 @@ jobs:
           git fetch origin
           git reset --hard origin/main
           
-      - name: Generate observatory report
-        run: node scripts/observatory-insights.js
+      - name: Update About Me section
+        run: node scripts/update-aboutme.js
         env:
-          TOKEN: ${{ secrets.TOKEN }}
-          REPOSITORY_OWNER: ${{ secrets.REPOSITORY_OWNER }}
-          
-      - name: Update README with observatory
-        run: node scripts/update-readme-observatory.js
-        env:
-          TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
           
       - name: Commit and push changes
         run: |
-          git add README.md assets/observatory-report.json .devgoals.yml
-          git diff --staged --quiet || git commit -m "🔭 update dev observatory and weekly goals"
+          git add README.md
+          git diff --staged --quiet || git commit -m "update about me section"
           git push

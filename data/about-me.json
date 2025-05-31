@@ -1,0 +1,14 @@
+{
+  "name": "Pedro Reoli",
+  "title": "Desenvolvedor Full Stack Jr",
+  "company": "Autocom3",
+  "companyRole": "Desenvolvedor Full Stack",
+  "portfolio": "https://pedroreoliportfolio.vercel.app",
+  "blog": "https://www.devemdesenvolvimento.com.br/",
+  "currentProject": "FalaAtipica",
+  "currentProjectUrl": "https://github.com/PedroReoli/falatipica-tutor",
+  "currentProjectDescription": "TCC sobre acessibilidade comunicativa",
+  "learningTechs": ["React", "Next.js", "Three.js", "Node.js", "C#"],
+  "hobbies": ["Tocar guitarra", "Blues", "Metal", "Rock"],
+  "description": "Opa! Sou desenvolvedor Full Stack com foco em Frontend, sempre buscando transformar ideias malucas em experiências digitais que realmente funcionam. Trabalho na Autocom3 criando sistemas ERP que não fazem as pessoas chorarem de desespero."
+}
