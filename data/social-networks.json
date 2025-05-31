@@ -1,0 +1,47 @@
+{
+  "socialNetworks": [
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/@DevDesenvolvimento",
+      "gif": "https://media.giphy.com/media/13Nc3xlO1kGg3S/giphy.gif",
+      "alt": "YouTube Channel"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/01_dev_em_desenvolvimento/",
+      "gif": "https://media.giphy.com/media/Xy6OuMPWQVija8JcXa/giphy.gif",
+      "alt": "Instagram Profile"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/pedro-lucas-reis-de-oliveira-sousa-a93945171/",
+      "gif": "https://media.giphy.com/media/TLHXKJlSHSkzC/giphy.gif",
+      "alt": "LinkedIn Profile"
+    },
+    {
+      "name": "Discord",
+      "url": "https://discord.gg/teDfu39G7r",
+      "gif": "https://media.giphy.com/media/PCiPUzKYmXOGmTIUOF/giphy.gif",
+      "alt": "Discord Server"
+    },
+    {
+      "name": "Portfolio",
+      "url": "https://pedroreoliportfolio.vercel.app",
+      "gif": "https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif",
+      "alt": "Portfolio Website"
+    },
+    {
+      "name": "Blog",
+      "url": "https://www.devemdesenvolvimento.com.br/",
+      "gif": "https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif",
+      "alt": "Dev Blog"
+    }
+  ],
+  "style": {
+    "gifWidth": "60",
+    "gifHeight": "60",
+    "spacing": "10px",
+    "borderRadius": "15px"
+  },
+  "lastUpdated": "2024-01-01T00:00:00.000Z"
+}
