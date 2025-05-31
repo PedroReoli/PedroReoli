@@ -968,6 +968,230 @@ Opa! Sou **desenvolvedor Full Stack** com foco em **Frontend**, sempre buscando 
 </div>
 ### 🎨 Frontend & UI
 
+<div align="center">
+
+<table border="0" cellpadding="15" cellspacing="0">
+<tr>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" width="80" height="80" />
+  <br><br>
+  <strong>React</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="80" height="80" />
+  <br><br>
+  <strong>Next.js</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Angular" width="80" height="80" />
+  <br><br>
+  <strong>Angular</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/VgGthkhUvGgOit7Y9i/giphy.gif" alt="Vue.js" width="80" height="80" />
+  <br><br>
+  <strong>Vue.js</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="TypeScript" width="80" height="80" />
+  <br><br>
+  <strong>TypeScript</strong>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table border="0" cellpadding="15" cellspacing="0">
+<tr>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/SU2ic3wTfuC6JhD1lA/giphy.gif" alt="JavaScript" width="80" height="80" />
+  <br><br>
+  <strong>JavaScript</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="Tailwind CSS" width="80" height="80" />
+  <br><br>
+  <strong>Tailwind CSS</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" alt="Sass" width="80" height="80" />
+  <br><br>
+  <strong>Sass</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://global.discourse-cdn.com/standard17/uploads/threejs/original/2X/e/e4f86d2200d2d35c30f7b1494e96b9595ebc2751.png" alt="Three.js" width="80" height="80" />
+  <br><br>
+  <strong>Three.js</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://user-images.githubusercontent.com/38039349/60953119-d3c6f300-a2fc-11e9-9596-4978e5d52180.png" alt="Framer Motion" width="80" height="80" />
+  <br><br>
+  <strong>Framer Motion</strong>
+</td>
+</tr>
+</table>
+
+</div>
+
+
+
+### ⚙️ Backend & Languages
+
+<div align="center">
+
+<table border="0" cellpadding="15" cellspacing="0">
+<tr>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="Node.js" width="80" height="80" />
+  <br><br>
+  <strong>Node.js</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="Python" width="80" height="80" />
+  <br><br>
+  <strong>Python</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="C#" width="80" height="80" />
+  <br><br>
+  <strong>C#</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/20/express-js.png" alt="Express.js" width="80" height="80" />
+  <br><br>
+  <strong>Express.js</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Blazor.png" alt="Blazor" width="80" height="80" />
+  <br><br>
+  <strong>Blazor</strong>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table border="0" cellpadding="15" cellspacing="0">
+<tr>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" alt="PyTorch" width="80" height="80" />
+  <br><br>
+  <strong>PyTorch</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" alt="Socket.IO" width="80" height="80" />
+  <br><br>
+  <strong>Socket.IO</strong>
+</td>
+<td width="180"></td>
+<td width="180"></td>
+<td width="180"></td>
+</tr>
+</table>
+
+</div>
+
+
+
+### 🗄️ Database & Storage
+
+<div align="center">
+
+<table border="0" cellpadding="15" cellspacing="0">
+<tr>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif" alt="PostgreSQL" width="80" height="80" />
+  <br><br>
+  <strong>PostgreSQL</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/vISmwpBJUNYzukTnVx/giphy.gif" alt="MySQL" width="80" height="80" />
+  <br><br>
+  <strong>MySQL</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif" alt="MongoDB" width="80" height="80" />
+  <br><br>
+  <strong>MongoDB</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://seeklogo.com/images/S/supabase-logo-DCC676FFE2-seeklogo.com.png" alt="Supabase" width="80" height="80" />
+  <br><br>
+  <strong>Supabase</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://avatars.githubusercontent.com/u/17219288?s=200&v=4" alt="Prisma" width="80" height="80" />
+  <br><br>
+  <strong>Prisma</strong>
+</td>
+</tr>
+</table>
+
+</div>
+
+
+
+### 🛠️ Tools & DevOps
+
+<div align="center">
+
+<table border="0" cellpadding="15" cellspacing="0">
+<tr>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" width="80" height="80" />
+  <br><br>
+  <strong>Git</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/6HkGCxUE8KnBGOvKJ7/giphy.gif" alt="Docker" width="80" height="80" />
+  <br><br>
+  <strong>Docker</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="VS Code" width="80" height="80" />
+  <br><br>
+  <strong>VS Code</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" width="80" height="80" />
+  <br><br>
+  <strong>Vercel</strong>
+</td>
+<td align="center" valign="top" width="180">
+  <img src="https://media.giphy.com/media/Ri2TUcKlaOcaDBxFpY/giphy.gif" alt="Figma" width="80" height="80" />
+  <br><br>
+  <strong>Figma</strong>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table border="0" cellpadding="15" cellspacing="0">
+<tr>
+<td align="center" valign="top" width="180">
+  <img src="https://vitejs.dev/logo.svg" alt="Vite" width="80" height="80" />
+  <br><br>
+  <strong>Vite</strong>
+</td>
+<td width="180"></td>
+<td width="180"></td>
+<td width="180"></td>
+<td width="180"></td>
+</tr>
+</table>
+
+</div>
+
+
+
+<div align="center">
+  <br>
+  <sub><i>Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
+</div>
+### 🎨 Frontend & UI
+
 | <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" width="40" height="40" /> | <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Angular" width="40" height="40" /> | <img src="https://media.giphy.com/media/VgGthkhUvGgOit7Y9i/giphy.gif" alt="Vue.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="TypeScript" width="40" height="40" /> | <img src="https://media.giphy.com/media/SU2ic3wTfuC6JhD1lA/giphy.gif" alt="JavaScript" width="40" height="40" /> |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | **React** | **Next.js** | **Angular** | **Vue.js** | **TypeScript** | **JavaScript** |
