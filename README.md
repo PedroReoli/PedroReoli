@@ -17,6 +17,7 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
 </div>
 
+
 ## Ultimas Atualizacoes
 
 <div align="center">
@@ -36,6 +37,7 @@
   </table>
   <sub><i>Atualizado via GitHub Actions</i></sub>
 </div>
+
 
 ## Sobre Mim
 
