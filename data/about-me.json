@@ -1,14 +1,14 @@
 {
   "name": "Pedro Reoli",
-  "title": "Desenvolvedor Full Stack Jr",
-  "company": "Autocom3",
-  "companyRole": "Desenvolvedor Full Stack",
+  "title": "Estagiário de Desenvolvimento",
+  "company": "AutoCom3",
+  "companyRole": "Estagiário de Desenvolvimento",
   "portfolio": "https://pedroreoliportfolio.vercel.app",
   "blog": "https://www.devemdesenvolvimento.com.br/",
-  "currentProject": "FalaAtipica",
+  "currentProject": "FalaAtípica",
   "currentProjectUrl": "https://github.com/PedroReoli/falatipica-tutor",
-  "currentProjectDescription": "TCC sobre acessibilidade comunicativa",
-  "learningTechs": ["React", "Next.js", "Three.js", "Node.js", "C#"],
-  "hobbies": ["Tocar guitarra", "Blues", "Metal", "Rock"],
-  "description": "Opa! Sou desenvolvedor Full Stack com foco em Frontend, sempre buscando transformar ideias malucas em experiências digitais que realmente funcionam. Trabalho na Autocom3 criando sistemas ERP que não fazem as pessoas chorarem de desespero."
+  "currentProjectDescription": "TCC sobre acessibilidade e comunicação",
+  "learningTechs": ["React", "Next.js", "Node.js", "Three.js", "C#"],
+  "hobbies": ["guitarra", "blues", "rock"],
+  "description": "Sou desenvolvedor full stack com foco em frontend e interesse constante por novas tecnologias. Atualmente sou estagiário na AutoCom3, onde atuo no desenvolvimento de sistemas com back-end e front-end integrados.\n\nTambém sou músico, apaixonado por guitarra, blues e rock — e acredito que a criatividade se expressa tanto no código quanto nas cordas."
 }
