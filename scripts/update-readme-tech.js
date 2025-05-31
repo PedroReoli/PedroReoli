@@ -1,5 +1,5 @@
 /**
- * Atualiza a seção de tech stack no README - Versão com Limpeza de Duplicatas
+ * Atualiza a seção de tech stack no README - Versão Tabela Única
  */
 
 import fs from "fs"
@@ -19,16 +19,10 @@ const README_FILE = path.join(__dirname, "../README.md")
 function cleanupDuplicatedTechSections(readme) {
   console.log("Limpando duplicações antigas...")
 
-  // Remover todas as seções duplicadas de Frontend & UI
+  // Remover todas as seções duplicadas de categorias antigas
   readme = readme.replace(/### Frontend & UI\s*\n[\s\S]*?(?=###|##|$)/g, "")
-
-  // Remover todas as seções duplicadas de Backend & Languages
   readme = readme.replace(/### Backend & Languages\s*\n[\s\S]*?(?=###|##|$)/g, "")
-
-  // Remover todas as seções duplicadas de Database & Storage
   readme = readme.replace(/### Database & Storage\s*\n[\s\S]*?(?=###|##|$)/g, "")
-
-  // Remover todas as seções duplicadas de Tools & DevOps
   readme = readme.replace(/### Tools & DevOps\s*\n[\s\S]*?(?=###|##|$)/g, "")
 
   // Remover divs de "Stack sempre em evolução" duplicadas
@@ -44,29 +38,49 @@ function cleanupDuplicatedTechSections(readme) {
 }
 
 /**
- * Gera seção de tecnologias em formato simplificado
+ * Gera tabela única com todas as tecnologias
  */
-function generateSimpleTechSection(techs, title) {
-  let sectionMarkdown = `### ${title}\n\n`
+function generateUnifiedTechTable(technologies) {
+  // Definir quantas colunas por linha (6 tecnologias por linha)
+  const itemsPerRow = 6
+  const rows = []
 
-  // Criar tabela simples
-  sectionMarkdown += `| ${techs.map(() => "").join(" | ")} |\n`
-  sectionMarkdown += `| ${techs.map(() => ":---:").join(" | ")} |\n`
+  // Dividir tecnologias em grupos de 6
+  for (let i = 0; i < technologies.length; i += itemsPerRow) {
+    const rowTechs = technologies.slice(i, i + itemsPerRow)
 
-  // Linha de ícones
-  sectionMarkdown += `| ${techs.map((tech) => `<img src="${tech.url}" alt="${tech.name}" width="40" height="40" />`).join(" | ")} |\n`
+    // Preencher linha com espaços vazios se necessário
+    while (rowTechs.length < itemsPerRow) {
+      rowTechs.push({ name: "", url: "" })
+    }
 
-  // Linha de nomes
-  sectionMarkdown += `| ${techs.map((tech) => `**${tech.name}**`).join(" | ")} |\n\n`
+    rows.push(rowTechs)
+  }
 
-  return sectionMarkdown
+  // Gerar cabeçalho da tabela
+  let tableMarkdown = `| ${Array(itemsPerRow).fill("").join(" | ")} |\n`
+  tableMarkdown += `| ${Array(itemsPerRow).fill(":---:").join(" | ")} |\n`
+
+  // Gerar linhas de ícones
+  rows.forEach((row) => {
+    const iconRow = row
+      .map((tech) => (tech.name ? `<img src="${tech.url}" alt="${tech.name}" width="40" height="40" />` : ""))
+      .join(" | ")
+    tableMarkdown += `| ${iconRow} |\n`
+
+    // Gerar linha de nomes
+    const nameRow = row.map((tech) => (tech.name ? `**${tech.name}**` : "")).join(" | ")
+    tableMarkdown += `| ${nameRow} |\n`
+  })
+
+  return tableMarkdown
 }
 
 /**
- * Atualiza o README com as tecnologias em formato simplificado
+ * Atualiza o README com as tecnologias em tabela única
  */
 function updateReadmeTechStack() {
-  console.log("Atualizando tech stack com limpeza de duplicatas...")
+  console.log("Atualizando tech stack com tabela única...")
 
   try {
     // Verificar se arquivo de dados existe
@@ -78,23 +92,25 @@ function updateReadmeTechStack() {
     // Ler dados das tecnologias
     const techData = JSON.parse(fs.readFileSync(TECH_DATA_FILE, "utf8"))
 
+    // Atualizar timestamp
+    techData.lastUpdated = new Date().toISOString()
+    fs.writeFileSync(TECH_DATA_FILE, JSON.stringify(techData, null, 2))
+
     // Ler README atual
     let readme = fs.readFileSync(README_FILE, "utf8")
 
     // PRIMEIRO: Limpar todas as duplicações existentes
     readme = cleanupDuplicatedTechSections(readme)
 
-    // Gerar seções em formato simplificado
-    const frontendSection = generateSimpleTechSection(techData.frontend, "Frontend & UI")
-    const backendSection = generateSimpleTechSection(techData.backend, "Backend & Languages")
-    const databaseSection = generateSimpleTechSection(techData.database, "Database & Storage")
-    const toolsSection = generateSimpleTechSection(techData.tools, "Tools & DevOps")
+    // Gerar tabela única
+    const techTable = generateUnifiedTechTable(techData.technologies)
 
-    // Gerar seção completa da tech stack simplificada
+    // Gerar seção completa da tech stack
     const techStackMarkdown = `## Tech Stack
 
-${frontendSection}${backendSection}${databaseSection}${toolsSection}<div align="center">
-  <sub><i>Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
+${techTable}
+<div align="center">
+  <sub><i>Stack sempre em evolução • ${techData.technologies.length} tecnologias • Atualizado via GitHub Actions</i></sub>
 </div>
 
 `
@@ -117,13 +133,14 @@ ${frontendSection}${backendSection}${databaseSection}${toolsSection}<div align="
 
     // Salvar README atualizado
     fs.writeFileSync(README_FILE, readme)
-    console.log("Tech stack atualizada e duplicatas removidas!")
+    console.log("Tech stack atualizada com tabela única!")
 
     // Log das tecnologias carregadas
-    console.log(`Frontend: ${techData.frontend.length} tecnologias`)
-    console.log(`Backend: ${techData.backend.length} tecnologias`)
-    console.log(`Database: ${techData.database.length} tecnologias`)
-    console.log(`Tools: ${techData.tools.length} tecnologias`)
+    console.log(`Total de tecnologias: ${techData.technologies.length}`)
+    console.log("Tecnologias incluídas:")
+    techData.technologies.forEach((tech, index) => {
+      console.log(`${index + 1}. ${tech.name}`)
+    })
   } catch (error) {
     console.error("Erro ao atualizar tech stack:", error)
     throw error

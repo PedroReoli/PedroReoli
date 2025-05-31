@@ -1,5 +1,5 @@
 {
-  "frontend": [
+  "technologies": [
     {
       "name": "React",
       "url": "https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif"
@@ -15,9 +15,23 @@
     {
       "name": "TypeScript",
       "url": "https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif"
-    }
-  ],
-  "backend": [
+    },
+    {
+      "name": "Tailwind CSS",
+      "url": "https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif"
+    },
+    {
+      "name": "Vite",
+      "url": "https://media.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif"
+    },
+    {
+      "name": "ShadCN",
+      "url": "https://ui.shadcn.com/favicon.ico"
+    },
+    {
+      "name": "Framer Motion",
+      "url": "https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif"
+    },
     {
       "name": "Node.js",
       "url": "https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif"
@@ -29,9 +43,15 @@
     {
       "name": "C#",
       "url": "https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif"
-    }
-  ],
-  "database": [
+    },
+    {
+      "name": "Blazor",
+      "url": "https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/10/2019/04/BrandBlazor_nohalo_1000x.png"
+    },
+    {
+      "name": "Express",
+      "url": "https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif"
+    },
     {
       "name": "PostgreSQL",
       "url": "https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif"
@@ -39,20 +59,47 @@
     {
       "name": "MongoDB",
       "url": "https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif"
-    }
-  ],
-  "tools": [
+    },
+    {
+      "name": "Supabase",
+      "url": "https://supabase.com/favicon.ico"
+    },
+    {
+      "name": "Prisma",
+      "url": "https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif"
+    },
+    {
+      "name": "JWT",
+      "url": "https://jwt.io/img/pic_logo.svg"
+    },
+    {
+      "name": "Socket.io",
+      "url": "https://socket.io/images/logo.svg"
+    },
     {
       "name": "Git",
       "url": "https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif"
+    },
+    {
+      "name": "Docker",
+      "url": "https://media.giphy.com/media/6HkGCxUE8kTG8/giphy.gif"
     },
     {
       "name": "VS Code",
       "url": "https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif"
     },
     {
+      "name": "Postman",
+      "url": "https://www.postman.com/assets/logos/postman-logo-icon-orange.svg"
+    },
+    {
+      "name": "Swagger",
+      "url": "https://swagger.io/favicon-32x32.png"
+    },
+    {
       "name": "Vercel",
       "url": "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png"
     }
-  ]
+  ],
+  "lastUpdated": "2024-01-01T00:00:00.000Z"
 }
