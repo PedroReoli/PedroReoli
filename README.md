@@ -22,6 +22,7 @@
 
 
 
+
 ## Ultimas Atualizacoes
 
 <div align="center">
@@ -36,11 +37,12 @@
       <td align="center">Online</td>
       <td align="center">PedroReoli</td>
       <td align="center">Agora</td>
-      <td align="center">5</td>
+      <td align="center">7</td>
     </tr>
   </table>
   <sub><i>Atualizado via GitHub Actions</i></sub>
 </div>
+
 
 
 
