@@ -17,7 +17,6 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
 </div>
 
-
 ## Ultimas Atualizacoes
 
 <div align="center">
@@ -38,7 +37,6 @@
   <sub><i>Atualizado via GitHub Actions</i></sub>
 </div>
 
-
 ## Sobre Mim
 
 <img align="right" alt="Chill gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="300" height="160" />
@@ -53,37 +51,24 @@ Tambem sou músico nas horas vagas,apaixonado por blues , rock e heavy metal
 - Blog onde escrevo sobre código: [devemdesenvolvimento.com.br/](https://www.devemdesenvolvimento.com.br/)
 - **Plot twist:** Quando não estou debugando, estou tocando guitarra - viciado em guitarra, blues, rock
 
+
+
 ## Tech Stack
 
-### Frontend & UI
-
-|  |  |  |  |
-| :---: | :---: | :---: | :---: |
-| <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" width="40" height="40" /> | <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Angular" width="40" height="40" /> | <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="TypeScript" width="40" height="40" /> |
-| **React** | **Next.js** | **Angular** | **TypeScript** |
-
-### Backend & Languages
-
-|  |  |  |
-| :---: | :---: | :---: |
-| <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="Node.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="Python" width="40" height="40" /> | <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="C#" width="40" height="40" /> |
-| **Node.js** | **Python** | **C#** |
-
-### Database & Storage
-
-|  |  |
-| :---: | :---: |
-| <img src="https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif" alt="PostgreSQL" width="40" height="40" /> | <img src="https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif" alt="MongoDB" width="40" height="40" /> |
-| **PostgreSQL** | **MongoDB** |
-
-### Tools & DevOps
-
-|  |  |  |
-| :---: | :---: | :---: |
-| <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" width="40" height="40" /> | <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="VS Code" width="40" height="40" /> | <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" width="40" height="40" /> |
-| **Git** | **VS Code** | **Vercel** |
+|  |  |  |  |  |  |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" width="40" height="40" /> | <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Angular" width="40" height="40" /> | <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="TypeScript" width="40" height="40" /> | <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" alt="Tailwind CSS" width="40" height="40" /> | <img src="https://media.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" alt="Vite" width="40" height="40" /> |
+| **React** | **Next.js** | **Angular** | **TypeScript** | **Tailwind CSS** | **Vite** |
+| <img src="https://ui.shadcn.com/favicon.ico" alt="ShadCN" width="40" height="40" /> | <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" alt="Framer Motion" width="40" height="40" /> | <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="Node.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="Python" width="40" height="40" /> | <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="C#" width="40" height="40" /> | <img src="https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/10/2019/04/BrandBlazor_nohalo_1000x.png" alt="Blazor" width="40" height="40" /> |
+| **ShadCN** | **Framer Motion** | **Node.js** | **Python** | **C#** | **Blazor** |
+| <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="Express" width="40" height="40" /> | <img src="https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif" alt="PostgreSQL" width="40" height="40" /> | <img src="https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif" alt="MongoDB" width="40" height="40" /> | <img src="https://supabase.com/favicon.ico" alt="Supabase" width="40" height="40" /> | <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Prisma" width="40" height="40" /> | <img src="https://jwt.io/img/pic_logo.svg" alt="JWT" width="40" height="40" /> |
+| **Express** | **PostgreSQL** | **MongoDB** | **Supabase** | **Prisma** | **JWT** |
+| <img src="https://socket.io/images/logo.svg" alt="Socket.io" width="40" height="40" /> | <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" width="40" height="40" /> | <img src="https://media.giphy.com/media/6HkGCxUE8kTG8/giphy.gif" alt="Docker" width="40" height="40" /> | <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="VS Code" width="40" height="40" /> | <img src="https://www.postman.com/assets/logos/postman-logo-icon-orange.svg" alt="Postman" width="40" height="40" /> | <img src="https://swagger.io/favicon-32x32.png" alt="Swagger" width="40" height="40" /> |
+| **Socket.io** | **Git** | **Docker** | **VS Code** | **Postman** | **Swagger** |
+| <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" width="40" height="40" /> |  |  |  |  |  |
+| **Vercel** |  |  |  |  |  |
 
 <div align="center">
-  <sub><i>Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
+  <sub><i>Stack sempre em evolução • 25 tecnologias • Atualizado via GitHub Actions</i></sub>
 </div>
 
