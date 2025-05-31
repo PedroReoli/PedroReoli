@@ -44,7 +44,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           USERNAME: ${{ secrets.REPOSITORY_OWNER }}
           
-      # Push Snake Animation
+      # Push Snake Animation to output branch
       - name: Push Snake Animation
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
@@ -53,9 +53,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
           
-      # Commit 3D Profile
+      # Commit only 3D Profile (skip dist folder)
       - name: Commit & Push 3D Profile
         run: |
-          git add profile-3d-contrib/*.svg dist/
-          git diff --staged --quiet || git commit -m "🎨 update 3D profile and animations"
+          git add profile-3d-contrib/*.svg
+          git diff --staged --quiet || git commit -m "update 3D profile visualization"
           git push
