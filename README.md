@@ -7,14 +7,51 @@
     <img src="https://img.shields.io/badge/Foco-Frontend%20Avançado-blue?style=flat&logo=react" alt="Focus" />
   </p>
 
-  <div>
-    <a href="https://www.youtube.com/@DevDesenvolvimento"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" /></a>
-    <a href="https://www.instagram.com/01_dev_em_desenvolvimento/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
-    <a href="https://www.linkedin.com/in/pedro-lucas-reis-de-oliveira-sousa-a93945171/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-    <a href="https://discord.gg/teDfu39G7r"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  </div>
   
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
+  
+  <div align="center">
+  <h3> Conecte-se Comigo</h3>
+  <p>
+    <a href="https://www.youtube.com/@DevDesenvolvimento" target="_blank" rel="noopener noreferrer">
+      <img src="https://media.giphy.com/media/13Nc3xlO1kGg3S/giphy.gif" 
+           alt="YouTube Channel" 
+           width="60" 
+           height="60"
+           style="border-radius: 15px; margin: 10px;" />
+    </a>
+    <a href="https://www.instagram.com/01_dev_em_desenvolvimento/" target="_blank" rel="noopener noreferrer">
+      <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNmhxNWc1Mzg5YXdsY2hqcXRoNXBxOHUzZ3NoZXFtdTBjbm03bW9ndiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YwNCU8P5jGMNKGG5Bq/giphy.gif" 
+           alt="Instagram Profile" 
+           width="60" 
+           height="60"
+           style="border-radius: 15px; margin: 10px;" />
+    </a>
+    <a href="https://www.linkedin.com/in/pedro-lucas-reis-de-oliveira-sousa-a93945171/" target="_blank" rel="noopener noreferrer">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHVzenF3NTY4b3VuNmoxZGhzMW4zcTg2bmJvNDJzMmMycHg5ZXVvMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/0R7mnx1ZvrBG42PbNV/giphy.gif" 
+           alt="LinkedIn Profile" 
+           width="60" 
+           height="60"
+           style="border-radius: 15px; margin: 10px;" />
+    </a>
+    <a href="https://pedroreoliportfolio.vercel.app" target="_blank" rel="noopener noreferrer">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm9hczN2bHl4YjNiamFqZHYwdzh3cHB2NXpoODdla25vejdncXNneSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/K2Sh84qmPCk0rekSqk/giphy.gif" 
+           alt="Portfolio Website" 
+           width="60" 
+           height="60"
+           style="border-radius: 15px; margin: 10px;" />
+    </a>
+    <a href="https://www.devemdesenvolvimento.com.br/" target="_blank" rel="noopener noreferrer">
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHh0c3R6ZWluMGp6cjhvdXdwaDl5eTJ3NnZ2d240YnYzN2gxeWV4aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/yxPRAfqAIjzGlz7cPE/giphy.gif" 
+           alt="Dev Blog" 
+           width="60" 
+           height="60"
+           style="border-radius: 15px; margin: 10px;" />
+    </a>
+  </p>
+  <sub><i>Redes sociais atualizadas via GitHub Actions</i></sub>
+</div>
+  
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
 </div>
 
 
