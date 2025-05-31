@@ -89,8 +89,6 @@ Opa! Sou desenvolvedor Full Stack com foco em Frontend, sempre buscando transfor
 - Blog onde escrevo sobre código: [devemdesenvolvimento.com.br/](https://www.devemdesenvolvimento.com.br/)
 - **Plot twist:** Quando não estou debugando, estou tocando guitarra - viciado em Tocar guitarra, Blues, Metal, Rock
 
-
-
 ## Tech Stack
 
 ### Frontend & UI
