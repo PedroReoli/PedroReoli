@@ -17,7 +17,6 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
 </div>
 
-
 ## Ultimas Atualizacoes
 
 <div align="center">
@@ -51,9 +50,41 @@ Opa! Sou desenvolvedor Full Stack com foco em Frontend, sempre buscando transfor
 - Blog onde escrevo sobre código: [devemdesenvolvimento.com.br/](https://www.devemdesenvolvimento.com.br/)
 - **Plot twist:** Quando não estou debugando, estou tocando guitarra - viciado em Tocar guitarra, Blues, Metal, Rock
 
-
-
-
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
 </div>
+
+## Tech Stack
+
+### Frontend & UI
+
+|  |  |  |  |
+| :---: | :---: | :---: | :---: |
+| <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" width="40" height="40" /> | <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Angular" width="40" height="40" /> | <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="TypeScript" width="40" height="40" /> |
+| **React** | **Next.js** | **Angular** | **TypeScript** |
+
+### Backend & Languages
+
+|  |  |  |
+| :---: | :---: | :---: |
+| <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="Node.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="Python" width="40" height="40" /> | <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="C#" width="40" height="40" /> |
+| **Node.js** | **Python** | **C#** |
+
+### Database & Storage
+
+|  |  |
+| :---: | :---: |
+| <img src="https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif" alt="PostgreSQL" width="40" height="40" /> | <img src="https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif" alt="MongoDB" width="40" height="40" /> |
+| **PostgreSQL** | **MongoDB** |
+
+### Tools & DevOps
+
+|  |  |  |
+| :---: | :---: | :---: |
+| <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" width="40" height="40" /> | <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="VS Code" width="40" height="40" /> | <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" width="40" height="40" /> |
+| **Git** | **VS Code** | **Vercel** |
+
+<div align="center">
+  <sub><i>Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
+</div>
+
