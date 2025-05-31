@@ -58,28 +58,18 @@ function updateReadmeTechStack() {
     const toolsSection = generateSimpleTechSection(techData.tools, "Tools & DevOps")
 
     // Gerar seção completa da tech stack simplificada
-    const techStackMarkdown = `## Tech Stack
+    const techStackMarkdown = `## Tech Stack\n\n${frontendSection}${backendSection}${databaseSection}${toolsSection}<div align="center">\n  <sub><i>Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>\n</div>\n\n`
 
-${frontendSection}
-${backendSection}
-${databaseSection}
-${toolsSection}
-
-<div align="center">
-  <sub><i>Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
-</div>
-`
-
-    // Substituir seção de tech stack
-    const techStackRegex = /## Tech Stack[\s\S]*?(?=##|$)/
+    // Substituir seção de tech stack - usando uma regex mais precisa para evitar duplicação
+    const techStackRegex = /## Tech Stack\s*\n[\s\S]*?(?=\n##|$)/
 
     if (techStackRegex.test(readme)) {
       readme = readme.replace(techStackRegex, techStackMarkdown)
     } else {
       console.log("Seção Tech Stack não encontrada, adicionando nova seção...")
       // Se não encontrar, adicionar após a seção "Sobre Mim"
-      const aboutMeRegex = /(## Sobre Mim[\s\S]*?)(?=##|$)/
-      readme = readme.replace(aboutMeRegex, `$1\n${techStackMarkdown}\n`)
+      const aboutMeRegex = /(## Sobre Mim[\s\S]*?)(?=\n##|$)/
+      readme = readme.replace(aboutMeRegex, `$1\n\n${techStackMarkdown}`)
     }
 
     // Salvar README atualizado
