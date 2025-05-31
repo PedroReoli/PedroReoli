@@ -17,10 +17,6 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
 </div>
 
-
-
-
-
 ## Ultimas Atualizacoes
 
 <div align="center">
@@ -41,10 +37,6 @@
   <sub><i>Atualizado via GitHub Actions</i></sub>
 </div>
 
-
-
-
-
 ## Sobre Mim
 
 <img align="right" alt="Chill gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="300" height="160" />
@@ -57,6 +49,7 @@ Opa! Sou desenvolvedor Full Stack com foco em Frontend, sempre buscando transfor
 - Meu portfólio: [pedroreoliportfolio.vercel.app](https://pedroreoliportfolio.vercel.app)
 - Blog onde escrevo sobre código: [devemdesenvolvimento.com.br/](https://www.devemdesenvolvimento.com.br/)
 - **Plot twist:** Quando não estou debugando, estou tocando guitarra - viciado em Tocar guitarra, Blues, Metal, Rock
+
 
 ## Tech Stack
 
@@ -92,117 +85,6 @@ Opa! Sou desenvolvedor Full Stack com foco em Frontend, sempre buscando transfor
   <sub><i>Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
 </div>
 
-
-### Backend & Languages
-
-|  |  |  |
-| :---: | :---: | :---: |
-| <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="Node.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="Python" width="40" height="40" /> | <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="C#" width="40" height="40" /> |
-| **Node.js** | **Python** | **C#** |
-
-
-### Database & Storage
-
-|  |  |
-| :---: | :---: |
-| <img src="https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif" alt="PostgreSQL" width="40" height="40" /> | <img src="https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif" alt="MongoDB" width="40" height="40" /> |
-| **PostgreSQL** | **MongoDB** |
-
-
-### Tools & DevOps
-
-|  |  |  |
-| :---: | :---: | :---: |
-| <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" width="40" height="40" /> | <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="VS Code" width="40" height="40" /> | <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" width="40" height="40" /> |
-| **Git** | **VS Code** | **Vercel** |
-
-
-
-<div align="center">
-  <sub><i>Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
-</div>
-### Frontend & UI
-
-|  |  |  |  |
-| :---: | :---: | :---: | :---: |
-| <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" width="40" height="40" /> | <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Angular" width="40" height="40" /> | <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="TypeScript" width="40" height="40" /> |
-| **React** | **Next.js** | **Angular** | **TypeScript** |
-
-
-### Backend & Languages
-
-|  |  |  |
-| :---: | :---: | :---: |
-| <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="Node.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="Python" width="40" height="40" /> | <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="C#" width="40" height="40" /> |
-| **Node.js** | **Python** | **C#** |
-
-
-### Database & Storage
-
-|  |  |
-| :---: | :---: |
-| <img src="https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif" alt="PostgreSQL" width="40" height="40" /> | <img src="https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif" alt="MongoDB" width="40" height="40" /> |
-| **PostgreSQL** | **MongoDB** |
-
-
-### Tools & DevOps
-
-|  |  |  |
-| :---: | :---: | :---: |
-| <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" width="40" height="40" /> | <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="VS Code" width="40" height="40" /> | <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" width="40" height="40" /> |
-| **Git** | **VS Code** | **Vercel** |
-
-
-
-<div align="center">
-  <sub><i>Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
-</div>
-### Frontend & UI
-
-| <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" width="40" height="40" /> | <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Angular" width="40" height="40" /> | <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="TypeScript" width="40" height="40" /> |
-| :---: | :---: | :---: | :---: |
-| **React** | **Next.js** | **Angular** | **TypeScript** |
-
-### Backend & Languages
-
-| <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="Node.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="Python" width="40" height="40" /> | <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="C#" width="40" height="40" /> |
-| :---: | :---: | :---: |
-| **Node.js** | **Python** | **C#** |
-
-### Database & Storage
-
-| <img src="https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif" alt="PostgreSQL" width="40" height="40" /> | <img src="https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif" alt="MongoDB" width="40" height="40" /> |
-| :---: | :---: |
-| **PostgreSQL** | **MongoDB** |
-
-### Tools & DevOps
-
-| <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" width="40" height="40" /> | <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="VS Code" width="40" height="40" /> | <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" width="40" height="40" /> |
-| :---: | :---: | :---: |
-| **Git** | **VS Code** | **Vercel** |
-
-<div align="center">
-  <sub><i>Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
-</div>
-
-## GitHub Overview
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-stats-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/github-stats-light.svg">
-    <img src="./assets/github-stats-dark.svg" alt="GitHub Overview" width="800">
-  </picture>
-  
-  <br><br>
-  
-  <img width="400" height="158" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&hide_title=true" alt="Linguagens" />
-  <img width="400" height="158" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=radical&hide_border=true" alt="GitHub Streak" />
-  
-  <br>
-  
-  <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="300" alt="Developer Animation" />
-</div>
 
 ## Contribuicoes
 
