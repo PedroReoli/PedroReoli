@@ -18,7 +18,7 @@
     },
     {
       "name": "Tailwind CSS",
-      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/tailwindcss/tailwindcss-original.svg"
     },
     {
       "name": "Vite",
@@ -35,10 +35,6 @@
     {
       "name": "C#",
       "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
-    },
-    {
-      "name": "Express",
-      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
     },
     {
       "name": "PostgreSQL",
@@ -66,7 +62,7 @@
     },
     {
       "name": "Vercel",
-      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vercel/vercel-original.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/vercel/vercel-line-wordmark.svg"
     },
     {
       "name": "JavaScript",
@@ -97,5 +93,5 @@
       "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
     }
   ],
-  "lastUpdated": "2025-06-01T01:38:06.292Z"
+  "lastUpdated": "2024-01-01T00:00:00.000Z"
 }
