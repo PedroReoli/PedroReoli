@@ -2,104 +2,100 @@
   "technologies": [
     {
       "name": "React",
-      "url": "./icons/react.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"
     },
     {
       "name": "Next.js",
-      "url": "./icons/nextjs.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg"
     },
     {
       "name": "Angular",
-      "url": "./icons/angular.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg"
     },
     {
       "name": "TypeScript",
-      "url": "./icons/typescript.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
     },
     {
       "name": "Tailwind CSS",
-      "url": "./icons/tailwindcss.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg"
     },
     {
       "name": "Vite",
-      "url": "./icons/vite.svg"
-    },
-    {
-      "name": "ShadCN",
-      "url": "./icons/shadcn.svg"
-    },
-    {
-      "name": "Framer Motion",
-      "url": "./icons/framer.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg"
     },
     {
       "name": "Node.js",
-      "url": "./icons/nodejs.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
     },
     {
       "name": "Python",
-      "url": "./icons/python.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
     },
     {
       "name": "C#",
-      "url": "./icons/csharp.svg"
-    },
-    {
-      "name": "Blazor",
-      "url": "./icons/blazor.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
     },
     {
       "name": "Express",
-      "url": "./icons/express.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
     },
     {
       "name": "PostgreSQL",
-      "url": "./icons/postgresql.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg"
     },
     {
       "name": "MongoDB",
-      "url": "./icons/mongodb.svg"
-    },
-    {
-      "name": "Supabase",
-      "url": "./icons/supabase.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg"
     },
     {
       "name": "Prisma",
-      "url": "./icons/prisma.svg"
-    },
-    {
-      "name": "JWT",
-      "url": "./icons/jwt.svg"
-    },
-    {
-      "name": "Socket.io",
-      "url": "./icons/socketio.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/prisma/prisma-original.svg"
     },
     {
       "name": "Git",
-      "url": "./icons/git.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg"
     },
     {
       "name": "Docker",
-      "url": "./icons/docker.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"
     },
     {
       "name": "VS Code",
-      "url": "./icons/vscode.svg"
-    },
-    {
-      "name": "Postman",
-      "url": "./icons/postman.svg"
-    },
-    {
-      "name": "Swagger",
-      "url": "./icons/swagger.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
     },
     {
       "name": "Vercel",
-      "url": "./icons/vercel.svg"
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/vercel/vercel-original.svg"
+    },
+    {
+      "name": "JavaScript",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
+    },
+    {
+      "name": "HTML5",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
+    },
+    {
+      "name": "CSS3",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
+    },
+    {
+      "name": "Figma",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg"
+    },
+    {
+      "name": "Firebase",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/firebase/firebase-plain.svg"
+    },
+    {
+      "name": "MySQL",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+    },
+    {
+      "name": "Linux",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
     }
   ],
-  "lastUpdated": "2025-06-01T01:31:33.264Z"
+  "lastUpdated": "2024-01-01T00:00:00.000Z"
 }
