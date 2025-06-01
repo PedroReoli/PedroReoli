@@ -1,6 +1,6 @@
 /**
- * Tech Stack SVG Generator - Versão com Ícones Locais
- * Gera SVG dinâmico usando ícones da pasta ./icons/
+ * Tech Stack Generator - Versão Compatível com GitHub
+ * Gera HTML table em vez de SVG para evitar problemas de CSP
  */
 
 import fs from "fs"
@@ -16,46 +16,57 @@ const OUTPUT_DIR = path.join(__dirname, "../assets")
 const ICONS_DIR = path.join(__dirname, "../icons")
 
 /**
- * Calcula o grid ideal para distribuir as tecnologias
+ * Converte SVG para base64
+ */
+function svgToBase64(svgPath) {
+  try {
+    if (fs.existsSync(svgPath)) {
+      const svgContent = fs.readFileSync(svgPath, "utf8")
+      const base64 = Buffer.from(svgContent).toString("base64")
+      return `data:image/svg+xml;base64,${base64}`
+    }
+  } catch (error) {
+    console.log(`Erro ao converter ${svgPath}:`, error.message)
+  }
+  return null
+}
+
+/**
+ * Gera ícone fallback simples
+ */
+function generateFallbackIcon(techName, theme = "dark") {
+  const firstLetter = techName.charAt(0).toUpperCase()
+  const colors = ["#6366f1", "#8b5cf6", "#06b6d4", "#10b981", "#f59e0b", "#ef4444"]
+  const bgColor = colors[techName.length % colors.length]
+  const textColor = theme === "dark" ? "#ffffff" : "#ffffff"
+
+  return `data:image/svg+xml;base64,${Buffer.from(`
+    <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+      <rect width="40" height="40" rx="8" fill="${bgColor}"/>
+      <text x="20" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="${textColor}" font-family="Arial, sans-serif">${firstLetter}</text>
+    </svg>
+  `).toString("base64")}`
+}
+
+/**
+ * Calcula grid otimizado
  */
 function calculateOptimalGrid(total) {
-  if (total <= 6) return { rows: 1, cols: total }
-  if (total <= 12) return { rows: 2, cols: 6 }
+  if (total <= 5) return { rows: 1, cols: total }
+  if (total <= 10) return { rows: 2, cols: 5 }
   if (total <= 20) return { rows: 4, cols: 5 }
   if (total <= 30) return { rows: 5, cols: 6 }
 
-  // Para mais de 30, calcular o mais próximo de um quadrado
   const sqrt = Math.sqrt(total)
   const cols = Math.ceil(sqrt)
   const rows = Math.ceil(total / cols)
-
   return { rows, cols }
 }
 
 /**
- * Verifica se o ícone existe na pasta icons
+ * Gera HTML da tech stack
  */
-function checkIconExists(iconPath) {
-  const fullPath = path.join(__dirname, "..", iconPath)
-  return fs.existsSync(fullPath)
-}
-
-/**
- * Gera ícone fallback SVG
- */
-function generateFallbackIcon(techName) {
-  const firstLetter = techName.charAt(0).toUpperCase()
-  const colors = ["#6366f1", "#8b5cf6", "#06b6d4", "#10b981", "#f59e0b", "#ef4444"]
-  const color = colors[techName.length % colors.length]
-
-  return `<rect width="40" height="40" rx="8" fill="${color}"/>
-          <text x="20" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="white">${firstLetter}</text>`
-}
-
-/**
- * Gera SVG com tema específico
- */
-function generateSVG(technologies, theme = "dark") {
+function generateTechStackHTML(technologies, theme = "dark") {
   const { rows, cols } = calculateOptimalGrid(technologies.length)
 
   // Configurações de tema
@@ -80,147 +91,95 @@ function generateSVG(technologies, theme = "dark") {
 
   const colors = themes[theme]
 
-  // Dimensões
-  const itemWidth = 120
-  const itemHeight = 100
-  const padding = 20
-  const svgWidth = cols * itemWidth + padding * 2
-  const svgHeight = rows * itemHeight + padding * 2 + 60 // Extra para título
+  // Dividir tecnologias em linhas
+  const techRows = []
+  for (let i = 0; i < technologies.length; i += cols) {
+    techRows.push(technologies.slice(i, i + cols))
+  }
 
-  // Gerar elementos das tecnologias
-  const techElements = technologies
-    .map((tech, index) => {
-      const row = Math.floor(index / cols)
-      const col = index % cols
-      const x = padding + col * itemWidth + itemWidth / 2
-      const y = padding + 50 + row * itemHeight + itemHeight / 2
+  // Gerar células das tecnologias
+  const techCells = techRows
+    .map((row) => {
+      const cells = row
+        .map((tech) => {
+          // Tentar carregar ícone local
+          const iconPath = path.join(__dirname, "..", tech.url)
+          let iconSrc = svgToBase64(iconPath)
 
-      // Verificar se ícone existe
-      const iconExists = checkIconExists(tech.url)
-      let iconElement
+          // Se não conseguir, usar fallback
+          if (!iconSrc) {
+            iconSrc = generateFallbackIcon(tech.name, theme)
+          }
 
-      if (iconExists) {
-        // Usar ícone local
-        iconElement = `<image x="${x - 20}" y="${y - 25}" width="40" height="40" href="${tech.url}" />`
-      } else {
-        // Usar fallback
-        iconElement = `<g transform="translate(${x - 20}, ${y - 25})">
-          <svg width="40" height="40" viewBox="0 0 40 40">
-            ${generateFallbackIcon(tech.name)}
-          </svg>
-        </g>`
-      }
+          return `
+        <td align="center" style="padding: 16px; border: 1px solid ${colors.border}; background: ${colors.cardBg}; border-radius: 8px; min-width: 120px;">
+          <img src="${iconSrc}" alt="${tech.name}" width="40" height="40" style="display: block; margin: 0 auto 8px auto;" />
+          <div style="font-size: 11px; font-weight: 500; color: ${colors.text}; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
+            ${tech.name}
+          </div>
+        </td>`
+        })
+        .join("")
 
-      return `
-    <g class="tech-item" style="animation-delay: ${index * 0.05}s">
-      <!-- Card background -->
-      <rect x="${x - 50}" y="${y - 40}" width="100" height="80" rx="8" 
-            fill="${colors.cardBg}" stroke="${colors.border}" stroke-width="1" 
-            opacity="0.8" />
-      
-      <!-- Tech icon -->
-      ${iconElement}
-      
-      <!-- Tech name -->
-      <text x="${x}" y="${y + 25}" text-anchor="middle" 
-            font-size="11" font-weight="500" fill="${colors.text}">
-        ${tech.name}
-      </text>
-    </g>`
+      // Preencher células vazias se necessário
+      const emptyCells = cols - row.length
+      const emptyFill = emptyCells > 0 ? "<td></td>".repeat(emptyCells) : ""
+
+      return `<tr>${cells}${emptyFill}</tr>`
     })
     .join("")
 
-  // SVG completo
-  const svg = `
-<svg width="${svgWidth}" height="${svgHeight}" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    @keyframes fadeInUp { 
-      from { opacity: 0; transform: translateY(10px); } 
-      to { opacity: 1; transform: translateY(0); } 
-    }
-    
-    .tech-item { 
-      animation: fadeInUp 0.6s ease-out forwards; 
-      opacity: 0;
-    }
-    
-    text { 
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif; 
-    }
-    
-    .title-text { 
-      animation: fadeInUp 0.8s ease-out; 
-    }
-    
-    .tech-item:hover rect {
-      fill: ${colors.accent};
-      opacity: 0.2;
-    }
-  </style>
+  // HTML completo
+  const html = `
+<div align="center" style="background: ${colors.background}; padding: 24px; border-radius: 12px; border: 1px solid ${colors.border};">
+  <h3 style="color: ${colors.text}; margin: 0 0 16px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 18px; font-weight: 600;">
+    Tech Stack
+  </h3>
   
-  <!-- Background -->
-  <rect width="${svgWidth}" height="${svgHeight}" fill="${colors.background}" rx="12" />
+  <table style="border-collapse: separate; border-spacing: 8px; margin: 0 auto;">
+    ${techCells}
+  </table>
   
-  <!-- Header -->
-  <g class="title-text">
-    <text x="${svgWidth / 2}" y="35" text-anchor="middle" font-size="18" font-weight="600" fill="${colors.text}">
-      Tech Stack
-    </text>
-    <line x1="${padding}" y1="45" x2="${svgWidth - padding}" y2="45" stroke="${colors.border}" stroke-width="1" />
-  </g>
-  
-  <!-- Tech items -->
-  ${techElements}
-  
-  <!-- Footer -->
-  <text x="${svgWidth / 2}" y="${svgHeight - 15}" text-anchor="middle" font-size="10" fill="${colors.textSecondary}">
+  <p style="color: ${colors.textSecondary}; font-size: 10px; margin: 16px 0 0 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">
     ${technologies.length} tecnologias • Atualizado automaticamente
-  </text>
-  
-  <!-- Accent line -->
-  <rect x="0" y="0" width="${svgWidth}" height="3" fill="${colors.accent}" rx="2" />
-</svg>`
+  </p>
+</div>`
 
-  return svg.trim()
+  return html.trim()
 }
 
-/**
- * Gera SVGs para ambos os temas
- */
-async function generateTechStackSVGs() {
-  console.log("Gerando SVGs da tech stack com ícones locais...")
+// Executar
+async function runTechStackGenerator() {
+  console.log("Gerando HTML da tech stack compatível com GitHub...")
 
   try {
-    // Verificar se arquivo de dados existe
+    // Verificar arquivo de dados
     if (!fs.existsSync(TECH_DATA_FILE)) {
       console.error("❌ Arquivo data/tech-stack.json não encontrado!")
       return
     }
 
-    // Ler dados das tecnologias
+    // Ler dados
     const techData = JSON.parse(fs.readFileSync(TECH_DATA_FILE, "utf8"))
     const technologies = techData.technologies
 
     if (!technologies || technologies.length === 0) {
-      console.error("❌ Nenhuma tecnologia encontrada no JSON!")
+      console.error("❌ Nenhuma tecnologia encontrada!")
       return
-    }
-
-    // Verificar pasta de ícones
-    if (!fs.existsSync(ICONS_DIR)) {
-      console.log("📁 Criando pasta icons...")
-      fs.mkdirSync(ICONS_DIR, { recursive: true })
     }
 
     // Criar diretório de saída
     fs.mkdirSync(OUTPUT_DIR, { recursive: true })
 
-    // Verificar quais ícones existem
-    const iconsStatus = technologies.map((tech) => ({
-      name: tech.name,
-      exists: checkIconExists(tech.url),
-      path: tech.url,
-    }))
+    // Verificar status dos ícones
+    const iconsStatus = technologies.map((tech) => {
+      const iconPath = path.join(__dirname, "..", tech.url)
+      return {
+        name: tech.name,
+        exists: fs.existsSync(iconPath),
+        path: tech.url,
+      }
+    })
 
     const existingIcons = iconsStatus.filter((icon) => icon.exists).length
     const missingIcons = iconsStatus.filter((icon) => !icon.exists)
@@ -230,30 +189,30 @@ async function generateTechStackSVGs() {
     console.log(`❌ Faltando: ${missingIcons.length}`)
 
     if (missingIcons.length > 0) {
-      console.log("\n📝 Ícones faltando:")
+      console.log("\n📝 Ícones faltando (usando fallback):")
       missingIcons.forEach((icon) => {
         console.log(`   - ${icon.name} (${icon.path})`)
       })
     }
 
-    // Gerar SVGs para ambos os temas
-    const darkSVG = generateSVG(technologies, "dark")
-    const lightSVG = generateSVG(technologies, "light")
+    // Gerar HTML para ambos os temas
+    const darkHTML = generateTechStackHTML(technologies, "dark")
+    const lightHTML = generateTechStackHTML(technologies, "light")
 
-    // Salvar arquivos
-    fs.writeFileSync(path.join(OUTPUT_DIR, "tech-stack-dark.svg"), darkSVG)
-    fs.writeFileSync(path.join(OUTPUT_DIR, "tech-stack-light.svg"), lightSVG)
+    // Salvar arquivos HTML
+    fs.writeFileSync(path.join(OUTPUT_DIR, "tech-stack-dark.html"), darkHTML)
+    fs.writeFileSync(path.join(OUTPUT_DIR, "tech-stack-light.html"), lightHTML)
 
-    // Atualizar timestamp no JSON
+    // Atualizar timestamp
     techData.lastUpdated = new Date().toISOString()
     fs.writeFileSync(TECH_DATA_FILE, JSON.stringify(techData, null, 2))
 
-    console.log("\n✅ SVGs da tech stack gerados com sucesso!")
+    console.log("\n✅ HTML da tech stack gerado com sucesso!")
     console.log(`📊 Tecnologias: ${technologies.length}`)
     console.log(
       `📐 Layout: ${calculateOptimalGrid(technologies.length).rows}x${calculateOptimalGrid(technologies.length).cols}`,
     )
-    console.log("📁 Arquivos: tech-stack-dark.svg, tech-stack-light.svg")
+    console.log("📁 Arquivos: tech-stack-dark.html, tech-stack-light.html")
 
     return {
       totalTechs: technologies.length,
@@ -263,10 +222,9 @@ async function generateTechStackSVGs() {
       missingIcons: missingIcons.length,
     }
   } catch (error) {
-    console.error("❌ Erro ao gerar SVGs da tech stack:", error)
+    console.error("❌ Erro ao gerar HTML da tech stack:", error)
     throw error
   }
 }
 
-// Executar
-generateTechStackSVGs().catch(console.error)
+runTechStackGenerator().catch(console.error)
