@@ -49,14 +49,13 @@
 <img align="right" alt="Chill gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="300" height="160" />
 
 Sou desenvolvedor full stack com foco em frontend e interesse constante por novas tecnologias. Atualmente sou estagiário na AutoCom3, onde atuo no desenvolvimento de sistemas com back-end e front-end integrados.
-
-Também sou músico, apaixonado por guitarra, blues e rock — e acredito que a criatividade se expressa tanto no código quanto nas cordas.
+Tambem sou músico nas horas vagas,apaixonado por blues , rock e heavy metal
 
 - Atualmente na **AutoCom3**, Estagiário de Desenvolvimento
 - Desenvolvendo o [FalaAtípica](https://github.com/PedroReoli/falatipica-tutor) - TCC sobre acessibilidade e comunicação
 - Sempre aprendendo algo novo em **React, Next.js, Node.js, Three.js, C#**
 - Meu portfólio: [pedroreoliportfolio.vercel.app](https://pedroreoliportfolio.vercel.app)
-- Blog onde escrevo sobre código: [devemdesenvolvimento.com.br](https://www.devemdesenvolvimento.com.br/)
+- Blog onde escrevo sobre código: [devemdesenvolvimento.com.br/](https://www.devemdesenvolvimento.com.br/)
 - **Plot twist:** Quando não estou debugando, estou tocando guitarra - viciado em guitarra, blues, rock
 <!-- FIM_SOBRE_MIM -->
 
