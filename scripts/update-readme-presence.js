@@ -1,5 +1,5 @@
 /**
- * Atualiza README com status de presença - Versão com Marcadores Seguros
+ * Atualiza README com status de presença - Versão sem emojis
  */
 
 import fs from "fs"
@@ -22,7 +22,7 @@ function updateReadmePresence() {
     const status = JSON.parse(fs.readFileSync(statusFile, "utf8"))
     let readme = fs.readFileSync(readmeFile, "utf8")
 
-    // Gerar seção de status limpa
+    // Gerar seção de status limpa sem emojis
     const githubActivity = status.github
 
     const statusSection = `<div align="center">
@@ -34,7 +34,7 @@ function updateReadmePresence() {
       <td align="center"><strong>Commits Hoje</strong></td>
     </tr>
     <tr>
-      <td align="center">${githubActivity.isOnline ? "🟢 Online" : "🔴 Offline"}</td>
+      <td align="center">${githubActivity.isOnline ? "Online" : "Offline"}</td>
       <td align="center">${githubActivity.activeRepo}</td>
       <td align="center">${githubActivity.lastActive}</td>
       <td align="center">${githubActivity.todayCommits}</td>
@@ -48,9 +48,9 @@ function updateReadmePresence() {
 
     if (statusRegex.test(readme)) {
       readme = readme.replace(statusRegex, `$1\n${statusSection}\n$3`)
-      console.log("✅ Status atualizado com sucesso!")
+      console.log("Status atualizado com sucesso!")
     } else {
-      console.error("❌ Marcadores de status não encontrados no README!")
+      console.error("Marcadores de status não encontrados no README!")
       return
     }
 

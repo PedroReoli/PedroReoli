@@ -19,7 +19,7 @@
 
 ---
 
-## 📊 Últimas Atualizações
+## Ultimas Atualizacoes
 
 <!-- INICIO_STATUS_LIVE -->
 <div align="center">
@@ -31,54 +31,48 @@
       <td align="center"><strong>Commits Hoje</strong></td>
     </tr>
     <tr>
-      <td align="center">🟢 Online</td>
-      <td align="center">PedroReoli</td>
-      <td align="center">Agora</td>
-      <td align="center">2</td>
+      <td align="center">Carregando...</td>
+      <td align="center">Carregando...</td>
+      <td align="center">Carregando...</td>
+      <td align="center">Carregando...</td>
     </tr>
   </table>
-  <sub><i>Última atualização: 01/06/2025, 00:29:46</i></sub>
+  <sub><i>Atualizando via GitHub Actions...</i></sub>
 </div>
 <!-- FIM_STATUS_LIVE -->
 
 ---
 
-## 👨‍💻 Sobre Mim
+## Sobre Mim
 
 <!-- INICIO_SOBRE_MIM -->
 <img align="right" alt="Chill gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="300" height="160" />
 
 Sou desenvolvedor full stack com foco em frontend e interesse constante por novas tecnologias. Atualmente sou estagiário na AutoCom3, onde atuo no desenvolvimento de sistemas com back-end e front-end integrados.
-Tambem sou músico nas horas vagas,apaixonado por blues , rock e heavy metal
+
+Também sou músico, apaixonado por guitarra, blues e rock — e acredito que a criatividade se expressa tanto no código quanto nas cordas.
 
 - Atualmente na **AutoCom3**, Estagiário de Desenvolvimento
 - Desenvolvendo o [FalaAtípica](https://github.com/PedroReoli/falatipica-tutor) - TCC sobre acessibilidade e comunicação
 - Sempre aprendendo algo novo em **React, Next.js, Node.js, Three.js, C#**
 - Meu portfólio: [pedroreoliportfolio.vercel.app](https://pedroreoliportfolio.vercel.app)
-- Blog onde escrevo sobre código: [devemdesenvolvimento.com.br/](https://www.devemdesenvolvimento.com.br/)
+- Blog onde escrevo sobre código: [devemdesenvolvimento.com.br](https://www.devemdesenvolvimento.com.br/)
 - **Plot twist:** Quando não estou debugando, estou tocando guitarra - viciado em guitarra, blues, rock
 <!-- FIM_SOBRE_MIM -->
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 
 <!-- INICIO_TECH_STACK -->
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/tech-stack-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/tech-stack-light.svg">
-    <img src="./assets/tech-stack-dark.svg" alt="Tech Stack" width="100%">
-  </picture>
-  
-  <br>
-  <sub><i>25 tecnologias • Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
+  <p>Stack sempre em evolução • Atualizado via GitHub Actions</p>
 </div>
 <!-- FIM_TECH_STACK -->
 
 ---
 
-## 📈 GitHub Overview
+## GitHub Overview
 
 <!-- INICIO_GITHUB_STATS -->
 <div align="center">
@@ -101,38 +95,11 @@ Tambem sou músico nas horas vagas,apaixonado por blues , rock e heavy metal
 
 ---
 
-## 🧠 Evolução das Skills
-
-<!-- INICIO_SKILL_EVOLUTION -->
-<div align="center">
-  <h4>Análise dos últimos 30 dias de commits</h4>
-  
-  | Linguagem | Commits | Tendência |
-  |:----------|:-------:|:----------|
-  
-  
-  <br>
-  
-  
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/skill-evolution-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/skill-evolution-light.svg">
-    <img src="./assets/skill-evolution-dark.svg" alt="Skill Evolution" width="800">
-  </picture>
-  
-  
-  <br>
-  <sub><i>Atualizado em: 01/06/2025, 00:29:36</i></sub>
-</div>
-<!-- FIM_SKILL_EVOLUTION -->
-
----
-
-## 🐍 Contribuições
+## Contribuicoes
 
 <!-- INICIO_CONTRIBUICOES -->
 <div align="center">
-  <h3>🎮 Pacman Contribution Graph</h3>
+  <h3>Pacman Contribution Graph</h3>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
@@ -141,27 +108,7 @@ Tambem sou músico nas horas vagas,apaixonado por blues , rock e heavy metal
   
   <br><br>
   
-  <h3>📊 Matriz de Contribuições 3D</h3>
+  <h3>Matriz de Contribuicoes 3D</h3>
   <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile" width="100%" onerror="this.style.display='none'" />
-  
-  <br><br>
-  
-  <h3>🐍 Snake Animation</h3>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/github-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/github-snake.svg">
-    <img alt="snake animation" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/github-snake.svg" width="100%" onerror="this.style.display='none'">
-  </picture>
 </div>
 <!-- FIM_CONTRIBUICOES -->
-
----
-
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
-  
-  <p>
-    <sub>💜 Feito com amor e muito café ☕</sub><br>
-    <sub>🤖 Atualizado automaticamente via GitHub Actions</sub>
-  </p>
-</div>

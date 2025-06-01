@@ -1,4 +1,4 @@
-name: 🎭 Profile Orchestrator
+name: Profile Orchestrator
 
 on:
   push:
@@ -12,62 +12,55 @@ on:
   workflow_dispatch:
 
 jobs:
-  # 0. Primeiro: Pacman animation (mais leve)
+  # 1. Primeiro: Pacman animation
   generate-pacman:
     name: "Pacman Animation"
     uses: ./.github/workflows/pacman.yml
     secrets: inherit
 
-  # 1. Segundo: Gerar dados base
+  # 2. Segundo: Gerar dados base
   generate-stats:
     name: "GitHub Stats"
     needs: generate-pacman
     uses: ./.github/workflows/github-stats.yml
     secrets: inherit
 
-  # 2. Terceiro: Análise de skills (depende dos stats)
-  analyze-skills:
-    name: "Skill Evolution"
-    needs: generate-stats
-    uses: ./.github/workflows/weekly-insights.yml
-    secrets: inherit
-
-  # 3. Quarto: Status de presença
+  # 3. Terceiro: Status de presença
   update-presence:
     name: "Live Presence"
-    needs: analyze-skills
+    needs: generate-stats
     uses: ./.github/workflows/daily-update.yml
     secrets: inherit
 
-  # 4. Quinto: About Me
+  # 4. Quarto: About Me
   update-aboutme:
     name: "About Me"
     needs: update-presence
     uses: ./.github/workflows/update-aboutme.yml
     secrets: inherit
 
-  # 6. Sétimo: Tech Stack
+  # 5. Quinto: Tech Stack
   update-tech-stack:
     name: "Tech Stack"
     needs: update-aboutme
     uses: ./.github/workflows/update-tech-stack.yml
     secrets: inherit
 
-  # 7. Oitavo: Animações e visualizações 3D
+  # 6. Sexto: Animações e visualizações 3D
   generate-animations:
     name: "Animations & 3D"
     needs: update-tech-stack
     uses: ./.github/workflows/main.yml
     secrets: inherit
 
-  # 8. Penúltimo: Sincronizar versão em inglês
+  # 7. Sétimo: Sincronizar versão em inglês
   sync-english:
     name: "English Sync"
     needs: generate-animations
     uses: ./.github/workflows/sync-english.yml
     secrets: inherit
 
-  # 9. Otimização e limpeza
+  # 8. Otimização e limpeza
   optimize-assets:
     name: "Optimize & Clean"
     needs: sync-english
@@ -102,7 +95,7 @@ jobs:
           git diff --staged --quiet || git commit -m "optimize assets and finalize profile update"
           git push
 
-  # 10. Último: Relatório final
+  # 9. Último: Relatório final
   orchestrator-report:
     name: "Orchestration Report"
     needs: optimize-assets
@@ -114,7 +107,6 @@ jobs:
           echo "All workflows executed in sequence"
           echo "Pacman: Generated"
           echo "Stats: Generated"
-          echo "Skills: Analyzed" 
           echo "Presence: Refreshed"
           echo "About Me: Updated"
           echo "Tech Stack: Updated"
