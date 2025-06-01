@@ -31,13 +31,13 @@
       <td align="center"><strong>Commits Hoje</strong></td>
     </tr>
     <tr>
-      <td align="center">Carregando...</td>
-      <td align="center">Carregando...</td>
-      <td align="center">Carregando...</td>
-      <td align="center">Carregando...</td>
+      <td align="center">🟢 Online</td>
+      <td align="center">PedroReoli</td>
+      <td align="center">Agora</td>
+      <td align="center">2</td>
     </tr>
   </table>
-  <sub><i>Atualizando via GitHub Actions...</i></sub>
+  <sub><i>Última atualização: 01/06/2025, 00:29:46</i></sub>
 </div>
 <!-- FIM_STATUS_LIVE -->
 
