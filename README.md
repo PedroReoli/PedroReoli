@@ -110,9 +110,10 @@ Também sou músico, apaixonado por guitarra, blues e rock — e acredito que a 
   
   | Linguagem | Commits | Tendência |
   |:----------|:-------:|:----------|
-  | Carregando... | ... | ... |
+  
   
   <br>
+  
   
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/skill-evolution-dark.svg">
@@ -120,8 +121,9 @@ Também sou músico, apaixonado por guitarra, blues e rock — e acredito que a 
     <img src="./assets/skill-evolution-dark.svg" alt="Skill Evolution" width="800">
   </picture>
   
+  
   <br>
-  <sub><i>Atualizando análise de skills...</i></sub>
+  <sub><i>Atualizado em: 01/06/2025, 00:29:36</i></sub>
 </div>
 <!-- FIM_SKILL_EVOLUTION -->
 

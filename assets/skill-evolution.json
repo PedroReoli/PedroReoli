@@ -1,7 +1,7 @@
 {
   "period": {
-    "start": "2025-05-01",
-    "end": "2025-05-31",
+    "start": "2025-05-02",
+    "end": "2025-06-01",
     "days": 30
   },
   "weeklyData": {
@@ -36,21 +36,12 @@
       "totalCommits": 2
     },
     "4": {
-      "languages": {
-        "Markdown": 1
-      },
-      "totalCommits": 1
+      "languages": {},
+      "totalCommits": 0
     }
   },
   "trends": {
-    "languages": {
-      "Markdown": {
-        "trend": "up",
-        "change": 1,
-        "current": 1,
-        "previous": 0
-      }
-    }
+    "languages": {}
   },
-  "lastUpdated": "2025-05-31T23:36:34.748Z"
+  "lastUpdated": "2025-06-01T00:29:36.355Z"
 }
