@@ -1,6 +1,5 @@
 /**
- * About Me Updater
- * Atualiza a seção "Sobre Mim" do README com dados do JSON
+ * About Me Updater - Versão com Marcadores Seguros
  */
 
 import fs from "fs"
@@ -14,35 +13,26 @@ const __dirname = path.dirname(__filename)
 const ABOUT_ME_FILE = path.join(__dirname, "../data/about-me.json")
 const README_FILE = path.join(__dirname, "../README.md")
 
-/**
- * Atualiza a seção "Sobre Mim" no README
- */
 function updateAboutMe() {
   console.log("Atualizando seção Sobre Mim...")
 
   try {
     // Verificar se arquivo de dados existe
     if (!fs.existsSync(ABOUT_ME_FILE)) {
-      console.error("Arquivo data/about-me.json não encontrado!")
+      console.error("❌ Arquivo data/about-me.json não encontrado!")
       return
     }
 
     // Ler dados do about-me
     const aboutMeData = JSON.parse(fs.readFileSync(ABOUT_ME_FILE, "utf8"))
-
-    // Ler README atual
     let readme = fs.readFileSync(README_FILE, "utf8")
 
     // Formatar tecnologias que está aprendendo
     const learningTechs = aboutMeData.learningTechs.join(", ")
-
-    // Formatar hobbies
     const hobbies = aboutMeData.hobbies.join(", ")
 
     // Gerar seção "Sobre Mim"
-    const aboutMeMarkdown = `## Sobre Mim
-
-<img align="right" alt="Chill gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="300" height="160" />
+    const aboutMeContent = `<img align="right" alt="Chill gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="300" height="160" />
 
 ${aboutMeData.description}
 
@@ -51,25 +41,21 @@ ${aboutMeData.description}
 - Sempre aprendendo algo novo em **${learningTechs}**
 - Meu portfólio: [${aboutMeData.portfolio.replace(/^https?:\/\//, "")}](${aboutMeData.portfolio})
 - Blog onde escrevo sobre código: [${aboutMeData.blog.replace(/^https?:\/\/www\./, "")}](${aboutMeData.blog})
-- **Plot twist:** Quando não estou debugando, estou tocando guitarra - viciado em ${hobbies}
+- **Plot twist:** Quando não estou debugando, estou tocando guitarra - viciado em ${hobbies}`
 
-`
-
-    // Substituir seção "Sobre Mim"
-    const aboutMeRegex = /## Sobre Mim[\s\S]*?(?=##|$)/
+    // Substituir APENAS entre os marcadores específicos
+    const aboutMeRegex = /(<!-- INICIO_SOBRE_MIM -->)([\s\S]*?)(<!-- FIM_SOBRE_MIM -->)/
 
     if (aboutMeRegex.test(readme)) {
-      readme = readme.replace(aboutMeRegex, aboutMeMarkdown)
+      readme = readme.replace(aboutMeRegex, `$1\n${aboutMeContent}\n$3`)
+      console.log("✅ Seção Sobre Mim atualizada com sucesso!")
     } else {
-      console.log("Seção Sobre Mim não encontrada, adicionando nova seção...")
-      // Se não encontrar, adicionar após a seção de status
-      const statusRegex = /(## Ultimas Atualizacoes[\s\S]*?<\/div>)/
-      readme = readme.replace(statusRegex, `$1\n\n${aboutMeMarkdown}`)
+      console.error("❌ Marcadores de Sobre Mim não encontrados no README!")
+      return
     }
 
     // Salvar README atualizado
     fs.writeFileSync(README_FILE, readme)
-    console.log("Seção Sobre Mim atualizada com sucesso!")
   } catch (error) {
     console.error("Erro ao atualizar Sobre Mim:", error)
     throw error

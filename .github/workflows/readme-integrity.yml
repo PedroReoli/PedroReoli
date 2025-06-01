@@ -1,0 +1,48 @@
+name: README Integrity Check
+
+on:
+  workflow_call: # Permite ser chamado por outros workflows
+  workflow_dispatch: # Permite execução manual
+
+jobs:
+  integrity-check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Run integrity check
+        run: node scripts/readme-integrity-checker.js
+        
+      - name: Check if critical files exist
+        run: |
+          echo "Verificando arquivos críticos..."
+          
+          if [ ! -f "README.md" ]; then
+            echo "❌ README.md não encontrado!"
+            exit 1
+          fi
+          
+          if [ ! -f "data/about-me.json" ]; then
+            echo "❌ data/about-me.json não encontrado!"
+            exit 1
+          fi
+          
+          if [ ! -f "data/tech-stack.json" ]; then
+            echo "❌ data/tech-stack.json não encontrado!"
+            exit 1
+          fi
+          
+          echo "✅ Arquivos críticos verificados!"

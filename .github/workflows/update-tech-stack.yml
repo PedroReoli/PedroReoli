@@ -29,11 +29,14 @@ jobs:
           git fetch origin
           git reset --hard origin/main
           
+      - name: Generate Tech Stack SVGs
+        run: node scripts/tech-stack-svg-generator.js
+        
       - name: Update README tech stack
         run: node scripts/update-readme-tech.js
         
       - name: Commit and push changes
         run: |
-          git add README.md
-          git diff --staged --quiet || git commit -m "🚀 update tech stack in README"
+          git add README.md assets/tech-stack-*.svg data/tech-stack.json
+          git diff --staged --quiet || git commit -m "🚀 update tech stack SVGs and README"
           git push

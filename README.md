@@ -17,8 +17,11 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
 </div>
 
-## Ultimas Atualizacoes
+---
 
+## 📊 Últimas Atualizações
+
+<!-- INICIO_STATUS_LIVE -->
 <div align="center">
   <table>
     <tr>
@@ -28,47 +31,136 @@
       <td align="center"><strong>Commits Hoje</strong></td>
     </tr>
     <tr>
-      <td align="center">Online</td>
-      <td align="center">PedroReoli</td>
-      <td align="center">Agora</td>
-      <td align="center">10</td>
+      <td align="center">Carregando...</td>
+      <td align="center">Carregando...</td>
+      <td align="center">Carregando...</td>
+      <td align="center">Carregando...</td>
     </tr>
   </table>
-  <sub><i>Atualizado via GitHub Actions</i></sub>
+  <sub><i>Atualizando via GitHub Actions...</i></sub>
 </div>
+<!-- FIM_STATUS_LIVE -->
 
-## Sobre Mim
+---
 
+## 👨‍💻 Sobre Mim
+
+<!-- INICIO_SOBRE_MIM -->
 <img align="right" alt="Chill gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="300" height="160" />
 
 Sou desenvolvedor full stack com foco em frontend e interesse constante por novas tecnologias. Atualmente sou estagiário na AutoCom3, onde atuo no desenvolvimento de sistemas com back-end e front-end integrados.
-Tambem sou músico nas horas vagas,apaixonado por blues , rock e heavy metal
+
+Também sou músico, apaixonado por guitarra, blues e rock — e acredito que a criatividade se expressa tanto no código quanto nas cordas.
 
 - Atualmente na **AutoCom3**, Estagiário de Desenvolvimento
 - Desenvolvendo o [FalaAtípica](https://github.com/PedroReoli/falatipica-tutor) - TCC sobre acessibilidade e comunicação
 - Sempre aprendendo algo novo em **React, Next.js, Node.js, Three.js, C#**
 - Meu portfólio: [pedroreoliportfolio.vercel.app](https://pedroreoliportfolio.vercel.app)
-- Blog onde escrevo sobre código: [devemdesenvolvimento.com.br/](https://www.devemdesenvolvimento.com.br/)
+- Blog onde escrevo sobre código: [devemdesenvolvimento.com.br](https://www.devemdesenvolvimento.com.br/)
 - **Plot twist:** Quando não estou debugando, estou tocando guitarra - viciado em guitarra, blues, rock
+<!-- FIM_SOBRE_MIM -->
 
+---
 
+## 🚀 Tech Stack
 
-## Tech Stack
+<!-- INICIO_TECH_STACK -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/tech-stack-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/tech-stack-light.svg">
+    <img src="./assets/tech-stack-dark.svg" alt="Tech Stack" width="100%">
+  </picture>
+  
+  <br>
+  <sub><i>Carregando tecnologias... • Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
+</div>
+<!-- FIM_TECH_STACK -->
 
-|  |  |  |  |  |  |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| <img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" alt="React" width="40" height="40" /> | <img src="https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png" alt="Next.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Angular" width="40" height="40" /> | <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="TypeScript" width="40" height="40" /> | <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" alt="Tailwind CSS" width="40" height="40" /> | <img src="https://media.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif" alt="Vite" width="40" height="40" /> |
-| **React** | **Next.js** | **Angular** | **TypeScript** | **Tailwind CSS** | **Vite** |
-| <img src="https://ui.shadcn.com/favicon.ico" alt="ShadCN" width="40" height="40" /> | <img src="https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif" alt="Framer Motion" width="40" height="40" /> | <img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" alt="Node.js" width="40" height="40" /> | <img src="https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif" alt="Python" width="40" height="40" /> | <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" alt="C#" width="40" height="40" /> | <img src="https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/10/2019/04/BrandBlazor_nohalo_1000x.png" alt="Blazor" width="40" height="40" /> |
-| **ShadCN** | **Framer Motion** | **Node.js** | **Python** | **C#** | **Blazor** |
-| <img src="https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif" alt="Express" width="40" height="40" /> | <img src="https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif" alt="PostgreSQL" width="40" height="40" /> | <img src="https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif" alt="MongoDB" width="40" height="40" /> | <img src="https://supabase.com/favicon.ico" alt="Supabase" width="40" height="40" /> | <img src="https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif" alt="Prisma" width="40" height="40" /> | <img src="https://jwt.io/img/pic_logo.svg" alt="JWT" width="40" height="40" /> |
-| **Express** | **PostgreSQL** | **MongoDB** | **Supabase** | **Prisma** | **JWT** |
-| <img src="https://socket.io/images/logo.svg" alt="Socket.io" width="40" height="40" /> | <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" alt="Git" width="40" height="40" /> | <img src="https://media.giphy.com/media/6HkGCxUE8kTG8/giphy.gif" alt="Docker" width="40" height="40" /> | <img src="https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif" alt="VS Code" width="40" height="40" /> | <img src="https://www.postman.com/assets/logos/postman-logo-icon-orange.svg" alt="Postman" width="40" height="40" /> | <img src="https://swagger.io/favicon-32x32.png" alt="Swagger" width="40" height="40" /> |
-| **Socket.io** | **Git** | **Docker** | **VS Code** | **Postman** | **Swagger** |
-| <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png" alt="Vercel" width="40" height="40" /> |  |  |  |  |  |
-| **Vercel** |  |  |  |  |  |
+---
+
+## 📈 GitHub Overview
+
+<!-- INICIO_GITHUB_STATS -->
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-stats-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/github-stats-light.svg">
+    <img src="./assets/github-stats-dark.svg" alt="GitHub Overview" width="800">
+  </picture>
+  
+  <br><br>
+  
+  <img width="400" height="158" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&hide_title=true" alt="Linguagens" />
+  <img width="400" height="158" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=radical&hide_border=true" alt="GitHub Streak" />
+  
+  <br>
+  
+  <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="300" alt="Developer Animation" />
+</div>
+<!-- FIM_GITHUB_STATS -->
+
+---
+
+## 🧠 Evolução das Skills
+
+<!-- INICIO_SKILL_EVOLUTION -->
+<div align="center">
+  <h4>Análise dos últimos 30 dias de commits</h4>
+  
+  | Linguagem | Commits | Tendência |
+  |:----------|:-------:|:----------|
+  | Carregando... | ... | ... |
+  
+  <br>
+  
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/skill-evolution-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/skill-evolution-light.svg">
+    <img src="./assets/skill-evolution-dark.svg" alt="Skill Evolution" width="800">
+  </picture>
+  
+  <br>
+  <sub><i>Atualizando análise de skills...</i></sub>
+</div>
+<!-- FIM_SKILL_EVOLUTION -->
+
+---
+
+## 🐍 Contribuições
+
+<!-- INICIO_CONTRIBUICOES -->
+<div align="center">
+  <h3>🎮 Pacman Contribution Graph</h3>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
+    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg" width="100%" onerror="this.style.display='none'">
+  </picture>
+  
+  <br><br>
+  
+  <h3>📊 Matriz de Contribuições 3D</h3>
+  <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile" width="100%" onerror="this.style.display='none'" />
+  
+  <br><br>
+  
+  <h3>🐍 Snake Animation</h3>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/github-snake.svg">
+    <img alt="snake animation" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/github-snake.svg" width="100%" onerror="this.style.display='none'">
+  </picture>
+</div>
+<!-- FIM_CONTRIBUICOES -->
+
+---
 
 <div align="center">
-  <sub><i>Stack sempre em evolução • 25 tecnologias • Atualizado via GitHub Actions</i></sub>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%" />
+  
+  <p>
+    <sub>💜 Feito com amor e muito café ☕</sub><br>
+    <sub>🤖 Atualizado automaticamente via GitHub Actions</sub>
+  </p>
 </div>
-
