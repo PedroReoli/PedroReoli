@@ -29,16 +29,7 @@ jobs:
           git fetch origin
           git reset --hard origin/main
           
-      - name: Download icons (if needed)
-        run: |
-          if [ ! -d "icons" ] || [ -z "$(ls -A icons)" ]; then
-            echo "Baixando ícones..."
-            node scripts/download-icons.js
-          else
-            echo "Ícones já existem, pulando download"
-          fi
-        
-      - name: Generate Tech Stack HTML
+      - name: Verify Tech Stack data
         run: node scripts/tech-stack-svg-generator.js
         
       - name: Update README tech stack
@@ -46,6 +37,6 @@ jobs:
         
       - name: Commit and push changes
         run: |
-          git add README.md assets/tech-stack-*.html data/tech-stack.json icons/
-          git diff --staged --quiet || git commit -m "update tech stack HTML and README"
+          git add README.md data/tech-stack.json
+          git diff --staged --quiet || git commit -m "update tech stack badges in README"
           git push
