@@ -1,5 +1,5 @@
 /**
- * Atualiza a seção de tech stack no README - Versão HTML Table (suporta GIFs)
+ * Atualiza a seção de tech stack no README - Versão SVG com Imagens Estáticas
  */
 
 import fs from "fs"
@@ -13,106 +13,60 @@ const __dirname = path.dirname(__filename)
 const README_FILE = path.join(__dirname, "../README.md")
 const TECH_DATA_FILE = path.join(__dirname, "../data/tech-stack.json")
 
-/**
- * Gera tabela HTML com todas as tecnologias (suporta GIFs)
- */
-function generateTechTable(technologies) {
-  // Definir quantas colunas por linha
-  const itemsPerRow = 6
-  const rows = []
-
-  // Dividir tecnologias em grupos
-  for (let i = 0; i < technologies.length; i += itemsPerRow) {
-    const rowTechs = technologies.slice(i, i + itemsPerRow)
-
-    // Preencher linha com espaços vazios se necessário
-    while (rowTechs.length < itemsPerRow) {
-      rowTechs.push({ name: "", url: "" })
-    }
-
-    rows.push(rowTechs)
-  }
-
-  // Gerar cabeçalho da tabela
-  let tableHTML = `<table align="center">\n`
-
-  // Gerar linhas
-  rows.forEach((row) => {
-    // Linha de ícones
-    tableHTML += `  <tr>\n`
-    row.forEach((tech) => {
-      if (tech.name) {
-        tableHTML += `    <td align="center" width="96">\n`
-        tableHTML += `      <img src="${tech.url}" alt="${tech.name}" width="48" height="48" />\n`
-        tableHTML += `    </td>\n`
-      } else {
-        tableHTML += `    <td align="center" width="96"></td>\n`
-      }
-    })
-    tableHTML += `  </tr>\n`
-
-    // Linha de nomes
-    tableHTML += `  <tr>\n`
-    row.forEach((tech) => {
-      if (tech.name) {
-        tableHTML += `    <td align="center"><strong>${tech.name}</strong></td>\n`
-      } else {
-        tableHTML += `    <td align="center"></td>\n`
-      }
-    })
-    tableHTML += `  </tr>\n`
-
-    // Espaçamento entre grupos
-    if (rows.indexOf(row) < rows.length - 1) {
-      tableHTML += `  <tr><td colspan="${itemsPerRow}" height="20"></td></tr>\n`
-    }
-  })
-
-  tableHTML += `</table>`
-
-  return tableHTML
-}
-
 function updateReadmeTechStack() {
-  console.log("Atualizando README com tabela HTML da tech stack...")
+  console.log("Atualizando README com SVG da tech stack...")
 
   try {
     // Ler README atual
     let readme = fs.readFileSync(README_FILE, "utf8")
 
-    // Verificar se arquivo de dados existe
-    if (!fs.existsSync(TECH_DATA_FILE)) {
-      console.error("Arquivo data/tech-stack.json não encontrado!")
-      return
+    // Verificar se SVGs existem
+    const darkSVGPath = path.join(__dirname, "../assets/tech-stack-dark.svg")
+    const lightSVGPath = path.join(__dirname, "../assets/tech-stack-light.svg")
+
+    const darkSVGExists = fs.existsSync(darkSVGPath)
+    const lightSVGExists = fs.existsSync(lightSVGPath)
+
+    // Ler dados para estatísticas
+    let totalTechs = "carregando"
+    if (fs.existsSync(TECH_DATA_FILE)) {
+      const techData = JSON.parse(fs.readFileSync(TECH_DATA_FILE, "utf8"))
+      totalTechs = techData.technologies.length
     }
 
-    // Ler dados das tecnologias
-    const techData = JSON.parse(fs.readFileSync(TECH_DATA_FILE, "utf8"))
-    const technologies = techData.technologies
+    // Gerar conteúdo baseado na disponibilidade dos SVGs
+    let techStackContent
 
-    if (!technologies || technologies.length === 0) {
-      console.error("Nenhuma tecnologia encontrada no JSON!")
-      return
-    }
-
-    // Gerar tabela HTML
-    const techTable = generateTechTable(technologies)
-
-    // Gerar conteúdo completo
-    const techStackContent = `<div align="center">
-  ${techTable}
+    if (darkSVGExists && lightSVGExists) {
+      techStackContent = `<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/tech-stack-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/tech-stack-light.svg">
+    <img src="./assets/tech-stack-dark.svg" alt="Tech Stack" width="100%">
+  </picture>
   
   <br>
-  <sub><i>${technologies.length} tecnologias • Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
+  <sub><i>${totalTechs} tecnologias • Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
 </div>`
+    } else {
+      // Fallback se SVGs não existirem
+      techStackContent = `<div align="center">
+  <p><strong>Tech Stack em construção...</strong></p>
+  <p>Os SVGs estão sendo gerados pelos GitHub Actions</p>
+  <sub><i>Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
+</div>`
+    }
 
     // Substituir APENAS entre os marcadores específicos
     const techStackRegex = /(<!-- INICIO_TECH_STACK -->)([\s\S]*?)(<!-- FIM_TECH_STACK -->)/
 
     if (techStackRegex.test(readme)) {
       readme = readme.replace(techStackRegex, `$1\n${techStackContent}\n$3`)
-      console.log("Tech Stack atualizada com tabela HTML!")
-      console.log(`Total de tecnologias: ${technologies.length}`)
+      console.log("Tech Stack atualizada com sucesso!")
+
+      if (!darkSVGExists || !lightSVGExists) {
+        console.log("SVGs não encontrados, usando fallback")
+      }
     } else {
       console.error("Marcadores de Tech Stack não encontrados no README!")
       return

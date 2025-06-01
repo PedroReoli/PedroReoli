@@ -2,27 +2,27 @@
   "technologies": [
     {
       "name": "React",
-      "url": "https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif"
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
     },
     {
       "name": "Next.js",
-      "url": "https://assets.vercel.com/image/upload/v1662130559/nextjs/Icon_dark_background.png"
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
     },
     {
       "name": "Angular",
-      "url": "https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif"
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
     },
     {
       "name": "TypeScript",
-      "url": "https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif"
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
     },
     {
       "name": "Tailwind CSS",
-      "url": "https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif"
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
     },
     {
       "name": "Vite",
-      "url": "https://media.giphy.com/media/bGgsc5mWoryfgKBx1u/giphy.gif"
+      "url": "https://vitejs.dev/logo.svg"
     },
     {
       "name": "ShadCN",
@@ -30,19 +30,19 @@
     },
     {
       "name": "Framer Motion",
-      "url": "https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif"
+      "url": "https://www.framer.com/images/favicons/128.png"
     },
     {
       "name": "Node.js",
-      "url": "https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif"
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
     },
     {
       "name": "Python",
-      "url": "https://media.giphy.com/media/KAq5w47R9rmTuvWOWa/giphy.gif"
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
     },
     {
       "name": "C#",
-      "url": "https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif"
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
     },
     {
       "name": "Blazor",
@@ -50,15 +50,15 @@
     },
     {
       "name": "Express",
-      "url": "https://media.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif"
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
     },
     {
       "name": "PostgreSQL",
-      "url": "https://media.giphy.com/media/jnDKffgCfGYOp6cMTK/giphy.gif"
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
     },
     {
       "name": "MongoDB",
-      "url": "https://media.giphy.com/media/74d1H50VBuE2A/giphy.gif"
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
     },
     {
       "name": "Supabase",
@@ -66,7 +66,7 @@
     },
     {
       "name": "Prisma",
-      "url": "https://media.giphy.com/media/XAxylRMCdpbEWUAvr8/giphy.gif"
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg"
     },
     {
       "name": "JWT",
@@ -78,15 +78,15 @@
     },
     {
       "name": "Git",
-      "url": "https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif"
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
     },
     {
       "name": "Docker",
-      "url": "https://media.giphy.com/media/6HkGCxUE8kTG8/giphy.gif"
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
     },
     {
       "name": "VS Code",
-      "url": "https://media.giphy.com/media/IdyAQJVN2kVPNUrojM/giphy.gif"
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
     },
     {
       "name": "Postman",
@@ -101,5 +101,5 @@
       "url": "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png"
     }
   ],
-  "lastUpdated": "2025-06-01T00:30:18.666Z"
+  "lastUpdated": "2024-01-01T00:00:00.000Z"
 }
