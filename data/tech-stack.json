@@ -2,104 +2,104 @@
   "technologies": [
     {
       "name": "React",
-      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+      "url": "./icons/react.svg"
     },
     {
       "name": "Next.js",
-      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+      "url": "./icons/nextjs.svg"
     },
     {
       "name": "Angular",
-      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+      "url": "./icons/angular.svg"
     },
     {
       "name": "TypeScript",
-      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+      "url": "./icons/typescript.svg"
     },
     {
       "name": "Tailwind CSS",
-      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+      "url": "./icons/tailwindcss.svg"
     },
     {
       "name": "Vite",
-      "url": "https://vitejs.dev/logo.svg"
+      "url": "./icons/vite.svg"
     },
     {
       "name": "ShadCN",
-      "url": "https://ui.shadcn.com/favicon.ico"
+      "url": "./icons/shadcn.svg"
     },
     {
       "name": "Framer Motion",
-      "url": "https://www.framer.com/images/favicons/128.png"
+      "url": "./icons/framer.svg"
     },
     {
       "name": "Node.js",
-      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+      "url": "./icons/nodejs.svg"
     },
     {
       "name": "Python",
-      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+      "url": "./icons/python.svg"
     },
     {
       "name": "C#",
-      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+      "url": "./icons/csharp.svg"
     },
     {
       "name": "Blazor",
-      "url": "https://devblogs.microsoft.com/dotnet/wp-content/uploads/sites/10/2019/04/BrandBlazor_nohalo_1000x.png"
+      "url": "./icons/blazor.svg"
     },
     {
       "name": "Express",
-      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+      "url": "./icons/express.svg"
     },
     {
       "name": "PostgreSQL",
-      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+      "url": "./icons/postgresql.svg"
     },
     {
       "name": "MongoDB",
-      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+      "url": "./icons/mongodb.svg"
     },
     {
       "name": "Supabase",
-      "url": "https://supabase.com/favicon.ico"
+      "url": "./icons/supabase.svg"
     },
     {
       "name": "Prisma",
-      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg"
+      "url": "./icons/prisma.svg"
     },
     {
       "name": "JWT",
-      "url": "https://jwt.io/img/pic_logo.svg"
+      "url": "./icons/jwt.svg"
     },
     {
       "name": "Socket.io",
-      "url": "https://socket.io/images/logo.svg"
+      "url": "./icons/socketio.svg"
     },
     {
       "name": "Git",
-      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+      "url": "./icons/git.svg"
     },
     {
       "name": "Docker",
-      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+      "url": "./icons/docker.svg"
     },
     {
       "name": "VS Code",
-      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+      "url": "./icons/vscode.svg"
     },
     {
       "name": "Postman",
-      "url": "https://www.postman.com/assets/logos/postman-logo-icon-orange.svg"
+      "url": "./icons/postman.svg"
     },
     {
       "name": "Swagger",
-      "url": "https://swagger.io/favicon-32x32.png"
+      "url": "./icons/swagger.svg"
     },
     {
       "name": "Vercel",
-      "url": "https://assets.vercel.com/image/upload/front/favicon/vercel/180x180.png"
+      "url": "./icons/vercel.svg"
     }
   ],
-  "lastUpdated": "2025-06-01T00:55:13.340Z"
+  "lastUpdated": "2024-01-01T00:00:00.000Z"
 }
