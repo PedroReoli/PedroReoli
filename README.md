@@ -65,7 +65,14 @@ Tambem sou músico nas horas vagas,apaixonado por blues , rock e heavy metal
 
 <!-- INICIO_TECH_STACK -->
 <div align="center">
-  <p>Stack sempre em evolução • Atualizado via GitHub Actions</p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/tech-stack-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/tech-stack-light.svg">
+    <img src="./assets/tech-stack-dark.svg" alt="Tech Stack" width="100%">
+  </picture>
+  
+  <br>
+  <sub><i>25 tecnologias • Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
 </div>
 <!-- FIM_TECH_STACK -->
 
