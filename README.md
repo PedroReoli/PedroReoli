@@ -72,7 +72,7 @@ Tambem sou músico nas horas vagas,apaixonado por blues , rock e heavy metal
   </picture>
   
   <br>
-  <sub><i>Carregando tecnologias... • Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
+  <sub><i>25 tecnologias • Stack sempre em evolução • Atualizado via GitHub Actions</i></sub>
 </div>
 <!-- FIM_TECH_STACK -->
 
