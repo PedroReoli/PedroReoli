@@ -34,10 +34,10 @@
       <td align="center">Online</td>
       <td align="center">PedroReoli</td>
       <td align="center">Agora</td>
-      <td align="center">10</td>
+      <td align="center">1</td>
     </tr>
   </table>
-  <sub><i>Última atualização: 01/06/2025, 18:22:50</i></sub>
+  <sub><i>Última atualização: 02/06/2025, 01:27:02</i></sub>
 </div>
 <!-- FIM_STATUS_LIVE -->
 
