@@ -31,13 +31,13 @@
       <td align="center"><strong>Commits Hoje</strong></td>
     </tr>
     <tr>
-      <td align="center">Offline</td>
+      <td align="center">Online</td>
       <td align="center">PedroReoli</td>
-      <td align="center">11h</td>
-      <td align="center">2</td>
+      <td align="center">Agora</td>
+      <td align="center">1</td>
     </tr>
   </table>
-  <sub><i>Última atualização: 04/06/2025, 18:25:27</i></sub>
+  <sub><i>Última atualização: 05/06/2025, 01:23:53</i></sub>
 </div>
 <!-- FIM_STATUS_LIVE -->
 
