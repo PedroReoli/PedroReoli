@@ -37,7 +37,7 @@
       <td align="center">0</td>
     </tr>
   </table>
-  <sub><i>Última atualização: 13/06/2025, 01:25:15</i></sub>
+  <sub><i>Última atualização: 13/06/2025, 06:27:24</i></sub>
 </div>
 <!-- FIM_STATUS_LIVE -->
 
