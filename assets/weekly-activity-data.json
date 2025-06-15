@@ -1,0 +1,447 @@
+{
+  "commits": [
+    {
+      "hash": "055aba0",
+      "date": "2025-06-14",
+      "message": "Reorganizando a aplicacao toda",
+      "x": 575,
+      "y": 375
+    },
+    {
+      "hash": "7856bc7",
+      "date": "2025-06-15",
+      "message": "update 3D profile visualization",
+      "x": 675,
+      "y": 375
+    },
+    {
+      "hash": "9a0e4b2",
+      "date": "2025-06-15",
+      "message": "update tech stack badges in README",
+      "x": 675,
+      "y": 375
+    },
+    {
+      "hash": "7de1f5d",
+      "date": "2025-06-15",
+      "message": "🟢 update presence status",
+      "x": 675,
+      "y": 375
+    },
+    {
+      "hash": "e002593",
+      "date": "2025-06-14",
+      "message": "update tech stack badges in README",
+      "x": 575,
+      "y": 375
+    },
+    {
+      "hash": "72d8176",
+      "date": "2025-06-14",
+      "message": "🟢 update presence status",
+      "x": 575,
+      "y": 375
+    },
+    {
+      "hash": "c5be7ea",
+      "date": "2025-06-14",
+      "message": "update tech stack badges in README",
+      "x": 575,
+      "y": 375
+    },
+    {
+      "hash": "768bca2",
+      "date": "2025-06-14",
+      "message": "🟢 update presence status",
+      "x": 575,
+      "y": 375
+    },
+    {
+      "hash": "6ced6f0",
+      "date": "2025-06-14",
+      "message": "update 3D profile visualization",
+      "x": 575,
+      "y": 375
+    },
+    {
+      "hash": "e2f04ae",
+      "date": "2025-06-14",
+      "message": "update tech stack badges in README",
+      "x": 575,
+      "y": 375
+    },
+    {
+      "hash": "d05cf80",
+      "date": "2025-06-14",
+      "message": "🟢 update presence status",
+      "x": 575,
+      "y": 375
+    },
+    {
+      "hash": "fd7e063",
+      "date": "2025-06-14",
+      "message": "update tech stack badges in README",
+      "x": 575,
+      "y": 375
+    },
+    {
+      "hash": "bd05467",
+      "date": "2025-06-14",
+      "message": "🟢 update presence status",
+      "x": 575,
+      "y": 375
+    },
+    {
+      "hash": "ac2eaf0",
+      "date": "2025-06-13",
+      "message": "update tech stack badges in README",
+      "x": 475,
+      "y": 375
+    },
+    {
+      "hash": "cca0528",
+      "date": "2025-06-13",
+      "message": "🟢 update presence status",
+      "x": 475,
+      "y": 375
+    },
+    {
+      "hash": "c12d0f3",
+      "date": "2025-06-13",
+      "message": "update tech stack badges in README",
+      "x": 475,
+      "y": 375
+    },
+    {
+      "hash": "9e54f1b",
+      "date": "2025-06-13",
+      "message": "🟢 update presence status",
+      "x": 475,
+      "y": 375
+    },
+    {
+      "hash": "5500394",
+      "date": "2025-06-13",
+      "message": "update 3D profile visualization",
+      "x": 475,
+      "y": 375
+    },
+    {
+      "hash": "cc0b50d",
+      "date": "2025-06-13",
+      "message": "update tech stack badges in README",
+      "x": 475,
+      "y": 375
+    },
+    {
+      "hash": "20a781e",
+      "date": "2025-06-13",
+      "message": "🟢 update presence status",
+      "x": 475,
+      "y": 375
+    },
+    {
+      "hash": "0afb7fd",
+      "date": "2025-06-13",
+      "message": "update tech stack badges in README",
+      "x": 475,
+      "y": 375
+    },
+    {
+      "hash": "597798d",
+      "date": "2025-06-13",
+      "message": "🟢 update presence status",
+      "x": 475,
+      "y": 375
+    },
+    {
+      "hash": "95b6a7f",
+      "date": "2025-06-12",
+      "message": "update tech stack badges in README",
+      "x": 375,
+      "y": 375
+    },
+    {
+      "hash": "5299758",
+      "date": "2025-06-12",
+      "message": "🟢 update presence status",
+      "x": 375,
+      "y": 375
+    },
+    {
+      "hash": "da067d0",
+      "date": "2025-06-12",
+      "message": "update 3D profile visualization",
+      "x": 375,
+      "y": 375
+    },
+    {
+      "hash": "d85b369",
+      "date": "2025-06-12",
+      "message": "update tech stack badges in README",
+      "x": 375,
+      "y": 375
+    },
+    {
+      "hash": "07e2b0b",
+      "date": "2025-06-12",
+      "message": "🟢 update presence status",
+      "x": 375,
+      "y": 375
+    },
+    {
+      "hash": "702db97",
+      "date": "2025-06-12",
+      "message": "update tech stack badges in README",
+      "x": 375,
+      "y": 375
+    },
+    {
+      "hash": "e1c645d",
+      "date": "2025-06-12",
+      "message": "🟢 update presence status",
+      "x": 375,
+      "y": 375
+    },
+    {
+      "hash": "b5b7542",
+      "date": "2025-06-11",
+      "message": "update tech stack badges in README",
+      "x": 275,
+      "y": 375
+    },
+    {
+      "hash": "4ebc4da",
+      "date": "2025-06-11",
+      "message": "🟢 update presence status",
+      "x": 275,
+      "y": 375
+    },
+    {
+      "hash": "09112fd",
+      "date": "2025-06-11",
+      "message": "update tech stack badges in README",
+      "x": 275,
+      "y": 375
+    },
+    {
+      "hash": "77e440b",
+      "date": "2025-06-11",
+      "message": "🟢 update presence status",
+      "x": 275,
+      "y": 375
+    },
+    {
+      "hash": "ee6899e",
+      "date": "2025-06-11",
+      "message": "update 3D profile visualization",
+      "x": 275,
+      "y": 375
+    },
+    {
+      "hash": "362853f",
+      "date": "2025-06-11",
+      "message": "update tech stack badges in README",
+      "x": 275,
+      "y": 375
+    },
+    {
+      "hash": "063fd6a",
+      "date": "2025-06-11",
+      "message": "🟢 update presence status",
+      "x": 275,
+      "y": 375
+    },
+    {
+      "hash": "9f42cd8",
+      "date": "2025-06-11",
+      "message": "update tech stack badges in README",
+      "x": 275,
+      "y": 375
+    },
+    {
+      "hash": "b81e066",
+      "date": "2025-06-11",
+      "message": "🟢 update presence status",
+      "x": 275,
+      "y": 375
+    },
+    {
+      "hash": "c2180d0",
+      "date": "2025-06-10",
+      "message": "update tech stack badges in README",
+      "x": 175,
+      "y": 375
+    },
+    {
+      "hash": "e581696",
+      "date": "2025-06-10",
+      "message": "🟢 update presence status",
+      "x": 175,
+      "y": 375
+    },
+    {
+      "hash": "47bc4fe",
+      "date": "2025-06-10",
+      "message": "update tech stack badges in README",
+      "x": 175,
+      "y": 375
+    },
+    {
+      "hash": "8f89ef1",
+      "date": "2025-06-10",
+      "message": "🟢 update presence status",
+      "x": 175,
+      "y": 375
+    },
+    {
+      "hash": "af67777",
+      "date": "2025-06-10",
+      "message": "update 3D profile visualization",
+      "x": 175,
+      "y": 375
+    },
+    {
+      "hash": "06273f6",
+      "date": "2025-06-10",
+      "message": "update tech stack badges in README",
+      "x": 175,
+      "y": 375
+    },
+    {
+      "hash": "0253358",
+      "date": "2025-06-10",
+      "message": "🟢 update presence status",
+      "x": 175,
+      "y": 375
+    },
+    {
+      "hash": "b0026b8",
+      "date": "2025-06-10",
+      "message": "update tech stack badges in README",
+      "x": 175,
+      "y": 375
+    },
+    {
+      "hash": "ea35a2c",
+      "date": "2025-06-10",
+      "message": "🟢 update presence status",
+      "x": 175,
+      "y": 375
+    },
+    {
+      "hash": "ab42e9d",
+      "date": "2025-06-09",
+      "message": "update tech stack badges in README",
+      "x": 75,
+      "y": 375
+    },
+    {
+      "hash": "bcf7825",
+      "date": "2025-06-09",
+      "message": "🟢 update presence status",
+      "x": 75,
+      "y": 375
+    },
+    {
+      "hash": "ddfec5f",
+      "date": "2025-06-09",
+      "message": "update tech stack badges in README",
+      "x": 75,
+      "y": 375
+    },
+    {
+      "hash": "b4a8aa6",
+      "date": "2025-06-09",
+      "message": "🟢 update presence status",
+      "x": 75,
+      "y": 375
+    },
+    {
+      "hash": "fe09836",
+      "date": "2025-06-09",
+      "message": "update 3D profile visualization",
+      "x": 75,
+      "y": 375
+    },
+    {
+      "hash": "c74cdda",
+      "date": "2025-06-09",
+      "message": "update tech stack badges in README",
+      "x": 75,
+      "y": 375
+    },
+    {
+      "hash": "041520d",
+      "date": "2025-06-09",
+      "message": "🟢 update presence status",
+      "x": 75,
+      "y": 375
+    },
+    {
+      "hash": "d0cea33",
+      "date": "2025-06-09",
+      "message": "update tech stack badges in README",
+      "x": 75,
+      "y": 375
+    },
+    {
+      "hash": "3032c63",
+      "date": "2025-06-09",
+      "message": "🟢 update presence status",
+      "x": 75,
+      "y": 375
+    },
+    {
+      "hash": "0a13d79",
+      "date": "2025-06-08",
+      "message": "update tech stack badges in README",
+      "x": 675,
+      "y": 375
+    },
+    {
+      "hash": "e5856d9",
+      "date": "2025-06-08",
+      "message": "🟢 update presence status",
+      "x": 675,
+      "y": 375
+    },
+    {
+      "hash": "cc2b4c3",
+      "date": "2025-06-08",
+      "message": "update tech stack badges in README",
+      "x": 675,
+      "y": 375
+    },
+    {
+      "hash": "20c2b51",
+      "date": "2025-06-08",
+      "message": "🟢 update presence status",
+      "x": 675,
+      "y": 375
+    },
+    {
+      "hash": "7c45c47",
+      "date": "2025-06-08",
+      "message": "update 3D profile visualization",
+      "x": 675,
+      "y": 375
+    },
+    {
+      "hash": "b0d462e",
+      "date": "2025-06-08",
+      "message": "update tech stack badges in README",
+      "x": 675,
+      "y": 375
+    },
+    {
+      "hash": "83b96a0",
+      "date": "2025-06-08",
+      "message": "🟢 update presence status",
+      "x": 675,
+      "y": 375
+    }
+  ],
+  "technologies": [],
+  "lastUpdated": "2025-06-15T02:47:05.144Z"
+}

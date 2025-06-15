@@ -1,39 +1,14 @@
 {
-  "userStats": {
-    "publicRepos": 15,
-    "followers": 7,
-    "following": 19,
-    "createdAt": "2023-03-23T02:10:34Z"
-  },
-  "topLanguages": [
-    {
-      "name": "TypeScript",
-      "percentage": "62.4",
-      "color": "#3178c6"
-    },
-    {
-      "name": "Python",
-      "percentage": "21.0",
-      "color": "#3776ab"
-    },
-    {
-      "name": "JavaScript",
-      "percentage": "9.1",
-      "color": "#f7df1e"
-    },
-    {
-      "name": "CSS",
-      "percentage": "5.6",
-      "color": "#264de4"
-    },
-    {
-      "name": "HTML",
-      "percentage": "1.9",
-      "color": "#e34c26"
-    }
-  ],
-  "commitStreak": 3,
+  "totalRepos": 0,
   "totalStars": 0,
-  "yearsOnGitHub": 2,
-  "lastUpdated": "2025-06-01T00:38:32.163Z"
+  "totalForks": 0,
+  "totalContributions": 0,
+  "topLanguages": [],
+  "recentActivity": [],
+  "skillEvolution": [],
+  "presence": {
+    "status": "offline",
+    "lastActive": "2025-06-15T02:47:04.581Z",
+    "currentProject": "PedroReoli"
+  }
 }

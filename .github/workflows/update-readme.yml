@@ -25,7 +25,7 @@ jobs:
           cache: 'npm'  # Cache dependencies
           
       - name: Install dependencies
-        run: npm ci  # Usa package-lock.json para instalação mais precisa
+        run: npm install  # Mudado de npm ci para npm install
         
       - name: Generate stats and activity
         run: npm run generate:all
