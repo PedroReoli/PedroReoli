@@ -4,9 +4,7 @@
   "description": "GitHub Profile README Generator",
   "main": "index.js",
   "scripts": {
-    "generate:all": "node scripts/generate-github-stats.js && node scripts/generate-weekly-activity.js",
-    "generate:stats": "node scripts/generate-github-stats.js",
-    "generate:activity": "node scripts/generate-weekly-activity.js"
+    "generate:stats": "node scripts/generate-github-stats.js"
   },
   "dependencies": {
     "axios": "^1.6.2",

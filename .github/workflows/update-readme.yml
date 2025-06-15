@@ -1,4 +1,4 @@
-name: Update README
+name: Update README Stats
 
 on:
   schedule:
@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write  # Permissão para fazer push
-  pull-requests: write  # Permissão para criar/atualizar PRs
 
 jobs:
   update-readme:
@@ -22,17 +21,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'  # Cache dependencies
+          cache: 'npm'
           
       - name: Install dependencies
-        run: npm install  # Mudado de npm ci para npm install
+        run: npm install
         
-      - name: Generate stats and activity
-        run: npm run generate:all
+      - name: Generate GitHub stats
+        run: npm run generate:stats
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
-          GITHUB_REPO: ${{ github.repository }}
           THEME: dark
           
       - name: Commit and push if changed
@@ -40,4 +38,4 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add .
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Update README stats and activity [skip ci]" && git push) 
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Update README stats [skip ci]" && git push) 
