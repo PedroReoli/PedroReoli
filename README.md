@@ -92,12 +92,6 @@ Também sou músico nas horas vagas, apaixonado por blues, rock e heavy metal.
         <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
         <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg" width="100%">
       </picture>
-      <br/>
-      <h3>Snake Contribution Graph</h3>
-      <img src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/github-contribution-grid-snake.svg" alt="Snake animation" width="100%" />
-      <br/>
-      <h3>GitHub Skyline</h3>
-      <img src="https://github.com/PedroReoli/PedroReoli/raw/main/assets/skyline.gif" alt="GitHub Skyline" width="100%" />
     </td>
     <td width="50%" align="center" valign="top">
       <h3>Matriz de Contribuições 3D</h3>
