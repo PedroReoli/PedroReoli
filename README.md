@@ -27,7 +27,7 @@ Sou desenvolvedor full stack com foco em frontend e interesse constante por nova
 Também sou músico nas horas vagas, apaixonado por blues, rock e heavy metal.
 
 - Atualmente na **AutoCom3**, Estagiário de Desenvolvimento
-- Desenvolvendo o [FalaAtípica](https://github.com/PedroReoli/falatipica-tutor) - TCC sobre acessibilidade e comunicação
+- Desenvolvendo o [FalaAtípica](https://github.com/PedroReoli/FalaAtipica-Tutores) - TCC sobre acessibilidade e comunicação
 - Sempre aprendendo algo novo em **React, Next.js, Node.js, Three.js, C#**
 - Meu portfólio: [pedroreoliportfolio.vercel.app](https://pedroreoliportfolio.vercel.app)
 - Blog onde escrevo sobre código: [devemdesenvolvimento.com.br/](https://www.devemdesenvolvimento.com.br/)
