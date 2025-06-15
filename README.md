@@ -33,11 +33,11 @@
     <tr>
       <td align="center">Offline</td>
       <td align="center">PedroReoli</td>
-      <td align="center">17h</td>
-      <td align="center">1</td>
+      <td align="center">13h</td>
+      <td align="center">0</td>
     </tr>
   </table>
-  <sub><i>Última atualização: 14/06/2025, 18:22:14</i></sub>
+  <sub><i>Última atualização: 15/06/2025, 01:41:33</i></sub>
 </div>
 <!-- FIM_STATUS_LIVE -->
 
