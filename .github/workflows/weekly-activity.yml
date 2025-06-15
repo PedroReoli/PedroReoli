@@ -1,12 +1,12 @@
-name: Profile README Generator
+name: Weekly Activity Graph
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Run every 6 hours
+    - cron: '0 0 * * 0'  # Run weekly on Sunday
   workflow_dispatch:
 
 jobs:
-  update-profile:
+  generate-weekly-activity:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -19,17 +19,12 @@ jobs:
       - name: Install dependencies
         run: npm install
         
-      - name: Generate Stats and Activity
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm run generate:all
-        
-      - name: Update README
-        run: node scripts/update-readme.js
+      - name: Generate weekly activity graph
+        run: node scripts/generate-weekly-activity.js
         
       - name: Commit and push if changed
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add .
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update profile stats and README" && git push)
+          git add assets/weekly-activity.svg
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update weekly activity graph" && git push) 

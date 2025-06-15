@@ -1,19 +1,18 @@
 {
-  "name": "github-profile-automation",
+  "name": "pedroreoli-profile",
   "version": "1.0.0",
-  "description": "Automated GitHub profile with custom visualizations",
-  "type": "module",
+  "description": "GitHub Profile README Generator",
+  "main": "index.js",
   "scripts": {
-    "constellation": "node scripts/constellation-generator.js",
-    "skills": "node scripts/skill-evolution.js",
-    "stats": "node scripts/github-stats-generator.js",
-    "observatory": "node scripts/observatory-insights.js",
-    "presence": "node scripts/presence-tracker.js"
+    "generate:all": "node scripts/generate-github-stats.js && node scripts/generate-weekly-activity.js",
+    "generate:stats": "node scripts/generate-github-stats.js",
+    "generate:activity": "node scripts/generate-weekly-activity.js"
   },
   "dependencies": {
-    "@octokit/rest": "^20.0.2"
-  },
-  "engines": {
-    "node": ">=18.0.0"
+    "axios": "^1.6.2",
+    "canvas": "^2.11.2",
+    "dotenv": "^16.4.5",
+    "octokit": "^3.1.2",
+    "sharp": "^0.33.0"
   }
 }

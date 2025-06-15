@@ -1,3 +1,84 @@
+# GitHub Profile README Generator
+
+Gerador automático de README para perfil do GitHub com estatísticas e visualizações personalizadas.
+
+## 🚀 Funcionalidades
+
+- Estatísticas do GitHub em tempo real
+- Gráfico de atividade semanal
+- Análise de tecnologias mais utilizadas
+- Tema claro/escuro automático
+- Atualização automática via GitHub Actions
+
+## 🛠️ Tecnologias
+
+- Node.js
+- Canvas para geração de gráficos
+- GitHub API
+- GitHub Actions
+
+## 📋 Pré-requisitos
+
+- Node.js 16+
+- Token de acesso pessoal do GitHub
+- Repositório público no GitHub
+
+## 🔧 Instalação
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/PedroReoli/PedroReoli.git
+cd PedroReoli
+```
+
+2. Instale as dependências:
+```bash
+npm install
+```
+
+3. Configure as variáveis de ambiente:
+```bash
+cp .env.example .env
+```
+Edite o arquivo `.env` com suas configurações.
+
+## 🚀 Uso
+
+### Geração Manual
+
+Para gerar todas as estatísticas:
+```bash
+npm run generate:all
+```
+
+Para gerar apenas estatísticas do GitHub:
+```bash
+npm run generate:stats
+```
+
+Para gerar apenas o gráfico de atividade:
+```bash
+npm run generate:activity
+```
+
+### Atualização Automática
+
+O repositório está configurado para atualizar automaticamente via GitHub Actions a cada 6 horas.
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 🤝 Contribuindo
+
+Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
 <div align="center">
   <h1>Pedro Reoli | Desenvolvedor Fullstack Jr</h1>
   
@@ -19,30 +100,6 @@
 
 ---
 
-## Ultimas Atualizacoes
-
-<!-- INICIO_STATUS_LIVE -->
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><strong>Status</strong></td>
-      <td align="center"><strong>Projeto Ativo</strong></td>
-      <td align="center"><strong>Ultima Atividade</strong></td>
-      <td align="center"><strong>Commits Hoje</strong></td>
-    </tr>
-    <tr>
-      <td align="center">Offline</td>
-      <td align="center">PedroReoli</td>
-      <td align="center">13h</td>
-      <td align="center">0</td>
-    </tr>
-  </table>
-  <sub><i>Última atualização: 15/06/2025, 01:41:33</i></sub>
-</div>
-<!-- FIM_STATUS_LIVE -->
-
----
-
 ## Sobre Mim
 
 <!-- INICIO_SOBRE_MIM -->
@@ -61,64 +118,76 @@ Tambem sou músico nas horas vagas,apaixonado por blues , rock e heavy metal
 
 ---
 
-## Tech Stack
-
-<!-- INICIO_TECH_STACK -->
 <div align="center">
-  <h3>🛠️ Tech Stack</h3>
+  <h2>🛠️ Tech Stack & GitHub Overview</h2>
   
   <table>
-  <tr><td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="48" height="48" alt="React" /></td><td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="48" height="48" alt="TypeScript" /></td><td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="48" height="48" alt="JavaScript" /></td><td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/tailwindcss/tailwindcss-original.svg" width="48" height="48" alt="Tailwind CSS" /></td><td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="48" height="48" alt="Node.js" /></td><td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="48" height="48" alt="Python" /></td></tr>
-  <tr><td align="center" width="96"><sub><b>React</b></sub></td><td align="center" width="96"><sub><b>TypeScript</b></sub></td><td align="center" width="96"><sub><b>JavaScript</b></sub></td><td align="center" width="96"><sub><b>Tailwind CSS</b></sub></td><td align="center" width="96"><sub><b>Node.js</b></sub></td><td align="center" width="96"><sub><b>Python</b></sub></td></tr>
-  <tr><td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" width="48" height="48" alt="C#" /></td><td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="48" height="48" alt="PostgreSQL" /></td><td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="48" height="48" alt="MySQL" /></td><td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="48" height="48" alt="Git" /></td><td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="48" height="48" alt="VS Code" /></td><td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="48" height="48" alt="Docker" /></td></tr>
-  <tr><td align="center" width="96"><sub><b>C#</b></sub></td><td align="center" width="96"><sub><b>PostgreSQL</b></sub></td><td align="center" width="96"><sub><b>MySQL</b></sub></td><td align="center" width="96"><sub><b>Git</b></sub></td><td align="center" width="96"><sub><b>VS Code</b></sub></td><td align="center" width="96"><sub><b>Docker</b></sub></td></tr>
-  <tr><td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="48" height="48" alt="HTML5" /></td><td align="center" width="96"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="48" height="48" alt="CSS3" /></td><td></td><td></td><td></td><td></td></tr>
-  <tr><td align="center" width="96"><sub><b>HTML5</b></sub></td><td align="center" width="96"><sub><b>CSS3</b></sub></td><td></td><td></td><td></td><td></td></tr>
+    <tr>
+      <td width="50%">
+        <!-- Tech Stack -->
+        <h3>Tech Stack</h3>
+        <div align="center">
+          <!-- Frontend -->
+          <h4>Frontend</h4>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="40" height="40" alt="CSS3" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="40" height="40" alt="React" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/tailwindcss/tailwindcss-original.svg" width="40" height="40" alt="Tailwind CSS" />
+          
+          <!-- TypeScript -->
+          <h4>TypeScript</h4>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40" height="40" alt="TypeScript" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="40" height="40" alt="Node.js" />
+          
+          <!-- C# -->
+          <h4>C#</h4>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" width="40" height="40" alt="C#" />
+          
+          <!-- Python -->
+          <h4>Python</h4>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" height="40" alt="Python" />
+          
+          <!-- Others -->
+          <h4>Others</h4>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="40" height="40" alt="PostgreSQL" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="40" height="40" alt="MySQL" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="40" height="40" alt="Git" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="40" height="40" alt="VS Code" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="40" height="40" alt="Docker" />
+        </div>
+      </td>
+      <td width="50%">
+        <!-- GitHub Overview -->
+        <h3>GitHub Overview</h3>
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/github-stats-dark.svg">
+          <source media="(prefers-color-scheme: light)" srcset="./assets/github-stats-light.svg">
+          <img src="./assets/github-stats-dark.svg" alt="GitHub Overview" width="100%">
+        </picture>
+        
+        <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&hide_title=true" alt="Linguagens" />
+        <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=radical&hide_border=true" alt="GitHub Streak" />
+      </td>
+    </tr>
   </table>
-  
-  <sub><i>14 tecnologias • Sempre evoluindo</i></sub>
 </div>
-<!-- FIM_TECH_STACK -->
 
 ---
 
-## GitHub Overview
+## Contribuições
 
-<!-- INICIO_GITHUB_STATS -->
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-stats-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/github-stats-light.svg">
-    <img src="./assets/github-stats-dark.svg" alt="GitHub Overview" width="800">
-  </picture>
+  <h3>Atividade Semanal</h3>
+  <img src="./assets/weekly-activity.svg" alt="Weekly Activity" width="100%" />
   
-  <br><br>
+  <h3>Matriz de Contribuições 3D</h3>
+  <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile" width="100%" />
   
-  <img width="400" height="158" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&hide_title=true" alt="Linguagens" />
-  <img width="400" height="158" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=radical&hide_border=true" alt="GitHub Streak" />
-  
-  <br>
-  
-  <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="300" alt="Developer Animation" />
-</div>
-<!-- FIM_GITHUB_STATS -->
-
----
-
-## Contribuicoes
-
-<!-- INICIO_CONTRIBUICOES -->
-<div align="center">
   <h3>Pacman Contribution Graph</h3>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
-    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg" width="100%" onerror="this.style.display='none'">
+    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg" width="100%">
   </picture>
-  
-  <br><br>
-  
-  <h3>Matriz de Contribuicoes 3D</h3>
-  <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile" width="100%" onerror="this.style.display='none'" />
 </div>
-<!-- FIM_CONTRIBUICOES -->
