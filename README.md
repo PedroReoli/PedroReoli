@@ -35,7 +35,7 @@ Também sou músico nas horas vagas, apaixonado por blues, rock e heavy metal.
 
 ---
 
-## 🛠️ Tech Stack & GitHub Overview
+##  Tech Stack & GitHub Overview
 
 <div align="center">
   <table>
@@ -43,7 +43,7 @@ Também sou músico nas horas vagas, apaixonado por blues, rock e heavy metal.
       <td width="50%">
     <!--  -->
         <div align="center">
-          <h4>Minha Stack</h4>
+          <!-- <h4>Minha Stack</h4> -->
           <table>
             <tr>
               <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40" /><br>HTML5</td>
@@ -83,19 +83,14 @@ Também sou músico nas horas vagas, apaixonado por blues, rock e heavy metal.
 
 ## Contribuições
 
-<table>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <h3>Pacman Contribution Graph</h3>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph-dark.svg">
-        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
-        <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg" width="100%">
-      </picture>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <h3>Matriz de Contribuições 3D</h3>
-      <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile" width="100%" />
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <h3>Matriz de Contribuições 3D</h3>
+  <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile" width="90%" />
+  <br/><br/>
+  <h3>Pacman Contribution Graph</h3>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
+    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg" width="80%">
+  </picture>
+</div>
