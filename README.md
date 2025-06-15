@@ -84,13 +84,10 @@ Também sou músico nas horas vagas, apaixonado por blues, rock e heavy metal.
 ## Contribuições
 
 <div align="center">
-  <h3>Matriz de Contribuições 3D</h3>
   <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile" width="90%" />
-  <br/><br/>
-  <h3>Pacman Contribution Graph</h3>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
-    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg" width="80%">
+    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg" width="90%">
   </picture>
 </div>
