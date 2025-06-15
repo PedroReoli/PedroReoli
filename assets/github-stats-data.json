@@ -1,14 +1,201 @@
 {
-  "totalRepos": 0,
+  "totalRepos": 15,
   "totalStars": 0,
   "totalForks": 0,
-  "totalContributions": 0,
-  "topLanguages": [],
-  "recentActivity": [],
-  "skillEvolution": [],
+  "totalContributions": {
+    "2023": 18,
+    "2024": 291,
+    "2025": 507
+  },
+  "topLanguages": [
+    "TypeScript",
+    "Python",
+    "JavaScript",
+    "CSS",
+    "HTML"
+  ],
+  "recentActivity": [
+    {
+      "type": "PushEvent",
+      "repo": "PedroReoli/FalaAtipica-Tutores",
+      "date": "2025-06-14T20:20:33.000Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PedroReoli/PedroReoli",
+      "date": "2025-06-14T18:21:51.000Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PedroReoli/PedroReoli",
+      "date": "2025-06-14T12:32:45.000Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PedroReoli/PedroReoli",
+      "date": "2025-06-14T06:23:36.000Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "PedroReoli/PedroReoli",
+      "date": "2025-06-14T01:21:54.000Z"
+    }
+  ],
+  "skillEvolution": [
+    {
+      "date": "2025-06-15T02:51:15.712Z",
+      "skills": [
+        {
+          "name": "TypeScript",
+          "level": 93
+        },
+        {
+          "name": "Python",
+          "level": 72
+        },
+        {
+          "name": "JavaScript",
+          "level": 81
+        },
+        {
+          "name": "CSS",
+          "level": 82
+        },
+        {
+          "name": "HTML",
+          "level": 86
+        }
+      ]
+    },
+    {
+      "date": "2025-05-15T02:51:15.712Z",
+      "skills": [
+        {
+          "name": "TypeScript",
+          "level": 82
+        },
+        {
+          "name": "Python",
+          "level": 81
+        },
+        {
+          "name": "JavaScript",
+          "level": 80
+        },
+        {
+          "name": "CSS",
+          "level": 99
+        },
+        {
+          "name": "HTML",
+          "level": 92
+        }
+      ]
+    },
+    {
+      "date": "2025-04-15T02:51:15.712Z",
+      "skills": [
+        {
+          "name": "TypeScript",
+          "level": 99
+        },
+        {
+          "name": "Python",
+          "level": 83
+        },
+        {
+          "name": "JavaScript",
+          "level": 73
+        },
+        {
+          "name": "CSS",
+          "level": 91
+        },
+        {
+          "name": "HTML",
+          "level": 92
+        }
+      ]
+    },
+    {
+      "date": "2025-03-15T02:51:15.712Z",
+      "skills": [
+        {
+          "name": "TypeScript",
+          "level": 95
+        },
+        {
+          "name": "Python",
+          "level": 94
+        },
+        {
+          "name": "JavaScript",
+          "level": 99
+        },
+        {
+          "name": "CSS",
+          "level": 85
+        },
+        {
+          "name": "HTML",
+          "level": 95
+        }
+      ]
+    },
+    {
+      "date": "2025-02-15T02:51:15.712Z",
+      "skills": [
+        {
+          "name": "TypeScript",
+          "level": 73
+        },
+        {
+          "name": "Python",
+          "level": 93
+        },
+        {
+          "name": "JavaScript",
+          "level": 73
+        },
+        {
+          "name": "CSS",
+          "level": 96
+        },
+        {
+          "name": "HTML",
+          "level": 88
+        }
+      ]
+    },
+    {
+      "date": "2025-01-15T02:51:15.712Z",
+      "skills": [
+        {
+          "name": "TypeScript",
+          "level": 74
+        },
+        {
+          "name": "Python",
+          "level": 83
+        },
+        {
+          "name": "JavaScript",
+          "level": 81
+        },
+        {
+          "name": "CSS",
+          "level": 82
+        },
+        {
+          "name": "HTML",
+          "level": 72
+        }
+      ]
+    }
+  ],
   "presence": {
     "status": "offline",
-    "lastActive": "2025-06-15T02:47:04.581Z",
+    "lastActive": "2025-06-15T02:51:10.519Z",
     "currentProject": "PedroReoli"
   }
 }
