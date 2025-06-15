@@ -21,10 +21,11 @@
 
 ## Sobre Mim
 
+<!-- INICIO_SOBRE_MIM -->
 <img align="right" alt="Chill gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="300" height="160" />
 
 Sou desenvolvedor full stack com foco em frontend e interesse constante por novas tecnologias. Atualmente sou estagiário na AutoCom3, onde atuo no desenvolvimento de sistemas com back-end e front-end integrados.
-Também sou músico nas horas vagas, apaixonado por blues, rock e heavy metal.
+Tambem sou músico nas horas vagas,apaixonado por blues , rock e heavy metal
 
 - Atualmente na **AutoCom3**, Estagiário de Desenvolvimento
 - Desenvolvendo o [FalaAtípica](https://github.com/PedroReoli/falatipica-tutor) - TCC sobre acessibilidade e comunicação
@@ -32,46 +33,59 @@ Também sou músico nas horas vagas, apaixonado por blues, rock e heavy metal.
 - Meu portfólio: [pedroreoliportfolio.vercel.app](https://pedroreoliportfolio.vercel.app)
 - Blog onde escrevo sobre código: [devemdesenvolvimento.com.br/](https://www.devemdesenvolvimento.com.br/)
 - **Plot twist:** Quando não estou debugando, estou tocando guitarra - viciado em guitarra, blues, rock
+<!-- FIM_SOBRE_MIM -->
 
 ---
 
-##  Tech Stack & GitHub Overview
-
 <div align="center">
+  <h2>🛠️ Tech Stack & GitHub Overview</h2>
+
   <table>
     <tr>
       <td width="50%">
-    <!--  -->
+        <!-- Tech Stack -->
+        <h3>Tech Stack</h3>
         <div align="center">
-          <!-- <h4>Minha Stack</h4> -->
-          <table>
-            <tr>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40" /><br>HTML5</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="40" /><br>CSS3</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" /><br>JavaScript</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="40" /><br>React</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/tailwindcss/tailwindcss-original.svg" width="40" /><br>Tailwind</td>
-            </tr>
-            <tr>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40" /><br>TypeScript</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="40" /><br>Node.js</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" width="40" /><br>C#</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" /><br>Python</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="40" /><br>Docker</td>
-            </tr>
-            <tr>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="40" /><br>PostgreSQL</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="40" /><br>MySQL</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="40" /><br>Git</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="40" /><br>VS Code</td>
-              <td align="center"></td>
-            </tr>
-          </table>
+          <!-- Frontend -->
+          <h4>Frontend</h4>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="40" height="40" alt="CSS3" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="40" height="40" alt="React" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/tailwindcss/tailwindcss-original.svg" width="40" height="40" alt="Tailwind CSS" />
+
+          <!-- TypeScript -->
+          <h4>TypeScript</h4>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40" height="40" alt="TypeScript" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="40" height="40" alt="Node.js" />
+
+          <!-- C# -->
+          <h4>C#</h4>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" width="40" height="40" alt="C#" />
+
+          <!-- Python -->
+          <h4>Python</h4>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" height="40" alt="Python" />
+
+          <!-- Others -->
+          <h4>Others</h4>
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="40" height="40" alt="PostgreSQL" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="40" height="40" alt="MySQL" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="40" height="40" alt="Git" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="40" height="40" alt="VS Code" />
+          <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="40" height="40" alt="Docker" />
+
         </div>
       </td>
       <td width="50%">
+        <!-- GitHub Overview -->
         <h3>GitHub Overview</h3>
-        <img width="100%" src="https://github-readme-stats.vercel.app/api?username=pedroreoli&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" />
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/github-stats-dark.svg">
+          <source media="(prefers-color-scheme: light)" srcset="./assets/github-stats-light.svg">
+          <img src="./assets/github-stats-dark.svg" alt="GitHub Overview" width="100%">
+        </picture>
+
         <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&hide_title=true" alt="Linguagens" />
         <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=radical&hide_border=true" alt="GitHub Streak" />
       </td>
@@ -84,10 +98,16 @@ Também sou músico nas horas vagas, apaixonado por blues, rock e heavy metal.
 ## Contribuições
 
 <div align="center">
-  <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile" width="90%" />
+  <h3>Atividade Semanal</h3>
+  <img src="./assets/weekly-activity.svg" alt="Weekly Activity" width="100%" />
+  
+  <h3>Matriz de Contribuições 3D</h3>
+  <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile" width="100%" />
+  
+  <h3>Pacman Contribution Graph</h3>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
-    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg" width="90%">
+    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg" width="100%">
   </picture>
-</div>
+</div> 
