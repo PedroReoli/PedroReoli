@@ -41,9 +41,9 @@ Também sou músico nas horas vagas, apaixonado por blues, rock e heavy metal.
   <table>
     <tr>
       <td width="50%">
-        <h3>Tech Stack</h3>
+    <!--  -->
         <div align="center">
-          <h4>Frontend</h4>
+          <h4>Minha Stack</h4>
           <table>
             <tr>
               <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40" /><br>HTML5</td>
