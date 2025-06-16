@@ -5,7 +5,7 @@
   "totalContributions": {
     "2023": 18,
     "2024": 291,
-    "2025": 517
+    "2025": 520
   },
   "topLanguages": [
     "TypeScript",
@@ -43,48 +43,73 @@
   ],
   "skillEvolution": [
     {
-      "date": "2025-06-16T12:51:36.413Z",
+      "date": "2025-06-16T18:34:03.475Z",
       "skills": [
         {
           "name": "TypeScript",
-          "level": 82
+          "level": 95
         },
         {
           "name": "Python",
-          "level": 97
+          "level": 91
         },
         {
           "name": "JavaScript",
-          "level": 76
+          "level": 80
         },
         {
           "name": "CSS",
-          "level": 90
+          "level": 79
         },
         {
           "name": "HTML",
-          "level": 98
+          "level": 89
         }
       ]
     },
     {
-      "date": "2025-05-16T12:51:36.413Z",
+      "date": "2025-05-16T18:34:03.475Z",
       "skills": [
         {
           "name": "TypeScript",
-          "level": 83
+          "level": 97
         },
         {
           "name": "Python",
-          "level": 91
+          "level": 77
         },
         {
           "name": "JavaScript",
-          "level": 90
+          "level": 77
         },
         {
           "name": "CSS",
-          "level": 91
+          "level": 71
+        },
+        {
+          "name": "HTML",
+          "level": 75
+        }
+      ]
+    },
+    {
+      "date": "2025-04-16T18:34:03.475Z",
+      "skills": [
+        {
+          "name": "TypeScript",
+          "level": 74
+        },
+        {
+          "name": "Python",
+          "level": 75
+        },
+        {
+          "name": "JavaScript",
+          "level": 86
+        },
+        {
+          "name": "CSS",
+          "level": 93
         },
         {
           "name": "HTML",
@@ -93,40 +118,15 @@
       ]
     },
     {
-      "date": "2025-04-16T12:51:36.413Z",
+      "date": "2025-03-16T18:34:03.475Z",
       "skills": [
         {
           "name": "TypeScript",
-          "level": 88
+          "level": 94
         },
         {
           "name": "Python",
-          "level": 98
-        },
-        {
-          "name": "JavaScript",
-          "level": 97
-        },
-        {
-          "name": "CSS",
-          "level": 70
-        },
-        {
-          "name": "HTML",
-          "level": 73
-        }
-      ]
-    },
-    {
-      "date": "2025-03-16T12:51:36.413Z",
-      "skills": [
-        {
-          "name": "TypeScript",
-          "level": 73
-        },
-        {
-          "name": "Python",
-          "level": 84
+          "level": 96
         },
         {
           "name": "JavaScript",
@@ -134,68 +134,68 @@
         },
         {
           "name": "CSS",
-          "level": 99
+          "level": 95
         },
         {
           "name": "HTML",
-          "level": 80
+          "level": 95
         }
       ]
     },
     {
-      "date": "2025-02-16T12:51:36.413Z",
+      "date": "2025-02-16T18:34:03.475Z",
       "skills": [
         {
           "name": "TypeScript",
+          "level": 79
+        },
+        {
+          "name": "Python",
+          "level": 96
+        },
+        {
+          "name": "JavaScript",
+          "level": 77
+        },
+        {
+          "name": "CSS",
           "level": 75
         },
         {
-          "name": "Python",
-          "level": 78
-        },
-        {
-          "name": "JavaScript",
-          "level": 72
-        },
-        {
-          "name": "CSS",
-          "level": 78
-        },
-        {
           "name": "HTML",
-          "level": 86
+          "level": 97
         }
       ]
     },
     {
-      "date": "2025-01-16T12:51:36.413Z",
+      "date": "2025-01-16T18:34:03.475Z",
       "skills": [
         {
           "name": "TypeScript",
-          "level": 74
+          "level": 92
         },
         {
           "name": "Python",
-          "level": 74
-        },
-        {
-          "name": "JavaScript",
           "level": 73
         },
         {
+          "name": "JavaScript",
+          "level": 71
+        },
+        {
           "name": "CSS",
-          "level": 80
+          "level": 93
         },
         {
           "name": "HTML",
-          "level": 91
+          "level": 73
         }
       ]
     }
   ],
   "presence": {
     "status": "offline",
-    "lastActive": "2025-06-16T12:51:31.820Z",
+    "lastActive": "2025-06-16T18:33:58.185Z",
     "currentProject": "PedroReoli"
   }
 }
