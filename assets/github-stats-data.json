@@ -43,144 +43,44 @@
   ],
   "skillEvolution": [
     {
-      "date": "2025-06-18T01:58:15.139Z",
+      "date": "2025-06-18T06:35:04.150Z",
       "skills": [
         {
           "name": "TypeScript",
-          "level": 89
+          "level": 79
         },
         {
           "name": "Python",
-          "level": 86
-        },
-        {
-          "name": "JavaScript",
-          "level": 77
-        },
-        {
-          "name": "CSS",
-          "level": 71
-        },
-        {
-          "name": "HTML",
           "level": 95
-        }
-      ]
-    },
-    {
-      "date": "2025-05-18T01:58:15.139Z",
-      "skills": [
-        {
-          "name": "TypeScript",
-          "level": 94
-        },
-        {
-          "name": "Python",
-          "level": 84
         },
         {
           "name": "JavaScript",
-          "level": 84
+          "level": 95
         },
         {
           "name": "CSS",
-          "level": 82
+          "level": 93
         },
         {
           "name": "HTML",
-          "level": 77
+          "level": 80
         }
       ]
     },
     {
-      "date": "2025-04-18T01:58:15.139Z",
+      "date": "2025-05-18T06:35:04.150Z",
       "skills": [
         {
           "name": "TypeScript",
-          "level": 74
+          "level": 93
         },
         {
           "name": "Python",
-          "level": 98
+          "level": 84
         },
         {
           "name": "JavaScript",
-          "level": 89
-        },
-        {
-          "name": "CSS",
           "level": 90
-        },
-        {
-          "name": "HTML",
-          "level": 77
-        }
-      ]
-    },
-    {
-      "date": "2025-03-18T01:58:15.139Z",
-      "skills": [
-        {
-          "name": "TypeScript",
-          "level": 89
-        },
-        {
-          "name": "Python",
-          "level": 74
-        },
-        {
-          "name": "JavaScript",
-          "level": 88
-        },
-        {
-          "name": "CSS",
-          "level": 97
-        },
-        {
-          "name": "HTML",
-          "level": 79
-        }
-      ]
-    },
-    {
-      "date": "2025-02-18T01:58:15.139Z",
-      "skills": [
-        {
-          "name": "TypeScript",
-          "level": 91
-        },
-        {
-          "name": "Python",
-          "level": 96
-        },
-        {
-          "name": "JavaScript",
-          "level": 91
-        },
-        {
-          "name": "CSS",
-          "level": 99
-        },
-        {
-          "name": "HTML",
-          "level": 71
-        }
-      ]
-    },
-    {
-      "date": "2025-01-18T01:58:15.139Z",
-      "skills": [
-        {
-          "name": "TypeScript",
-          "level": 96
-        },
-        {
-          "name": "Python",
-          "level": 79
-        },
-        {
-          "name": "JavaScript",
-          "level": 70
         },
         {
           "name": "CSS",
@@ -188,14 +88,114 @@
         },
         {
           "name": "HTML",
+          "level": 98
+        }
+      ]
+    },
+    {
+      "date": "2025-04-18T06:35:04.150Z",
+      "skills": [
+        {
+          "name": "TypeScript",
+          "level": 71
+        },
+        {
+          "name": "Python",
+          "level": 98
+        },
+        {
+          "name": "JavaScript",
+          "level": 77
+        },
+        {
+          "name": "CSS",
           "level": 90
+        },
+        {
+          "name": "HTML",
+          "level": 96
+        }
+      ]
+    },
+    {
+      "date": "2025-03-18T06:35:04.150Z",
+      "skills": [
+        {
+          "name": "TypeScript",
+          "level": 75
+        },
+        {
+          "name": "Python",
+          "level": 70
+        },
+        {
+          "name": "JavaScript",
+          "level": 76
+        },
+        {
+          "name": "CSS",
+          "level": 83
+        },
+        {
+          "name": "HTML",
+          "level": 77
+        }
+      ]
+    },
+    {
+      "date": "2025-02-18T06:35:04.150Z",
+      "skills": [
+        {
+          "name": "TypeScript",
+          "level": 93
+        },
+        {
+          "name": "Python",
+          "level": 94
+        },
+        {
+          "name": "JavaScript",
+          "level": 81
+        },
+        {
+          "name": "CSS",
+          "level": 73
+        },
+        {
+          "name": "HTML",
+          "level": 78
+        }
+      ]
+    },
+    {
+      "date": "2025-01-18T06:35:04.150Z",
+      "skills": [
+        {
+          "name": "TypeScript",
+          "level": 90
+        },
+        {
+          "name": "Python",
+          "level": 78
+        },
+        {
+          "name": "JavaScript",
+          "level": 78
+        },
+        {
+          "name": "CSS",
+          "level": 78
+        },
+        {
+          "name": "HTML",
+          "level": 95
         }
       ]
     }
   ],
   "presence": {
     "status": "offline",
-    "lastActive": "2025-06-18T01:58:11.097Z",
+    "lastActive": "2025-06-18T06:34:59.795Z",
     "currentProject": "PedroReoli"
   }
 }
