@@ -5,7 +5,7 @@
   "totalContributions": {
     "2023": 18,
     "2024": 291,
-    "2025": 551
+    "2025": 553
   },
   "topLanguages": [
     "TypeScript",
@@ -43,48 +43,23 @@
   ],
   "skillEvolution": [
     {
-      "date": "2025-06-26T12:51:12.113Z",
+      "date": "2025-06-26T18:34:07.938Z",
       "skills": [
         {
           "name": "TypeScript",
-          "level": 75
+          "level": 82
         },
         {
           "name": "Python",
-          "level": 71
+          "level": 95
         },
         {
           "name": "JavaScript",
-          "level": 84
+          "level": 95
         },
         {
           "name": "Jupyter Notebook",
-          "level": 75
-        },
-        {
-          "name": "CSS",
-          "level": 78
-        }
-      ]
-    },
-    {
-      "date": "2025-05-26T12:51:12.113Z",
-      "skills": [
-        {
-          "name": "TypeScript",
-          "level": 81
-        },
-        {
-          "name": "Python",
-          "level": 80
-        },
-        {
-          "name": "JavaScript",
-          "level": 77
-        },
-        {
-          "name": "Jupyter Notebook",
-          "level": 89
+          "level": 88
         },
         {
           "name": "CSS",
@@ -93,40 +68,65 @@
       ]
     },
     {
-      "date": "2025-04-26T12:51:12.113Z",
+      "date": "2025-05-26T18:34:07.938Z",
       "skills": [
         {
           "name": "TypeScript",
-          "level": 94
-        },
-        {
-          "name": "Python",
-          "level": 96
-        },
-        {
-          "name": "JavaScript",
-          "level": 72
-        },
-        {
-          "name": "Jupyter Notebook",
           "level": 73
         },
         {
+          "name": "Python",
+          "level": 95
+        },
+        {
+          "name": "JavaScript",
+          "level": 98
+        },
+        {
+          "name": "Jupyter Notebook",
+          "level": 88
+        },
+        {
           "name": "CSS",
-          "level": 89
+          "level": 73
         }
       ]
     },
     {
-      "date": "2025-03-26T12:51:12.113Z",
+      "date": "2025-04-26T18:34:07.938Z",
       "skills": [
         {
           "name": "TypeScript",
-          "level": 93
+          "level": 90
         },
         {
           "name": "Python",
-          "level": 91
+          "level": 78
+        },
+        {
+          "name": "JavaScript",
+          "level": 80
+        },
+        {
+          "name": "Jupyter Notebook",
+          "level": 92
+        },
+        {
+          "name": "CSS",
+          "level": 86
+        }
+      ]
+    },
+    {
+      "date": "2025-03-26T18:34:07.938Z",
+      "skills": [
+        {
+          "name": "TypeScript",
+          "level": 70
+        },
+        {
+          "name": "Python",
+          "level": 73
         },
         {
           "name": "JavaScript",
@@ -138,64 +138,64 @@
         },
         {
           "name": "CSS",
-          "level": 73
+          "level": 76
         }
       ]
     },
     {
-      "date": "2025-02-26T12:51:12.113Z",
+      "date": "2025-02-26T18:34:07.938Z",
       "skills": [
         {
           "name": "TypeScript",
-          "level": 83
+          "level": 88
         },
         {
           "name": "Python",
-          "level": 97
-        },
-        {
-          "name": "JavaScript",
-          "level": 75
-        },
-        {
-          "name": "Jupyter Notebook",
-          "level": 91
-        },
-        {
-          "name": "CSS",
-          "level": 82
-        }
-      ]
-    },
-    {
-      "date": "2025-01-26T12:51:12.113Z",
-      "skills": [
-        {
-          "name": "TypeScript",
           "level": 89
         },
         {
-          "name": "Python",
-          "level": 86
-        },
-        {
           "name": "JavaScript",
-          "level": 99
+          "level": 83
         },
         {
           "name": "Jupyter Notebook",
-          "level": 85
+          "level": 90
         },
         {
           "name": "CSS",
-          "level": 92
+          "level": 85
+        }
+      ]
+    },
+    {
+      "date": "2025-01-26T18:34:07.938Z",
+      "skills": [
+        {
+          "name": "TypeScript",
+          "level": 77
+        },
+        {
+          "name": "Python",
+          "level": 87
+        },
+        {
+          "name": "JavaScript",
+          "level": 76
+        },
+        {
+          "name": "Jupyter Notebook",
+          "level": 72
+        },
+        {
+          "name": "CSS",
+          "level": 96
         }
       ]
     }
   ],
   "presence": {
     "status": "offline",
-    "lastActive": "2025-06-26T12:51:06.784Z",
+    "lastActive": "2025-06-26T18:34:01.269Z",
     "currentProject": "PedroReoli"
   }
 }
