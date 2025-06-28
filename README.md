@@ -1,96 +1,77 @@
 <div align="center">
-  <h1>Pedro Reoli | Desenvolvedor Fullstack Jr</h1>
-  
-  <p>
-    <img src="https://komarev.com/ghpvc/?username=pedroreoli&label=Visitantes&color=0e75b6&style=flat" alt="pedroreoli" />
-    <img src="https://img.shields.io/badge/Status-Codando%20Agora-brightgreen?style=flat&logo=visual-studio-code&logoColor=white" alt="Status" />
-    <img src="https://img.shields.io/badge/Foco-Frontend%20Avançado-blue?style=flat&logo=react" alt="Focus" />
-  </p>
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6E56CF&center=true&vCenter=true&width=500&lines=Ol%C3%A1%2C+eu+sou+o+Pedro+Reoli;Desenvolvedor+Full+Stack;Especialista+em+Frontend+%26+UX;M%C3%BAsico+e+criador+de+c%C3%B3digo" alt="Typing SVG" />
+  </a>
+</div>
 
-  <div>
-    <a href="https://www.youtube.com/@DevDesenvolvimento"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" /></a>
-    <a href="https://www.instagram.com/01_dev_em_desenvolvimento/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
-    <a href="https://www.linkedin.com/in/pedro-lucas-reis-de-oliveira-sousa-a93945171/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-    <a href="https://discord.gg/teDfu39G7r"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  </div>
-  
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=600&lines=Desenvolvedor+Frontend+Especialista;Desenvolvedor+Full+Stack;Criador+de+Interfaces+Imersivas;Entusiasta+de+React+e+Next.js;Artista+do+Código;Músico+nas+Horas+Vagas" alt="Typing SVG" />
+<div align="center" style="display: flex; justify-content: center; gap: 10px; margin-top: 10px;">
+  <a href="https://www.linkedin.com/in/pedro-lucas-reis-de-oliveira-sousa-a93945171/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://pedroreoliportfolio.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/Portf%C3%B3lio-6E56CF?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+  <a href="https://www.devemdesenvolvimento.com.br/" target="_blank"><img src="https://img.shields.io/badge/Blog-20232A?style=for-the-badge&logo=wordpress&logoColor=white" /></a>
+  <a href="https://discord.gg/teDfu39G7r" target="_blank"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" /></a>
 </div>
 
 ---
 
-## Sobre Mim
-
-<img align="right" alt="Chill gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="300" height="160" />
-
-Sou desenvolvedor full stack com foco em frontend e interesse constante por novas tecnologias. Atualmente sou estagiário na AutoCom3, onde atuo no desenvolvimento de sistemas com back-end e front-end integrados.
-Também sou músico nas horas vagas, apaixonado por blues, rock e heavy metal.
-
-- Atualmente na **AutoCom3**, Estagiário de Desenvolvimento
-- Desenvolvendo o [FalaAtípica](https://github.com/PedroReoli/FalaAtipica-Tutores) - TCC sobre acessibilidade e comunicação
-- Sempre aprendendo algo novo em **React, Next.js, Node.js, Three.js, C#**
-- Meu portfólio: [pedroreoliportfolio.vercel.app](https://pedroreoliportfolio.vercel.app)
-- Blog onde escrevo sobre código: [devemdesenvolvimento.com.br/](https://www.devemdesenvolvimento.com.br/)
-- **Plot twist:** Quando não estou codando, estou tocando guitarra - viciado em guitarra, blues, rock
+<p align="center">
+  <img align="right" alt="Lofi dev gif" src="https://cdn.shopify.com/s/files/1/0578/3696/1997/t/9/assets/lofiboy.gif?v=103461765217895835051680702279" width="280" />
+  
+  Desenvolvedor Full Stack apaixonado por criar experiências digitais intuitivas e acessíveis. Com foco em **React, Next.js e C#**, busco constantemente unir design e funcionalidade para construir soluções robustas.
+  
+  Atualmente, contribuo como estagiário na **AutoCom3**, desenvolvendo sistemas integrados, e dedico meu tempo ao meu TCC, o **[FalaAtípica](https://github.com/PedroReoli/FalaAtipica-Tutores)**, um projeto focado em comunicação assistiva.
+  
+  Fora do código, sou músico e guitarrista, sempre explorando as harmonias do blues e do rock.
+</p>
 
 ---
 
-##  Tech Stack & GitHub Overview
+### Minhas Ferramentas e Tecnologias
+
+<table width="100%">
+  <tr>
+    <td width="16%" align="center"><strong>Frontend</strong></td>
+    <td width="84%">
+      <a href="https://skillicons.dev">
+        <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,threejs" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Backend & DB</strong></td>
+    <td>
+      <a href="https://skillicons.dev">
+        <img src="https://skillicons.dev/icons?i=nodejs,cs,python,postgres,mysql,docker" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><strong>Ferramentas</strong></td>
+    <td>
+      <a href="https://skillicons.dev">
+        <img src="https://skillicons.dev/icons?i=git,github,vscode,figma" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+---
+
+### Minhas Estatisticas no GitHub
 
 <div align="center">
-  <table>
-    <tr>
-      <td width="50%">
-    <!--  -->
-        <div align="center">
-          <!-- <h4>Minha Stack</h4> -->
-          <table>
-            <tr>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40" /><br>HTML5</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="40" /><br>CSS3</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" /><br>JavaScript</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="40" /><br>React</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/tailwindcss/tailwindcss-original.svg" width="40" /><br>Tailwind</td>
-            </tr>
-            <tr>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="40" /><br>TypeScript</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="40" /><br>Node.js</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" width="40" /><br>C#</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40" /><br>Python</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="40" /><br>Docker</td>
-            </tr>
-            <tr>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="40" /><br>PostgreSQL</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="40" /><br>MySQL</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="40" /><br>Git</td>
-              <td align="center"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" width="40" /><br>VS Code</td>
-              <td align="center"></td>
-            </tr>
-          </table>
-        </div>
-      </td>
-      <td width="50%">
-        <h3>GitHub Overview</h3>
-        <img width="100%" src="https://github-readme-stats.vercel.app/api?username=pedroreoli&show_icons=true&theme=radical&hide_border=true" alt="GitHub Stats" />
-        <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&hide_title=true" alt="Linguagens" />
-        <img width="100%" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=radical&hide_border=true" alt="GitHub Streak" />
-      </td>
-    </tr>
-  </table>
+  <img width="450px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Linguagens mais usadas" />
+  <br>
+  <img width="450px" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=radical&hide_border=true" alt="GitHub Streak" />
 </div>
 
 ---
 
-## Contribuições
+### Minhas Contribuições
 
 <div align="center">
-
-  <img src="./profile-3d-contrib/profile-night-green.svg" alt="3D Profile" width="90%" />
-
-
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
-    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg" width="90%">
+    <img alt="Pacman Contribution Graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg" width="90%">
   </picture>
 </div>
