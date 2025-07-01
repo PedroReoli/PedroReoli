@@ -12,7 +12,7 @@
   </a>
   &nbsp;&nbsp;
   <a href="https://pedroreoliportfolio.vercel.app/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=vercel" alt="Portfólio" />
+    <img src="https://img.shields.io/badge/Portfolio-6E56CF?style=for-the-badge" alt="Portfólio" />
   </a>
   &nbsp;&nbsp;
   <a href="https://www.devemdesenvolvimento.com.br/" target="_blank">
