@@ -35,7 +35,6 @@
 <div align="center">
   <img width="450px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Linguagens mais usadas" />
   <br>
-  <img width="450px" src="https://github-readme-streak-stats.herokuapp.com/?user=pedroreoli&theme=radical&hide_border=true" alt="GitHub Streak" />
 </div>
 
 <p align="center">
