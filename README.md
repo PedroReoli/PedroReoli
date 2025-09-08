@@ -1,5 +1,5 @@
 <div align="center">
-  <div class="tenor-gif-embed" data-postid="26918329" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/what-was-that-david-martinez-cyberpunk-edgerunners-i-sensed-something-somethings-going-on-here-gif-26918329">What Was That David Martinez Sticker</a>from <a href="https://tenor.com/search/what+was+that-stickers">What Was That Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+  <img src="https://media.tenor.com/26918329.gif" alt="David Martinez Cyberpunk" width="300" />
 </div>
 
 <div align="center">
@@ -31,18 +31,15 @@
   <table>
     <tr>
       <td align="left" width="60%">
-        
-        ### FalaAtípica
-        
-        Sistema completo de auxílio para crianças com atraso de fala, desenvolvido como projeto de TCC.
-        
-        **Aplicações:**
-        - **KIDS** - Jogos educativos para crianças
-        - **TUTORS** - Acompanhamento para pais/responsáveis
-        - **PRO** - Ferramentas profissionais para fonoaudiólogos
-        
-        **Tecnologias:** React Native e React com TypeScript
-        
+        <h3>FalaAtípica</h3>
+        <p>Sistema completo de auxílio para crianças com atraso de fala, desenvolvido como projeto de TCC.</p>
+        <p><strong>Aplicações:</strong></p>
+        <ul>
+          <li><strong>KIDS</strong> - Jogos educativos para crianças</li>
+          <li><strong>TUTORS</strong> - Acompanhamento para pais/responsáveis</li>
+          <li><strong>PRO</strong> - Ferramentas profissionais para fonoaudiólogos</li>
+        </ul>
+        <p><strong>Tecnologias:</strong> React Native e React com TypeScript</p>
       </td>
       <td align="center" width="40%">
         <a href="https://github.com/PedroReoli/FalaAtipica-Triade">
