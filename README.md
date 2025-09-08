@@ -1,9 +1,15 @@
-<div align="center">
-  <img src="https://media.tenor.com/26918329.gif" alt="David Martinez Cyberpunk" width="300" />
-</div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6E56CF&center=true&vCenter=true&width=500&lines=PEDRO+REOLI;Desenvolvedor+Full+Stack;Soluções+Web" alt="Typing SVG" />
+  <table>
+    <tr>
+      <td align="left" width="60%">
+        <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6E56CF&center=false&vCenter=true&width=500&lines=PEDRO+REOLI;Desenvolvedor+Full+Stack;Soluções+Web" alt="Typing SVG" />
+      </td>
+      <td align="center" width="40%">
+        <img src="https://media.tenor.com/18025526012403813134.gif" alt="Johnny Silverhand Cyberpunk" width="200" />
+      </td>
+    </tr>
+  </table>
 </div>
 
 <p align="center">
@@ -26,7 +32,6 @@
 
 ---
 
-
 <div align="center">
   <table>
     <tr>
@@ -43,7 +48,7 @@
       </td>
       <td align="center" width="40%">
         <a href="https://github.com/PedroReoli/FalaAtipica-Triade">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=pedroreoli&repo=FalaAtipica-Triade&theme=radical&hide_border=true" alt="FalaAtípica" />
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=pedroreoli&repo=FalaAtipica-Triade&theme=radical&hide_border=true&show_owner=true" alt="FalaAtípica" width="400" />
         </a>
       </td>
     </tr>
@@ -80,4 +85,3 @@
 </div>
 
 ---
-
