@@ -3,10 +3,12 @@
   <table>
     <tr>
       <td align="left" width="60%">
-        <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6E56CF&center=false&vCenter=true&width=500&lines=PEDRO+REOLI;Desenvolvedor+Full+Stack;Soluções+Web" alt="Typing SVG" />
+        <h1 align="center">
+          <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=32&pause=1000&color=6E56CF&center=false&vCenter=true&width=600&lines=Olá!+Eu+sou+o+PEDRO+REOLI;Desenvolvedor+Full+Stack;Especialista+em+React+e+Next.js;Soluções+Web+Inovadoras" alt="Typing SVG" />
+        </h1>
       </td>
       <td align="center" width="40%">
-        <img src="https://media.tenor.com/18025526012403813134.gif" alt="Johnny Silverhand Cyberpunk" width="200" />
+        <img src="img/you're-breath-taking-johnny-silverhand.gif" alt="Johnny Silverhand Cyberpunk" width="250" />
       </td>
     </tr>
   </table>
