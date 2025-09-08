@@ -3,9 +3,7 @@
   <table>
     <tr>
       <td align="left" width="60%">
-        <h1 align="center">
-          <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=32&pause=1000&color=6E56CF&center=false&vCenter=true&width=600&lines=Olá!+Eu+sou+o+PEDRO+REOLI;Desenvolvedor+Full+Stack;Especialista+em+React+e+Next.js;Soluções+Web+Inovadoras" alt="Typing SVG" />
-        </h1>
+        <img src="img/img.png" alt="Pedro Lucas - Desenvolvedor FullStack Jr." width="500" />
       </td>
       <td align="center" width="40%">
         <img src="img/you're-breath-taking-johnny-silverhand.gif" alt="Johnny Silverhand Cyberpunk" width="250" />
