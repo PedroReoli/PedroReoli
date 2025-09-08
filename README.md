@@ -1,4 +1,8 @@
 <div align="center">
+  <div class="tenor-gif-embed" data-postid="26918329" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/what-was-that-david-martinez-cyberpunk-edgerunners-i-sensed-something-somethings-going-on-here-gif-26918329">What Was That David Martinez Sticker</a>from <a href="https://tenor.com/search/what+was+that-stickers">What Was That Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+</div>
+
+<div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6E56CF&center=true&vCenter=true&width=500&lines=PEDRO+REOLI;Desenvolvedor+Full+Stack;Soluções+Web" alt="Typing SVG" />
 </div>
 
@@ -10,18 +14,36 @@
 
 ---
 
+### Sobre Mim
+
+<div align="left">
+  <p>• <strong>Desenvolvedor Full Stack</strong> apaixonado por criar experiências digitais intuitivas</p>
+  <p>• <strong>Estagiário na AutoCom3</strong> desenvolvendo sistemas integrados</p>
+  <p>• <strong>Foco em React, Next.js e C#</strong> para soluções robustas</p>
+  <p>• <strong>Músico e guitarrista</strong> explorando harmonias do blues e rock</p>
+  <p>• <strong>Especialista em acessibilidade</strong> e desenvolvimento de soluções inovadoras</p>
+</div>
+
+---
+
 
 <div align="center">
   <table>
     <tr>
-      <td align="center" width="50%">
+      <td align="left" width="60%">
+        <h3><strong>FalaAtípica</strong></h3>
+        <p>Sistema completo de auxílio para crianças com atraso de fala, desenvolvido como projeto de TCC.</p>
+        
+        <p><strong>Aplicações:</strong></p>
+        <p>• <strong>KIDS</strong> - Jogos educativos para crianças</p>
+        <p>• <strong>TUTORS</strong> - Acompanhamento para pais/responsáveis</p>
+        <p>• <strong>PRO</strong> - Ferramentas profissionais para fonoaudiólogos</p>
+        
+        <p><strong>Tecnologias:</strong> React Native e React com TypeScript</p>
+      </td>
+      <td align="center" width="40%">
         <a href="https://github.com/PedroReoli/FalaAtipica-Triade">
           <img src="https://github-readme-stats.vercel.app/api/pin/?username=pedroreoli&repo=FalaAtipica-Triade&theme=radical&hide_border=true" alt="FalaAtípica" />
-        </a>
-      </td>
-      <td align="center" width="50%">
-        <a href="https://pedroreoliportfolio.vercel.app/">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=pedroreoli&repo=portfolio&theme=radical&hide_border=true" alt="Portfolio" />
         </a>
       </td>
     </tr>
@@ -32,14 +54,17 @@
 
 ### Minha Stack
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,threejs,nodejs,cs,python,postgres,mysql,docker,git,github,vscode,figma,notion&perline=10" />
-</p>
-
----
-
 <div align="center">
-  <img width="450px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Linguagens mais usadas" />
+  <table>
+    <tr>
+      <td align="center" width="60%">
+        <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,threejs,nodejs,cs,python,postgres,mysql,docker,git,github,vscode,figma,notion&perline=10" />
+      </td>
+      <td align="center" width="40%">
+        <img width="350px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Linguagens mais usadas" />
+      </td>
+    </tr>
+  </table>
 </div>
 
 <div align="center">
