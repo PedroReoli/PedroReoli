@@ -31,15 +31,18 @@
   <table>
     <tr>
       <td align="left" width="60%">
-        <h3><strong>FalaAtípica</strong></h3>
-        <p>Sistema completo de auxílio para crianças com atraso de fala, desenvolvido como projeto de TCC.</p>
         
-        <p><strong>Aplicações:</strong></p>
-        <p>• <strong>KIDS</strong> - Jogos educativos para crianças</p>
-        <p>• <strong>TUTORS</strong> - Acompanhamento para pais/responsáveis</p>
-        <p>• <strong>PRO</strong> - Ferramentas profissionais para fonoaudiólogos</p>
+        ### FalaAtípica
         
-        <p><strong>Tecnologias:</strong> React Native e React com TypeScript</p>
+        Sistema completo de auxílio para crianças com atraso de fala, desenvolvido como projeto de TCC.
+        
+        **Aplicações:**
+        - **KIDS** - Jogos educativos para crianças
+        - **TUTORS** - Acompanhamento para pais/responsáveis
+        - **PRO** - Ferramentas profissionais para fonoaudiólogos
+        
+        **Tecnologias:** React Native e React com TypeScript
+        
       </td>
       <td align="center" width="40%">
         <a href="https://github.com/PedroReoli/FalaAtipica-Triade">
