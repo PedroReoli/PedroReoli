@@ -74,9 +74,9 @@
   </table>
 </div>
 
-<div align="center">
+<!-- <div align="center">
   <img src="profile-3d-contrib/profile-green-animate.svg" alt="3D Contribution Calendar" width="100%">
-</div>
+</div> -->
 
 <div align="center">
   <picture>
