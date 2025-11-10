@@ -11,23 +11,17 @@
 
 ---
 
-## Sobre
+## 💡 Sobre
 
 - Desenvolvedor Full Stack Pleno, especialista em React, Next.js e C#.
 - Experiência em integrações, acessibilidade e entrega orientada a métricas.
 - Atuei como Desenvolvedor Full Stack Jr entre janeiro e novembro de 2024.
 - Open to work (apenas remoto).
+- Portfólio atualizado: <a href="https://pedroreoli.vercel.app/" target="_blank">pedroreoli.vercel.app</a>
 
 ---
 
-## Experiência
-
-- AutoCom3 — Desenvolvedor Full Stack Jr (nov/2024 - atualmente)
-- Sivis Tecnologia — Desenvolvedor Full Stack Jr (jan/2024 - nov/2024)
-
----
-
-## Tools
+## 🛠️ Tools
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,threejs,nodejs,cs,python,postgres,mysql,docker,git,github,vscode,figma,notion&perline=10" alt="Tecnologias principais" />
@@ -37,7 +31,7 @@
   <img width="350" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Linguagens mais usadas" />
 </p>
 
-<p align="center">
+<p align="center" title="Histórico de contribuições">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
