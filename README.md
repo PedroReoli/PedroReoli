@@ -1,87 +1,49 @@
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="left" width="60%">
-        <img src="img/img.png" alt="Pedro Lucas - Desenvolvedor FullStack Jr." width="500" />
-      </td>
-      <td align="center" width="40%">
-        <img src="img/you're-breath-taking-johnny-silverhand.gif" alt="Johnny Silverhand Cyberpunk" width="250" />
-      </td>
-    </tr>
-  </table>
-</div>
+<h1 align="center">Pedro Lucas Reis de Oliveira Sousa</h1>
+<p align="center">Desenvolvedor Full Stack Pleno focado em produtos digitais escaláveis</p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/pedro-lucas-reis-de-oliveira-sousa-a93945171/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://pedroreoliportfolio.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/Portfólio-6E56CF?style=for-the-badge&logo=vercel&logoColor=white" /></a>
-  <a href="mailto:pedroreoli.dev@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/pedro-lucas-reis-de-oliveira-sousa-a93945171/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" /></a>
+  <a href="https://pedroreoliportfolio.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/Portfólio-6E56CF?style=flat-square&logo=vercel&logoColor=white" /></a>
+  <a href="mailto:pedroreoli.dev@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
 </p>
 
 ---
 
-### Sobre Mim
+## Sobre
 
-<div align="left">
-  <p>• <strong>Desenvolvedor Full Stack</strong> apaixonado por criar experiências digitais intuitivas</p>
-  <p>• <strong>Estagiário na AutoCom3</strong> desenvolvendo sistemas integrados</p>
-  <p>• <strong>Foco em React, Next.js e C#</strong> para soluções robustas</p>
-  <p>• <strong>Músico e guitarrista</strong> explorando harmonias do blues e rock</p>
-  <p>• <strong>Especialista em acessibilidade</strong> e desenvolvimento de soluções inovadoras</p>
-</div>
+- Desenvolvedor Full Stack Pleno, especialista em React, Next.js e C#.
+- Experiência em integrações, acessibilidade e entrega orientada a métricas.
+- Atuei como Desenvolvedor Full Stack Jr entre janeiro e novembro de 2024.
 
 ---
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="left" width="60%">
-        <h3>FalaAtípica</h3>
-        <p>Sistema completo de auxílio para crianças com atraso de fala, desenvolvido como projeto de TCC.</p>
-        <p><strong>Aplicações:</strong></p>
-        <ul>
-          <li><strong>KIDS</strong> - Jogos educativos para crianças</li>
-          <li><strong>TUTORS</strong> - Acompanhamento para pais/responsáveis</li>
-          <li><strong>PRO</strong> - Ferramentas profissionais para fonoaudiólogos</li>
-        </ul>
-        <p><strong>Tecnologias:</strong> React Native e React com TypeScript</p>
-      </td>
-      <td align="center" width="40%">
-        <a href="https://github.com/PedroReoli/FalaAtipica-Triade">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=pedroreoli&repo=FalaAtipica-Triade&theme=radical&hide_border=true&show_owner=true" alt="FalaAtípica" width="400" />
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
+## Experiência
+
+- AutoCom3 — Desenvolvedor Full Stack Jr (jan/2024 - nov/2024)
 
 ---
 
-### Minha Stack
+## Destaque
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="60%">
-        <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,threejs,nodejs,cs,python,postgres,mysql,docker,git,github,vscode,figma,notion&perline=10" />
-      </td>
-      <td align="center" width="40%">
-        <img width="350px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Linguagens mais usadas" />
-      </td>
-    </tr>
-  </table>
-</div>
+- FalaAtípica: plataforma de apoio ao desenvolvimento da fala com módulos para crianças, responsáveis e fonoaudiólogos. Tecnologias: React Native e React com TypeScript. <a href="https://github.com/PedroReoli/FalaAtipica-Triade" target="_blank">Repositório</a>
 
-<!-- <div align="center">
-  <img src="profile-3d-contrib/profile-green-animate.svg" alt="3D Contribution Calendar" width="100%">
-</div> -->
+---
 
-<div align="center">
+## Stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,threejs,nodejs,cs,python,postgres,mysql,docker,git,github,vscode,figma,notion&perline=10" alt="Tecnologias principais" />
+</p>
+
+<p align="center">
+  <img width="350" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Linguagens mais usadas" />
+</p>
+
+<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
     <img alt="Pacman Contribution Graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg" width="90%">
   </picture>
-</div>
-
----
+</p>
