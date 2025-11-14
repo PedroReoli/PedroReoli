@@ -1,6 +1,6 @@
 
 <h1 align="center">Pedro Lucas Reis de Oliveira Sousa</h1>
-<h2 align="center">Web Engineer  focado em produtos digitais escaláveis</h2>
+<h2 align="center"> Web Engineer | React | Next.js | TypeScript  </h2>
 
 <p align="center">
   <a href="#"><img src="https://img.shields.io/badge/Open%20To%20Work-2EA44F?style=flat-square&logo=nextdoor&logoColor=white" /></a>
