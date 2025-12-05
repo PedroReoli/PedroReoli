@@ -10,6 +10,10 @@
   <a href="mailto:pedroreoli.dev@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
 </p>
 
+<p align="center">
+  <img src="profile-3d-contrib/profile-night-view.svg" alt="GitHub 3D Contributions" width="100%" />
+</p>
+
 ---
 
 ## 💡 Sobre
@@ -31,11 +35,11 @@
 ## 🛠️ Tools
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,threejs,nodejs,cs,python,postgres,mysql,docker,git,github,vscode,figma,notion&perline=10" alt="Tecnologias principais" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind,threejs,nodejs,cs,python,postgres,mysql,docker,git,github,vscode,figma,notion,prisma&perline=10" alt="Tecnologias principais" />
 </p>
 
 <p align="center">
-  <img width="350" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Linguagens mais usadas" />
+  <!-- <img width="350" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pedroreoli&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Linguagens mais usadas" /> -->
 </p>
 
 <p align="center" title="Histórico de contribuições">
