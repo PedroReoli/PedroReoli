@@ -1,80 +1,102 @@
-<h1 align="center">Pedro Lucas Reis</h1>
-<h3 align="center">Full Stack Engineer · React · Next.js · Node.js · AI Integration</h3>
+# 🇧🇷 Leia em Português
+
+---
+
+<a href="./README_pt.md">
+  <img src="https://img.shields.io/badge/🇧🇷-Ler%20em%20Português-25D366?style=for-the-badge&logo=googletranslate&logoColor=white" alt="Read in Portuguese" />
+</a>
+
+---
+
+## 🇺🇸 English Version
+
+# 👨‍💻 Pedro Lucas Reis
+
+[![Verified](https://img.shields.io/badge/Verified-✅-25D366?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/)
+**Senior Frontend Engineer | React, Next.js & TypeScript | AI in Workflow | SaaS & ERP**
+
+📍 Brazil | 🏢 Open to work | 🔗 [LinkedIn](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/) · [Portfolio](https://pedroreis.vercel.app/) · [Email](mailto:pedroreis.dev@gmail.com)
+
+---
+
+## 💼 Professional Experience
+
+### Software Engineer · Domus - Sua Solução Digital
+`Oct 2025 - Present` · Freelance
+
+- Websites, admin platforms and custom web applications
+- Reusable and scalable frontend architectures
+- API integrations and external services
+- AI-assisted development workflows
+- Lighthouse scores close to 100 (Performance, SEO, Accessibility, Best Practices)
+
+### Frontend Engineer · SIVIS Tecnologia
+`Nov 2025 - Present` · Freelance
+
+- Corporate systems and business management platforms
+- Frontend integrations with REST APIs
+- Usability, maintainability and performance improvements
+- Production applications for real operational environments
+
+### Full Stack Developer / Frontend Engineer · Autocom3
+`Nov 2024 - Present` · Hybrid · Volta Redonda, RJ
+
+- ERP systems, dashboards and admin platforms
+- APIs and integrations for business workflows
+- ERP modules with complex business rules
+- Application stability and maintainability improvements
+
+### FullStack Developer Jr · SIVIS Tecnologia
+`Aug 2022 - Jun 2024` · Hybrid
+
+- ERP systems for clubs, associations and vehicle protection
+- Dashboards, management systems and admin interfaces
+
+### Technology Mentor · UniFOA University
+`Jun 2024 - Dec 2024`
+
+- **EvaTech** program — digital inclusion and AI
+- **30+ participants** mentored in technology and AI
+
+---
+
+## 🏆 Results & Achievements
+
+- 📦 Shared library with **300+ reusable components**
+- 🏢 Multi-tenant ERP platforms used by **20+ organizations**
+- 🎓 **FalaAtípica** capstone project approved with **9.5/10**
+- ⚡ **40% faster** — application loading time reduction
+- 🎯 Lighthouse scores close to **100** in Performance, SEO, A11y
+
+---
+
+## 🛠️ Tech Stack
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+---
+
+## 🤖 AI in Workflow
+
+Research · Documentation · Prototyping · Debugging · Code Review · Productivity
+
+---
+
+## 📊 Contribution Graph
 
 <p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/Open%20To%20Work-2EA44F?style=flat-square&logo=nextdoor&logoColor=white" /></a>
-  <a href="#"><img src="https://img.shields.io/badge/Remote%20Only-1D4ED8?style=flat-square&logo=homeassistantcommunitystore&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/pedro-lucas-reis-a93945171/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" /></a>
-  <a href="https://pedroreis.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/Portfolio-9333EA?style=flat-square&logo=vercel&logoColor=white" /></a>
-  <a href="mailto:pedroreoli.dev@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" /></a>
-  <img src="https://komarev.com/ghpvc/?username=PedroReoli&style=flat-square&color=6366f1&label=Views" />
+  <img src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg" alt="Contribution Graph" width="85%">
 </p>
 
-<br />
+---
 
 <p align="center">
-  <img src="profile-3d-contrib/profile-night-view.svg" alt="GitHub 3D Contributions" width="100%" />
-</p>
-
----
-
-## About
-
-Full Stack Engineer with 4+ years of experience building scalable web applications, backend services, and AI-powered products. I've worked across the full lifecycle — from migrating legacy systems to modern API-driven architectures, to designing large-scale ERP systems with complex business rules, to shipping SaaS products from scratch.
-
-I care about clean architecture, real performance, and writing code that scales — both technically and as a product.
-
----
-
-## What I'm building
-
-Scalable frontend architectures with React and Next.js, full stack system design with clean API layers, and integrating LLMs into real products — not as a gimmick, but where they genuinely improve UX and developer velocity.
-
-Currently shipping **[Propose](https://pedroreis.vercel.app/)** — a SaaS for proposal generation with digital signature and link tracking.
-
----
-
-## Highlights
-
-- Developed and maintained a full ERP ecosystem at **Autocom3**, handling complex business rules and multi-system integrations
-- Migrated legacy codebases (Visual FoxPro → modern APIs) in production without downtime
-- Built AI integrations including chat interfaces, copilots, and LLM-powered automation flows
-- Designed and shipped **Propose** end-to-end — proposal builder, digital signature, and engagement tracking
-
----
-
-## Tech Stack
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,angular,tailwind,nodejs,cs,python,postgres,mysql,docker,git,github,vscode,notion&perline=10" />
-</p>
-
-<p align="center">
-  <b>Frontend</b> &nbsp;·&nbsp; React · Next.js · Angular · TypeScript · Tailwind CSS
-  <br />
-  <b>Backend</b> &nbsp;·&nbsp; Node.js · C# · REST APIs · GraphQL
-  <br />
-  <b>Data</b> &nbsp;·&nbsp; PostgreSQL · MySQL
-  <br />
-  <b>AI</b> &nbsp;·&nbsp; LLM workflows · AI-driven interfaces · Automation pipelines
-  <br />
-  <b>Tooling</b> &nbsp;·&nbsp; Git · Docker · Postman · Swagger
-</p>
-
----
-
----
-
-## Contribution Graph
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg">
-    <img alt="Pacman Contribution Graph" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/pacman-contribution-graph.svg" width="90%">
-  </picture>
-</p>
-
-<p align="center">
-  <i>Made with focus, coffee, and way too many tabs open.</i>
+  <i>Open to work · Frontend Engineer</i>
 </p>
