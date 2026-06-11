@@ -2,11 +2,9 @@
 
 # <u>Pedro Lucas Reis</u>
 
-### Senior Frontend Engineer | React, Next.js & TypeScript
+### Mid Frontend Engineer | React, Next.js & TypeScript
 
 <br>
-
-[![Verified](https://img.shields.io/badge/Verified-✅-25D366?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/)
 
 [![🇧🇷 Português](https://img.shields.io/badge/🇧🇷-Português-7C3AED?style=for-the-badge&logo=googletranslate&logoColor=white)](README_pt.md)
 [![🔗 LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/)
