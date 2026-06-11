@@ -1,0 +1,55 @@
+{
+  "contribution":
+  {
+    "colors": {
+      "full": "#7C3AED",
+      "moreThanHalf": "#8B5CF6",
+      "half": "#A78BFA",
+      "lessThanHalf": "#C4B5FD",
+      "none": "#E5E7EB"
+    },
+    "column": 52,
+    "row": 7
+  },
+  "rotation": {
+    "x": 20,
+    "y": 15,
+    "z": 0
+  },
+  "animate": {
+    "enabled": true,
+    "rotationSpeed": 0.8,
+    "hoverEffect": true,
+    "pulseEffect": true
+  },
+  "title": {
+    "text": "Pedro Lucas Reis",
+    "enable": true,
+    "color": "#7C3AED",
+    "size": 40,
+    "animation": "fade-in"
+  },
+  "subtitle": {
+    "text": "Frontend Engineer · React · Next.js · TypeScript",
+    "enable": true,
+    "color": "#6B7280",
+    "size": 18,
+    "animation": "slide-up"
+  },
+  "messages": {
+    "enable": true,
+    "items": [
+      "Building scalable solutions 🚀",
+      "React · Next.js · TypeScript ⚡",
+      "AI in Workflow 🤖",
+      "Open to work 💼",
+      "Performance focused ⚡",
+      "SaaS & ERP platforms 🏢"
+    ],
+    "animation": "typing",
+    "speed": 100,
+    "loop": true
+  },
+  "theme": "night-view",
+  "size": "compact"
+}

@@ -1,0 +1,102 @@
+<svg viewBox="0 0 400 130" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-4px); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes typing {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+      }
+      @keyframes glow {
+        0%, 100% { filter: drop-shadow(0 0 3px #7C3AED); }
+        50% { filter: drop-shadow(0 0 8px #06B6D4); }
+      }
+      .float { animation: float 3s ease-in-out infinite; }
+      .pulse { animation: pulse 2s ease-in-out infinite; }
+      .spin { animation: spin 10s linear infinite; transform-origin: center; }
+      .typing { animation: typing 1.2s ease-in-out infinite; }
+      .glow { animation: glow 3s ease-in-out infinite; }
+      .text { font-family: system-ui, -apple-system, sans-serif; }
+    </style>
+
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f23"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="orb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="130" rx="16" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#2d2d4a" stroke-width="0.5"/>
+  </pattern>
+  <rect width="400" height="130" rx="16" fill="url(#grid)" opacity="0.3"/>
+
+  <!-- Orbiting circle -->
+  <g class="spin" style="transform-origin: 200px 65px">
+    <circle cx="200" cy="65" r="30" fill="none" stroke="url(#grad)" stroke-width="1.5" stroke-dasharray="5 3"/>
+  </g>
+
+  <!-- Inner glow ring -->
+  <circle cx="200" cy="65" r="18" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.6" class="glow"/>
+
+  <!-- Center dot -->
+  <circle cx="200" cy="65" r="4" fill="url(#orb)" class="pulse"/>
+
+  <!-- Floating code blocks -->
+  <g class="float">
+    <rect x="25" y="35" width="28" height="28" rx="6" fill="#7C3AED" opacity="0.2"/>
+    <text x="33" y="55" fill="#8B5CF6" font-size="12" class="text" text-anchor="middle">&lt;/&gt;</text>
+  </g>
+
+  <g class="float" style="animation-delay: 0.8s">
+    <rect x="347" y="70" width="28" height="28" rx="6" fill="#06B6D4" opacity="0.2"/>
+    <text x="355" y="90" fill="#06B6D4" font-size="12" class="text" text-anchor="middle">⚛️</text>
+  </g>
+
+  <!-- Floating icons -->
+  <g class="float" style="animation-delay: 0.3s">
+    <text x="80" y="95" fill="#A78BFA" font-size="12" class="text">TS</text>
+  </g>
+
+  <g class="float" style="animation-delay: 1.2s">
+    <text x="305" y="30" fill="#22D3EE" font-size="12" class="text">N</text>
+  </g>
+
+  <!-- Name -->
+  <text x="200" y="38" text-anchor="middle" fill="url(#grad)" font-size="18" font-weight="700" class="text glow">
+    Pedro Lucas Reis
+  </text>
+
+  <!-- Title -->
+  <text x="200" y="108" text-anchor="middle" fill="#94a3b8" font-size="10" class="text typing">
+    React · Next.js · TypeScript · AI
+  </text>
+
+  <!-- Status dot -->
+  <circle cx="188" cy="118" r="3" fill="#10b981" class="pulse"/>
+  <text x="195" y="121" text-anchor="start" fill="#10b981" font-size="8" class="text">Open to work</text>
+</svg>
