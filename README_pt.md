@@ -1,10 +1,16 @@
-# 👨‍💻 Pedro Lucas Reis
-
 <div align="center">
 
-[![Verificado](https://img.shields.io/badge/Verificado-✅-25D366?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/) · **[🇺🇸 EN](README.md)** · [LinkedIn](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/) · [Portfolio](https://pedroreis.vercel.app/)
+# <u>Pedro Lucas Reis</u>
 
-**Desenvolvedor Frontend Pleno | React, Next.js & TypeScript | IA no Workflow**
+### Desenvolvedor Frontend Pleno | React, Next.js & TypeScript
+
+<br>
+
+[![Verificado](https://img.shields.io/badge/Verificado-✅-25D366?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/)
+
+[![🇺🇸 English](https://img.shields.io/badge/🇺🇸-English-3B82F6?style=for-the-badge&logo=googletranslate&logoColor=white)](README.md)
+[![🔗 LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/)
+[![🌐 Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://pedroreis.vercel.app/)
 
 </div>
 
@@ -83,10 +89,10 @@ Research · Documentation · Prototyping · Debugging · Code Review · Producti
 
 ---
 
-## 📊 Perfil Animado
+## 📊 Atividade
 
 <div align="center">
-  <img src="assets/animated-profile.svg" alt="Perfil Animado" width="400" />
+  <img src="assets/animated-profile.svg" alt="Status de Atividade" width="500" />
 </div>
 
 ---
