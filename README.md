@@ -20,16 +20,16 @@
 
 Full Stack Engineer with around **4 years of experience** building ERP systems, SaaS products, enterprise platforms and modern web applications.
 
-Strong background in Frontend Engineering, with hands-on experience across **backend, APIs, PostgreSQL, AWS, software architecture and AI-assisted engineering**.
+Strong background in Frontend Engineering, with hands-on experience across **backend, APIs, PostgreSQL, AWS, software architecture and AI Engineering**.
 
 ---
 
 ## 🏆 Highlights
 
-- 🚀 Contributed to **10+ digital products**
+- 🚀 **10+ digital products**
 - 🏢 Platforms used by **20+ organizations**
 - 🧩 Design System with **500+ reusable components**
-- ⚡ Up to **70% reduction in development time** for selected workflows
+- ⚡ Up to **70% faster development** in selected workflows
 - 📈 Up to **40% improvement in application load time**
 - 💡 ERP ecosystem with **50+ pages**
 
@@ -46,9 +46,7 @@ Strong background in Frontend Engineering, with hands-on experience across **bac
 ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 
-</div>
-
-<div align="center">
+<br>
 
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
@@ -61,27 +59,27 @@ Strong background in Frontend Engineering, with hands-on experience across **bac
 
 ## 🚀 Featured Work
 
-### ERP Ecosystem
+**ERP Ecosystem**  
 Enterprise portals, dashboards and administrative platforms with **50+ pages**, APIs, integrations and multi-tenant environments.
 
-### Design System
-Architecture and evolution of a shared Design System with **500+ reusable components**.
+**Design System**  
+Shared architecture with **500+ reusable components** focused on scalability and development speed.
 
-### Electron → Tauri
-Desktop ERP modernization and migration from Electron to Tauri with focus on performance and application efficiency.
+**Electron → Tauri**  
+Desktop ERP modernization focused on performance and application efficiency.
 
-### ReoliOS
-AI Engineering ecosystem focused on **Spec-Driven Development, reusable AI Skills, Agent Loops and development workflows**.
+**ReoliOS**  
+AI Engineering ecosystem built around **Spec-Driven Development, AI Skills, Agent Loops and reusable engineering workflows**.
 
 ---
 
 ## 🤖 AI Engineering
 
-I use AI throughout the software engineering workflow for:
+AI applied throughout the software engineering workflow:
 
 **Research • Specifications • Documentation • Prototyping • Debugging • Code Review • Automation**
 
-Areas I actively explore:
+Exploring and building with:
 
 **Spec-Driven Development • AI Skills • Agent Loops • Context Engineering**
 
@@ -91,7 +89,11 @@ Areas I actively explore:
 
 <div align="center">
 
-<img src="assets/animated-profile.svg" alt="Activity Status" width="500" />
+<img
+  src="profile-3d-contrib/animated-profile.svg"
+  alt="GitHub 3D Contribution Graph"
+  width="680"
+/>
 
 </div>
 
@@ -101,6 +103,6 @@ Areas I actively explore:
 
 ### Open to Full Stack Software Engineering opportunities
 
-**TypeScript • React • Next.js • Node.js • NestJS • PostgreSQL**
+[LinkedIn](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/) • [Portfolio](https://pedroreis.vercel.app/)
 
 </div>
