@@ -1,90 +1,81 @@
 <div align="center">
 
-# 👋 Olá, eu sou o Pedro Lucas Reis!
-### **Full Stack Software Engineer | Frontend Architecture • Cloud • AI Engineering**
+# Pedro Lucas Reis
+#### **Full Stack Software Engineer • Frontend Architecture • Cloud • AI Engineering**
 
- Volta Redonda — RJ, Brasil | 💼 4+ Anos de Experiência | 🎓 Bacharel em Sistemas de Informação
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/)
-[![Portfólio](https://img.shields.io/badge/Portfólio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://pedroreis.vercel.app/)
-[![E-mail](https://img.shields.io/badge/E--mail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pedrosousa2160@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/)
+[![Portfólio](https://img.shields.io/badge/Live_Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://pedroreis.vercel.app/)
+[![Email](https://img.shields.io/badge/Direct_Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:pedrosousa2160@gmail.com)
 [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5524993264040)
 
 </div>
 
 ---
 
-### 🚀 Sobre Mim
+### 🏛️ Perfil Executivo
 
-Engenheiro de Software Full Stack com mais de **4 anos de experiência** construindo produtos digitais escaláveis, ecossistemas ERP corporativos, soluções SaaS e aplicações integradas à **Inteligência Artificial**. 
+Engenheiro de Software Full Stack com **~4 anos de atuação em engenharia de produto, arquitetura de sistemas e soluções distribuídas**. Experiência comprovada na concepção e sustentação de ecossistemas corporativos de alta complexidade (ERPs multi-tenant, plataformas SaaS e portais unificados) para mais de 20 organizações operacionais.
 
-Especializado no ecossistema **TypeScript (React, Next.js, Node.js, NestJS)**, arquitetura de software orientada a eventos e **Design Systems de grande porte**, com foco em entregas de alta performance, código limpo e experiência do usuário (UX/UI).
-
-- 🔭 Atuando como **Full Stack Engineer** em soluções SaaS (Domus), ecossistemas ERP (Autocom3) e integrações corporativas (SIVIS).
-- 🎨 Liderança e desenvolvimento de **Design System com 500+ componentes reutilizáveis**.
-- 🤖 Apaixonado por **AI Engineering** (Agent Loops, Spec-Driven Development e integração de modelos como Whisper IA).
-- 🎓 Ex-Mentor de Tecnologia no programa **EvaTech (UniFOA + SEBRAE)**, capacitando +30 pessoas em tecnologia e inteligência artificial.
+Especialista no ecossistema **TypeScript/Node.js**, com ênfase em:
+- **Frontend Architecture & Design Systems**: Liderança de bibliotecas corporativas com mais de 500 componentes reutilizáveis, reduzindo expressivamente o *time-to-market*.
+- **Performance & Usabilidade**: Otimizações críticas de runtime e bundle atingindo pontuações **Lighthouse ~100** e redução de 40% na latência de carregamento.
+- **AI Engineering**: Implementação de *agent loops*, arquiteturas orientadas a especificações (*Spec-Driven Development*) e integração de modelos generativos e de áudio em tempo real.
 
 ---
 
-### 🏆 Destaques & Resultados Reais
+### 📊 Indicadores de Impacto & Escala
 
-- 📱 **10+ Produtos Digitais**: Criação e evolução de SaaS, ERPs, Portais Administrativos e plataformas B2B.
-- 🏢 **20+ Organizações Corporativas**: Aplicações em produção utilizadas diariamente por diversas equipes operacionais.
-- ⚡ **70% Redução no Tempo de Dev**: Otimização de arquitetura e reaproveitamento modular de componentes.
-- 📈 **40% Ganho em Performance**: Otimização de sistemas ERP corporativos e páginas atingindo pontuações **Lighthouse ~100**.
-- 🛠️ **Organon (Business OS)**: Aplicação desktop/mobile combinando TipTap, Excalidraw, Nivo Charts e Whisper IA em tempo real.
+| Pilar | Escala & Métrica | Foco Arquitetural |
+| :--- | :--- | :--- |
+| **Design Systems** | **500+ Componentes** corporativos | Padronização atômica, acessibilidade e até **70% de redução** no ciclo de desenvolvimento. |
+| **Enterprise ERP** | **100+ Módulos** corporativos | Arquitetura desacoplada, **-40% de tempo de carregamento** e aderência a contratos rigorosos. |
+| **Escala B2B / SaaS** | **20+ Organizações** atendidas | Multi-tenancy, autenticação JWT, controle de acesso granular (RBAC) e webhooks assíncronos. |
+| **Engenharia de IA** | **Flagship Organon (v6.23.2)** | Integração real-time com Whisper IA, Canvas vetorial interativo e persistência dinâmica. |
+| **Liderança Técnica** | **30+ Profissionais capacitados** | Mentoria técnica em desenvolvimento web e inteligência artificial aplicada (EvaTech / SEBRAE). |
 
 ---
 
-### 🛠️ Core Técnico & Ferramentas
+### ⚡ Stack Tecnológica & Infraestrutura
+
+<table>
+  <tr>
+    <td width="20%"><strong>Frontend & Web</strong></td>
+    <td>
+      <code>TypeScript</code> • <code>React</code> • <code>Next.js</code> • <code>Angular</code> • <code>Tailwind CSS</code> • <code>Design Systems</code> • <code>Micro-frontends</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="20%"><strong>Backend & APIs</strong></td>
+    <td>
+      <code>Node.js</code> • <code>NestJS</code> • <code>Express</code> • <code>Fastify</code> • <code>C# / ASP.NET</code> • <code>RESTful APIs</code> • <code>Event-Driven Webhooks</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="20%"><strong>Data & Cloud</strong></td>
+    <td>
+      <code>PostgreSQL</code> • <code>Supabase</code> • <code>SQL Server</code> • <code>MySQL</code> • <code>AWS (API Gateway, S3, Deploy)</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="20%"><strong>Desktop & AI</strong></td>
+    <td>
+      <code>Tauri</code> • <code>Electron</code> • <code>Whisper IA</code> • <code>Agent Loops</code> • <code>Spec-Driven Development</code>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 📈 Métricas de Engenharia
 
 <div align="center">
 
-#### **Frontend & Design Systems**
-[![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)](https://reactjs.org/)
-[![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white)](https://angular.io/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://html.spec.whatwg.org/)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
-
-#### **Backend, APIs & Cloud**
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
-[![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)](https://nestjs.com/)
-[![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white)](https://expressjs.com/)
-[![Fastify](https://img.shields.io/badge/Fastify-000000?style=flat-square&logo=fastify&logoColor=white)](https://www.fastify.io/)
-[![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)](https://docs.microsoft.com/en-us/dotnet/csharp/)
-[![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
-
-#### **Banco de Dados & Desktop**
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)](https://supabase.com/)
-[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![SQL Server](https://img.shields.io/badge/SQL_Server-CC292B?style=flat-square&logo=microsoftsqlserver&logoColor=white)](https://www.microsoft.com/sql-server)
-[![Tauri](https://img.shields.io/badge/Tauri-FFC131?style=flat-square&logo=tauri&logoColor=black)](https://tauri.app/)
-[![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white)](https://www.electronjs.org/)
+<img src="https://github-readme-stats.vercel.app/api?username=PedroReoli&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="155"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PedroReoli&layout=compact&theme=tokyonight&hide_border=true" height="155"/>
 
 </div>
 
 ---
 
-### 📊 Estatísticas do GitHub
-
 <div align="center">
 
-![Pedro's GitHub Stats](https://github-readme-stats.vercel.app/api?username=PedroReoli&show_icons=true&theme=radial&hide_border=true&count_private=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=PedroReoli&layout=compact&theme=radial&hide_border=true)
-
-</div>
-
----
-
-<div align="center">
-
-💡 *Sempre aberto a novos desafios técnicos, colaborações em projetos open-source e conexões no mercado!*
-
-[ Vamos Conversar no LinkedIn](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/) • [ Acessar Portfólio](https://pedroreis.vercel.app/)
-
-</div>
