@@ -1,106 +1,142 @@
 <div align="center">
 
 # Pedro Lucas Reis
+### Senior Full Stack Software Engineer & Frontend Architect
 
-### Full Stack Software Engineer
+**TypeScript · React · Next.js · Node.js · NestJS · PostgreSQL · Cloud AWS · AI Engineering**
 
-**TypeScript · React · Next.js · Node.js · NestJS · PostgreSQL · AI Engineering**
+<p align="center">
+  <a href="https://www.linkedin.com/in/pedro-lucas-reis-a93945171/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" height="26"/></a>
+  <a href="https://pedroreis.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white" height="26"/></a>
+  <a href="mailto:pedrosousa2160@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" height="26"/></a>
+  <a href="https://wa.me/5524993264040"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white" height="26"/></a>
+</p>
+
+📍 *Volta Redonda, RJ · Brazil (Available for Global Remote / B2B Contracts)*
+
+---
+
+### ⚡ Proven Engineering Impact
+
+| 🚀 **4+ Years Experience** | 🏢 **20+ Client Organizations** | 📦 **10+ Digital Products** |
+| :---: | :---: | :---: |
+| **🎨 500+ DS Components** | **⚡ -40% Load Time (ERP)** | **💯 ~100 Lighthouse Metrics** |
+
+---
+
+</div>
+
+## 🛠️ Core Tech Stack
+
+<div align="center">
+
+| Layer | Technologies & Ecosystem |
+| :--- | :--- |
+| **Frontend Architecture** | `TypeScript` · `React 18/19` · `Next.js (App Router)` · `Tailwind CSS` · `Radix UI` · `TanStack Query/Virtual` · `Storybook` |
+| **Backend & Microservices** | `Node.js` · `NestJS` · `Express` · `C# .NET Core` · `REST & GraphQL` · `WebSockets` · `RabbitMQ / Kafka` |
+| **Data & Cloud Infrastructure** | `PostgreSQL (pgvector)` · `Prisma / Drizzle` · `Redis` · `Docker` · `AWS (S3, Lambda, ECS, CloudFront)` |
+| **AI & Automation Engineering** | `Autonomous Agents (CDP)` · `LangChain` · `RAG / Embeddings` · `Claude / OpenAI / Gemini APIs` · `Playwright` |
 
 <br>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](https://pedroreis.vercel.app/)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:pedrosousa2160@gmail.com)
-
-📍 Volta Redonda, RJ · Brazil
+<img src="https://skillicons.dev/icons?i=ts,react,nextjs,nodejs,nestjs,postgres,aws,docker,tailwind,git" height="42" />
 
 </div>
 
 ---
 
-## About
+## 🏛️ Featured Engineering Projects
 
-Full Stack Software Engineer with **~4 years of experience** working on ERP platforms, SaaS products, corporate systems and digital products.
-
-Strong background in **Frontend Architecture, React, TypeScript and Design Systems**, with practical experience across **Backend, APIs, PostgreSQL, AWS and Software Architecture**.
-
-I also work extensively with **AI Engineering**, applying Claude, Codex and Gemini to specification, development, code review, automation and agent-based engineering workflows.
-
-- **10+** digital products
-- Platforms used by **20+ organizations**
-- Design System with **500+ reusable components**
-- Up to **70% faster development** in selected workflows
-- Up to **40% improvement** in ERP loading time
-
----
-
-## Tech Stack
-
-<table>
+<table width="100%">
 <tr>
-<td align="center"><b>Frontend</b></td>
-<td>
-<img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,angular,tailwind,vite" height="38" />
+<td width="50%" valign="top">
+
+### 🤖 [Achilles CDP Agent](https://github.com/PedroReoli)
+*Autonomous Chrome DevTools Protocol Agent CLI in Python*
+- Direct CDP socket control bypassing anti-bot shields
+- Zero-leak persistent sessions with semantic DOM observation
+- Built-in multi-threaded locks & dual i18n support
+`Python` · `Chrome DevTools Protocol` · `WebSockets` · `CLI`
+
+</td>
+<td width="50%" valign="top">
+
+### 🎨 [Enterprise UI Foundation & Design System](https://github.com/PedroReoli)
+*Scalable multi-brand Component Library & Design Tokens*
+- 500+ reusable atomic components with strict WCAG 2.1 AA a11y
+- Dynamic theme switching (Dark/Light) with CVA & Tailwind
+- Interactive Storybook & automated visual regression testing
+`TypeScript` · `React` · `Tailwind CSS` · `Radix UI` · `Storybook`
+
 </td>
 </tr>
 
 <tr>
-<td align="center"><b>Backend</b></td>
-<td>
-<img src="https://skillicons.dev/icons?i=nodejs,nestjs,express,cs,dotnet" height="38" />
-</td>
-</tr>
+<td width="50%" valign="top">
 
-<tr>
-<td align="center"><b>Data & Cloud</b></td>
-<td>
-<img src="https://skillicons.dev/icons?i=postgres,mysql,supabase,aws,docker" height="38" />
-</td>
-</tr>
+### ⚡ [Enterprise SaaS Core Engine](https://github.com/PedroReoli)
+*High-performance Multi-tenant Architecture*
+- Clean Architecture (Domain, Application, Infrastructure layers)
+- Distributed caching with Redis and smart tag invalidation
+- Granular RBAC, audit logging & payment gateway integration
+`Next.js 14` · `NestJS` · `PostgreSQL` · `Redis` · `Docker`
 
-<tr>
-<td align="center"><b>Tools</b></td>
-<td>
-<img src="https://skillicons.dev/icons?i=git,github,figma,electron,tauri" height="38" />
+</td>
+<td width="50%" valign="top">
+
+### 🧠 [AI Agent Workflow & Real-Time Analytics](https://github.com/PedroReoli)
+*Vector RAG Pipeline & Live Streaming Analytics Dashboard*
+- Semantic search via PostgreSQL `pgvector` & token streaming
+- Real-time data visualization with Nivo Charts & WebSockets
+- Deterministic guardrails and sub-second token latency
+`Next.js` · `FastAPI / Node` · `pgvector` · `WebSockets` · `Nivo`
+
 </td>
 </tr>
 </table>
 
 ---
 
-## AI Engineering
+## 🧠 AI Engineering & Architecture Workflow
 
-<p align="left">
+I apply **Spec-Driven Engineering** and deterministic agent architectures to multiply delivery velocity without compromising system stability:
 
-<img src="https://img.shields.io/badge/Claude-D97757?style=flat-square&logo=anthropic&logoColor=white" height="27"/>
-<img src="https://img.shields.io/badge/Codex-000000?style=flat-square&logo=openai&logoColor=white" height="27"/>
-<img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" height="27"/>
-<img src="https://img.shields.io/badge/ChatGPT-10A37F?style=flat-square&logo=openai&logoColor=white" height="27"/>
+```mermaid
+graph LR
+    A[Spec & RFC Design] --> B[Deterministic Coding Rules]
+    B --> C[AI Agent Implementation]
+    C --> D[Rigorous Static Analysis & Profiling]
+    D --> E[Production CI/CD]
+```
 
-</p>
-
-**Spec-Driven Development · AI Skills · Agent Loops · Context Engineering · Automation**
-
-I use AI as part of the engineering process for **research, specifications, implementation, debugging, code review and documentation**, while keeping architecture and technical decisions under human validation.
-
----
-
-## Engineering
-
-`Frontend Architecture` · `Design Systems` · `REST APIs` · `JWT / RBAC` · `Webhooks` · `Event-Driven`
-
-`System Design` · `AWS` · `Docker` · `CI/CD` · `Multi-tenant` · `White-label`
+- **Deterministic Governance**: Monitored context engineering with local skills and strict coding standards.
+- **Deep Profiling**: Performance optimization with Chrome DevTools Profiler, memory leak audits, and render tree pruning.
 
 ---
 
 <div align="center">
 
-### Let's connect
+### 📈 Activity & Contribution Matrix
 
-[LinkedIn](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/)
-&nbsp;·&nbsp;
-[Portfolio](https://pedroreis.vercel.app/)
-&nbsp;·&nbsp;
-[Email](mailto:pedrosousa2160@gmail.com)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/github-contribution-grid-snake-dark.svg">
+</picture>
+
+<br><br>
+
+<a href="https://github.com/PedroReoli">
+  <img src="https://github-readme-stats.vercel.app/api?username=PedroReoli&show_icons=true&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=06b6d4&text_color=94a3b8&icon_color=06b6d4" height="155" />
+</a>
+<a href="https://github.com/PedroReoli">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PedroReoli&layout=compact&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=06b6d4&text_color=94a3b8" height="155" />
+</a>
+
+<br><br>
+
+### 🤝 Let's build something exceptional together
+
+[LinkedIn](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/) · [Portfolio](https://pedroreis.vercel.app/) · [E-mail](mailto:pedrosousa2160@gmail.com) · [WhatsApp](https://wa.me/5524993264040)
 
 </div>
