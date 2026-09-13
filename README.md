@@ -45,61 +45,9 @@
 
 ---
 
-## 🏛️ Featured Engineering Projects
-
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
-
-### 🤖 [Achilles CDP Agent](https://github.com/PedroReoli)
-*Autonomous Chrome DevTools Protocol Agent CLI in Python*
-- Direct CDP socket control bypassing anti-bot shields
-- Zero-leak persistent sessions with semantic DOM observation
-- Built-in multi-threaded locks & dual i18n support
-`Python` · `Chrome DevTools Protocol` · `WebSockets` · `CLI`
-
-</td>
-<td width="50%" valign="top">
-
-### 🎨 [Enterprise UI Foundation & Design System](https://github.com/PedroReoli)
-*Scalable multi-brand Component Library & Design Tokens*
-- 500+ reusable atomic components with strict WCAG 2.1 AA a11y
-- Dynamic theme switching (Dark/Light) with CVA & Tailwind
-- Interactive Storybook & automated visual regression testing
-`TypeScript` · `React` · `Tailwind CSS` · `Radix UI` · `Storybook`
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### ⚡ [Enterprise SaaS Core Engine](https://github.com/PedroReoli)
-*High-performance Multi-tenant Architecture*
-- Clean Architecture (Domain, Application, Infrastructure layers)
-- Distributed caching with Redis and smart tag invalidation
-- Granular RBAC, audit logging & payment gateway integration
-`Next.js 14` · `NestJS` · `PostgreSQL` · `Redis` · `Docker`
-
-</td>
-<td width="50%" valign="top">
-
-### 🧠 [AI Agent Workflow & Real-Time Analytics](https://github.com/PedroReoli)
-*Vector RAG Pipeline & Live Streaming Analytics Dashboard*
-- Semantic search via PostgreSQL `pgvector` & token streaming
-- Real-time data visualization with Nivo Charts & WebSockets
-- Deterministic guardrails and sub-second token latency
-`Next.js` · `FastAPI / Node` · `pgvector` · `WebSockets` · `Nivo`
-
-</td>
-</tr>
-</table>
-
----
-
 ## 🧠 AI Engineering & Architecture Workflow
 
-I apply **Spec-Driven Engineering** and deterministic agent architectures to multiply delivery velocity without compromising system stability:
+I apply **Spec-Driven Engineering** and deterministic agent workflows to accelerate delivery while keeping architecture and code quality under strict control:
 
 ```mermaid
 graph LR
@@ -109,7 +57,7 @@ graph LR
     D --> E[Production CI/CD]
 ```
 
-- **Deterministic Governance**: Monitored context engineering with local skills and strict coding standards.
+- **Deterministic Governance**: Monitored context engineering with local skills, strict typing, and zero runtime drift.
 - **Deep Profiling**: Performance optimization with Chrome DevTools Profiler, memory leak audits, and render tree pruning.
 
 ---
