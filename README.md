@@ -74,14 +74,17 @@ graph LR
 
 <br><br>
 
-<a href="https://github.com/PedroReoli">
-  <img src="https://github-readme-stats.vercel.app/api?username=PedroReoli&show_icons=true&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=06b6d4&text_color=94a3b8&icon_color=06b6d4" height="155" />
-</a>
-<a href="https://github.com/PedroReoli">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PedroReoli&layout=compact&theme=tokyonight&hide_border=true&bg_color=090d16&title_color=06b6d4&text_color=94a3b8" height="155" />
-</a>
+<p align="center">
+  <img src="profile-summary-card-output/tokyonight/0-profile-details.svg" height="155" />
+  <img src="profile-summary-card-output/tokyonight/1-repos-per-language.svg" height="155" />
+</p>
 
-<br><br>
+<p align="center">
+  <img src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" height="155" />
+  <img src="profile-summary-card-output/tokyonight/3-stats.svg" height="155" />
+</p>
+
+<br>
 
 ### 🤝 Let's build something exceptional together
 
