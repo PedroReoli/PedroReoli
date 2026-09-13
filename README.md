@@ -75,13 +75,7 @@ graph LR
 <br><br>
 
 <p align="center">
-  <img src="profile-summary-card-output/tokyonight/0-profile-details.svg" height="155" />
-  <img src="profile-summary-card-output/tokyonight/1-repos-per-language.svg" height="155" />
-</p>
-
-<p align="center">
-  <img src="profile-summary-card-output/tokyonight/2-most-commit-language.svg" height="155" />
-  <img src="profile-summary-card-output/tokyonight/3-stats.svg" height="155" />
+  <img src="profile-summary-card-output/tokyonight/0-profile-details.svg" width="96%" />
 </p>
 
 <br>
