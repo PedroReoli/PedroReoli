@@ -40,7 +40,8 @@ const pedroReoli = {
 | Project | Description | Stack |
 | :--- | :--- | :--- |
 | 🧠 **[Organon](https://github.com/PedroReoli/Organon)** | Workspace & ecossistema de inteligência e gestão autônoma | `TypeScript` · `React` |
-| 🌐 **[portfolio-main](https://github.com/PedroReoli/PedroReoli/tree/main)** | Portfólio oficial web e showcase interativo | `Next.js` · `Tailwind` |
+| 🛡️ **[Achilles CDP Agent](https://github.com/PedroReoli/Achilles-CDP-Agent)** | Chrome CDP Autonomous Agent & Security Suite | `Python` · `CDP` |
+| 🌐 **[portfolio-main](https://github.com/PedroReoli/portfolio-main)** | Portfólio oficial web e showcase interativo | `Next.js` · `Tailwind` |
 | 🎨 **[tool-react-image-editor](https://github.com/PedroReoli/tool-react-image-editor)** | Editor de imagem interativo com React Canvas | `React` · `TypeScript` |
 | 🔬 **[ai-neural-network-python](https://github.com/PedroReoli/ai-neural-network-python)** | Implementação de rede neural em Python | `Python` |
 
