@@ -40,18 +40,17 @@ const pedroReoli = {
 | Project | Description | Stack |
 | :--- | :--- | :--- |
 | 🧠 **[Organon](https://github.com/PedroReoli/Organon)** | Workspace & ecossistema de inteligência e gestão autônoma | `TypeScript` · `React` |
-| 🌐 **[portfolio-main](https://github.com/PedroReoli/portfolio-main)** | Portfólio oficial web e showcase interativo | `Next.js` · `Tailwind` |
+| 🌐 **[portfolio-main](https://github.com/PedroReoli/PedroReoli/tree/main)** | Portfólio oficial web e showcase interativo | `Next.js` · `Tailwind` |
 | 🎨 **[tool-react-image-editor](https://github.com/PedroReoli/tool-react-image-editor)** | Editor de imagem interativo com React Canvas | `React` · `TypeScript` |
 | 🔬 **[ai-neural-network-python](https://github.com/PedroReoli/ai-neural-network-python)** | Implementação de rede neural em Python | `Python` |
 
 ---
 
-### 📊 GitHub Activity & Stats
+### 📈 GitHub Commit Activity
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=PedroReoli&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=PedroReoli&theme=tokyonight&hide_border=true" width="48%" />
-</div>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=PedroReoli&theme=tokyo-night&height=300&custom_title=GitHub%20Commit%20Activity" width="100%" alt="Pedro Reoli GitHub Commit Activity Graph" />
+</p>
 
 <br>
 
