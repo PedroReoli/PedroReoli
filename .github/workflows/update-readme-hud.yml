@@ -1,15 +1,15 @@
-name: Update GitHub Profile HUD Card
+name: Hourly Profile Activity Update
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Everyday at midnight
+    - cron: '0 * * * *' # Hourly update
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-hud:
+  update-activity:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Generate Dynamic HUD SVG
+      - name: Generate Compact Activity SVG
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/generate-hud.js
@@ -29,5 +29,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add assets/profile-hud.svg
-          git diff --quiet && git diff --staged --quiet || (git commit -m "build: update dynamic profile HUD SVG [skip ci]" && git push)
+          git add assets/profile-activity.svg
+          git rm --ignore-unmatch assets/profile-hud.svg
+          git diff --quiet && git diff --staged --quiet || (git commit -m "build: hourly activity update [skip ci]" && git push)

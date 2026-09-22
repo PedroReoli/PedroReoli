@@ -1,92 +1,4 @@
-const fs = require('fs');
-const path = require('path');
-const https = require('https');
-
-function fetchJson(url, token) {
-  return new Promise((resolve) => {
-    const options = {
-      headers: {
-        'User-Agent': 'PedroReoli-Activity-Generator',
-        'Accept': 'application/vnd.github+json'
-      }
-    };
-    if (token) {
-      options.headers['Authorization'] = `Bearer ${token}`;
-    }
-    https.get(url, options, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        try {
-          resolve(JSON.parse(data));
-        } catch (e) {
-          resolve(null);
-        }
-      });
-    }).on('error', () => resolve(null));
-  });
-}
-
-async function main() {
-  const token = process.env.GITHUB_TOKEN || process.env.GH_PAT;
-
-  const repos = await fetchJson('https://api.github.com/users/PedroReoli/repos?per_page=15&sort=updated', token) || [];
-  
-  let allCommits = [];
-
-  if (Array.isArray(repos)) {
-    for (const repo of repos.slice(0, 5)) {
-      if (repo.fork) continue;
-      const commits = await fetchJson(`https://api.github.com/repos/PedroReoli/${repo.name}/commits?per_page=3`, token);
-      if (Array.isArray(commits)) {
-        commits.forEach(c => {
-          if (c && c.commit && c.commit.message) {
-            allCommits.push({
-              repo: repo.name,
-              sha: c.sha ? c.sha.substring(0, 7) : 'head',
-              msg: c.commit.message.split('\n')[0].substring(0, 48),
-              date: new Date(c.commit.author ? c.commit.author.date : Date.now())
-            });
-          }
-        });
-      }
-    }
-  }
-
-  // Sort commits newest first
-  allCommits.sort((a, b) => b.date - a.date);
-  const recentCommits = allCommits.slice(0, 3);
-
-  const now = new Date();
-  const dateOptions = { timeZone: 'America/Sao_Paulo', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
-  const formattedDate = new Intl.DateTimeFormat('pt-BR', dateOptions).format(now);
-
-  const commitRows = recentCommits.map(c => `
-    <div class="commit-item">
-      <span class="commit-sha">${c.sha}</span>
-      <span class="commit-repo">[${c.repo}]</span>
-      <span class="commit-msg">${escapeXml(c.msg)}</span>
-    </div>
-  `).join('') || `
-    <div class="commit-item">
-      <span class="commit-repo">[Organon]</span>
-      <span class="commit-msg">System update and architecture refinement</span>
-    </div>
-  `;
-
-  function escapeXml(unsafe) {
-    return unsafe.replace(/[<>&'"]/g, c => {
-      switch (c) {
-        case '<': return '&lt;';
-        case '>': return '&gt;';
-        case '&': return '&amp;';
-        case '\'': return '&apos;';
-        case '"': return '&quot;';
-      }
-    });
-  }
-
-  const svgContent = `<svg fill="none" width="800" height="210" viewBox="0 0 800 210" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" width="800" height="210" viewBox="0 0 800 210" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
@@ -205,31 +117,32 @@ async function main() {
         </div>
 
         <div class="commits-list">
-          ${commitRows}
+          
+    <div class="commit-item">
+      <span class="commit-sha">7ec8d0f</span>
+      <span class="commit-repo">[PedroReoli]</span>
+      <span class="commit-msg">feat: upgrade to 3D cybernetic animated HUD SVG </span>
+    </div>
+  
+    <div class="commit-item">
+      <span class="commit-sha">ccb520b</span>
+      <span class="commit-repo">[PedroReoli]</span>
+      <span class="commit-msg">feat: add dynamic HUD SVG card, daily workflow a</span>
+    </div>
+  
+    <div class="commit-item">
+      <span class="commit-sha">125f7b6</span>
+      <span class="commit-repo">[PedroReoli]</span>
+      <span class="commit-msg">chore: update profile activity</span>
+    </div>
+  
         </div>
 
         <div class="footer">
           <span>PEDRO REOLI</span>
-          <span>ÚLTIMA ATUALIZAÇÃO: ${formattedDate}</span>
+          <span>ÚLTIMA ATUALIZAÇÃO: 22/09/2026, 14:06</span>
         </div>
       </div>
     </div>
   </foreignObject>
-</svg>`;
-
-  const assetsDir = path.join(__dirname, '..', 'assets');
-  if (!fs.existsSync(assetsDir)) {
-    fs.mkdirSync(assetsDir, { recursive: true });
-  }
-
-  // Delete old files if present
-  const oldHud = path.join(assetsDir, 'profile-hud.svg');
-  if (fs.existsSync(oldHud)) {
-    fs.unlinkSync(oldHud);
-  }
-
-  fs.writeFileSync(path.join(assetsDir, 'profile-activity.svg'), svgContent, 'utf-8');
-  console.log('Compact Activity SVG generated successfully!');
-}
-
-main().catch(console.error);
+</svg>

@@ -12,9 +12,9 @@
   <a href="https://wa.me/5524993264040"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white" height="26"/></a>
 </p>
 
-<!-- Dynamic 3D Animated System HUD Card (Auto-updated every 24h with exact timestamps) -->
+<!-- Compact Live Recent Activity Card (Auto-updated hourly) -->
 <br>
-<img src="assets/profile-hud.svg" width="100%" alt="Reoli OS 3D Cyber HUD" />
+<img src="assets/profile-activity.svg" width="100%" alt="Pedro Reoli Recent Activity" />
 <br><br>
 
 </div>
