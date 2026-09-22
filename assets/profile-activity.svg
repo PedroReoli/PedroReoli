@@ -1,146 +1,102 @@
-<svg fill="none" width="800" height="210" viewBox="0 0 800 210" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" width="800" height="110" viewBox="0 0 800 110" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
-        @keyframes fadeIn {
-          0% { opacity: 0; transform: translateY(8px); }
-          100% { opacity: 1; transform: translateY(0); }
+        @keyframes pulseGlow {
+          0%, 100% { opacity: 1; filter: drop-shadow(0 0 6px #10b981); }
+          50% { opacity: 0.3; filter: drop-shadow(0 0 1px #10b981); }
         }
-        @keyframes pulseDot {
-          0%, 100% { opacity: 1; transform: scale(1); }
-          50% { opacity: 0.3; transform: scale(0.85); }
-        }
-        .wrapper {
+        .status-card {
           font-family: 'Inter', -apple-system, system-ui, sans-serif;
           background: #090d16;
-          background-image: radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
-                            radial-gradient(circle at 90% 80%, rgba(168, 85, 247, 0.08) 0%, transparent 40%);
-          border-radius: 14px;
-          padding: 18px 24px;
+          background-image: radial-gradient(circle at 10% 50%, rgba(56, 189, 248, 0.08) 0%, transparent 50%),
+                            radial-gradient(circle at 90% 50%, rgba(168, 85, 247, 0.08) 0%, transparent 50%);
+          border-radius: 12px;
+          padding: 16px 24px;
           color: #f8fafc;
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.08);
           box-sizing: border-box;
-          height: 210px;
-          animation: fadeIn 0.8s ease-out forwards;
-          box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.7);
-        }
-        .header {
+          height: 110px;
           display: flex;
+          align-items: center;
           justify-content: space-between;
-          align-items: center;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-          padding-bottom: 10px;
-          margin-bottom: 14px;
+          box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
         }
-        .header-title {
-          font-size: 13px;
-          font-weight: 700;
-          letter-spacing: 1px;
-          color: #38bdf8;
-          font-family: monospace;
+        .left-content {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
         }
-        .live-tag {
+        .badge-row {
           display: flex;
           align-items: center;
-          gap: 6px;
+          gap: 8px;
+        }
+        .live-dot {
+          width: 7px;
+          height: 7px;
+          background-color: #10b981;
+          border-radius: 50%;
+          animation: pulseGlow 1.8s infinite ease-in-out;
+        }
+        .badge-text {
           font-size: 10px;
           font-weight: 700;
           color: #34d399;
+          letter-spacing: 1px;
           font-family: monospace;
-          background: rgba(16, 185, 129, 0.1);
-          padding: 3px 8px;
-          border-radius: 12px;
-          border: 1px solid rgba(16, 185, 129, 0.2);
+          text-transform: uppercase;
         }
-        .pulse-dot {
-          width: 6px;
-          height: 6px;
-          background-color: #34d399;
-          border-radius: 50%;
-          animation: pulseDot 2s infinite ease-in-out;
-        }
-        .commits-list {
-          display: flex;
-          flex-direction: column;
-          gap: 8px;
-        }
-        .commit-item {
+        .repo-title {
+          font-size: 18px;
+          font-weight: 800;
+          color: #f1f5f9;
           display: flex;
           align-items: center;
-          gap: 10px;
-          background: rgba(255, 255, 255, 0.02);
-          border: 1px solid rgba(255, 255, 255, 0.05);
-          padding: 8px 12px;
-          border-radius: 8px;
-          font-size: 12px;
+          gap: 8px;
         }
-        .commit-sha {
-          font-family: monospace;
-          color: #a855f7;
-          font-weight: 700;
-          font-size: 11px;
-          background: rgba(168, 85, 247, 0.12);
-          padding: 2px 6px;
-          border-radius: 4px;
+        .repo-name {
+          background: linear-gradient(90deg, #38bdf8, #a855f7);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
-        .commit-repo {
-          color: #38bdf8;
-          font-weight: 600;
-          font-size: 11px;
-          white-space: nowrap;
-        }
-        .commit-msg {
-          color: #cbd5e1;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          font-weight: 400;
-        }
-        .footer {
-          margin-top: 12px;
+        .right-content {
           display: flex;
-          justify-content: space-between;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 6px;
+        }
+        .tech-tag {
+          background: rgba(56, 189, 248, 0.1);
+          border: 1px solid rgba(56, 189, 248, 0.25);
+          color: #38bdf8;
+          font-size: 11px;
+          font-weight: 600;
+          padding: 3px 10px;
+          border-radius: 12px;
+          font-family: monospace;
+        }
+        .update-time {
           font-size: 10px;
           color: #64748b;
           font-family: monospace;
-          border-top: 1px solid rgba(255, 255, 255, 0.05);
-          padding-top: 8px;
         }
       </style>
-      <div class="wrapper">
-        <div class="header">
-          <div class="header-title">PEDRO REOLI // RECENT ACTIVITY</div>
-          <div class="live-tag">
-            <div class="pulse-dot"></div>
-            SYNCED
+      <div class="status-card">
+        <div class="left-content">
+          <div class="badge-row">
+            <div class="live-dot"></div>
+            <span class="badge-text">ÚLTIMO REPOSITÓRIO PÚBLICO ALTERADO</span>
+          </div>
+          <div class="repo-title">
+            <span style="color: #64748b;">PedroReoli /</span>
+            <span class="repo-name">PedroReoli</span>
           </div>
         </div>
 
-        <div class="commits-list">
-          
-    <div class="commit-item">
-      <span class="commit-sha">7ec8d0f</span>
-      <span class="commit-repo">[PedroReoli]</span>
-      <span class="commit-msg">feat: upgrade to 3D cybernetic animated HUD SVG </span>
-    </div>
-  
-    <div class="commit-item">
-      <span class="commit-sha">ccb520b</span>
-      <span class="commit-repo">[PedroReoli]</span>
-      <span class="commit-msg">feat: add dynamic HUD SVG card, daily workflow a</span>
-    </div>
-  
-    <div class="commit-item">
-      <span class="commit-sha">125f7b6</span>
-      <span class="commit-repo">[PedroReoli]</span>
-      <span class="commit-msg">chore: update profile activity</span>
-    </div>
-  
-        </div>
-
-        <div class="footer">
-          <span>PEDRO REOLI</span>
-          <span>ÚLTIMA ATUALIZAÇÃO: 22/09/2026, 14:06</span>
+        <div class="right-content">
+          <div class="tech-tag">JavaScript</div>
+          <div class="update-time">Sincronizado: 22/09/2026, 14:17</div>
         </div>
       </div>
     </div>

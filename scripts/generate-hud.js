@@ -6,7 +6,7 @@ function fetchJson(url, token) {
   return new Promise((resolve) => {
     const options = {
       headers: {
-        'User-Agent': 'PedroReoli-Activity-Generator',
+        'User-Agent': 'PedroReoli-Compact-Generator',
         'Accept': 'application/vnd.github+json'
       }
     };
@@ -30,187 +30,123 @@ function fetchJson(url, token) {
 async function main() {
   const token = process.env.GITHUB_TOKEN || process.env.GH_PAT;
 
-  const repos = await fetchJson('https://api.github.com/users/PedroReoli/repos?per_page=15&sort=updated', token) || [];
+  const repos = await fetchJson('https://api.github.com/users/PedroReoli/repos?per_page=100&sort=updated', token) || [];
   
-  let allCommits = [];
+  let lastPublicRepo = { name: 'Organon', updated_at: new Date().toISOString(), language: 'TypeScript' };
 
   if (Array.isArray(repos)) {
-    for (const repo of repos.slice(0, 5)) {
-      if (repo.fork) continue;
-      const commits = await fetchJson(`https://api.github.com/repos/PedroReoli/${repo.name}/commits?per_page=3`, token);
-      if (Array.isArray(commits)) {
-        commits.forEach(c => {
-          if (c && c.commit && c.commit.message) {
-            allCommits.push({
-              repo: repo.name,
-              sha: c.sha ? c.sha.substring(0, 7) : 'head',
-              msg: c.commit.message.split('\n')[0].substring(0, 48),
-              date: new Date(c.commit.author ? c.commit.author.date : Date.now())
-            });
-          }
-        });
-      }
+    const publicNonForks = repos.filter(r => !r.private && !r.fork);
+    if (publicNonForks.length > 0) {
+      lastPublicRepo = publicNonForks[0];
     }
   }
-
-  // Sort commits newest first
-  allCommits.sort((a, b) => b.date - a.date);
-  const recentCommits = allCommits.slice(0, 3);
 
   const now = new Date();
   const dateOptions = { timeZone: 'America/Sao_Paulo', day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
   const formattedDate = new Intl.DateTimeFormat('pt-BR', dateOptions).format(now);
 
-  const commitRows = recentCommits.map(c => `
-    <div class="commit-item">
-      <span class="commit-sha">${c.sha}</span>
-      <span class="commit-repo">[${c.repo}]</span>
-      <span class="commit-msg">${escapeXml(c.msg)}</span>
-    </div>
-  `).join('') || `
-    <div class="commit-item">
-      <span class="commit-repo">[Organon]</span>
-      <span class="commit-msg">System update and architecture refinement</span>
-    </div>
-  `;
+  const repoName = lastPublicRepo.name || 'Organon';
+  const repoLang = lastPublicRepo.language || 'TypeScript';
 
-  function escapeXml(unsafe) {
-    return unsafe.replace(/[<>&'"]/g, c => {
-      switch (c) {
-        case '<': return '&lt;';
-        case '>': return '&gt;';
-        case '&': return '&amp;';
-        case '\'': return '&apos;';
-        case '"': return '&quot;';
-      }
-    });
-  }
-
-  const svgContent = `<svg fill="none" width="800" height="210" viewBox="0 0 800 210" xmlns="http://www.w3.org/2000/svg">
+  const svgContent = `<svg fill="none" width="800" height="110" viewBox="0 0 800 110" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
-        @keyframes fadeIn {
-          0% { opacity: 0; transform: translateY(8px); }
-          100% { opacity: 1; transform: translateY(0); }
+        @keyframes pulseGlow {
+          0%, 100% { opacity: 1; filter: drop-shadow(0 0 6px #10b981); }
+          50% { opacity: 0.3; filter: drop-shadow(0 0 1px #10b981); }
         }
-        @keyframes pulseDot {
-          0%, 100% { opacity: 1; transform: scale(1); }
-          50% { opacity: 0.3; transform: scale(0.85); }
-        }
-        .wrapper {
+        .status-card {
           font-family: 'Inter', -apple-system, system-ui, sans-serif;
           background: #090d16;
-          background-image: radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
-                            radial-gradient(circle at 90% 80%, rgba(168, 85, 247, 0.08) 0%, transparent 40%);
-          border-radius: 14px;
-          padding: 18px 24px;
+          background-image: radial-gradient(circle at 10% 50%, rgba(56, 189, 248, 0.08) 0%, transparent 50%),
+                            radial-gradient(circle at 90% 50%, rgba(168, 85, 247, 0.08) 0%, transparent 50%);
+          border-radius: 12px;
+          padding: 16px 24px;
           color: #f8fafc;
-          border: 1px solid rgba(255, 255, 255, 0.1);
+          border: 1px solid rgba(255, 255, 255, 0.08);
           box-sizing: border-box;
-          height: 210px;
-          animation: fadeIn 0.8s ease-out forwards;
-          box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.7);
-        }
-        .header {
+          height: 110px;
           display: flex;
+          align-items: center;
           justify-content: space-between;
-          align-items: center;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-          padding-bottom: 10px;
-          margin-bottom: 14px;
+          box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
         }
-        .header-title {
-          font-size: 13px;
-          font-weight: 700;
-          letter-spacing: 1px;
-          color: #38bdf8;
-          font-family: monospace;
+        .left-content {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
         }
-        .live-tag {
+        .badge-row {
           display: flex;
           align-items: center;
-          gap: 6px;
+          gap: 8px;
+        }
+        .live-dot {
+          width: 7px;
+          height: 7px;
+          background-color: #10b981;
+          border-radius: 50%;
+          animation: pulseGlow 1.8s infinite ease-in-out;
+        }
+        .badge-text {
           font-size: 10px;
           font-weight: 700;
           color: #34d399;
+          letter-spacing: 1px;
           font-family: monospace;
-          background: rgba(16, 185, 129, 0.1);
-          padding: 3px 8px;
-          border-radius: 12px;
-          border: 1px solid rgba(16, 185, 129, 0.2);
+          text-transform: uppercase;
         }
-        .pulse-dot {
-          width: 6px;
-          height: 6px;
-          background-color: #34d399;
-          border-radius: 50%;
-          animation: pulseDot 2s infinite ease-in-out;
-        }
-        .commits-list {
-          display: flex;
-          flex-direction: column;
-          gap: 8px;
-        }
-        .commit-item {
+        .repo-title {
+          font-size: 18px;
+          font-weight: 800;
+          color: #f1f5f9;
           display: flex;
           align-items: center;
-          gap: 10px;
-          background: rgba(255, 255, 255, 0.02);
-          border: 1px solid rgba(255, 255, 255, 0.05);
-          padding: 8px 12px;
-          border-radius: 8px;
-          font-size: 12px;
+          gap: 8px;
         }
-        .commit-sha {
-          font-family: monospace;
-          color: #a855f7;
-          font-weight: 700;
-          font-size: 11px;
-          background: rgba(168, 85, 247, 0.12);
-          padding: 2px 6px;
-          border-radius: 4px;
+        .repo-name {
+          background: linear-gradient(90deg, #38bdf8, #a855f7);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
-        .commit-repo {
-          color: #38bdf8;
-          font-weight: 600;
-          font-size: 11px;
-          white-space: nowrap;
-        }
-        .commit-msg {
-          color: #cbd5e1;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          font-weight: 400;
-        }
-        .footer {
-          margin-top: 12px;
+        .right-content {
           display: flex;
-          justify-content: space-between;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 6px;
+        }
+        .tech-tag {
+          background: rgba(56, 189, 248, 0.1);
+          border: 1px solid rgba(56, 189, 248, 0.25);
+          color: #38bdf8;
+          font-size: 11px;
+          font-weight: 600;
+          padding: 3px 10px;
+          border-radius: 12px;
+          font-family: monospace;
+        }
+        .update-time {
           font-size: 10px;
           color: #64748b;
           font-family: monospace;
-          border-top: 1px solid rgba(255, 255, 255, 0.05);
-          padding-top: 8px;
         }
       </style>
-      <div class="wrapper">
-        <div class="header">
-          <div class="header-title">PEDRO REOLI // RECENT ACTIVITY</div>
-          <div class="live-tag">
-            <div class="pulse-dot"></div>
-            SYNCED
+      <div class="status-card">
+        <div class="left-content">
+          <div class="badge-row">
+            <div class="live-dot"></div>
+            <span class="badge-text">ÚLTIMO REPOSITÓRIO PÚBLICO ALTERADO</span>
+          </div>
+          <div class="repo-title">
+            <span style="color: #64748b;">PedroReoli /</span>
+            <span class="repo-name">${repoName}</span>
           </div>
         </div>
 
-        <div class="commits-list">
-          ${commitRows}
-        </div>
-
-        <div class="footer">
-          <span>PEDRO REOLI</span>
-          <span>ÚLTIMA ATUALIZAÇÃO: ${formattedDate}</span>
+        <div class="right-content">
+          <div class="tech-tag">${repoLang}</div>
+          <div class="update-time">Sincronizado: ${formattedDate}</div>
         </div>
       </div>
     </div>
@@ -222,14 +158,8 @@ async function main() {
     fs.mkdirSync(assetsDir, { recursive: true });
   }
 
-  // Delete old files if present
-  const oldHud = path.join(assetsDir, 'profile-hud.svg');
-  if (fs.existsSync(oldHud)) {
-    fs.unlinkSync(oldHud);
-  }
-
   fs.writeFileSync(path.join(assetsDir, 'profile-activity.svg'), svgContent, 'utf-8');
-  console.log('Compact Activity SVG generated successfully!');
+  console.log('Ultra-Compact Activity Status Bar generated successfully!');
 }
 
 main().catch(console.error);
