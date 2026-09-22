@@ -12,9 +12,9 @@
   <a href="https://wa.me/5524993264040"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white" height="26"/></a>
 </p>
 
-<!-- Dynamic Animated System HUD Card (Auto-updated every 24h) -->
+<!-- Dynamic 3D Animated System HUD Card (Auto-updated every 24h with exact timestamps) -->
 <br>
-<img src="assets/profile-hud.svg" width="100%" alt="Reoli OS System HUD" />
+<img src="assets/profile-hud.svg" width="100%" alt="Reoli OS 3D Cyber HUD" />
 <br><br>
 
 </div>
@@ -23,18 +23,18 @@
 
 ### ⚡ Core Engineering & Architecture
 
-* **AI & Agentic Workflows:** Autonomous Agents (CDP), Spec-Driven Development, RAG, Custom Skills, Claude/Gemini APIs.
+* **AI & Agentic Systems:** Autonomous Agents (CDP), Spec-Driven Development, RAG, Custom Skills, Claude/Gemini APIs.
 * **Frontend Architecture:** TypeScript, React 19, Next.js (App Router), Tailwind CSS, Design Systems, State Machines.
 * **Backend & Cloud:** Node.js, NestJS, PostgreSQL (pgvector), Redis, Docker, AWS Infrastructure.
 
 ---
 
-### 🚀 Public Highlights
+### 🚀 Featured Public Projects
 
-* 🤖 **[odysseus](https://github.com/PedroReoli/odysseus)** — Self-hosted AI workspace environment.
-* 🌐 **[portfolio-main](https://github.com/PedroReoli/portfolio-main)** — Official Web Portfolio & Design Showcase.
-* 🎨 **[tool-react-image-editor](https://github.com/PedroReoli/tool-react-image-editor)** — Interactive React Canvas Image Editor.
-* 🧠 **[ai-neural-network-python](https://github.com/PedroReoli/ai-neural-network-python)** — Neural Network Implementation in Python.
+* 🧠 **[Organon](https://github.com/PedroReoli/Organon)** — Workspace e ecossistema de gestão e inteligência autônoma.
+* 🌐 **[portfolio-main](https://github.com/PedroReoli/portfolio-main)** — Portfólio oficial web e showcase de UI/UX.
+* 🎨 **[tool-react-image-editor](https://github.com/PedroReoli/tool-react-image-editor)** — Editor interativo de imagens em React Canvas.
+* 🔬 **[ai-neural-network-python](https://github.com/PedroReoli/ai-neural-network-python)** — Implementação de rede neural em Python.
 
 ---
 
