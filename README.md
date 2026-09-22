@@ -1,9 +1,9 @@
 <div align="center">
 
 # Pedro Lucas Reis
-### Senior Full Stack Software Engineer & Frontend Architect
+### Senior Software Architect & AI Systems Engineer
 
-**TypeScript · React · Next.js · Node.js · NestJS · PostgreSQL · Cloud AWS · AI Engineering**
+*Volta Redonda, RJ · Brazil (Available for Global Remote / B2B Contracts)*
 
 <p align="center">
   <a href="https://www.linkedin.com/in/pedro-lucas-reis-a93945171/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" height="26"/></a>
@@ -12,76 +12,34 @@
   <a href="https://wa.me/5524993264040"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white" height="26"/></a>
 </p>
 
-📍 *Volta Redonda, RJ · Brazil (Available for Global Remote / B2B Contracts)*
-
----
-
-### ⚡ Proven Engineering Impact
-
-| 🚀 **4+ Years Experience** | 🏢 **20+ Client Organizations** | 📦 **10+ Digital Products** |
-| :---: | :---: | :---: |
-| **🎨 500+ DS Components** | **⚡ -40% Load Time (ERP)** | **💯 ~100 Lighthouse Metrics** |
-
----
-
-</div>
-
-## 🛠️ Core Tech Stack
-
-<div align="center">
-
-| Layer | Technologies & Ecosystem |
-| :--- | :--- |
-| **Frontend Architecture** | `TypeScript` · `React 18/19` · `Next.js (App Router)` · `Tailwind CSS` · `Radix UI` · `TanStack Query/Virtual` · `Storybook` |
-| **Backend & Microservices** | `Node.js` · `NestJS` · `Express` · `C# .NET Core` · `REST & GraphQL` · `WebSockets` · `RabbitMQ / Kafka` |
-| **Data & Cloud Infrastructure** | `PostgreSQL (pgvector)` · `Prisma / Drizzle` · `Redis` · `Docker` · `AWS (S3, Lambda, ECS, CloudFront)` |
-| **AI & Automation Engineering** | `Autonomous Agents (CDP)` · `LangChain` · `RAG / Embeddings` · `Claude / OpenAI / Gemini APIs` · `Playwright` |
-
+<!-- Dynamic Animated System HUD Card (Auto-updated every 24h) -->
 <br>
-
-<img src="https://skillicons.dev/icons?i=ts,react,nextjs,nodejs,nestjs,postgres,aws,docker,tailwind,git" height="42" />
-
-</div>
-
----
-
-## 🧠 AI Engineering & Architecture Workflow
-
-I apply **Spec-Driven Engineering** and deterministic agent workflows to accelerate delivery while keeping architecture and code quality under strict control:
-
-```mermaid
-graph LR
-    A[Spec & RFC Design] --> B[Deterministic Coding Rules]
-    B --> C[AI Agent Implementation]
-    C --> D[Rigorous Static Analysis & Profiling]
-    D --> E[Production CI/CD]
-```
-
-- **Deterministic Governance**: Monitored context engineering with local skills, strict typing, and zero runtime drift.
-- **Deep Profiling**: Performance optimization with Chrome DevTools Profiler, memory leak audits, and render tree pruning.
-
----
-
-<div align="center">
-
-### 📈 Activity & Contribution Matrix
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/PedroReoli/PedroReoli/output/github-contribution-grid-snake-dark.svg">
-</picture>
-
+<img src="assets/profile-hud.svg" width="100%" alt="Reoli OS System HUD" />
 <br><br>
 
-<p align="center">
-  <img src="profile-summary-card-output/tokyonight/0-profile-details.svg" width="96%" />
-</p>
+</div>
 
-<br>
+---
 
-### 🤝 Let's build something exceptional together
+### ⚡ Core Engineering & Architecture
 
-[LinkedIn](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/) · [Portfolio](https://pedroreis.vercel.app/) · [E-mail](mailto:pedrosousa2160@gmail.com) · [WhatsApp](https://wa.me/5524993264040)
+* **AI & Agentic Workflows:** Autonomous Agents (CDP), Spec-Driven Development, RAG, Custom Skills, Claude/Gemini APIs.
+* **Frontend Architecture:** TypeScript, React 19, Next.js (App Router), Tailwind CSS, Design Systems, State Machines.
+* **Backend & Cloud:** Node.js, NestJS, PostgreSQL (pgvector), Redis, Docker, AWS Infrastructure.
+
+---
+
+### 🚀 Public Highlights
+
+* 🤖 **[odysseus](https://github.com/PedroReoli/odysseus)** — Self-hosted AI workspace environment.
+* 🌐 **[portfolio-main](https://github.com/PedroReoli/portfolio-main)** — Official Web Portfolio & Design Showcase.
+* 🎨 **[tool-react-image-editor](https://github.com/PedroReoli/tool-react-image-editor)** — Interactive React Canvas Image Editor.
+* 🧠 **[ai-neural-network-python](https://github.com/PedroReoli/ai-neural-network-python)** — Neural Network Implementation in Python.
+
+---
+
+<div align="center">
+
+**[LinkedIn](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/) · [Portfolio](https://pedroreis.vercel.app/) · [Email](mailto:pedrosousa2160@gmail.com)**
 
 </div>
