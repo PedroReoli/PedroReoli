@@ -45,14 +45,3 @@ const pedroReoli = {
 
 ---
 
-### 📈 GitHub Commit Activity
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=PedroReoli&theme=tokyo-night&height=300&custom_title=GitHub%20Commit%20Activity" width="100%" alt="Pedro Reoli GitHub Commit Activity Graph" />
-</p>
-
-<br>
-
-<p align="center">
-  <sub>Built with precision by Pedro Reoli</sub>
-</p>
