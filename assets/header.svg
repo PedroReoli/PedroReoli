@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200" role="img" aria-label="Pedro Lucas Reis, Full Stack AI Engineer">
+  <title>Pedro Lucas Reis, Full Stack AI Engineer</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070b14"/>
+      <stop offset="55%" stop-color="#0c1220"/>
+      <stop offset="100%" stop-color="#0a1020"/>
+    </linearGradient>
+    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <clipPath id="barClip">
+      <rect x="18" y="186" width="864" height="3" rx="1.5"/>
+    </clipPath>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="200" rx="18" fill="url(#bg)"/>
+  <rect width="900" height="200" rx="18" fill="url(#grid)" opacity="0.35"/>
+  <rect x="1" y="1" width="898" height="198" rx="17" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+
+  <circle cx="86" cy="40" r="70" fill="#38bdf8" opacity="0.06"/>
+  <circle cx="820" cy="170" r="90" fill="#a855f7" opacity="0.07"/>
+
+  <g transform="translate(86,100)">
+    <circle r="42" fill="none" stroke="url(#ringGrad)" stroke-width="1.2" stroke-dasharray="6 7" opacity="0.55">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="32" fill="none" stroke="url(#ringGrad)" stroke-width="2" opacity="0.9" filter="url(#softGlow)"/>
+    <circle r="22" fill="#111827"/>
+    <text x="0" y="6" text-anchor="middle" font-family="ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#f8fafc">PR</text>
+  </g>
+
+  <text x="156" y="78" font-family="ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="700" fill="url(#nameGrad)">Pedro Lucas Reis</text>
+
+  <g font-family="ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="18" font-weight="500" fill="#38bdf8">
+    <text x="156" y="118">
+      Full Stack AI Engineer
+      <tspan fill="#e2e8f0">
+        |
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </tspan>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.30;0.33;0.96;0.99;1" values="1;1;0;0;1;1"/>
+    </text>
+    <text x="156" y="118" opacity="0">
+      Applied AI (LLMs, RAG, MCP)
+      <tspan fill="#e2e8f0">
+        |
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </tspan>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.30;0.33;0.63;0.66;1" values="0;0;1;1;0;0"/>
+    </text>
+    <text x="156" y="118" opacity="0">
+      React · Next.js · TypeScript · Python · C#
+      <tspan fill="#e2e8f0">
+        |
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </tspan>
+      <animate attributeName="opacity" dur="12s" repeatCount="indefinite" keyTimes="0;0.63;0.66;0.96;0.99;1" values="0;0;1;1;0;0"/>
+    </text>
+  </g>
+
+  <g transform="translate(730,44)">
+    <rect x="0" y="0" width="118" height="30" rx="15" fill="#0b1f18" stroke="#14532d" stroke-width="1"/>
+    <circle cx="18" cy="15" r="4.5" fill="#34d399">
+      <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="68" y="20" text-anchor="middle" font-family="ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2" fill="#6ee7b7">REMOTE</text>
+  </g>
+
+  <g clip-path="url(#barClip)">
+    <rect x="18" y="186" width="864" height="3" rx="1.5" fill="url(#barGrad)"/>
+    <rect x="-200" y="186" width="200" height="3" fill="#ffffff" opacity="0.35">
+      <animate attributeName="x" values="-200;882" dur="3.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

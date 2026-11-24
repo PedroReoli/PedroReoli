@@ -1,102 +1,28 @@
 <div align="center">
-
-# <u>Pedro Lucas Reis</u>
-
-### Desenvolvedor Frontend Pleno | React, Next.js & TypeScript
-
-<br>
-
-[![Verificado](https://img.shields.io/badge/Verificado-✅-25D366?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/)
-
-[![🇺🇸 English](https://img.shields.io/badge/🇺🇸-English-3B82F6?style=for-the-badge&logo=googletranslate&logoColor=white)](README.md)
-[![🔗 LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-lucas-reis-a93945171/)
-[![🌐 Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://pedroreis.vercel.app/)
-
+  <img src="assets/header.svg" alt="Pedro Lucas Reis, Full Stack AI Engineer" width="900" />
 </div>
 
----
+<p align="center">
+  <a href="https://www.linkedin.com/in/pedro-lucas-reis-a93945171/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://medium.com/@pedrosousa2160"><img src="https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" /></a>
+  <a href="mailto:pedrosousa2160@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
 
-## 💼 Experiência Profissional
+Full Stack AI Engineer com foco em IA aplicada (LLMs, RAG, MCP) e apps em produção com React, Next.js, TypeScript, Python e C#.
 
-### Engenheiro de Software · Domus - Sua Solução Digital
-`Out 2025 - Atual` · Freelance
+Eu construo design systems (500+ componentes, até 70% menos tempo de dev) e ferramentas para agentes, e estou disponível para trabalho remoto a partir do Brasil.
 
-- Websites, plataformas administrativas e aplicações web customizadas
-- Arquiteturas frontend reutilizáveis e escaláveis
-- Integrações com APIs e serviços externos
-- Fluxos de desenvolvimento assistidos por IA
-- Scores Lighthouse próximos de 100
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ts,react,nextjs,nodejs,python,cs,dotnet,postgres,docker" alt="TypeScript, React, Next.js, Node.js, Python, C#, .NET, PostgreSQL, Docker" />
+</p>
 
-### Frontend Engineer · SIVIS Tecnologia
-`Nov 2025 - Atual` · Freelance
+### Projetos em destaque
 
-- Sistemas corporativos e plataformas de gestão empresarial
-- Integrações frontend com REST APIs
-- Melhorias de usabilidade e performance
+**[Achilles](https://github.com/PedroReoli/Achilles-CDP-Agent)**  
+Servidor MCP que opera Chrome, Edge e apps Windows para agentes de IA.
 
-### Full Stack Developer / Frontend Engineer · Autocom3
-`Nov 2024 - Atual` · Híbrido · Volta Redonda, RJ
+**[Argos](https://github.com/PedroReoli/argos-action)**  
+Modelo LoRA de ações de UI (1.5B). Dataset e eval holdout no [Kaggle](https://www.kaggle.com/datasets/pedroreoli/argos-computer-use-mcp) (schema 121/132, action 56/132).
 
-- Sistemas ERP, dashboards e plataformas administrativas
-- APIs e integrações para fluxos de trabalho empresariais
-- Módulos ERP com regras de negócio complexas
-
-### FullStack Developer Jr · SIVIS Tecnologia
-`Ago 2022 - Jun 2024` · Híbrido
-
-- Sistemas ERP para clubes, associações e proteção veicular
-
-### Mentor de Tecnologia · UniFOA
-`Jun 2024 - Dez 2024`
-
-- Programa **EvaTech** — inclusão digital e IA
-- **30+ participantes** mentorados
-
----
-
-## 🏆 Resultados & Conquistas
-
-| Métrica | Resultado |
-|---------|----------|
-| Componentes Reutilizáveis | **300+** |
-| Organizações Atendidas | **20+** |
-| Nota FalaAtípica | **9.5/10** |
-| Performance | **40% mais rápido** |
-| Lighthouse Scores | **~100** |
-
----
-
-## 🛠️ Tech Stack
-
-<div align="center">
-
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-</div>
-
----
-
-## 🤖 IA no Workflow
-
-Research · Documentation · Prototyping · Debugging · Code Review · Productivity
-
----
-
-## 📊 Atividade
-
-<div align="center">
-  <img src="assets/animated-profile.svg" alt="Status de Atividade" width="500" />
-</div>
-
----
-
-<div align="center">
-  <i>Aberto a oportunidades · Frontend Engineer</i>
-</div>
+**Organon**  
+Workspace desktop local-first para planejamento e documentação, com IA offline. Por enquanto, privado.
